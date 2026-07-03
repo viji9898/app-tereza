@@ -53,6 +53,16 @@
         object-position: center;
       }
 
+      .hero__mark {
+        align-self: end;
+        justify-self: center;
+        margin-bottom: clamp(18px, 4vw, 34px);
+        font-size: clamp(0.8rem, 1.6vw, 1rem);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: #b71b0b;
+      }
+
       .hero::after {
         content: "";
         position: absolute;
@@ -164,11 +174,7 @@
         src="heart-hero.png"
         alt="A red heart centered on a pale background"
       />
-      <section class="hero__content">
-        <div class="hero__actions" aria-label="Primary actions">
-          <p class="eyebrow">Made with heart</p>
-        </div>
-      </section>
+      <div class="hero__mark" aria-label="T and V">T&amp;V</div>
     </main>
   </body>
 </html>
