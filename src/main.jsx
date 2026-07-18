@@ -38,10 +38,26 @@ const tracks = [
 function HomePage() {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
-    videoRef.current?.play().catch(() => {});
+    const video = videoRef.current;
+
+    if (!video) {
+      return undefined;
+    }
+
+    video.defaultMuted = true;
+    video.muted = true;
+
+    const playVideo = () => {
+      video.play().catch(() => {});
+    };
+
+    playVideo();
+    video.addEventListener("canplay", playVideo, { once: true });
+
+    return () => video.removeEventListener("canplay", playVideo);
   }, []);
 
   function togglePlayback() {
@@ -71,6 +87,7 @@ function HomePage() {
         ref={videoRef}
         className="hero__video"
         autoPlay
+        muted
         loop
         playsInline
         preload="auto"
