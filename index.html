@@ -3,19 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>T&amp;V</title>
-    <meta
-      name="description"
-      content="Tereza Dos Santos Costa Spirit Reel 2024 playing full-screen."
-    />
+    <title>Travel Feather</title>
+    <meta name="description" content="Tereza Dos Santos | Breath Sound " />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="T&V" />
+    <meta property="og:title" content="Travel Feather" />
     <meta
       property="og:description"
       content="Tereza Dos Santos Costa Spirit Reel 2024 playing full-screen."
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="T&V" />
+    <meta name="twitter:title" content="Travel Feather" />
     <meta
       name="twitter:description"
       content="Tereza Dos Santos Costa Spirit Reel 2024 playing full-screen."
@@ -67,12 +64,7 @@
         justify-items: center;
         padding: clamp(18px, 4vw, 54px);
         color: #fff9f0;
-        font-family:
-          Didot,
-          "Bodoni 72",
-          "Bodoni MT",
-          "Times New Roman",
-          serif;
+        font-family: Didot, "Bodoni 72", "Bodoni MT", "Times New Roman", serif;
         text-align: center;
         text-shadow: 0 2px 16px rgba(0, 0, 0, 0.44);
         pointer-events: none;
@@ -116,11 +108,7 @@
         border: 1px solid rgba(255, 249, 240, 0.82);
         border-radius: 999px;
         color: #fff9f0;
-        font-family:
-          Optima,
-          Candara,
-          "Noto Sans",
-          sans-serif;
+        font-family: Optima, Candara, "Noto Sans", sans-serif;
         font-size: clamp(0.82rem, 1.3vw, 1rem);
         font-weight: 700;
         letter-spacing: 0.08em;
@@ -142,7 +130,10 @@
         }
 
         .hero__overlay {
-          grid-template-rows: minmax(18px, 10vh) auto 1fr auto minmax(28px, 12vh);
+          grid-template-rows: minmax(18px, 10vh) auto 1fr auto minmax(
+              28px,
+              12vh
+            );
           padding-inline: 14px;
         }
 
@@ -157,7 +148,6 @@
       <video
         class="hero__video"
         autoplay
-        muted
         loop
         playsinline
         preload="auto"
@@ -168,6 +158,9 @@
           type="video/mp4"
         />
       </video>
+      <script>
+        document.querySelector(".hero__video")?.play().catch(() => {});
+      </script>
       <div class="hero__overlay">
         <h1 class="hero__name">
           <span class="hero__name-main">TEREZA</span>
