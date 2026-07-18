@@ -1,5 +1,28 @@
 # App Tereza
 
-A simple landing page with a full-viewport heart hero image.
+A React/Vite site for Travel Feather with a full-viewport hero video and a playlist page.
 
-Open `index.html` in a browser to view the page.
+## Development
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Run locally:
+
+```sh
+npm run dev
+```
+
+Build for production:
+
+```sh
+npm run build
+```
+
+Routes:
+
+- `/` - hero video landing page
+- `/content/` - video playlist
