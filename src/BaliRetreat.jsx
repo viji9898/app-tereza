@@ -9,7 +9,8 @@ const imageAssets = {
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
   returnHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view-from-room-of-ubud-resort.jpg",
-  homeHero: placeholder("1600x2200", "Your Home"),
+  homeHero:
+    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/ce95e139-6fb5-4bc9-8cee-11fb1d046dc5/dwa+chandra.jpeg",
   practiceHero: placeholder("1600x2200", "The Practice"),
   journeyHero: placeholder("1600x2200", "The Journey"),
   morning: placeholder("1200x1400", "Morning Ritual"),
@@ -32,6 +33,25 @@ const journeyDays = [
   ["Day 8", "GRATITUDE"],
   ["Day 9", "INTEGRATE"],
   ["Day 10", "RETURN"],
+];
+
+const homeFrames = [
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/chair-room-view.jpg",
+    alt: "Chair and room view at Dwa Chandra",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/twin-room-view.jpg",
+    alt: "Twin room view at Dwa Chandra",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/firts-view-looking-into-room.jpg",
+    alt: "View looking into a room at Dwa Chandra",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view-from+the+-pool-looking-at-resort-house.jpg",
+    alt: "View from the pool looking at the resort house",
+  },
 ];
 
 const spaceCards = [
@@ -432,6 +452,13 @@ export default function BaliRetreat() {
           land. Throughout your stay, this extraordinary sanctuary becomes as
           much a part of the journey as the practices themselves.
         </p>
+        <div className="kurulu-bay-page__gallery-grid">
+          {homeFrames.map((item) => (
+            <figure key={item.alt} className="kurulu-bay-page__gallery-card">
+              <img src={item.src} alt={item.alt} loading="lazy" />
+            </figure>
+          ))}
+        </div>
       </section>
 
       <section
