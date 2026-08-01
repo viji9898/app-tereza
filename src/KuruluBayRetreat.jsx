@@ -4,12 +4,12 @@ import "./KuruluBayRetreat.css";
 const imageAssets = {
   villa: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/2bedroom+villa.png",
   sonicBreath: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/tereza-sonic-breath.jpg",
-  cottages: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/women-wlaking-towards-koggala-lake.jpg",
+  cottages: "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/e996980f-77af-4ca1-ac1a-648b18a6941a/siriwanchmprn_KuruluBay_20220211-19.jpg?format=1500w",
   cover: "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
   ayurvedaHero: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/shirodhara-treatment.jpg",
   piano: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/tereza-pionma.jpg",
   treehouse: "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IkM0ODk0Rjc4QzJDOTBCMTJEQTM1OEM3MzMwRTYzQzY5IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozODQwLCJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoiY2VudGVyIn0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiYXZpZiI6eyJxdWFsaXR5Ijo1MH19fQ==?signature=688e5c856c56497cec55c843a8571150b1e33e7165f2bed2c17a6022bfab6112",
-  lakeView: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/women-wlaking-towards-koggala-lake.jpg",
+  lakeView: "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/e996980f-77af-4ca1-ac1a-648b18a6941a/siriwanchmprn_KuruluBay_20220211-19.jpg?format=1500w",
   massage: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/massage-face-down.png",
   bedroom: "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjBFNzc5MDdDMThGRDVDNzFCQ0Y2ODZEMzRFRDQyM0E4IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozODQwLCJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoiY2VudGVyIn0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiYXZpZiI6eyJxdWFsaXR5Ijo1MH19fQ==?signature=58f3589df589cea11e0d3af09576a43f8b41c91f56fd31eaadc9fffc6326dfee",
   shala: "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IkYxNTAwODA4MzI2MEVEQTY5NTdDRURGNzBGODBFOUU4IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozODQwLCJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoiY2VudGVyIn0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiYXZpZiI6eyJxdWFsaXR5Ijo1MH19fQ==?signature=4b16c3d5b0f27a963abbbf70955f763a75cb8b467c1255df7850e75f858fb9c1",
@@ -56,7 +56,7 @@ const optionalItems = [
 const roomGroups = [
   {
     title: "Treehouses · Garden Suites · Cottages",
-    image: imageAssets.treehouse,
+    image: "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/e0b6e0dc-0fe2-475c-87dc-bc0cd804ac8d/siriwanchmprn_KuruluBay_20220211-31.jpg?format=1500w",
     entries: [
       ["Single Occupancy", "5,700 USD"],
       ["Double Occupancy", "4,700 USD"],
@@ -465,7 +465,7 @@ export default function KuruluBayRetreat() {
             <figcaption>The Cottages</figcaption>
           </figure>
           <figure className="kurulu-bay-page__investment-image">
-            <img src={imageAssets.villa} alt="The two-bedroom villa with private pool at Kurulu Bay" loading="lazy" />
+            <img src="https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/f6f67f7e-f6d8-4233-8fff-c1e0a9fc7a3c/IMG_2046.jpg?format=1500w" alt="The two-bedroom villa with private pool at Kurulu Bay" loading="lazy" />
             <figcaption>The 2-Bedroom Villa w/ Private Pool</figcaption>
           </figure>
         </div>
