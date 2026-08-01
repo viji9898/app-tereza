@@ -159,8 +159,8 @@ const dayBlocks = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/man-in-boat-koggala-lanke.jpg",
     items: [
       "Nature or cultural immersion",
-      "All immersions included in the programme:",
       "Tea Plantation Excursion",
+      "Monk Blessing Ceremony",
       "Koggala Lake Boat Excursion",
       "Temple Visit",
     ],
@@ -609,14 +609,18 @@ export default function KuruluBayRetreat() {
         <SectionLabel index="10">YOUR JOURNEY INCLUDES</SectionLabel>
         <div className="kurulu-bay-page__list-columns">
           <ul>
-            {includedItems.slice(0, 6).map((item) => (
-              <li key={item}>{item}</li>
-            ))}
+            {includedItems
+              .slice(0, Math.ceil(includedItems.length / 2))
+              .map((item) => (
+                <li key={item}>{item}</li>
+              ))}
           </ul>
           <ul>
-            {includedItems.slice(6).map((item) => (
-              <li key={item}>{item}</li>
-            ))}
+            {includedItems
+              .slice(Math.ceil(includedItems.length / 2))
+              .map((item) => (
+                <li key={item}>{item}</li>
+              ))}
           </ul>
         </div>
         <p className="kurulu-bay-page__lead">
