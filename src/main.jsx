@@ -194,7 +194,7 @@ function ContentPage() {
           <a className="brand" href="/">
             T&amp;V
           </a>
-          <p className="section-label">Content</p>
+          <span className="topbar__divider" aria-hidden="true" />
         </nav>
 
         <section className="intro" aria-labelledby="page-title">

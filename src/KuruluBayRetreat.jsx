@@ -215,8 +215,9 @@ export default function KuruluBayRetreat() {
         onClick={() => setMenuOpen((current) => !current)}
         aria-expanded={menuOpen}
         aria-controls="kurulu-bay-contents-menu"
+        aria-label="Open contents menu"
       >
-        Contents
+        <span className="kurulu-bay-page__contents-trigger-line" aria-hidden="true" />
       </button>
 
       <div
@@ -489,7 +490,12 @@ export default function KuruluBayRetreat() {
           <div className="kurulu-bay-page__rule" />
           <p className="kurulu-bay-page__closing-line">The journey doesn't end when you leave Sri Lanka.</p>
           <p className="kurulu-bay-page__closing-line">It begins the moment you return.</p>
-          <p className="kurulu-bay-page__website">www.terezadossantos.com</p>
+          <a
+            className="kurulu-bay-page__website"
+            href="https://www.terezadossantos.com"
+          >
+            www.terezadossantos.com
+          </a>
         </div>
         <div className="kurulu-bay-page__closing-image">
           <img src={imageAssets.shala} alt="Closing scene from Kurulu Bay retreat" loading="lazy" />
