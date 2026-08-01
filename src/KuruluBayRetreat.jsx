@@ -501,7 +501,33 @@ export default function KuruluBayRetreat() {
             </article>
           ))}
         </div>
-        <p className="kurulu-bay-page__lead">A detailed room menu with photographs and layouts is available on request, so we can find the room that suits you best. Rooms are allocated in the order that bookings are received.</p>
+        <div className="kurulu-bay-page__pricing-summary">
+          <div className="kurulu-bay-page__pricing-columns">
+            <section className="kurulu-bay-page__pricing-group" aria-label="Treehouses, garden suites and cottages pricing">
+              <h3 className="kurulu-bay-page__pricing-heading kurulu-bay-page__pricing-heading--stacked">T R E E H O U S E S ·<br />C O T T A G E S ·<br />G A R D E N  S U I T E S ·</h3>
+              <div className="kurulu-bay-page__pricing-row">
+                <span>Single Occupancy</span>
+                <strong>5,700 USD</strong>
+              </div>
+              <div className="kurulu-bay-page__pricing-row">
+                <span>Double Occupancy</span>
+                <strong>4,700 USD</strong>
+              </div>
+            </section>
+            <section className="kurulu-bay-page__pricing-group" aria-label="Two-bedroom villa with private pool pricing">
+              <h3 className="kurulu-bay-page__pricing-heading">2-BEDROOM VILLA W/ PRIVATE POOL</h3>
+              <div className="kurulu-bay-page__pricing-row">
+                <span>Single Occupancy</span>
+                <strong>6,100 USD</strong>
+              </div>
+              <div className="kurulu-bay-page__pricing-row">
+                <span>Double Occupancy</span>
+                <strong>5,100 USD</strong>
+              </div>
+            </section>
+          </div>
+          <p className="kurulu-bay-page__pricing-note">A detailed room menu with photographs and layouts is available on request, so we can find the room that suits you best. Rooms are allocated in the order that bookings are received.</p>
+        </div>
       </section>
 
       <section id="closing" className="kurulu-bay-page__closing">

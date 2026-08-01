@@ -518,6 +518,69 @@
   font-size: 0.88rem;
 }
 
+.kurulu-bay-page__pricing-summary {
+  display: grid;
+  gap: 2rem;
+  padding-top: 0.75rem;
+}
+
+.kurulu-bay-page__pricing-columns {
+  display: grid;
+  gap: 2rem;
+}
+
+.kurulu-bay-page__pricing-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.kurulu-bay-page__pricing-heading {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  min-height: 4.8em;
+  color: var(--kb-accent);
+  font-size: 0.96rem;
+  font-weight: 400;
+  letter-spacing: 0.38em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.kurulu-bay-page__pricing-heading--stacked {
+  max-width: 28rem;
+}
+
+.kurulu-bay-page__pricing-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.kurulu-bay-page__pricing-row span,
+.kurulu-bay-page__pricing-row strong,
+.kurulu-bay-page__pricing-note {
+  font-size: clamp(1.05rem, 3vw, 1.28rem);
+  line-height: 1.5;
+}
+
+.kurulu-bay-page__pricing-row span {
+  color: var(--kb-text);
+}
+
+.kurulu-bay-page__pricing-row strong {
+  color: var(--kb-muted);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.kurulu-bay-page__pricing-note {
+  margin: 0;
+  color: var(--kb-muted);
+  max-width: 72rem;
+}
+
 .kurulu-bay-page__journey-row strong {
   letter-spacing: 0.26em;
   font-weight: 500;
@@ -635,6 +698,11 @@
 
   .kurulu-bay-page__columns--three {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .kurulu-bay-page__pricing-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 4rem;
   }
 
   .kurulu-bay-page__immersion-grid,
