@@ -481,6 +481,11 @@ export default function KuruluBayRetreat() {
               somatic movement practice that I'm so excited to finally share
               with you following my recent certification.
             </p>
+            <p>
+              Alongside my own work, you'll practise yoga with a renowned local
+              guest facilitator, and we'll share traditional chanting together
+              with a special opening blessing with the monks.
+            </p>
           </div>
           <div>
             <p>
@@ -502,7 +507,7 @@ export default function KuruluBayRetreat() {
       />
 
       <section id="journey" className="kurulu-bay-page__text-section">
-        <div className="kurulu-bay-page__columns">
+        <div className="kurulu-bay-page__stack">
           <div>
             <p>
               Rather than revealing every experience in advance, we've
