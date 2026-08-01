@@ -26,3 +26,8 @@ Routes:
 
 - `/` - hero video landing page
 - `/content/` - video playlist
+- `/kurulu-bay` - mobile-first editorial retreat page
+
+## Page Notes
+
+- `KURULU_BAY_PAGE.md` - implementation notes and editing guidance for the Kurulu Bay page

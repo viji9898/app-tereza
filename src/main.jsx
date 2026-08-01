@@ -1,5 +1,6 @@
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import KuruluBayRetreat from "./KuruluBayRetreat";
 import "./styles.css";
 
 const HERO_VIDEO =
@@ -223,6 +224,10 @@ function ContentPage() {
 }
 
 function App() {
+  if (window.location.pathname.startsWith("/kurulu-bay")) {
+    return <KuruluBayRetreat />;
+  }
+
   if (window.location.pathname.startsWith("/content")) {
     return <ContentPage />;
   }
