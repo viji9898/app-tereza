@@ -325,7 +325,7 @@ export default function KuruluBayRetreat() {
         alt="Tereza holding space during a breath and sound session"
         overlayIndex="05"
         overlayLabel="THE PRACTICE"
-        overlayText="Throughout the retreat, we'll explore the full spectrum of my signature work, including SONIC BREATH(TM), SOUND TEMPLE(TM), FLOATING TEMPLE(TM) and a series of BREATH LAB workshops."
+        overlayText="Throughout the retreat, we'll explore the full spectrum of my signature work, including SONIC BREATH™, SOUND TEMPLE™, FLOATING TEMPLE™ and a series of BREATH LAB workshops."
       />
 
       <section id="practice" className="kurulu-bay-page__text-section">
@@ -400,7 +400,7 @@ export default function KuruluBayRetreat() {
           <p>A soul-touching conversation over tea.</p>
           <p>Watching the sunset.</p>
           <p>Receiving an Ayurvedic massage.</p>
-          <p>Falling asleep after SOUND TEMPLE(TM).</p>
+          <p>Falling asleep after SOUND TEMPLE™.</p>
         </div>
         <p>Those quiet moments become just as much a part of the journey as the workshops and experiences themselves.</p>
       </section>
