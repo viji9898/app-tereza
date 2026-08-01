@@ -34,23 +34,30 @@ const journeyDays = [
 ];
 
 const includedItems = [
-  "Airport transfers",
-  "10 nights accommodation at Kurulu Bay",
-  "Daily Ayurvedic breakfast, afternoon snacks and dinner",
-  "Water and herbal tea available in all rooms",
+  "9 nights accommodation at Kurulu Bay",
+  "Round-trip airport transfers",
+  "Daily Ayurvedic breakfast, nourishing afternoon snacks and dinner",
+  "Water, herbal tea and fresh fruit available throughout your stay",
   "Sunset dinner by the ocean",
-  "Initial Ayurvedic consultation and Dosha assessment by a 3rd generation Ayurvedic Doctor",
+  "Private Ayurvedic consultation and Dosha assessment",
   "Personalised Ayurvedic nutrition programme throughout the retreat",
-  "One 120-minute Shirodhara Ayurvedic massage",
+  "One 120-minute signature Shirodhara treatment",
+  "Complimentary Ayurvedic follow-up consultation",
   "All of Tereza's signature sessions and workshops throughout the retreat",
   "2 yoga classes with a renowned local guest facilitator",
   "Daily guided meditation and mindfulness practices",
-  "All nature and cultural immersions",
+  "3 Nature and Cultural Immersions",
+  "Traditional Monk Blessing Ceremony*",
 ];
 
 const optionalItems = [
-  "Additional Ayurvedic treatments and spa therapies including Abhyanga massage, herbal bundle therapy, Marma point therapy, herbal body wraps and other personalised treatments recommended by the resident Ayurvedic doctor.",
-  "Optional experiences such as a jungle safari, surfing, whale watching, visits to local markets, and other carefully curated adventures can also be arranged throughout your stay.",
+  "International flights to and from Sri Lanka",
+  "Travel insurance (required)",
+  "Visa fees (if applicable)",
+  "Additional Ayurvedic treatments and spa therapies",
+  "Optional excursions and activities beyond the retreat programme including jungle safari, surfing, whale watching and local markets",
+  "Personal purchases and pocket money",
+  "Alcoholic beverages",
 ];
 
 const roomGroups = [
@@ -130,14 +137,23 @@ const dayBlocks = [
     title: "Golden Hour",
     overlayTitle: "G O L D E N H O U R",
     image: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/man-in-boat-koggala-lanke.jpg",
-    items: ["Nature or cultural immersion"],
+    items: [
+      "Nature or cultural immersion",
+      "All immersions included in the programme:",
+      "Tea Plantation Excursion",
+      "Koggala Lake Boat Excursion",
+      "Temple Visit",
+    ],
   },
   {
     title: "Evening Ritual",
     overlayTitle: "E V E N I N G R I T U A L",
     image: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/dining-at-kurulu-bay.jpg",
     items: [
-      "Tereza's signature experience",
+      "Tereza's Signature Session:",
+      "SONIC BREATH™",
+      "SOUND TEMPLE™",
+      "FLOATING TEMPLE™",
       "Curated Ayurvedic dinner experience",
     ],
   },
@@ -154,8 +170,8 @@ const sectionMenu = [
   ["typical-day", "A Typical Day"],
   ["in-between", "The In-Between"],
   ["immersions", "Immersions"],
-  ["included", "What's Included"],
-  ["optional", "Optional Additions"],
+  ["included", "Your Journey Includes"],
+  ["optional", "Arranged Separately"],
   ["investment", "Investment"],
   ["closing", "Closing"],
 ];
@@ -256,7 +272,7 @@ export default function KuruluBayRetreat() {
           <div>
             <p>Over the years, we've created beautiful moments and memories together through breath, sound, movement, conversation and shared silence. Somewhere along the way, the shared vision of this beautiful retreat began to take shape.</p>
             <p>I wanted to create something that couldn't be experienced in just a single evening. A journey with enough space to slow down. Enough time to settle. Enough time for everything to unfold naturally. And enough time to integrate it before returning home.</p>
-            <p>This retreat brings together everything that has shaped my work over the past two decades: breath, sound, movement, nature, meaningful connection, deep rest, and the beautiful wisdom of Ayurveda woven seamlessly throughout the experience through personalised treatments, nutrition and ancient healing practices.</p>
+            <p>This retreat brings together everything that has shaped my work over the past two decades: breath, sound, movement, nature, meaningful connection, and the beautiful wisdom of Ayurveda woven seamlessly throughout the experience through personalised treatments, nutrition and ancient healing practices.</p>
           </div>
           <div>
             <p>My intention was never to create another retreat packed with activities or a schedule to keep up with. Instead, I wanted to create something spacious and profound. Thoughtfully curated. A place to go deep, not wide.</p>
@@ -295,7 +311,7 @@ export default function KuruluBayRetreat() {
         alt="Kurulu Bay pool with lagoon beyond"
         overlayIndex="03"
         overlayLabel="YOUR HOME"
-        overlayText="Set between lush jungle and the open shoreline, Kurulu Bay feels both grounding and quietly expansive. Its calm spaces, considered design and warm Sri Lankan hospitality become part of the retreat itself, shaping the experience as deeply as the practices, conversations and rest."
+        overlayText="Nestled between jungle and ocean, Kurulu Bay offers a peaceful sanctuary where nature, thoughtful design and authentic Sri Lankan hospitality come together. Throughout your stay, this extraordinary setting becomes as much a part of the journey as the practices themselves."
       />
 
       <section id="home" className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact">
@@ -318,9 +334,9 @@ export default function KuruluBayRetreat() {
       <section id="ayurveda" className="kurulu-bay-page__text-section">
         <SectionLabel index="04">AYURVEDA</SectionLabel>
         <div className="kurulu-bay-page__columns kurulu-bay-page__columns--three">
-          <p>One of the defining aspects of this journey is Kurulu Bay's fully integrated Ayurvedic programme. Upon arrival, each guest receives a private consultation and Dosha assessment with the 3rd generation Ayurvedic Doctor, who creates a personalised wellness plan tailored to your individual constitution and needs.</p>
-          <p>Your personalised programme includes one signature Shirodhara treatment, together with Ayurvedic nutritional guidance and meals tailored to your individual Dosha throughout the retreat.</p>
-          <p>Should you wish to explore your programme more deeply, additional Ayurvedic treatments, massages and therapies recommended by the resident doctor are available as optional add-ons.</p>
+          <p>One of the defining aspects of this journey is Kurulu Bay's fully integrated Ayurvedic programme. Upon arrival, each guest receives a complimentary private consultation and Dosha assessment with Kurulu Bay's third-generation Ayurvedic doctor, who will create a personalised wellness plan tailored to your individual constitution and needs.</p>
+          <p>Your journey includes one signature Shirodhara treatment, personalised Ayurvedic nutritional guidance, and meals thoughtfully prepared according to your Dosha throughout the retreat. A complimentary follow-up consultation is also included to support your progress and refine your programme if needed.</p>
+          <p>For those wishing to explore more deeply, additional Ayurvedic treatments, massages and therapies recommended by the resident doctor are available throughout your stay at an exclusive 10% retreat guest discount.</p>
         </div>
       </section>
 
@@ -335,7 +351,7 @@ export default function KuruluBayRetreat() {
       <section id="practice" className="kurulu-bay-page__text-section">
         <div className="kurulu-bay-page__columns">
           <div>
-            <p>We'll also be introducing SUCO, an active meditation and somatic movement practice that I'm excited to share following my recent certification, alongside yoga with a renowned guest facilitator, traditional chanting, and a special opening blessing with the monks.</p>
+            <p>I'll also be introducing SUCO, an active meditation and global somatic movement practice that I'm so excited to finally share with you following my recent certification.</p>
           </div>
           <div>
             <p>Together, these experiences combine breath, sound and movement through practices rooted in somatic experiencing, nervous system regulation and embodied awareness as you know them - creating shifts that are not only remembered, but deeply embodied.</p>
@@ -348,13 +364,12 @@ export default function KuruluBayRetreat() {
         alt="Kurulu Bay pool and cottages"
         overlayIndex="06"
         overlayLabel="THE JOURNEY"
-        overlayText="Each day explores a different theme, gently building upon the one before it."
+        overlayText="Each day explores a different theme, thoughtfully designed to build upon the one before it - creating a journey that comes full circle before you return home."
       />
 
       <section id="journey" className="kurulu-bay-page__text-section">
         <div className="kurulu-bay-page__columns">
           <div>
-            <p>Together, they form one continuous journey - from arriving and slowing down, to expanding, connecting, integrating, and ultimately returning home.</p>
             <p>Rather than revealing every experience in advance, we've intentionally left space for curiosity, spontaneity and surprise.</p>
             <p>I invite you to trust the process.</p>
           </div>
@@ -429,7 +444,7 @@ export default function KuruluBayRetreat() {
       </section>
 
       <section id="included" className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact">
-        <SectionLabel index="10">WHAT'S INCLUDED</SectionLabel>
+        <SectionLabel index="10">YOUR JOURNEY INCLUDES</SectionLabel>
         <div className="kurulu-bay-page__list-columns">
           <ul>
             {includedItems.slice(0, 6).map((item) => <li key={item}>{item}</li>)}
@@ -438,10 +453,11 @@ export default function KuruluBayRetreat() {
             {includedItems.slice(6).map((item) => <li key={item}>{item}</li>)}
           </ul>
         </div>
+        <p className="kurulu-bay-page__lead">* Donations to the monks are warmly welcomed.</p>
       </section>
 
       <section id="optional" className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact">
-        <SectionLabel index="11">OPTIONAL ADDITIONS</SectionLabel>
+        <SectionLabel index="11">ARRANGED SEPARATELY</SectionLabel>
         <div className="kurulu-bay-page__stack">
           {optionalItems.map((item) => <p key={item}>{item}</p>)}
         </div>
@@ -485,6 +501,7 @@ export default function KuruluBayRetreat() {
             </article>
           ))}
         </div>
+        <p className="kurulu-bay-page__lead">A detailed room menu with photographs and layouts is available on request, so we can find the room that suits you best. Rooms are allocated in the order that bookings are received.</p>
       </section>
 
       <section id="closing" className="kurulu-bay-page__closing">
