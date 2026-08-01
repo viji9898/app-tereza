@@ -76,7 +76,10 @@ const galleryFrames = [
   { src: imageAssets.treehouse, alt: "Kurulu Bay treehouse exterior" },
   { src: imageAssets.shala, alt: "Yoga shala at Kurulu Bay" },
   { src: imageAssets.bedroom, alt: "Kurulu Bay bedroom" },
-  { src: imageAssets.lakeView, alt: "Looking out over Koggala Lake" },
+  {
+    src: "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/e0b6e0dc-0fe2-475c-87dc-bc0cd804ac8d/siriwanchmprn_KuruluBay_20220211-31.jpg?format=1500w",
+    alt: "Looking out over Koggala Lake",
+  },
 ];
 
 const immersionCards = [
@@ -105,7 +108,7 @@ const dayBlocks = [
   {
     title: "Morning Ritual",
     overlayTitle: "M O R N I N G R I T U A L",
-    image: imageAssets.shala,
+    image: "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/0fa4e121-b640-413b-9fd9-fa4200db4ac3/Foto+21-02-2025%2C+14+08+25.jpg?format=1000w",
     items: [
       "Ayurvedic health shot and herbal tea",
       "Guided morning meditation exploring the day's theme",
@@ -116,7 +119,7 @@ const dayBlocks = [
   {
     title: "Midday",
     overlayTitle: "M I D D A Y",
-    image: imageAssets.bedroom,
+    image: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-ahangama-demo/womoen-walking-along-the-pool.jpg",
     items: [
       "Free time",
       "Personal Ayurvedic treatments",
@@ -126,13 +129,13 @@ const dayBlocks = [
   {
     title: "Golden Hour",
     overlayTitle: "G O L D E N H O U R",
-    image: imageAssets.lakeView,
+    image: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/man-in-boat-koggala-lanke.jpg",
     items: ["Nature or cultural immersion"],
   },
   {
     title: "Evening Ritual",
     overlayTitle: "E V E N I N G R I T U A L",
-    image: imageAssets.cottages,
+    image: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/dining-at-kurulu-bay.jpg",
     items: [
       "Tereza's signature experience",
       "Curated Ayurvedic dinner experience",
