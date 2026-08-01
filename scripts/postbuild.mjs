@@ -28,6 +28,15 @@ const routeMetadata = {
 			"https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
 		imageAlt: "Kurulu Bay retreat pool framed by tropical palms",
 	},
+	bali: {
+		routePath: "/bali",
+		title: "The Return Bali Edition | Tereza Dos Santos",
+		description:
+			"Explore The Return, a 10-day private Bali retreat curated by Tereza Dos Santos with breathwork, movement, ritual, and immersive restoration.",
+		image:
+			"https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+		imageAlt: "Women standing in a Bali paddy field",
+	},
 };
 
 function toAbsoluteUrl(url) {
@@ -94,6 +103,7 @@ await writeFile("dist/404.html", homeHtml);
 for (const [directoryName, metadata] of [
 	["content", routeMetadata.content],
 	["kurulu-bay", routeMetadata.kuruluBay],
+	["bali", routeMetadata.bali],
 ]) {
 	await mkdir(`dist/${directoryName}`, { recursive: true });
 	await writeFile(`dist/${directoryName}/index.html`, buildHtml(baseHtml, metadata));
