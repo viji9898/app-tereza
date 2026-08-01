@@ -411,7 +411,7 @@ export default function KuruluBayRetreat() {
       </section>
 
       <FullImage
-        src={imageAssets.lagoonPool}
+        src="https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/4feb5084-87d9-4806-b522-5e8015f8a9e4/IMG_2033.jpg?format=2500w"
         alt="Kurulu Bay pool with lagoon beyond"
         overlayIndex="03"
         overlayLabel="YOUR HOME"
@@ -645,14 +645,18 @@ export default function KuruluBayRetreat() {
         </div>
       </section>
 
+      <FullImage
+        src="https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/92c414ec-5896-48d1-92a4-10dc10450838/KuruluBaySriLanka050424_NateleeCocks_062.jpg?format=2500w"
+        alt="Kurulu Bay retreat accommodation exterior"
+        overlayIndex="12"
+        overlayLabel="INVESTMENT"
+        overlayText="Choose your home"
+      />
+
       <section
         id="investment"
         className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
       >
-        <SectionLabel index="12">INVESTMENT</SectionLabel>
-        <h2 className="kurulu-bay-page__headline kurulu-bay-page__headline--medium">
-          Choose your home
-        </h2>
         <p className="kurulu-bay-page__lead">
           A limited number of beautifully designed rooms are available. Each has
           been thoughtfully selected to provide comfort, privacy, and a peaceful
