@@ -637,7 +637,7 @@ export default function KuruluBayRetreat() {
         id="optional"
         className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
       >
-        <SectionLabel index="11">ARRANGED SEPARATELY</SectionLabel>
+        <SectionLabel index="11">NOT INCLUDED</SectionLabel>
         <div className="kurulu-bay-page__stack">
           {optionalItems.map((item) => (
             <p key={item}>{item}</p>
