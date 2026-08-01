@@ -344,7 +344,7 @@ export default function KuruluBayRetreat() {
       </section>
 
       <FullImage
-        src={imageAssets.cottages}
+        src="https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/women-wlaking-towards-koggala-lake.jpg"
         alt="Kurulu Bay pool and cottages"
         overlayIndex="06"
         overlayLabel="THE JOURNEY"
