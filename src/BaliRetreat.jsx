@@ -7,7 +7,8 @@ const placeholder = (size, text) =>
 const imageAssets = {
   cover:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
-  returnHero: placeholder("1600x2200", "The Return"),
+  returnHero:
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view-from-room-of-ubud-resort.jpg",
   homeHero: placeholder("1600x2200", "Your Home"),
   practiceHero: placeholder("1600x2200", "The Practice"),
   journeyHero: placeholder("1600x2200", "The Journey"),
@@ -213,10 +214,10 @@ const FullImage = ({
   overlayText,
 }) => (
   <div
-    className={`kurulu-bay-page__media${priority ? " kurulu-bay-page__media--hero" : ""}${overlayText ? " kurulu-bay-page__media--with-overlay" : ""}`}
+    className={`kurulu-bay-page__media${priority ? " kurulu-bay-page__media--hero" : ""}${overlayLabel || overlayTitle || overlayText ? " kurulu-bay-page__media--with-overlay" : ""}`}
   >
     <img src={src} alt={alt} loading={priority ? "eager" : "lazy"} />
-    {overlayText ? (
+    {overlayLabel || overlayTitle || overlayText ? (
       <div className="kurulu-bay-page__media-overlay">
         {overlayLabel ? (
           <SectionLabel index={overlayIndex}>{overlayLabel}</SectionLabel>
@@ -234,9 +235,9 @@ const FullImage = ({
               </p>
             ))}
           </div>
-        ) : (
+        ) : overlayText ? (
           <p className="kurulu-bay-page__media-overlay-text">{overlayText}</p>
-        )}
+        ) : null}
       </div>
     ) : null}
   </div>
@@ -414,8 +415,24 @@ export default function BaliRetreat() {
         alt="Dwa Chandra retreat sanctuary"
         overlayIndex="03"
         overlayLabel="YOUR HOME"
-        overlayText="Just outside Ubud, tucked above a private river gorge in the ancient village of Pejeng, Dwa Chandra is a sanctuary where jungle, architecture and nature exist in perfect harmony. Two private villas, three open-air yoga shalas, a meditation deck suspended above the river, and ninth-century temple carvings hidden within the cliffs create a setting that feels both timeless and deeply connected to the land. Throughout your stay, this extraordinary sanctuary becomes as much a part of the journey as the practices themselves."
+        overlayText="Dwa Chandra is a sanctuary where jungle, architecture and nature exist in perfect harmony."
       />
+
+      <section
+        id="home"
+        className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+      >
+        <p className="kurulu-bay-page__lead">
+          Just outside Ubud, tucked above a private river gorge in the ancient
+          village of Pejeng, Dwa Chandra is a sanctuary where jungle,
+          architecture and nature exist in perfect harmony. Two private villas,
+          three open-air yoga shalas, a meditation deck suspended above the
+          river, and ninth-century temple carvings hidden within the cliffs
+          create a setting that feels both timeless and deeply connected to the
+          land. Throughout your stay, this extraordinary sanctuary becomes as
+          much a part of the journey as the practices themselves.
+        </p>
+      </section>
 
       <section
         id="spaces"
@@ -428,7 +445,7 @@ export default function BaliRetreat() {
           a different kind of attention, practice and energy, and each one
           opens onto the breathtaking valley.
         </p>
-        <div className="kurulu-bay-page__immersion-grid">
+        <div className="kurulu-bay-page__spaces-row">
           {spaceCards.map((item) => (
             <figure key={item.title} className="kurulu-bay-page__immersion-card">
               <img src={item.image} alt={item.title} loading="lazy" />

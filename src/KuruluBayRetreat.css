@@ -505,6 +505,15 @@
   padding-top: 0.5rem;
 }
 
+.kurulu-bay-page__spaces-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(15rem, 1fr);
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
 .kurulu-bay-page__journey-row {
   display: flex;
   justify-content: space-between;
@@ -698,6 +707,10 @@
 
   .kurulu-bay-page__columns--three {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .kurulu-bay-page__spaces-row {
+    grid-auto-columns: minmax(0, 1fr);
   }
 
   .kurulu-bay-page__pricing-columns {
