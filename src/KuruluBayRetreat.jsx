@@ -385,7 +385,7 @@ export default function KuruluBayRetreat() {
       <FullImage
         src={imageAssets.bathroom}
         alt="Quiet moment in the in-between at Kurulu Bay"
-        overlayIndex="09"
+        overlayIndex="08"
         overlayLabel="THE IN-BETWEEN"
         overlayText="Not every moment is scheduled."
       />
@@ -406,7 +406,7 @@ export default function KuruluBayRetreat() {
       </section>
 
       <section id="immersions" className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact">
-        <SectionLabel index="08">NATURE & CULTURAL IMMERSIONS</SectionLabel>
+        <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
         <p className="kurulu-bay-page__lead">Included throughout the retreat - moments to step outside the sanctuary and meet Sri Lanka itself.</p>
         <div className="kurulu-bay-page__immersion-grid">
           {immersionCards.map((item) => (

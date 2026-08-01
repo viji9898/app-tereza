@@ -8,6 +8,54 @@ const HERO_VIDEO =
 
 const INNER_CIRCLE_URL = "https://chat.whatsapp.com/H1KtTJdTBh16hhf4cAfDSu";
 
+const pageMetadata = {
+  home: {
+    title: "Tereza Dos Santos | Travel Feather",
+    description:
+      "Music. Movement. Story. Human experience. Explore the work of Tereza Dos Santos across performance, film, education, immersive experiences, and wellness.",
+    image: "ogImage-home-page.jpeg",
+    imageAlt: "Travel Feather by Tereza Dos Santos",
+  },
+  content: {
+    title: "Tereza Reels | Travel Feather",
+    description:
+      "Watch Tereza Dos Santos performance reels, trailers, and curated video work in a compact playlist experience.",
+    image: "/og-content-page.png",
+    imageAlt: "Preview of the Tereza reels playlist page",
+  },
+  kuruluBay: {
+    title: "The Return Sri Lanka Edition | Tereza Dos Santos",
+    description:
+      "Explore The Return, a 10-day private Sri Lanka retreat curated by Tereza Dos Santos with Ayurveda, movement, sound, and immersive restoration.",
+    image:
+      "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
+    imageAlt: "Kurulu Bay retreat pool framed by tropical palms",
+  },
+};
+
+function setMetaContent(name, content, attribute = "name") {
+  const selector = `meta[${attribute}="${name}"]`;
+  const element = document.head.querySelector(selector);
+
+  if (element) {
+    element.setAttribute("content", content);
+  }
+}
+
+function usePageMetadata(metadata) {
+  useEffect(() => {
+    document.title = metadata.title;
+    setMetaContent("description", metadata.description);
+    setMetaContent("og:title", metadata.title, "property");
+    setMetaContent("og:description", metadata.description, "property");
+    setMetaContent("og:image", metadata.image, "property");
+    setMetaContent("og:image:alt", metadata.imageAlt, "property");
+    setMetaContent("twitter:title", metadata.title);
+    setMetaContent("twitter:description", metadata.description);
+    setMetaContent("twitter:image", metadata.image);
+  }, [metadata]);
+}
+
 const tracks = [
   {
     title: "Tereza Piano Reel",
@@ -224,11 +272,20 @@ function ContentPage() {
 }
 
 function App() {
-  if (window.location.pathname.startsWith("/kurulu-bay")) {
+  const pathname = window.location.pathname;
+  const metadata = pathname.startsWith("/kurulu-bay")
+    ? pageMetadata.kuruluBay
+    : pathname.startsWith("/content")
+      ? pageMetadata.content
+      : pageMetadata.home;
+
+  usePageMetadata(metadata);
+
+  if (pathname.startsWith("/kurulu-bay")) {
     return <KuruluBayRetreat />;
   }
 
-  if (window.location.pathname.startsWith("/content")) {
+  if (pathname.startsWith("/content")) {
     return <ContentPage />;
   }
 
