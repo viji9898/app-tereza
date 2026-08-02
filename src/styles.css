@@ -222,6 +222,84 @@ button {
   align-items: stretch;
 }
 
+.bali-images-page {
+  padding-bottom: 4rem;
+}
+
+.bali-images-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.bali-images-page__card {
+  overflow: hidden;
+  border: 1px solid rgba(36, 25, 22, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 251, 245, 0.88);
+  box-shadow: var(--shadow);
+}
+
+.bali-images-page__image-link {
+  display: block;
+  background: #f2e8dc;
+}
+
+.bali-images-page__image-link img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.bali-images-page__card-body {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+}
+
+.bali-images-page__label {
+  margin: 0;
+  color: var(--ink);
+  font-family: Optima, Candara, "Noto Sans", sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.bali-images-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bali-images-page__actions button,
+.bali-images-page__actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid rgba(36, 25, 22, 0.16);
+  border-radius: 999px;
+  color: var(--ink);
+  font-family: Optima, Candara, "Noto Sans", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #fffdf9;
+  cursor: pointer;
+}
+
+.bali-images-page__actions button:hover,
+.bali-images-page__actions button:focus-visible,
+.bali-images-page__actions a:hover,
+.bali-images-page__actions a:focus-visible {
+  background: #f1e5d6;
+}
+
 .stage {
   overflow: hidden;
   border: 1px solid rgba(36, 25, 22, 0.1);

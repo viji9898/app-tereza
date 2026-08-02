@@ -13,10 +13,13 @@ const imageAssets = {
     "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/ce95e139-6fb5-4bc9-8cee-11fb1d046dc5/dwa+chandra.jpeg",
   practiceHero: placeholder("1600x2200", "The Practice"),
   journeyHero: placeholder("1600x2200", "The Journey"),
-  morning: placeholder("1200x1400", "Morning Ritual"),
-  midday: placeholder("1200x1400", "Midday"),
+  morning:
+    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/438d4804-2bad-4edd-a652-45f18a8453eb/Bali+Hai_UpperShala1.jpg",
+  midday:
+    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/c234d272-a808-4c82-83dc-9144a685d060/DSC01089.jpg",
   goldenHour: placeholder("1200x1400", "Golden Hour"),
-  evening: placeholder("1200x1400", "Evening Ritual"),
+  evening:
+    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/3641c094-9ce7-4c7d-a908-39817f93e989/ENG00624.jpg",
   inBetweenHero: placeholder("1600x2200", "The In-Between"),
   investmentHero: placeholder("1600x2200", "Investment"),
   closing: placeholder("1600x2200", "The Return"),
@@ -57,38 +60,41 @@ const homeFrames = [
 const spaceCards = [
   {
     title: "The Glass Shala",
-    image: placeholder("1000x1200", "The Glass Shala"),
+    image:
+      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/1724831548844-OO1ETH1UNT9VQL55D54I/dwa+chandra+yoga+shala.JPG",
   },
   {
     title: "The Open Pavilion",
-    image: placeholder("1000x1200", "The Open Pavilion"),
+    image:
+      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/1e9fbf4f-586d-4322-a80d-a5a22f923dfb/65d41b51-39ba-4f88-abd1-7b7deedb4b70+2.jpg",
   },
   {
     title: "The Pool",
-    image: placeholder("1000x1200", "The Pool"),
+    image:
+      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/ed5f095e-fe24-4316-b1b6-4a19b04db449/DSC00376.jpeg",
   },
   {
     title: "The River Gorge",
-    image: placeholder("1000x1200", "The River Gorge"),
-  },
-  {
-    title: "The Fire Pit",
-    image: placeholder("1000x1200", "The Fire Pit"),
+    image:
+      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/d7b70eff-992e-427e-83cd-b9b3a31ca15d/people+community+river.jpeg",
   },
 ];
 
 const guideCards = [
   {
     title: "Bex Tyrer",
-    image: placeholder("900x1200", "Bex Tyrer"),
+    image:
+      "https://www.balispiritfestival.com/wp-content/uploads/2019/07/BSF23-Bex-Tyrer-Headshot.jpg",
   },
   {
     title: "Jordi Jules",
-    image: placeholder("900x1200", "Jordi Jules"),
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpdMnJPCj4_QXmCYAz5z5xkyRjIzBzxBh8un9PCbgtIA&s=10",
   },
   {
     title: "Francie La Flow",
-    image: placeholder("900x1200", "Francie La Flow"),
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOBgiFERtnXITvYrcCHREfUPN9NcgAseiiJkJoNh5KA&s=10",
   },
   {
     title: "Tereza Dos Santos",

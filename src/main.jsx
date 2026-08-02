@@ -1,6 +1,7 @@
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import BaliRetreat from "./BaliRetreat";
+import BaliImagesPage from "./BaliImagesPage";
 import KuruluBayRetreat from "./KuruluBayRetreat";
 import "./styles.css";
 
@@ -39,6 +40,14 @@ const pageMetadata = {
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
+  },
+  baliImages: {
+    title: "Bali Image Collection | Tereza Dos Santos",
+    description:
+      "Temporary Bali image library for selecting Dwa Chandra and retreat assets.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    imageAlt: "Preview of the Bali image collection",
   },
 };
 
@@ -284,6 +293,8 @@ function App() {
   const pathname = window.location.pathname;
   const metadata = pathname.startsWith("/kurulu-bay")
     ? pageMetadata.kuruluBay
+    : pathname.startsWith("/bali-images")
+      ? pageMetadata.baliImages
     : pathname.startsWith("/bali")
       ? pageMetadata.bali
     : pathname.startsWith("/content")
@@ -294,6 +305,10 @@ function App() {
 
   if (pathname.startsWith("/kurulu-bay")) {
     return <KuruluBayRetreat />;
+  }
+
+  if (pathname.startsWith("/bali-images")) {
+    return <BaliImagesPage />;
   }
 
   if (pathname.startsWith("/bali")) {

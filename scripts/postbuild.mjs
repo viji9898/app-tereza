@@ -37,6 +37,15 @@ const routeMetadata = {
 			"https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
 		imageAlt: "Women standing in a Bali paddy field",
 	},
+	baliImages: {
+		routePath: "/bali-images",
+		title: "Bali Image Collection | Tereza Dos Santos",
+		description:
+			"Temporary Bali image library for selecting Dwa Chandra and retreat assets.",
+		image:
+			"https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+		imageAlt: "Preview of the Bali image collection",
+	},
 };
 
 function toAbsoluteUrl(url) {
@@ -104,6 +113,7 @@ for (const [directoryName, metadata] of [
 	["content", routeMetadata.content],
 	["kurulu-bay", routeMetadata.kuruluBay],
 	["bali", routeMetadata.bali],
+	["bali-images", routeMetadata.baliImages],
 ]) {
 	await mkdir(`dist/${directoryName}`, { recursive: true });
 	await writeFile(`dist/${directoryName}/index.html`, buildHtml(baseHtml, metadata));
