@@ -17,10 +17,12 @@ const imageAssets = {
     "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/438d4804-2bad-4edd-a652-45f18a8453eb/Bali+Hai_UpperShala1.jpg",
   midday:
     "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/c234d272-a808-4c82-83dc-9144a685d060/DSC01089.jpg",
-  goldenHour: placeholder("1200x1400", "Golden Hour"),
+  goldenHour:
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-bali-sunet-temple.webp",
   evening:
     "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/3641c094-9ce7-4c7d-a908-39817f93e989/ENG00624.jpg",
-  inBetweenHero: placeholder("1600x2200", "The In-Between"),
+  inBetweenHero:
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/terereza-seatitng-by-the-river.webp",
   investmentHero: placeholder("1600x2200", "Investment"),
   closing: placeholder("1600x2200", "The Return"),
 };
@@ -85,16 +87,19 @@ const guideCards = [
     title: "Bex Tyrer",
     image:
       "https://www.balispiritfestival.com/wp-content/uploads/2019/07/BSF23-Bex-Tyrer-Headshot.jpg",
+    overlayTitle: "BEX TYRER",
   },
   {
     title: "Jordi Jules",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpdMnJPCj4_QXmCYAz5z5xkyRjIzBzxBh8un9PCbgtIA&s=10",
+    overlayTitle: "JORDI JULES",
   },
   {
     title: "Francie La Flow",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOBgiFERtnXITvYrcCHREfUPN9NcgAseiiJkJoNh5KA&s=10",
+    overlayTitle: "FRANCIE LA FLOW",
   },
   {
     title: "Tereza Dos Santos",
@@ -430,8 +435,8 @@ export default function BaliRetreat() {
           nature and human connection.
         </p>
         <p>
-          Not everything will be revealed in advance. Some experiences are
-          meant to be discovered only when the moment arrives.
+          Not everything will be revealed in advance. Some experiences are meant
+          to be discovered only when the moment arrives.
         </p>
         <p>Give yourself permission to Surrender To The Mystery.</p>
       </section>
@@ -474,13 +479,16 @@ export default function BaliRetreat() {
         <SectionLabel index="04">THE SPACES</SectionLabel>
         <p className="kurulu-bay-page__lead">
           Every practice has its own room here. Not one hall we return to each
-          day, but a collection of spaces and platforms. Each one is built for
-          a different kind of attention, practice and energy, and each one
-          opens onto the breathtaking valley.
+          day, but a collection of spaces and platforms. Each one is built for a
+          different kind of attention, practice and energy, and each one opens
+          onto the breathtaking valley.
         </p>
         <div className="kurulu-bay-page__spaces-row">
           {spaceCards.map((item) => (
-            <figure key={item.title} className="kurulu-bay-page__immersion-card">
+            <figure
+              key={item.title}
+              className="kurulu-bay-page__immersion-card"
+            >
               <img src={item.image} alt={item.title} loading="lazy" />
               <figcaption>{item.title}</figcaption>
             </figure>
@@ -500,30 +508,37 @@ export default function BaliRetreat() {
         <div className="kurulu-bay-page__columns">
           <div>
             <p>
-              And because no retreat is created alone, I can't wait to
-              introduce you to a few of the beautiful humans who have shaped my
-              own journey over the years - my longtime mentor, teacher and dear
+              And because no retreat is created alone, I can't wait to introduce
+              you to a few of the beautiful humans who have shaped my own
+              journey over the years - my longtime mentor, teacher and dear
               friend Bex Tyrer for yoga, Jordi Jules for Qi Gong, Francie La
-              Flow for a powerful vocal activation experience, and a
-              traditional opening water blessing led by a local Balinese
-              priest.
+              Flow for a powerful vocal activation experience, and a traditional
+              opening water blessing led by a local Balinese priest.
             </p>
           </div>
           <div>
             <p>
-              Together, these experiences weave breath, sound, movement,
-              nature and meaningful connection into one continuous journey -
-              rooted in nervous system regulation, somatic practice and
-              embodied awareness. My hope is that you leave not only with
-              beautiful memories, but with practices that become part of your
-              everyday life.
+              Together, these experiences weave breath, sound, movement, nature
+              and meaningful connection into one continuous journey - rooted in
+              nervous system regulation, somatic practice and embodied
+              awareness. My hope is that you leave not only with beautiful
+              memories, but with practices that become part of your everyday
+              life.
             </p>
           </div>
         </div>
         <div className="kurulu-bay-page__investment-grid">
           {guideCards.map((item) => (
-            <figure key={item.title} className="kurulu-bay-page__investment-image">
+            <figure
+              key={item.title}
+              className="kurulu-bay-page__investment-image"
+            >
               <img src={item.image} alt={item.title} loading="lazy" />
+              {item.overlayTitle ? (
+                <div className="kurulu-bay-page__investment-image-overlay">
+                  <strong>{item.overlayTitle}</strong>
+                </div>
+              ) : null}
               <figcaption>{item.title}</figcaption>
             </figure>
           ))}
@@ -611,15 +626,18 @@ export default function BaliRetreat() {
       >
         <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
         <p className="kurulu-bay-page__lead">
-          This retreat is built as much on what we do together as on where we
-          do it. Over ten days the practices, the spaces and the experiences
-          become one continuous story - one we write together. These carefully
-          curated immersions are part of that story rather than an add-on. Each
-          one of them is already included in the retreat journey.
+          This retreat is built as much on what we do together as on where we do
+          it. Over ten days the practices, the spaces and the experiences become
+          one continuous story - one we write together. These carefully curated
+          immersions are part of that story rather than an add-on. Each one of
+          them is already included in the retreat journey.
         </p>
         <div className="kurulu-bay-page__immersion-grid">
           {immersionCards.map((item) => (
-            <figure key={item.title} className="kurulu-bay-page__immersion-card">
+            <figure
+              key={item.title}
+              className="kurulu-bay-page__immersion-card"
+            >
               <img src={item.image} alt={item.title} loading="lazy" />
               <div className="kurulu-bay-page__immersion-card-overlay">
                 <strong>{item.overlayTitle}</strong>
@@ -702,7 +720,9 @@ export default function BaliRetreat() {
               className="kurulu-bay-page__pricing-group"
               aria-label="All rooms pricing"
             >
-              <h3 className="kurulu-bay-page__pricing-heading">A L L R O O M S</h3>
+              <h3 className="kurulu-bay-page__pricing-heading">
+                A L L R O O M S
+              </h3>
               <div className="kurulu-bay-page__pricing-row">
                 <span>Single Occupancy</span>
                 <strong>4,700 USD</strong>
@@ -741,7 +761,10 @@ export default function BaliRetreat() {
           </a>
         </div>
         <div className="kurulu-bay-page__closing-image">
-          <img src={imageAssets.closing} alt="The Return Bali Edition closing" />
+          <img
+            src={imageAssets.closing}
+            alt="The Return Bali Edition closing"
+          />
         </div>
       </section>
     </div>

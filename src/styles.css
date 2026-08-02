@@ -226,6 +226,28 @@ button {
   padding-bottom: 4rem;
 }
 
+.bali-images-page__section {
+  display: grid;
+  gap: 18px;
+}
+
+.bali-images-page__section + .bali-images-page__section {
+  margin-top: 36px;
+}
+
+.bali-images-page__section-header {
+  display: grid;
+  gap: 6px;
+}
+
+.bali-images-page__section-header h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.6rem, 3.8vw, 2.4rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
 .bali-images-page__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

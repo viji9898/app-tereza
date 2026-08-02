@@ -1,5 +1,10 @@
 import { useMemo, useState } from "react";
 
+const terezaImageUrls = [
+  "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/terereza-seatitng-by-the-river.webp",
+  "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/terereza-seatitng-by-the-river-unedited.webp",
+];
+
 const baliImageUrls = Array.from(
   new Set([
     "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/1724831548844-OO1ETH1UNT9VQL55D54I/dwa+chandra+yoga+shala.JPG",
@@ -120,6 +125,14 @@ async function copyText(value) {
 
 export default function BaliImagesPage() {
   const [copiedUrl, setCopiedUrl] = useState("");
+  const terezaCards = useMemo(
+    () =>
+      terezaImageUrls.map((url) => ({
+        url,
+        label: formatLabel(url),
+      })),
+    [],
+  );
   const imageCards = useMemo(
     () =>
       baliImageUrls.map((url) => ({
@@ -159,30 +172,68 @@ export default function BaliImagesPage() {
           </p>
         </section>
 
-        <section className="bali-images-page__grid" aria-label="Bali images">
-          {imageCards.map((item) => (
-            <article key={item.url} className="bali-images-page__card">
-              <a
-                className="bali-images-page__image-link"
-                href={item.url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={item.url} alt={item.label} loading="lazy" />
-              </a>
-              <div className="bali-images-page__card-body">
-                <p className="bali-images-page__label">{item.label}</p>
-                <div className="bali-images-page__actions">
-                  <button type="button" onClick={() => handleCopy(item.url)}>
-                    {copiedUrl === item.url ? "Copied" : "Copy image link"}
-                  </button>
-                  <a href={item.url} target="_blank" rel="noreferrer">
-                    Open image
-                  </a>
+        <section className="bali-images-page__section" aria-labelledby="tereza-images-title">
+          <div className="bali-images-page__section-header">
+            <p className="section-label">Tereza</p>
+            <h2 id="tereza-images-title">Tereza</h2>
+          </div>
+          <div className="bali-images-page__grid">
+            {terezaCards.map((item) => (
+              <article key={item.url} className="bali-images-page__card">
+                <a
+                  className="bali-images-page__image-link"
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={item.url} alt={item.label} loading="lazy" />
+                </a>
+                <div className="bali-images-page__card-body">
+                  <p className="bali-images-page__label">{item.label}</p>
+                  <div className="bali-images-page__actions">
+                    <button type="button" onClick={() => handleCopy(item.url)}>
+                      {copiedUrl === item.url ? "Copied" : "Copy image link"}
+                    </button>
+                    <a href={item.url} target="_blank" rel="noreferrer">
+                      Open image
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="bali-images-page__section" aria-labelledby="bali-library-title">
+          <div className="bali-images-page__section-header">
+            <p className="section-label">Library</p>
+            <h2 id="bali-library-title">General collection</h2>
+          </div>
+          <div className="bali-images-page__grid">
+            {imageCards.map((item) => (
+              <article key={item.url} className="bali-images-page__card">
+                <a
+                  className="bali-images-page__image-link"
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={item.url} alt={item.label} loading="lazy" />
+                </a>
+                <div className="bali-images-page__card-body">
+                  <p className="bali-images-page__label">{item.label}</p>
+                  <div className="bali-images-page__actions">
+                    <button type="button" onClick={() => handleCopy(item.url)}>
+                      {copiedUrl === item.url ? "Copied" : "Copy image link"}
+                    </button>
+                    <a href={item.url} target="_blank" rel="noreferrer">
+                      Open image
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
       </div>
     </main>
