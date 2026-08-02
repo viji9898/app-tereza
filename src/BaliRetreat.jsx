@@ -103,7 +103,9 @@ const guideCards = [
   },
   {
     title: "Tereza Dos Santos",
-    image: placeholder("900x1200", "Tereza Dos Santos"),
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/Bali+Singing+Bowls+close+up.png",
+    overlayTitle: "TEREZA DOS SANTOS",
   },
 ];
 
