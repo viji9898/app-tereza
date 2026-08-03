@@ -231,6 +231,153 @@ button {
   gap: 18px;
 }
 
+
+.contracts-page {
+  padding-bottom: 4rem;
+}
+
+.contracts-page__shell {
+  display: grid;
+  gap: 28px;
+}
+
+.contracts-page__intro {
+  margin-bottom: 0;
+}
+
+.contracts-page__notice,
+.contracts-page__card {
+  padding: clamp(18px, 3vw, 28px);
+  border: 1px solid rgba(36, 25, 22, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 252, 246, 0.82);
+  box-shadow: 0 20px 60px rgba(54, 31, 20, 0.08);
+}
+
+.contracts-page__notice p,
+.contracts-page__card p,
+.contracts-page__card li {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.contracts-page__notice p,
+.contracts-page__card h2,
+.contracts-page__card h3,
+.contracts-page__card ul {
+  margin: 0;
+}
+
+.contracts-page__accordion,
+.contracts-page__details {
+  display: grid;
+  gap: 18px;
+}
+
+.contracts-page__card h2,
+.contracts-page__accordion-summary h2 {
+  margin-bottom: 14px;
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+  line-height: 1.1;
+}
+
+.contracts-page__accordion-item {
+  border: 1px solid rgba(36, 25, 22, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 252, 246, 0.82);
+  box-shadow: 0 20px 60px rgba(54, 31, 20, 0.08);
+  overflow: hidden;
+}
+
+.contracts-page__accordion-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: clamp(18px, 3vw, 28px);
+  cursor: pointer;
+  list-style: none;
+}
+
+.contracts-page__accordion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.contracts-page__accordion-summary h2 {
+  margin: 0;
+}
+
+.contracts-page__accordion-icon {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(36, 25, 22, 0.12);
+  color: var(--red);
+  font-family: Optima, Candara, "Noto Sans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.contracts-page__accordion-item[open] .contracts-page__accordion-icon {
+  transform: rotate(45deg);
+}
+
+.contracts-page__accordion-panel {
+  padding: 0 clamp(18px, 3vw, 28px) clamp(18px, 3vw, 28px);
+}
+
+.contracts-page__accordion-panel ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.contracts-page__accordion-panel li {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.contracts-page__accordion-panel li + li {
+  margin-top: 0.7rem;
+}
+
+.contracts-page__card ul {
+  padding-left: 1.25rem;
+}
+
+.contracts-page__card li + li {
+  margin-top: 0.7rem;
+}
+
+.contracts-page__card--accent {
+  background: linear-gradient(180deg, rgba(255, 248, 239, 0.95) 0%, rgba(244, 226, 209, 0.78) 100%);
+}
+
+.contracts-page__samples {
+  display: grid;
+  gap: 16px;
+}
+
+.contracts-page__samples article {
+  display: grid;
+  gap: 6px;
+}
+
+.contracts-page__samples h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 900px) {
+  .contracts-page__details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 .bali-images-page__section + .bali-images-page__section {
   margin-top: 36px;
 }

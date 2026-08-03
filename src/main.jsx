@@ -2,6 +2,7 @@ import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import BaliRetreat from "./BaliRetreat";
 import BaliImagesPage from "./BaliImagesPage";
+import ContractsPage from "./ContractsPage";
 import KuruluBayRetreat from "./KuruluBayRetreat";
 import "./styles.css";
 
@@ -48,6 +49,14 @@ const pageMetadata = {
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Preview of the Bali image collection",
+  },
+  contracts: {
+    title: "Contracts | Tereza Dos Santos",
+    description:
+      "A working checklist of key commercial, media, cancellation, and attribution terms to include in event agreements involving Tereza Dos Santos.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    imageAlt: "Contracts checklist page for Tereza Dos Santos",
   },
 };
 
@@ -295,6 +304,8 @@ function App() {
     ? pageMetadata.kuruluBay
     : pathname.startsWith("/bali-images")
       ? pageMetadata.baliImages
+    : pathname.startsWith("/contracts")
+      ? pageMetadata.contracts
     : pathname.startsWith("/bali")
       ? pageMetadata.bali
     : pathname.startsWith("/content")
@@ -309,6 +320,10 @@ function App() {
 
   if (pathname.startsWith("/bali-images")) {
     return <BaliImagesPage />;
+  }
+
+  if (pathname.startsWith("/contracts")) {
+    return <ContractsPage />;
   }
 
   if (pathname.startsWith("/bali")) {
