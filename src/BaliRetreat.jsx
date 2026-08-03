@@ -182,7 +182,8 @@ const immersionCards = [
   },
   {
     title: "Goa Gajah & Rice Fields",
-    image: placeholder("1000x1200", "Goa Gajah"),
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/9th-century+sites-goa-gajah.webp",
     overlayTitle: "9th-century sites",
     overlayText: "Guided walk through the rice fields",
   },
