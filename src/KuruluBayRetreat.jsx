@@ -82,16 +82,16 @@ const roomGroups = [
     image:
       "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/e0b6e0dc-0fe2-475c-87dc-bc0cd804ac8d/siriwanchmprn_KuruluBay_20220211-31.jpg?format=1500w",
     entries: [
-      ["Single Occupancy", "5,700 USD"],
-      ["Double Occupancy", "4,700 USD"],
+      ["Single Occupancy", " - USD"],
+      ["Double Occupancy", " - USD"],
     ],
   },
   {
     title: "2-Bedroom Villa w/ Private Pool",
     image: imageAssets.villa,
     entries: [
-      ["Single Occupancy", "6,100 USD"],
-      ["Double Occupancy", "5,100 USD"],
+      ["Single Occupancy", "- USD"],
+      ["Double Occupancy", "- USD"],
     ],
   },
 ];
@@ -724,11 +724,14 @@ export default function KuruluBayRetreat() {
               </h3>
               <div className="kurulu-bay-page__pricing-row">
                 <span>Single Occupancy</span>
-                <strong>5,700 USD</strong>
+                {/* <strong>5,700 USD</strong> */}
+                <strong>- USD</strong>
               </div>
               <div className="kurulu-bay-page__pricing-row">
                 <span>Double Occupancy</span>
-                <strong>4,700 USD</strong>
+                {/* <strong>4,700 USD</strong>
+                 */}{" "}
+                <strong>- USD</strong>
               </div>
             </section>
             <section
@@ -740,11 +743,13 @@ export default function KuruluBayRetreat() {
               </h3>
               <div className="kurulu-bay-page__pricing-row">
                 <span>Single Occupancy</span>
-                <strong>6,100 USD</strong>
+                {/* <strong>6,100 USD</strong> */}
+                <strong>- USD</strong>
               </div>
               <div className="kurulu-bay-page__pricing-row">
                 <span>Double Occupancy</span>
-                <strong>5,100 USD</strong>
+                <strong>- USD</strong>
+                {/* <strong>5,100 USD</strong> */}
               </div>
             </section>
           </div>
