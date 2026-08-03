@@ -161,19 +161,22 @@ const dayBlocks = [
 const immersionCards = [
   {
     title: "Melukat Water Blessing",
-    image: placeholder("1000x1200", "Melukat Water Blessing"),
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-at-water-temple.webp",
     overlayTitle: "Balinese priest blessing",
     overlayText: "At the river gorge",
   },
   {
     title: "Hidden-Gem Waterfall",
-    image: placeholder("1000x1200", "Hidden-Gem Waterfall"),
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/Waterfall+Tereza+Jump+2.webp",
     overlayTitle: "Nature immersion",
     overlayText: "Jungle waterfall experience",
   },
   {
     title: "Ecstatic Dance",
-    image: placeholder("1000x1200", "Ecstatic Dance"),
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/yoga-barn-ecstatic-dance.webp",
     overlayTitle: "Yoga Barn",
     overlayText: "A renowned Bali ritual",
   },
