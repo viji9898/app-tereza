@@ -69,13 +69,6 @@ export default function ContractsPage() {
   return (
     <main className="page contracts-page">
       <div className="shell contracts-page__shell">
-        <nav className="topbar" aria-label="Primary navigation">
-          <a className="brand" href="/">
-            T&amp;V
-          </a>
-          <span className="topbar__divider" aria-hidden="true" />
-        </nav>
-
         <section className="intro contracts-page__intro" aria-labelledby="contracts-title">
           <div>
             <p className="section-label">Contracts</p>
