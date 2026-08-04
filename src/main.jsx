@@ -4,6 +4,7 @@ import BaliRetreat from "./BaliRetreat";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import KuruluBayRetreat from "./KuruluBayRetreat";
+import RetreatsPage from "./RetreatsPage";
 import "./styles.css";
 
 const HERO_VIDEO =
@@ -41,6 +42,14 @@ const pageMetadata = {
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
+  },
+  retreats: {
+    title: "Retreats | Tereza Dos Santos",
+    description:
+      "Browse the Kurulu Bay and Bali retreat experiences curated by Tereza Dos Santos.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    imageAlt: "Retreat selection preview for Bali and Kurulu Bay",
   },
   baliImages: {
     title: "Bali Image Collection | Tereza Dos Santos",
@@ -302,6 +311,8 @@ function App() {
   const pathname = window.location.pathname;
   const metadata = pathname.startsWith("/kurulu-bay")
     ? pageMetadata.kuruluBay
+    : pathname.startsWith("/retreats")
+      ? pageMetadata.retreats
     : pathname.startsWith("/bali-images")
       ? pageMetadata.baliImages
     : pathname.startsWith("/contracts")
@@ -316,6 +327,10 @@ function App() {
 
   if (pathname.startsWith("/kurulu-bay")) {
     return <KuruluBayRetreat />;
+  }
+
+  if (pathname.startsWith("/retreats")) {
+    return <RetreatsPage />;
   }
 
   if (pathname.startsWith("/bali-images")) {

@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import "./KuruluBayRetreat.css";
+import "./BaliRetreat.css";
 
 const placeholder = (size, text) =>
   `https://placehold.co/${size}?text=${encodeURIComponent(text)}`;
@@ -293,7 +293,8 @@ export default function BaliRetreat() {
   };
 
   return (
-    <div className="kurulu-bay-page">
+    <div className="bali-retreat-page">
+      <div className="kurulu-bay-page">
       <section id="cover" className="kurulu-bay-page__hero">
         <div className="kurulu-bay-page__hero-image">
           <img
@@ -774,6 +775,7 @@ export default function BaliRetreat() {
           />
         </div>
       </section>
+      </div>
     </div>
   );
 }
