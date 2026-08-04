@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="Travel Feather Apple touch icon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbf4fb" />
+      <stop offset="100%" stop-color="#f1d7eb" />
+    </linearGradient>
+    <linearGradient id="featherFill" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f214f" />
+      <stop offset="45%" stop-color="#8a4e8e" />
+      <stop offset="100%" stop-color="#d8a2d1" />
+    </linearGradient>
+    <linearGradient id="spineFill" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67235d" />
+      <stop offset="100%" stop-color="#c45a92" />
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="url(#bg)" />
+  <g transform="translate(22 26)">
+    <path
+      d="M12 118C29 96 41 73 58 52C78 28 104 15 137 16C124 41 103 62 78 81C58 96 40 106 12 118Z"
+      fill="url(#featherFill)"
+      opacity="0.98"
+    />
+    <path
+      d="M12 118C26 95 39 72 56 49C73 29 97 20 126 16"
+      fill="none"
+      stroke="url(#spineFill)"
+      stroke-linecap="round"
+      stroke-width="7"
+    />
+    <path
+      d="M42 89C58 86 76 80 95 68"
+      fill="none"
+      stroke="#f7e8f5"
+      stroke-linecap="round"
+      stroke-opacity="0.5"
+      stroke-width="3"
+    />
+    <path
+      d="M53 67C70 63 87 54 106 42"
+      fill="none"
+      stroke="#f7e8f5"
+      stroke-linecap="round"
+      stroke-opacity="0.42"
+      stroke-width="2.6"
+    />
+    <path
+      d="M64 49C82 44 96 35 113 26"
+      fill="none"
+      stroke="#f7e8f5"
+      stroke-linecap="round"
+      stroke-opacity="0.36"
+      stroke-width="2.2"
+    />
+  </g>
+</svg>
