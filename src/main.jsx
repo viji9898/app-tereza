@@ -12,6 +12,12 @@ const HERO_VIDEO =
 
 const INNER_CIRCLE_URL = "https://chat.whatsapp.com/H1KtTJdTBh16hhf4cAfDSu";
 
+const WHATSAPP_BALI_URL =
+  "https://wa.me/201010001133?text=Tell%20me%20more%20about%20the%20Bali%20retreat";
+
+const WHATSAPP_SRI_LANKA_URL =
+  "https://wa.me/201010001133?text=Tell%20me%20more%20about%20the%20Sri%20Lanka%20retreat";
+
 const pageMetadata = {
   home: {
     title: "Tereza Dos Santos | Travel Feather",
@@ -167,7 +173,10 @@ function HomePage() {
   }
 
   return (
-    <main className="hero" aria-label="Tereza Dos Santos Costa Spirit Reel 2024">
+    <main
+      className="hero"
+      aria-label="Tereza Dos Santos Costa Spirit Reel 2024"
+    >
       <video
         ref={videoRef}
         className="hero__video"
@@ -189,8 +198,36 @@ function HomePage() {
           <span className="hero__name-sub">DOS SANTOS</span>
         </h1>
         <div className="hero__socials" aria-label="Social links">
+          <div className="hero__socials-row">
+            <a
+              className="hero__circle-link hero__circle-link--retreat"
+              href={WHATSAPP_BALI_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="hero__retreat-card-copy">
+                <span className="hero__retreat-card-title">Bali</span>
+                <span className="hero__retreat-card-meta">
+                  Ask about the retreat →
+                </span>
+              </span>
+            </a>
+            <a
+              className="hero__circle-link hero__circle-link--retreat"
+              href={WHATSAPP_SRI_LANKA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="hero__retreat-card-copy">
+                <span className="hero__retreat-card-title">Sri Lanka</span>
+                <span className="hero__retreat-card-meta">
+                  Ask about the retreat →
+                </span>
+              </span>
+            </a>
+          </div>
           <a
-            className="hero__circle-link"
+            className="hero__circle-link hero__circle-link--secondary"
             href={INNER_CIRCLE_URL}
             target="_blank"
             rel="noopener noreferrer"
@@ -313,15 +350,15 @@ function App() {
     ? pageMetadata.kuruluBay
     : pathname.startsWith("/retreats")
       ? pageMetadata.retreats
-    : pathname.startsWith("/bali-images")
-      ? pageMetadata.baliImages
-    : pathname.startsWith("/contracts")
-      ? pageMetadata.contracts
-    : pathname.startsWith("/bali")
-      ? pageMetadata.bali
-    : pathname.startsWith("/content")
-      ? pageMetadata.content
-      : pageMetadata.home;
+      : pathname.startsWith("/bali-images")
+        ? pageMetadata.baliImages
+        : pathname.startsWith("/contracts")
+          ? pageMetadata.contracts
+          : pathname.startsWith("/bali")
+            ? pageMetadata.bali
+            : pathname.startsWith("/content")
+              ? pageMetadata.content
+              : pageMetadata.home;
 
   usePageMetadata(metadata);
 
