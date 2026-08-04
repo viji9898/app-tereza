@@ -10,6 +10,8 @@ import "./styles.css";
 const HERO_VIDEO =
   "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/hero-video-over-layer-tereza-reel.mp4";
 
+const HERO_POSTER = "/video-thumbnail.jpg";
+
 const INNER_CIRCLE_URL = "https://chat.whatsapp.com/H1KtTJdTBh16hhf4cAfDSu";
 
 const WHATSAPP_BALI_URL =
@@ -23,7 +25,7 @@ const pageMetadata = {
     title: "Tereza Dos Santos | Travel Feather",
     description:
       "Music. Movement. Story. Human experience. Explore the work of Tereza Dos Santos across performance, film, education, immersive experiences, and wellness.",
-    image: "ogImage-home-page.jpeg",
+    image: "/ogImage-home-page.jpeg",
     imageAlt: "Travel Feather by Tereza Dos Santos",
   },
   content: {
@@ -212,6 +214,7 @@ function HomePage() {
         loop
         playsInline
         preload="auto"
+        poster={HERO_POSTER}
         aria-label="Tereza Dos Santos Costa Spirit Reel 2024"
         onPause={() => setIsPlaying(false)}
         onPlay={() => setIsPlaying(true)}
