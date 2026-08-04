@@ -141,6 +141,9 @@ function HomePage() {
     }
 
     let rafId = 0;
+    let retryTimeoutId = 0;
+    let retryCount = 0;
+    let playbackStarted = false;
 
     const tryPlay = () => {
       video.defaultMuted = true;
@@ -153,28 +156,51 @@ function HomePage() {
       video.play().catch(() => {});
     };
 
+    const scheduleRetry = () => {
+      if (playbackStarted || document.hidden || !video.paused || retryCount >= 12) {
+        return;
+      }
+
+      retryTimeoutId = window.setTimeout(() => {
+        retryCount += 1;
+        tryPlay();
+        scheduleRetry();
+      }, 300);
+    };
+
     const handleCanPlay = () => {
       tryPlay();
+      scheduleRetry();
+    };
+
+    const handlePlaying = () => {
+      playbackStarted = true;
+      window.clearTimeout(retryTimeoutId);
     };
 
     const handleVisibilityChange = () => {
       if (!document.hidden) {
         tryPlay();
+        scheduleRetry();
       }
     };
 
     tryPlay();
     rafId = requestAnimationFrame(tryPlay);
+    scheduleRetry();
 
     video.addEventListener("loadeddata", handleCanPlay);
     video.addEventListener("canplay", handleCanPlay);
+    video.addEventListener("playing", handlePlaying);
     window.addEventListener("pageshow", tryPlay);
     document.addEventListener("visibilitychange", handleVisibilityChange);
 
     return () => {
       cancelAnimationFrame(rafId);
+      window.clearTimeout(retryTimeoutId);
       video.removeEventListener("loadeddata", handleCanPlay);
       video.removeEventListener("canplay", handleCanPlay);
+      video.removeEventListener("playing", handlePlaying);
       window.removeEventListener("pageshow", tryPlay);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
