@@ -138,17 +138,44 @@ function HomePage() {
       return undefined;
     }
 
-    video.defaultMuted = true;
-    video.muted = true;
+    let rafId = 0;
 
-    const playVideo = () => {
+    const tryPlay = () => {
+      video.defaultMuted = true;
+      video.muted = true;
+
+      if (document.hidden || !video.paused) {
+        return;
+      }
+
       video.play().catch(() => {});
     };
 
-    playVideo();
-    video.addEventListener("canplay", playVideo, { once: true });
+    const handleCanPlay = () => {
+      tryPlay();
+    };
 
-    return () => video.removeEventListener("canplay", playVideo);
+    const handleVisibilityChange = () => {
+      if (!document.hidden) {
+        tryPlay();
+      }
+    };
+
+    tryPlay();
+    rafId = requestAnimationFrame(tryPlay);
+
+    video.addEventListener("loadeddata", handleCanPlay);
+    video.addEventListener("canplay", handleCanPlay);
+    window.addEventListener("pageshow", tryPlay);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      video.removeEventListener("loadeddata", handleCanPlay);
+      video.removeEventListener("canplay", handleCanPlay);
+      window.removeEventListener("pageshow", tryPlay);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
   }, []);
 
   function togglePlayback() {
