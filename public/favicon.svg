@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Travel Feather favicon">
+  <defs>
+    <linearGradient id="featherFill" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f214f" />
+      <stop offset="45%" stop-color="#8a4e8e" />
+      <stop offset="100%" stop-color="#d8a2d1" />
+    </linearGradient>
+    <linearGradient id="spineFill" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67235d" />
+      <stop offset="100%" stop-color="#c45a92" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(2 2)">
+    <path
+      d="M6 55C14 45 16 34 23 24C31 12 45 6 58 7C53 20 42 30 31 37C23 42 17 48 6 55Z"
+      fill="url(#featherFill)"
+      opacity="0.96"
+    />
+    <path
+      d="M6 55C14 45 19 33 25 23C31 14 41 10 53 8"
+      fill="none"
+      stroke="url(#spineFill)"
+      stroke-linecap="round"
+      stroke-width="3.2"
+    />
+    <path
+      d="M18 42C24 41 30 40 38 37"
+      fill="none"
+      stroke="#f0d8ec"
+      stroke-linecap="round"
+      stroke-opacity="0.45"
+      stroke-width="1.4"
+    />
+    <path
+      d="M22 33C28 32 35 29 43 24"
+      fill="none"
+      stroke="#f0d8ec"
+      stroke-linecap="round"
+      stroke-opacity="0.38"
+      stroke-width="1.2"
+    />
+    <path
+      d="M27 25C34 23 41 18 47 14"
+      fill="none"
+      stroke="#f0d8ec"
+      stroke-linecap="round"
+      stroke-opacity="0.32"
+      stroke-width="1.1"
+    />
+  </g>
+</svg>
