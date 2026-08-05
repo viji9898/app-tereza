@@ -24,7 +24,8 @@ const imageAssets = {
     "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/3641c094-9ce7-4c7d-a908-39817f93e989/ENG00624.jpg",
   inBetweenHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/terereza-seatitng-by-the-river.webp",
-  investmentHero: placeholder("1600x2200", "Investment"),
+  investmentHero:
+    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg",
   closing: placeholder("1600x2200", "The Return"),
 };
 
