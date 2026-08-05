@@ -6,14 +6,15 @@ const placeholder = (size, text) =>
 
 const imageAssets = {
   cover:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra.webp",
   returnHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view-from-room-of-ubud-resort.jpg",
   homeHero:
     "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/ce95e139-6fb5-4bc9-8cee-11fb1d046dc5/dwa+chandra.jpeg",
   practiceHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tezera-edge-inifity.webp",
-  journeyHero: placeholder("1600x2200", "The Journey"),
+  journeyHero:
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
   morning:
     "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/438d4804-2bad-4edd-a652-45f18a8453eb/Bali+Hai_UpperShala1.jpg",
   midday:
@@ -323,489 +324,494 @@ export default function BaliRetreat() {
   return (
     <div className="bali-retreat-page">
       <div className="kurulu-bay-page">
-      <section id="cover" className="kurulu-bay-page__hero">
-        <div className="kurulu-bay-page__hero-image">
-          <img
-            src={imageAssets.cover}
-            alt="The Return Bali Edition cover"
-            loading="eager"
-          />
-        </div>
-        <div className="kurulu-bay-page__hero-copy">
-          <p className="kurulu-bay-page__brand">THE RETURN</p>
-          <p className="kurulu-bay-page__edition">Bali Edition</p>
-          <div className="kurulu-bay-page__rule" />
-          <p className="kurulu-bay-page__meta">
-            A 10-Day Private Retreat curated by Tereza Dos Santos
-          </p>
-          <p className="kurulu-bay-page__meta kurulu-bay-page__meta--spaced">
-            October 3 — October 12, 2026
-          </p>
-          <div className="kurulu-bay-page__hero-lines">
-            <p>A return to what matters.</p>
-            <p>A return to yourself.</p>
+        <section id="cover" className="kurulu-bay-page__hero">
+          <div className="kurulu-bay-page__hero-image">
+            <img
+              src={imageAssets.cover}
+              alt="The Return Bali Edition cover"
+              loading="eager"
+            />
           </div>
-        </div>
-      </section>
+          <div className="kurulu-bay-page__hero-copy">
+            <p className="kurulu-bay-page__brand">THE RETURN</p>
+            <p className="kurulu-bay-page__edition">Bali Edition</p>
+            <div className="kurulu-bay-page__rule" />
+            <p className="kurulu-bay-page__meta">
+              A 10-Day Private Retreat curated by Tereza Dos Santos
+            </p>
+            <p className="kurulu-bay-page__meta kurulu-bay-page__meta--spaced">
+              October 3 — October 12, 2026
+            </p>
+            <div className="kurulu-bay-page__hero-lines">
+              <p>A return to what matters.</p>
+              <p>A return to yourself.</p>
+            </div>
+          </div>
+        </section>
 
-      <button
-        type="button"
-        className={`kurulu-bay-page__contents-trigger${menuOpen ? " kurulu-bay-page__contents-trigger--open" : ""}`}
-        onClick={() => setMenuOpen((current) => !current)}
-        aria-expanded={menuOpen}
-        aria-controls="bali-contents-menu"
-        aria-label="Open contents menu"
-      >
-        <span
-          className="kurulu-bay-page__contents-trigger-line"
-          aria-hidden="true"
-        />
-      </button>
-
-      <div
-        className={`kurulu-bay-page__contents-overlay${menuOpen ? " kurulu-bay-page__contents-overlay--open" : ""}`}
-        onClick={() => setMenuOpen(false)}
-        aria-hidden={!menuOpen}
-      />
-
-      <aside
-        id="bali-contents-menu"
-        className={`kurulu-bay-page__contents-panel${menuOpen ? " kurulu-bay-page__contents-panel--open" : ""}`}
-        aria-hidden={!menuOpen}
-      >
-        <p className="kurulu-bay-page__contents-title">Jump to section</p>
-        <nav
-          className="kurulu-bay-page__contents-nav"
-          aria-label="Bali retreat sections"
+        <button
+          type="button"
+          className={`kurulu-bay-page__contents-trigger${menuOpen ? " kurulu-bay-page__contents-trigger--open" : ""}`}
+          onClick={() => setMenuOpen((current) => !current)}
+          aria-expanded={menuOpen}
+          aria-controls="bali-contents-menu"
+          aria-label="Open contents menu"
         >
-          {menuItems.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className="kurulu-bay-page__contents-link"
-              onClick={handleMenuItemClick}
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-      </aside>
+          <span
+            className="kurulu-bay-page__contents-trigger-line"
+            aria-hidden="true"
+          />
+        </button>
 
-      <section id="welcome" className="kurulu-bay-page__text-section">
-        <SectionLabel index="01">WELCOME</SectionLabel>
-        <h1 className="kurulu-bay-page__headline">Dear Friends,</h1>
-        <div className="kurulu-bay-page__columns">
-          <div>
+        <div
+          className={`kurulu-bay-page__contents-overlay${menuOpen ? " kurulu-bay-page__contents-overlay--open" : ""}`}
+          onClick={() => setMenuOpen(false)}
+          aria-hidden={!menuOpen}
+        />
+
+        <aside
+          id="bali-contents-menu"
+          className={`kurulu-bay-page__contents-panel${menuOpen ? " kurulu-bay-page__contents-panel--open" : ""}`}
+          aria-hidden={!menuOpen}
+        >
+          <p className="kurulu-bay-page__contents-title">Jump to section</p>
+          <nav
+            className="kurulu-bay-page__contents-nav"
+            aria-label="Bali retreat sections"
+          >
+            {menuItems.map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className="kurulu-bay-page__contents-link"
+                onClick={handleMenuItemClick}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+        </aside>
+
+        <section id="welcome" className="kurulu-bay-page__text-section">
+          <SectionLabel index="01">WELCOME</SectionLabel>
+          <h1 className="kurulu-bay-page__headline">Dear Friends,</h1>
+          <div className="kurulu-bay-page__columns">
+            <div>
+              <p>
+                Over the years, we've created beautiful moments and memories
+                together through breath, sound, movement, conversation and
+                shared silence. Somewhere along the way, the shared vision of
+                this beautiful retreat began to take shape.
+              </p>
+              <p>
+                I wanted to create something that couldn't be experienced in
+                just a single evening. A journey with enough space to slow down.
+                Enough time to settle. Enough time for everything to unfold
+                naturally. And enough time to integrate it before returning
+                home.
+              </p>
+              <p>
+                This retreat brings together everything that has shaped my work
+                over the past two decades: breath, sound, movement, nature,
+                meaningful connection - and Mama Bali, my second home and my
+                most profound teacher. Her culture, her warm and devoted people,
+                and the rituals we are so generously invited into.
+              </p>
+            </div>
+            <div>
+              <p>
+                My intention was never to create another retreat packed with
+                activities or a schedule to keep up with. Instead, I wanted to
+                create something spacious and profound. Thoughtfully curated. A
+                place to go deep, not wide.
+              </p>
+              <p>
+                My greatest hope is not that you leave feeling inspired for a
+                few days, but that you return home carrying one small practice,
+                one new perspective, or one feeling that truly becomes a part of
+                the way you live. Not something you simply understand with your
+                mind, but something you've truly embodied.
+              </p>
+              <p>
+                If even one small part of this journey stays with you long after
+                we've said goodbye, then I believe we've created something truly
+                meaningful together.
+              </p>
+              <p>I can't wait to share these ten days with you.</p>
+              <p className="kurulu-bay-page__signature">
+                Com amor,
+                <br />
+                Tereza
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <FullImage
+          src={imageAssets.returnHero}
+          alt="The Return Bali Edition hero"
+          overlayIndex="02"
+          overlayLabel="THE RETURN"
+          overlayText={[
+            "Modern life, our jobs, and society ask us to be constantly available.",
+            "To respond. To produce. To perform. To stay connected.",
+          ]}
+        />
+
+        <section id="return" className="kurulu-bay-page__text-section">
+          <div className="kurulu-bay-page__lede-group">
+            <p>This journey asks something entirely different.</p>
             <p>
-              Over the years, we've created beautiful moments and memories
-              together through breath, sound, movement, conversation and shared
-              silence. Somewhere along the way, the shared vision of this
-              beautiful retreat began to take shape.
-            </p>
-            <p>
-              I wanted to create something that couldn't be experienced in just
-              a single evening. A journey with enough space to slow down. Enough
-              time to settle. Enough time for everything to unfold naturally.
-              And enough time to integrate it before returning home.
-            </p>
-            <p>
-              This retreat brings together everything that has shaped my work
-              over the past two decades: breath, sound, movement, nature,
-              meaningful connection - and Mama Bali, my second home and my most
-              profound teacher. Her culture, her warm and devoted people, and
-              the rituals we are so generously invited into.
+              To slow down. To breathe. To listen. To reconnect with yourself,
+              with nature, and with one another.
             </p>
           </div>
-          <div>
-            <p>
-              My intention was never to create another retreat packed with
-              activities or a schedule to keep up with. Instead, I wanted to
-              create something spacious and profound. Thoughtfully curated. A
-              place to go deep, not wide.
-            </p>
-            <p>
-              My greatest hope is not that you leave feeling inspired for a few
-              days, but that you return home carrying one small practice, one
-              new perspective, or one feeling that truly becomes a part of the
-              way you live. Not something you simply understand with your mind,
-              but something you've truly embodied.
-            </p>
-            <p>
-              If even one small part of this journey stays with you long after
-              we've said goodbye, then I believe we've created something truly
-              meaningful together.
-            </p>
-            <p>I can't wait to share these ten days with you.</p>
-            <p className="kurulu-bay-page__signature">
-              Com amor,
-              <br />
-              Tereza
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <FullImage
-        src={imageAssets.returnHero}
-        alt="The Return Bali Edition hero"
-        overlayIndex="02"
-        overlayLabel="THE RETURN"
-        overlayText={[
-          "Modern life, our jobs, and society ask us to be constantly available.",
-          "To respond. To produce. To perform. To stay connected.",
-        ]}
-      />
-
-      <section id="return" className="kurulu-bay-page__text-section">
-        <div className="kurulu-bay-page__lede-group">
-          <p>This journey asks something entirely different.</p>
+          <div className="kurulu-bay-page__rule kurulu-bay-page__rule--wide" />
           <p>
-            To slow down. To breathe. To listen. To reconnect with yourself,
-            with nature, and with one another.
+            Over ten carefully curated days, we'll move through practices rooted
+            in nervous system regulation, somatic experiencing, movement, sound,
+            nature and human connection.
           </p>
-        </div>
-        <div className="kurulu-bay-page__rule kurulu-bay-page__rule--wide" />
-        <p>
-          Over ten carefully curated days, we'll move through practices rooted
-          in nervous system regulation, somatic experiencing, movement, sound,
-          nature and human connection.
-        </p>
-        <p>
-          Not everything will be revealed in advance. Some experiences are meant
-          to be discovered only when the moment arrives.
-        </p>
-        <p>Give yourself permission to Surrender To The Mystery.</p>
-      </section>
+          <p>
+            Not everything will be revealed in advance. Some experiences are
+            meant to be discovered only when the moment arrives.
+          </p>
+          <p>Give yourself permission to Surrender To The Mystery.</p>
+        </section>
 
-      <FullImage
-        src={imageAssets.homeHero}
-        alt="Dwa Chandra retreat sanctuary"
-        overlayIndex="03"
-        overlayLabel="YOUR HOME"
-        overlayText="Dwa Chandra is a sanctuary where jungle, architecture and nature exist in perfect harmony."
-      />
+        <FullImage
+          src={imageAssets.homeHero}
+          alt="Dwa Chandra retreat sanctuary"
+          overlayIndex="03"
+          overlayLabel="YOUR HOME"
+          overlayText="Dwa Chandra is a sanctuary where jungle, architecture and nature exist in perfect harmony."
+        />
 
-      <section
-        id="home"
-        className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
-      >
-        <p className="kurulu-bay-page__lead">
-          Just outside Ubud, tucked above a private river gorge in the ancient
-          village of Pejeng, Dwa Chandra is a sanctuary where jungle,
-          architecture and nature exist in perfect harmony. Two private villas,
-          three open-air yoga shalas, a meditation deck suspended above the
-          river, and ninth-century temple carvings hidden within the cliffs
-          create a setting that feels both timeless and deeply connected to the
-          land. Throughout your stay, this extraordinary sanctuary becomes as
-          much a part of the journey as the practices themselves.
-        </p>
-        <div className="kurulu-bay-page__gallery-grid">
-          {homeFrames.map((item) => (
-            <figure key={item.alt} className="kurulu-bay-page__gallery-card">
-              <img src={item.src} alt={item.alt} loading="lazy" />
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <section
-        id="spaces"
-        className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
-      >
-        <SectionLabel index="04">THE SPACES</SectionLabel>
-        <p className="kurulu-bay-page__lead">
-          Every practice has its own room here. Not one hall we return to each
-          day, but a collection of spaces and platforms. Each one is built for a
-          different kind of attention, practice and energy, and each one opens
-          onto the breathtaking valley.
-        </p>
-        <div className="kurulu-bay-page__spaces-row">
-          {spaceCards.map((item) => (
-            <figure
-              key={item.title}
-              className="kurulu-bay-page__immersion-card"
-            >
-              <img src={item.image} alt={item.title} loading="lazy" />
-              <figcaption>{item.title}</figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <FullImage
-        src={imageAssets.practiceHero}
-        alt="The Practice at The Return Bali Edition"
-        overlayIndex="05"
-        overlayLabel="THE PRACTICE"
-        overlayText="Throughout the retreat, we'll explore the full spectrum of my signature work, including SONIC BREATH™, SOUND TEMPLE™, FLOATING TEMPLE™, and a series of BREATH LAB workshops. I'll also be introducing SUCO, an active meditation and global somatic movement practice that I'm so excited to finally share with you following my recent certification."
-      />
-
-      <section id="practice" className="kurulu-bay-page__text-section">
-        <div className="kurulu-bay-page__columns">
-          <div>
-            <p>
-              And because no retreat is created alone, I can't wait to introduce
-              you to a few of the beautiful humans who have shaped my own
-              journey over the years - my longtime mentor, teacher and dear
-              friend Bex Tyrer for yoga, Jordi Jules for Qi Gong, Francie La
-              Flow for a powerful vocal activation experience, and a traditional
-              opening water blessing led by a local Balinese priest.
-            </p>
-          </div>
-          <div>
-            <p>
-              Together, these experiences weave breath, sound, movement, nature
-              and meaningful connection into one continuous journey - rooted in
-              nervous system regulation, somatic practice and embodied
-              awareness. My hope is that you leave not only with beautiful
-              memories, but with practices that become part of your everyday
-              life.
-            </p>
-          </div>
-        </div>
-        <div className="kurulu-bay-page__investment-grid">
-          {guideCards.map((item) => (
-            <figure
-              key={item.title}
-              className="kurulu-bay-page__investment-image"
-            >
-              <img src={item.image} alt={item.title} loading="lazy" />
-              {item.overlayTitle ? (
-                <div className="kurulu-bay-page__investment-image-overlay">
-                  <strong>{item.overlayTitle}</strong>
-                </div>
-              ) : null}
-              <figcaption>{item.title}</figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <FullImage
-        src={imageAssets.journeyHero}
-        alt="The Journey at The Return Bali Edition"
-        overlayIndex="06"
-        overlayLabel="THE JOURNEY"
-        overlayText="Each day we explore a different theme, thoughtfully designed to build upon the one before it, creating a journey that comes full circle before you return home."
-      />
-
-      <section id="journey" className="kurulu-bay-page__text-section">
-        <div className="kurulu-bay-page__stack">
-          <div>
-            <p>
-              Rather than revealing every experience in advance, we've
-              intentionally left space for curiosity, spontaneity and surprise.
-            </p>
-            <p>I invite you to trust the process.</p>
-          </div>
-          <div className="kurulu-bay-page__journey-grid">
-            {journeyDays.map(([day, theme]) => (
-              <div key={day} className="kurulu-bay-page__journey-row">
-                <span>{day}</span>
-                <strong>{theme}</strong>
-              </div>
+        <section
+          id="home"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
+          <p className="kurulu-bay-page__lead">
+            Just outside Ubud, tucked above a private river gorge in the ancient
+            village of Pejeng, Dwa Chandra is a sanctuary where jungle,
+            architecture and nature exist in perfect harmony. Two private
+            villas, three open-air yoga shalas, a meditation deck suspended
+            above the river, and ninth-century temple carvings hidden within the
+            cliffs create a setting that feels both timeless and deeply
+            connected to the land. Throughout your stay, this extraordinary
+            sanctuary becomes as much a part of the journey as the practices
+            themselves.
+          </p>
+          <div className="kurulu-bay-page__gallery-grid">
+            {homeFrames.map((item) => (
+              <figure key={item.alt} className="kurulu-bay-page__gallery-card">
+                <img src={item.src} alt={item.alt} loading="lazy" />
+              </figure>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section
-        id="typical-day"
-        className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
-      >
-        <SectionLabel index="07">A TYPICAL DAY</SectionLabel>
-        <div className="kurulu-bay-page__day-grid">
-          {dayBlocks.map((block) => (
-            <article key={block.title} className="kurulu-bay-page__day-card">
-              <img src={block.image} alt={block.title} loading="lazy" />
-              <div className="kurulu-bay-page__day-card-overlay">
-                <h3>{block.overlayTitle}</h3>
-                <div className="kurulu-bay-page__day-card-lines">
-                  {block.items.map((item) => (
-                    <p key={item}>{item}</p>
-                  ))}
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <FullImage
-        src={imageAssets.inBetweenHero}
-        alt="The In-Between at The Return Bali Edition"
-        overlayIndex="08"
-        overlayLabel="THE IN-BETWEEN"
-        overlayText="Not every moment is scheduled."
-      />
-
-      <section id="in-between" className="kurulu-bay-page__text-section">
-        <div className="kurulu-bay-page__lede-group">
-          <p>
-            Some of the most meaningful parts of the retreat happen between the
-            sessions.
+        <section
+          id="spaces"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
+          <SectionLabel index="04">THE SPACES</SectionLabel>
+          <p className="kurulu-bay-page__lead">
+            Every practice has its own room here. Not one hall we return to each
+            day, but a collection of spaces and platforms. Each one is built for
+            a different kind of attention, practice and energy, and each one
+            opens onto the breathtaking valley.
           </p>
-        </div>
-        <div className="kurulu-bay-page__inbetween-list">
-          <p>Watching the morning mist lift from the valley.</p>
-          <p>Barefoot walks through the gardens.</p>
-          <p>A soul-touching conversation over tea.</p>
-          <p>Listening to the river between sessions.</p>
-          <p>Receiving a traditional Balinese massage.</p>
-          <p>Falling asleep with the jungle as your soundtrack.</p>
-        </div>
-      </section>
-
-      <section
-        id="immersions"
-        className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
-      >
-        <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
-        <p className="kurulu-bay-page__lead">
-          This retreat is built as much on what we do together as on where we do
-          it. Over ten days the practices, the spaces and the experiences become
-          one continuous story - one we write together. These carefully curated
-          immersions are part of that story rather than an add-on. Each one of
-          them is already included in the retreat journey.
-        </p>
-        <div className="kurulu-bay-page__immersion-grid">
-          {immersionCards.map((item) => (
-            <figure
-              key={item.title}
-              className="kurulu-bay-page__immersion-card"
-            >
-              <img src={item.image} alt={item.title} loading="lazy" />
-              <div className="kurulu-bay-page__immersion-card-overlay">
-                <strong>{item.overlayTitle}</strong>
-                <p>{item.overlayText}</p>
-              </div>
-              <figcaption>{item.title}</figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <section
-        id="included"
-        className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
-      >
-        <SectionLabel index="10">WHAT'S INCLUDED</SectionLabel>
-        <div className="kurulu-bay-page__list-columns">
-          <ul>
-            {includedItems
-              .slice(0, Math.ceil(includedItems.length / 2))
-              .map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-          </ul>
-          <ul>
-            {includedItems
-              .slice(Math.ceil(includedItems.length / 2))
-              .map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-          </ul>
-        </div>
-      </section>
-
-      <section
-        id="optional"
-        className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
-      >
-        <SectionLabel index="11">WHAT'S NOT INCLUDED</SectionLabel>
-        <div className="kurulu-bay-page__stack">
-          {optionalItems.map((item) => (
-            <p key={item}>{item}</p>
-          ))}
-        </div>
-      </section>
-
-      <FullImage
-        src={imageAssets.investmentHero}
-        alt="Investment at The Return Bali Edition"
-        overlayIndex="12"
-        overlayLabel="INVESTMENT"
-        overlayText="Choose your home"
-      />
-
-      <section
-        id="investment"
-        className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
-      >
-        <p className="kurulu-bay-page__lead">
-          Dwa Chandra is, without question, my favourite place to stay in Bali.
-          It's where I come to write, to create, to breathe, and to remember
-          what really matters. Over the years it has become my sanctuary - a
-          place that somehow always feels like coming home. Every room has its
-          own personality, every view tells a different story, and I couldn't
-          imagine a more beautiful place to share this journey with you.
-        </p>
-        <div className="kurulu-bay-page__day-grid">
-          {investmentRoomImages.map((room) => (
-            <article key={room.src} className="kurulu-bay-page__day-card">
-              <img src={room.src} alt={room.alt} loading="lazy" />
-              <div className="kurulu-bay-page__day-card-overlay">
-                <h3>{room.overlayTitle}</h3>
-                <div className="kurulu-bay-page__day-card-lines">
-                  <p>{room.title}</p>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-        <div className="kurulu-bay-page__pricing-summary">
-          <div className="kurulu-bay-page__pricing-columns">
-            <section
-              className="kurulu-bay-page__pricing-group"
-              aria-label="All rooms pricing"
-            >
-              <h3 className="kurulu-bay-page__pricing-heading">
-                A L L R O O M S
-              </h3>
-              <div className="kurulu-bay-page__pricing-row">
-                <span>Single Occupancy</span>
-                <strong>4,700 USD</strong>
-              </div>
-              <div className="kurulu-bay-page__pricing-row">
-                <span>Double Occupancy</span>
-                <strong>3,700 USD</strong>
-              </div>
-            </section>
+          <div className="kurulu-bay-page__spaces-row">
+            {spaceCards.map((item) => (
+              <figure
+                key={item.title}
+                className="kurulu-bay-page__immersion-card"
+              >
+                <img src={item.image} alt={item.title} loading="lazy" />
+                <figcaption>{item.title}</figcaption>
+              </figure>
+            ))}
           </div>
-          <p className="kurulu-bay-page__pricing-note">
-            A detailed room menu with photographs and layouts is available on
-            request, so we can find the room that suits you best. Rooms are
-            allocated in the order that bookings are received.
-          </p>
-        </div>
-      </section>
+        </section>
 
-      <section id="closing" className="kurulu-bay-page__closing">
-        <div>
-          <p className="kurulu-bay-page__brand kurulu-bay-page__brand--small">
-            THE RETURN
+        <FullImage
+          src={imageAssets.practiceHero}
+          alt="The Practice at The Return Bali Edition"
+          overlayIndex="05"
+          overlayLabel="THE PRACTICE"
+          overlayText="Throughout the retreat, we'll explore the full spectrum of my signature work, including SONIC BREATH™, SOUND TEMPLE™, FLOATING TEMPLE™, and a series of BREATH LAB workshops. I'll also be introducing SUCO, an active meditation and global somatic movement practice that I'm so excited to finally share with you following my recent certification."
+        />
+
+        <section id="practice" className="kurulu-bay-page__text-section">
+          <div className="kurulu-bay-page__columns">
+            <div>
+              <p>
+                And because no retreat is created alone, I can't wait to
+                introduce you to a few of the beautiful humans who have shaped
+                my own journey over the years - my longtime mentor, teacher and
+                dear friend Bex Tyrer for yoga, Jordi Jules for Qi Gong, Francie
+                La Flow for a powerful vocal activation experience, and a
+                traditional opening water blessing led by a local Balinese
+                priest.
+              </p>
+            </div>
+            <div>
+              <p>
+                Together, these experiences weave breath, sound, movement,
+                nature and meaningful connection into one continuous journey -
+                rooted in nervous system regulation, somatic practice and
+                embodied awareness. My hope is that you leave not only with
+                beautiful memories, but with practices that become part of your
+                everyday life.
+              </p>
+            </div>
+          </div>
+          <div className="kurulu-bay-page__investment-grid">
+            {guideCards.map((item) => (
+              <figure
+                key={item.title}
+                className="kurulu-bay-page__investment-image"
+              >
+                <img src={item.image} alt={item.title} loading="lazy" />
+                {item.overlayTitle ? (
+                  <div className="kurulu-bay-page__investment-image-overlay">
+                    <strong>{item.overlayTitle}</strong>
+                  </div>
+                ) : null}
+                <figcaption>{item.title}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+
+        <FullImage
+          src={imageAssets.journeyHero}
+          alt="The Journey at The Return Bali Edition"
+          overlayIndex="06"
+          overlayLabel="THE JOURNEY"
+          overlayText="Each day we explore a different theme, thoughtfully designed to build upon the one before it, creating a journey that comes full circle before you return home."
+        />
+
+        <section id="journey" className="kurulu-bay-page__text-section">
+          <div className="kurulu-bay-page__stack">
+            <div>
+              <p>
+                Rather than revealing every experience in advance, we've
+                intentionally left space for curiosity, spontaneity and
+                surprise.
+              </p>
+              <p>I invite you to trust the process.</p>
+            </div>
+            <div className="kurulu-bay-page__journey-grid">
+              {journeyDays.map(([day, theme]) => (
+                <div key={day} className="kurulu-bay-page__journey-row">
+                  <span>{day}</span>
+                  <strong>{theme}</strong>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="typical-day"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
+          <SectionLabel index="07">A TYPICAL DAY</SectionLabel>
+          <div className="kurulu-bay-page__day-grid">
+            {dayBlocks.map((block) => (
+              <article key={block.title} className="kurulu-bay-page__day-card">
+                <img src={block.image} alt={block.title} loading="lazy" />
+                <div className="kurulu-bay-page__day-card-overlay">
+                  <h3>{block.overlayTitle}</h3>
+                  <div className="kurulu-bay-page__day-card-lines">
+                    {block.items.map((item) => (
+                      <p key={item}>{item}</p>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <FullImage
+          src={imageAssets.inBetweenHero}
+          alt="The In-Between at The Return Bali Edition"
+          overlayIndex="08"
+          overlayLabel="THE IN-BETWEEN"
+          overlayText="Not every moment is scheduled."
+        />
+
+        <section id="in-between" className="kurulu-bay-page__text-section">
+          <div className="kurulu-bay-page__lede-group">
+            <p>
+              Some of the most meaningful parts of the retreat happen between
+              the sessions.
+            </p>
+          </div>
+          <div className="kurulu-bay-page__inbetween-list">
+            <p>Watching the morning mist lift from the valley.</p>
+            <p>Barefoot walks through the gardens.</p>
+            <p>A soul-touching conversation over tea.</p>
+            <p>Listening to the river between sessions.</p>
+            <p>Receiving a traditional Balinese massage.</p>
+            <p>Falling asleep with the jungle as your soundtrack.</p>
+          </div>
+        </section>
+
+        <section
+          id="immersions"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
+          <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
+          <p className="kurulu-bay-page__lead">
+            This retreat is built as much on what we do together as on where we
+            do it. Over ten days the practices, the spaces and the experiences
+            become one continuous story - one we write together. These carefully
+            curated immersions are part of that story rather than an add-on.
+            Each one of them is already included in the retreat journey.
           </p>
-          <div className="kurulu-bay-page__rule" />
-          <p className="kurulu-bay-page__closing-line">
-            The journey doesn't end when you leave Bali.
+          <div className="kurulu-bay-page__immersion-grid">
+            {immersionCards.map((item) => (
+              <figure
+                key={item.title}
+                className="kurulu-bay-page__immersion-card"
+              >
+                <img src={item.image} alt={item.title} loading="lazy" />
+                <div className="kurulu-bay-page__immersion-card-overlay">
+                  <strong>{item.overlayTitle}</strong>
+                  <p>{item.overlayText}</p>
+                </div>
+                <figcaption>{item.title}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+
+        <section
+          id="included"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
+          <SectionLabel index="10">WHAT'S INCLUDED</SectionLabel>
+          <div className="kurulu-bay-page__list-columns">
+            <ul>
+              {includedItems
+                .slice(0, Math.ceil(includedItems.length / 2))
+                .map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+            </ul>
+            <ul>
+              {includedItems
+                .slice(Math.ceil(includedItems.length / 2))
+                .map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+            </ul>
+          </div>
+        </section>
+
+        <section
+          id="optional"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
+          <SectionLabel index="11">WHAT'S NOT INCLUDED</SectionLabel>
+          <div className="kurulu-bay-page__stack">
+            {optionalItems.map((item) => (
+              <p key={item}>{item}</p>
+            ))}
+          </div>
+        </section>
+
+        <FullImage
+          src={imageAssets.investmentHero}
+          alt="Investment at The Return Bali Edition"
+          overlayIndex="12"
+          overlayLabel="INVESTMENT"
+          overlayText="Choose your home"
+        />
+
+        <section
+          id="investment"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
+          <p className="kurulu-bay-page__lead">
+            Dwa Chandra is, without question, my favourite place to stay in
+            Bali. It's where I come to write, to create, to breathe, and to
+            remember what really matters. Over the years it has become my
+            sanctuary - a place that somehow always feels like coming home.
+            Every room has its own personality, every view tells a different
+            story, and I couldn't imagine a more beautiful place to share this
+            journey with you.
           </p>
-          <p className="kurulu-bay-page__closing-line">
-            It begins the moment you return.
-          </p>
-          <a
-            className="kurulu-bay-page__website"
-            href="https://www.terezadossantos.com"
-          >
-            www.terezadossantos.com
-          </a>
-        </div>
-        <div className="kurulu-bay-page__closing-image">
-          <img
-            src={imageAssets.closing}
-            alt="The Return Bali Edition closing"
-          />
-        </div>
-      </section>
+          <div className="kurulu-bay-page__day-grid">
+            {investmentRoomImages.map((room) => (
+              <article key={room.src} className="kurulu-bay-page__day-card">
+                <img src={room.src} alt={room.alt} loading="lazy" />
+                <div className="kurulu-bay-page__day-card-overlay">
+                  <h3>{room.overlayTitle}</h3>
+                  <div className="kurulu-bay-page__day-card-lines">
+                    <p>{room.title}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="kurulu-bay-page__pricing-summary">
+            <div className="kurulu-bay-page__pricing-columns">
+              <section
+                className="kurulu-bay-page__pricing-group"
+                aria-label="All rooms pricing"
+              >
+                <h3 className="kurulu-bay-page__pricing-heading">
+                  A L L R O O M S
+                </h3>
+                <div className="kurulu-bay-page__pricing-row">
+                  <span>Single Occupancy</span>
+                  <strong>4,700 USD</strong>
+                </div>
+                <div className="kurulu-bay-page__pricing-row">
+                  <span>Double Occupancy</span>
+                  <strong>3,700 USD</strong>
+                </div>
+              </section>
+            </div>
+            <p className="kurulu-bay-page__pricing-note">
+              A detailed room menu with photographs and layouts is available on
+              request, so we can find the room that suits you best. Rooms are
+              allocated in the order that bookings are received.
+            </p>
+          </div>
+        </section>
+
+        <section id="closing" className="kurulu-bay-page__closing">
+          <div>
+            <p className="kurulu-bay-page__brand kurulu-bay-page__brand--small">
+              THE RETURN
+            </p>
+            <div className="kurulu-bay-page__rule" />
+            <p className="kurulu-bay-page__closing-line">
+              The journey doesn't end when you leave Bali.
+            </p>
+            <p className="kurulu-bay-page__closing-line">
+              It begins the moment you return.
+            </p>
+            <a
+              className="kurulu-bay-page__website"
+              href="https://www.terezadossantos.com"
+            >
+              www.terezadossantos.com
+            </a>
+          </div>
+          <div className="kurulu-bay-page__closing-image">
+            <img
+              src={imageAssets.closing}
+              alt="The Return Bali Edition closing"
+            />
+          </div>
+        </section>
       </div>
     </div>
   );
