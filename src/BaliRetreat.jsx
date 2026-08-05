@@ -111,6 +111,29 @@ const guideCards = [
   },
 ];
 
+const investmentRoomImages = [
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-pool.webp",
+    alt: "Dwa Chandra room overlooking the pool",
+    title: "Pool View",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-balcony.webp",
+    alt: "Dwa Chandra room overlooking a balcony",
+    title: "Balcony View",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-over-looking-trees.webp",
+    alt: "Dwa Chandra room overlooking the trees",
+    title: "Tree View",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-bathtub-outdoors.webp",
+    alt: "Dwa Chandra room with an outdoor bathtub view",
+    title: "Outdoor Bath",
+  },
+];
+
 const dayBlocks = [
   {
     title: "Morning Ritual",
@@ -714,14 +737,12 @@ export default function BaliRetreat() {
           imagine a more beautiful place to share this journey with you.
         </p>
         <div className="kurulu-bay-page__investment-grid">
-          <figure className="kurulu-bay-page__investment-image">
-            <img
-              src={placeholder("1000x1200", "All Rooms")}
-              alt="Dwa Chandra rooms"
-              loading="lazy"
-            />
-            <figcaption>All Rooms</figcaption>
-          </figure>
+          {investmentRoomImages.map((room) => (
+            <figure key={room.src} className="kurulu-bay-page__investment-image">
+              <img src={room.src} alt={room.alt} loading="lazy" />
+              <figcaption>{room.title}</figcaption>
+            </figure>
+          ))}
         </div>
         <div className="kurulu-bay-page__pricing-summary">
           <div className="kurulu-bay-page__pricing-columns">
