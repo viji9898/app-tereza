@@ -1,16 +1,16 @@
 # Kurulu Bay Page
 
-This document captures the current implementation details for the `/kurulu-bay` page inside `app-tereza` so future edits have one stable reference.
+This document captures the current implementation details for the `/sri-lanka` page inside `app-tereza` so future edits have one stable reference.
 
 ## Purpose
 
-`/kurulu-bay` is a mobile-first editorial landing page for `The Return · Sri Lanka Edition`.
+`/sri-lanka` is a mobile-first editorial landing page for `The Return · Sri Lanka Edition`.
 
 It was copied into this app from the Kurulu Bay page work originally built in another React app and adapted here as a standalone Vite route.
 
 ## Route
 
-- Path: `/kurulu-bay`
+- Path: `/sri-lanka`
 - Route logic lives in `src/main.jsx`
 - The app uses simple pathname checks instead of React Router
 
@@ -18,7 +18,7 @@ It was copied into this app from the Kurulu Bay page work originally built in an
 
 - `src/KuruluBayRetreat.jsx`: page structure, content, image assets, section order, overlays, room pricing, and menu configuration
 - `src/KuruluBayRetreat.css`: full page styling, typography, image overlay behavior, contents drawer, mobile-first layout, and responsive rules
-- `src/main.jsx`: route entry for `/kurulu-bay`
+- `src/main.jsx`: route entry for `/sri-lanka`
 
 ## Page Structure
 
@@ -138,7 +138,7 @@ Core variables are declared at the top of `src/KuruluBayRetreat.css`, including:
 
 - The page does not currently use React Router
 - Metadata helpers from the original app were not copied over; this version is a pure page component
-- The route is matched with `window.location.pathname.startsWith("/kurulu-bay")`
+- The route is matched with `window.location.pathname.startsWith("/sri-lanka")`
 - The copied page successfully builds in this Vite app
 
 ## Editing Guidance
@@ -153,7 +153,7 @@ When making future changes:
 
 ## Validation Status
 
-The `/kurulu-bay` page was added to `app-tereza` and validated with a successful production build:
+The `/sri-lanka` page was added to `app-tereza` and validated with a successful production build:
 
 - `npm run build`
 

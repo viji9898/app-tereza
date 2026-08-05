@@ -26,7 +26,7 @@ Routes:
 
 - `/` - hero video landing page
 - `/content/` - video playlist
-- `/kurulu-bay` - mobile-first editorial retreat page
+- `/sri-lanka` - mobile-first editorial retreat page
 
 ## Page Notes
 

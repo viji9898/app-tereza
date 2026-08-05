@@ -402,7 +402,7 @@ function ContentPage() {
 
 function App() {
   const pathname = window.location.pathname;
-  const metadata = pathname.startsWith("/kurulu-bay")
+  const metadata = pathname.startsWith("/sri-lanka")
     ? pageMetadata.kuruluBay
     : pathname.startsWith("/retreats")
       ? pageMetadata.retreats
@@ -418,7 +418,7 @@ function App() {
 
   usePageMetadata(metadata);
 
-  if (pathname.startsWith("/kurulu-bay")) {
+  if (pathname.startsWith("/sri-lanka")) {
     return <KuruluBayRetreat />;
   }
 

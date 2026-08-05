@@ -1,7 +1,7 @@
 export default function RetreatsPage() {
   const retreats = [
     {
-      href: "/kurulu-bay",
+      href: "/sri-lanka",
       eyebrow: "Sri Lanka",
       title: "Kurulu Bay",
       description:

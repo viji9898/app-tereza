@@ -20,7 +20,7 @@ const routeMetadata = {
 		imageAlt: "Preview of the Tereza reels playlist page",
 	},
 	kuruluBay: {
-		routePath: "/kurulu-bay",
+		routePath: "/sri-lanka",
 		title: "The Return Sri Lanka Edition | Tereza Dos Santos",
 		description:
 			"Explore The Return, a 10-day private Sri Lanka retreat curated by Tereza Dos Santos with Ayurveda, movement, sound, and immersive restoration.",
