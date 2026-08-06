@@ -82,8 +82,8 @@ const spaceCards = [
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/ed5f095e-fe24-4316-b1b6-4a19b04db449/DSC00376.jpeg",
   },
   {
-    title: "The River Gore",
-    overlayTitle: "THE RIVER GORE",
+    title: "The River Gorge",
+    overlayTitle: "THE RIVER GORGE",
     image:
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/d7b70eff-992e-427e-83cd-b9b3a31ca15d/people+community+river.jpeg",
   },
@@ -547,9 +547,9 @@ export default function BaliRetreat() {
               <p>
                 And because no retreat is created alone, I can't wait to
                 introduce you to a few of the beautiful humans who have shaped
-                my own journey over the years - my longtime mentor, teacher and
-                dear friend Bex Tyrer for yoga, Jordi Jules for Qi Gong, Francie
-                La Flow for a powerful vocal activation experience, and a
+                my own journey over the years - my longtime mentor and dear
+                friend Bex Tyrer for Yoga, Jordi Jules for Qi Gong, Francie La
+                Flow for a powerful vocal activation experience, and a
                 traditional opening water blessing led by a local Balinese
                 priest.
               </p>
