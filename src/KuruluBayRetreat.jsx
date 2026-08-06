@@ -5,7 +5,7 @@ const imageAssets = {
   villa:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/2bedroom+villa.png",
   sonicBreath:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/tereza-hand-pan.webp",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-holding-clarinet-darker.webp",
   cottages:
     "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/e996980f-77af-4ca1-ac1a-648b18a6941a/siriwanchmprn_KuruluBay_20220211-19.jpg?format=1500w",
   cover:
@@ -724,14 +724,11 @@ export default function KuruluBayRetreat() {
               </h3>
               <div className="kurulu-bay-page__pricing-row">
                 <span>Single Occupancy</span>
-                {/* <strong>5,700 USD</strong> */}
-                <strong>- USD</strong>
+                <strong>5,700 USD</strong>
               </div>
               <div className="kurulu-bay-page__pricing-row">
                 <span>Double Occupancy</span>
-                {/* <strong>4,700 USD</strong>
-                 */}{" "}
-                <strong>- USD</strong>
+                <strong>4,700 USD</strong>
               </div>
             </section>
             <section
@@ -743,13 +740,11 @@ export default function KuruluBayRetreat() {
               </h3>
               <div className="kurulu-bay-page__pricing-row">
                 <span>Single Occupancy</span>
-                {/* <strong>6,100 USD</strong> */}
-                <strong>- USD</strong>
+                <strong>6,100 USD</strong>
               </div>
               <div className="kurulu-bay-page__pricing-row">
                 <span>Double Occupancy</span>
-                <strong>- USD</strong>
-                {/* <strong>5,100 USD</strong> */}
+                <strong>5,100 USD</strong>
               </div>
             </section>
           </div>
