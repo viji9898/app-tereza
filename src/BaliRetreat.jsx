@@ -726,6 +726,9 @@ export default function BaliRetreat() {
         <FullImage
           src={imageAssets.investmentHero}
           alt="Investment at The Return Bali Edition"
+          overlayIndex="12"
+          overlayLabel="INVESTMENT"
+          overlayText="Choose your home"
         />
 
         <section
