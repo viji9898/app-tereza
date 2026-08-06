@@ -458,6 +458,10 @@
   );
 }
 
+.bali-retreat-page .kurulu-bay-page__day-card--plain::after {
+  content: none;
+}
+
 .bali-retreat-page .kurulu-bay-page__day-card h3,
 .bali-retreat-page .kurulu-bay-page__room-card h3 {
   margin: 1rem 1rem 0.75rem;

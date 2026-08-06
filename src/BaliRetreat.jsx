@@ -116,26 +116,18 @@ const investmentRoomImages = [
   {
     src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-pool.webp",
     alt: "Dwa Chandra room overlooking the pool",
-    overlayTitle: "ALL ROOMS",
-    title: "Pool View",
   },
   {
     src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-balcony.webp",
     alt: "Dwa Chandra room overlooking a balcony",
-    overlayTitle: "ALL ROOMS",
-    title: "Balcony View",
   },
   {
     src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-over-looking-trees.webp",
     alt: "Dwa Chandra room overlooking the trees",
-    overlayTitle: "ALL ROOMS",
-    title: "Tree View",
   },
   {
     src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-bathtub-outdoors.webp",
     alt: "Dwa Chandra room with an outdoor bathtub view",
-    overlayTitle: "ALL ROOMS",
-    title: "Outdoor Bath",
   },
 ];
 
@@ -728,9 +720,6 @@ export default function BaliRetreat() {
         <FullImage
           src={imageAssets.investmentHero}
           alt="Investment at The Return Bali Edition"
-          overlayIndex="12"
-          overlayLabel="INVESTMENT"
-          overlayText="Choose your home"
         />
 
         <section
@@ -748,14 +737,11 @@ export default function BaliRetreat() {
           </p>
           <div className="kurulu-bay-page__day-grid">
             {investmentRoomImages.map((room) => (
-              <article key={room.src} className="kurulu-bay-page__day-card">
+              <article
+                key={room.src}
+                className="kurulu-bay-page__day-card kurulu-bay-page__day-card--plain"
+              >
                 <img src={room.src} alt={room.alt} loading="lazy" />
-                <div className="kurulu-bay-page__day-card-overlay">
-                  <h3>{room.overlayTitle}</h3>
-                  <div className="kurulu-bay-page__day-card-lines">
-                    <p>{room.title}</p>
-                  </div>
-                </div>
               </article>
             ))}
           </div>
