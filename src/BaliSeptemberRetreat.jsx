@@ -83,7 +83,7 @@ const spaceCards = [
     title: "The River Gorge",
     overlayTitle: "THE RIVER GORGE",
     image:
-      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/d7b70eff-992e-427e-83cd-b9b3a31ca15d/people+community+river.jpeg",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/Co+Working+Week+(landscape)+_+1-4+December+2024+-+55.webp",
   },
 ];
 
