@@ -172,7 +172,10 @@ export default function BaliImagesPage() {
           </p>
         </section>
 
-        <section className="bali-images-page__section" aria-labelledby="tereza-images-title">
+        <section
+          className="bali-images-page__section"
+          aria-labelledby="tereza-images-title"
+        >
           <div className="bali-images-page__section-header">
             <p className="section-label">Tereza</p>
             <h2 id="tereza-images-title">Tereza</h2>
@@ -204,7 +207,10 @@ export default function BaliImagesPage() {
           </div>
         </section>
 
-        <section className="bali-images-page__section" aria-labelledby="bali-library-title">
+        <section
+          className="bali-images-page__section"
+          aria-labelledby="bali-library-title"
+        >
           <div className="bali-images-page__section-header">
             <p className="section-label">Library</p>
             <h2 id="bali-library-title">General collection</h2>

@@ -82,7 +82,8 @@
   top: 0;
   left: 0;
   width: min(84vw, 420px);
-  height: 100svh;
+  height: 100vh;
+  height: 100dvh;
   background: linear-gradient(
     180deg,
     rgba(244, 235, 223, 0.84) 0%,
@@ -167,7 +168,8 @@
 
 .bali-retreat-page .kurulu-bay-page__hero,
 .bali-retreat-page .kurulu-bay-page__closing {
-  min-height: 100svh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
 }
 
@@ -195,8 +197,10 @@
 .bali-retreat-page .kurulu-bay-page__closing-image,
 .bali-retreat-page .kurulu-bay-page__media {
   width: 100%;
-  height: 100svh;
-  min-height: 100svh;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .bali-retreat-page .kurulu-bay-page__media {
@@ -252,6 +256,28 @@
   line-height: 1.7;
 }
 
+.bali-retreat-page .kurulu-bay-page__closing-overlay {
+  padding: 0 7vw 5.5vw;
+}
+
+.bali-retreat-page .kurulu-bay-page__closing-overlay-title {
+  margin: 0 0 1rem;
+  font-size: clamp(2.4rem, 9vw, 5.4rem);
+  letter-spacing: 0.08em;
+  line-height: 0.96;
+  white-space: nowrap;
+}
+
+.bali-retreat-page .kurulu-bay-page__closing-overlay-text-group {
+  gap: 0.35rem;
+  max-width: 34rem;
+}
+
+.bali-retreat-page .kurulu-bay-page__closing-overlay-text {
+  font-size: clamp(1.05rem, 3.9vw, 1.6rem);
+  line-height: 1.35;
+}
+
 .bali-retreat-page .kurulu-bay-page__hero-image {
   position: absolute;
   inset: 0;
@@ -284,7 +310,8 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 1rem;
-  min-height: 100svh;
+  min-height: 100vh;
+  min-height: 100dvh;
   color: #f8f3ea;
 }
 
@@ -703,16 +730,12 @@
 
 .bali-retreat-page .kurulu-bay-page__closing {
   grid-template-columns: 1fr;
-  background: linear-gradient(
-    90deg,
-    #efe6d7 0%,
-    #efe6d7 54%,
-    #ddd5ca 54%,
-    #ddd5ca 100%
-  );
+  position: relative;
+  overflow: hidden;
+  background: #1f241c;
 }
 
-.bali-retreat-page .kurulu-bay-page__closing > div:first-child {
+.bali-retreat-page .kurulu-bay-page__closing-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -771,11 +794,23 @@
 
   .bali-retreat-page .kurulu-bay-page__text-section,
   .bali-retreat-page .kurulu-bay-page__hero-copy,
-  .bali-retreat-page .kurulu-bay-page__closing > div:first-child {
+  .bali-retreat-page .kurulu-bay-page__closing-copy {
     padding: 5rem;
   }
 
   .bali-retreat-page .kurulu-bay-page__media-overlay {
     padding: 0 5rem 5rem;
+  }
+
+  .bali-retreat-page .kurulu-bay-page__closing-overlay {
+    padding: 0 5rem 4rem;
+  }
+
+  .bali-retreat-page .kurulu-bay-page__closing-overlay-title {
+    font-size: clamp(3rem, 6vw, 4.8rem);
+  }
+
+  .bali-retreat-page .kurulu-bay-page__closing-overlay-text {
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
   }
 }

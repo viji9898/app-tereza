@@ -782,39 +782,21 @@ export default function BaliRetreat() {
           </div>
         </section>
 
-        <section id="closing" className="kurulu-bay-page__closing">
-          <div>
-            <p className="kurulu-bay-page__brand kurulu-bay-page__brand--small">
-              THE RETURN
-            </p>
-            <div className="kurulu-bay-page__rule" />
-            <p className="kurulu-bay-page__closing-line">
-              The journey doesn't end when you leave Bali.
-            </p>
-            <p className="kurulu-bay-page__closing-line">
-              It begins the moment you return.
-            </p>
-            <a
-              className="kurulu-bay-page__website"
-              href="https://www.terezadossantos.com"
-            >
-              www.terezadossantos.com
-            </a>
-          </div>
+        <section id="closing">
           <div className="kurulu-bay-page__closing-image kurulu-bay-page__media kurulu-bay-page__media--with-overlay">
             <img
               src={imageAssets.closing}
               alt="The Return Bali Edition closing"
             />
-            <div className="kurulu-bay-page__media-overlay">
-              <h2 className="kurulu-bay-page__media-overlay-title">
+            <div className="kurulu-bay-page__media-overlay kurulu-bay-page__closing-overlay">
+              <h2 className="kurulu-bay-page__media-overlay-title kurulu-bay-page__closing-overlay-title">
                 T H E R E T U R N
               </h2>
-              <div className="kurulu-bay-page__media-overlay-text-group">
-                <p className="kurulu-bay-page__media-overlay-text">
+              <div className="kurulu-bay-page__media-overlay-text-group kurulu-bay-page__closing-overlay-text-group">
+                <p className="kurulu-bay-page__media-overlay-text kurulu-bay-page__closing-overlay-text">
                   The journey doesn't end when you leave Bali.
                 </p>
-                <p className="kurulu-bay-page__media-overlay-text">
+                <p className="kurulu-bay-page__media-overlay-text kurulu-bay-page__closing-overlay-text">
                   It begins the moment you return.
                 </p>
               </div>
