@@ -27,7 +27,8 @@ const imageAssets = {
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/terereza-seatitng-by-the-river.webp",
   investmentHero:
     "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg",
-  closing: placeholder("1600x2200", "The Return"),
+  closing:
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/Namaste+Raabta.webp",
 };
 
 const journeyDays = [
