@@ -415,7 +415,7 @@ function App() {
         ? pageMetadata.baliImages
         : pathname.startsWith("/contracts")
           ? pageMetadata.contracts
-          : pathname.startsWith("/bali")
+          : pathname.startsWith("/bali-october")
             ? pageMetadata.bali
             : pathname.startsWith("/content")
               ? pageMetadata.content
@@ -439,7 +439,7 @@ function App() {
     return <ContractsPage />;
   }
 
-  if (pathname.startsWith("/bali")) {
+  if (pathname.startsWith("/bali-october")) {
     return <BaliRetreat />;
   }
 

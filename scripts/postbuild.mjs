@@ -29,7 +29,7 @@ const routeMetadata = {
     imageAlt: "Kurulu Bay retreat pool framed by tropical palms",
   },
   bali: {
-    routePath: "/bali",
+    routePath: "/bali-october",
     title: "The Return Bali Edition | Tereza Dos Santos",
     description:
       "Explore The Return, a 10-day private Bali retreat curated by Tereza Dos Santos with breathwork, movement, ritual, and immersive restoration.",

@@ -158,7 +158,7 @@ export default function BaliImagesPage() {
     <main className="page bali-images-page">
       <div className="shell">
         <nav className="topbar" aria-label="Primary navigation">
-          <a className="brand" href="/bali">
+          <a className="brand" href="/bali-october">
             Bali
           </a>
           <span className="topbar__divider" aria-hidden="true" />

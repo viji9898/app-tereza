@@ -12,7 +12,7 @@ export default function RetreatsPage() {
       highlights: ["10 days", "Ayurveda", "Sri Lanka"],
     },
     {
-      href: "/bali",
+      href: "/bali-october",
       eyebrow: "Bali",
       title: "The Return Bali",
       description:
