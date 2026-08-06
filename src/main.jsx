@@ -1,6 +1,7 @@
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import BaliRetreat from "./BaliRetreat";
+import BaliSeptemberRetreat from "./BaliSeptemberRetreat";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import KuruluBayRetreat from "./KuruluBayRetreat";
@@ -44,6 +45,14 @@ const pageMetadata = {
     imageAlt: "Kurulu Bay retreat pool framed by tropical palms",
   },
   bali: {
+    title: "The Return Bali Edition | Tereza Dos Santos",
+    description:
+      "Explore The Return, a 10-day private Bali retreat curated by Tereza Dos Santos with breathwork, movement, ritual, and immersive restoration.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    imageAlt: "Women standing in a Bali paddy field",
+  },
+  baliSeptember: {
     title: "The Return Bali Edition | Tereza Dos Santos",
     description:
       "Explore The Return, a 10-day private Bali retreat curated by Tereza Dos Santos with breathwork, movement, ritual, and immersive restoration.",
@@ -415,6 +424,8 @@ function App() {
         ? pageMetadata.baliImages
         : pathname.startsWith("/contracts")
           ? pageMetadata.contracts
+      : pathname.startsWith("/bali-september")
+        ? pageMetadata.baliSeptember
           : pathname.startsWith("/bali-october")
             ? pageMetadata.bali
             : pathname.startsWith("/content")
@@ -437,6 +448,10 @@ function App() {
 
   if (pathname.startsWith("/contracts")) {
     return <ContractsPage />;
+  }
+
+  if (pathname.startsWith("/bali-september")) {
+    return <BaliSeptemberRetreat />;
   }
 
   if (pathname.startsWith("/bali-october")) {

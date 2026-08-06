@@ -37,6 +37,15 @@ const routeMetadata = {
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
   },
+  baliSeptember: {
+    routePath: "/bali-september",
+    title: "The Return Bali Edition | Tereza Dos Santos",
+    description:
+      "Explore The Return, a 10-day private Bali retreat curated by Tereza Dos Santos with breathwork, movement, ritual, and immersive restoration.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    imageAlt: "Women standing in a Bali paddy field",
+  },
   baliImages: {
     routePath: "/bali-images",
     title: "Bali Image Collection | Tereza Dos Santos",
@@ -160,6 +169,8 @@ for (const [directoryName, metadata] of [
   ["content", routeMetadata.content],
   ["kurulu-bay", routeMetadata.kuruluBay],
   ["bali", routeMetadata.bali],
+  ["bali-october", routeMetadata.bali],
+  ["bali-september", routeMetadata.baliSeptember],
   ["bali-images", routeMetadata.baliImages],
   ["contracts", routeMetadata.contracts],
 ]) {
