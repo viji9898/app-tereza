@@ -65,21 +65,25 @@ const homeFrames = [
 const spaceCards = [
   {
     title: "The Glass Shala",
+    overlayTitle: "THE GLASS SHALA",
     image:
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/1724831548844-OO1ETH1UNT9VQL55D54I/dwa+chandra+yoga+shala.JPG",
   },
   {
     title: "The Open Pavilion",
+    overlayTitle: "THE OPEN PAVILION",
     image:
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/1e9fbf4f-586d-4322-a80d-a5a22f923dfb/65d41b51-39ba-4f88-abd1-7b7deedb4b70+2.jpg",
   },
   {
-    title: "The Pool",
+    title: "The Hanging Pool With Firepit",
+    overlayTitle: "THE HANGING POOL WITH FIREPIT",
     image:
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/ed5f095e-fe24-4316-b1b6-4a19b04db449/DSC00376.jpeg",
   },
   {
-    title: "The River Gorge",
+    title: "The River Gore",
+    overlayTitle: "THE RIVER GORE",
     image:
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/d7b70eff-992e-427e-83cd-b9b3a31ca15d/people+community+river.jpeg",
   },
@@ -514,14 +518,16 @@ export default function BaliRetreat() {
             a different kind of attention, practice and energy, and each one
             opens onto the breathtaking valley.
           </p>
-          <div className="kurulu-bay-page__spaces-row">
+          <div className="kurulu-bay-page__day-grid">
             {spaceCards.map((item) => (
               <figure
                 key={item.title}
                 className="kurulu-bay-page__immersion-card"
               >
                 <img src={item.image} alt={item.title} loading="lazy" />
-                <figcaption>{item.title}</figcaption>
+                <div className="kurulu-bay-page__immersion-card-overlay">
+                  <strong>{item.overlayTitle}</strong>
+                </div>
               </figure>
             ))}
           </div>
