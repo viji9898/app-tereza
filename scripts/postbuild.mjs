@@ -167,6 +167,7 @@ await writeFile("dist/404.html", homeHtml);
 
 for (const [directoryName, metadata] of [
   ["content", routeMetadata.content],
+  ["sri-lanka", routeMetadata.kuruluBay],
   ["kurulu-bay", routeMetadata.kuruluBay],
   ["bali", routeMetadata.bali],
   ["bali-october", routeMetadata.bali],
