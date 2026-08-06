@@ -801,11 +801,24 @@ export default function BaliRetreat() {
               www.terezadossantos.com
             </a>
           </div>
-          <div className="kurulu-bay-page__closing-image">
+          <div className="kurulu-bay-page__closing-image kurulu-bay-page__media kurulu-bay-page__media--with-overlay">
             <img
               src={imageAssets.closing}
               alt="The Return Bali Edition closing"
             />
+            <div className="kurulu-bay-page__media-overlay">
+              <h2 className="kurulu-bay-page__media-overlay-title">
+                T H E R E T U R N
+              </h2>
+              <div className="kurulu-bay-page__media-overlay-text-group">
+                <p className="kurulu-bay-page__media-overlay-text">
+                  The journey doesn't end when you leave Bali.
+                </p>
+                <p className="kurulu-bay-page__media-overlay-text">
+                  It begins the moment you return.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
