@@ -22,6 +22,17 @@ Build for production:
 npm run build
 ```
 
+Deploy to Cloudflare Workers:
+
+```sh
+npm run deploy
+```
+
+GitHub Actions deploys on push to `main` via `.github/workflows/cloudflare-deploy.yml`.
+The repository must define this GitHub Actions secret:
+
+- `CLOUDFLARE_API_TOKEN`
+
 Routes:
 
 - `/` - hero video landing page
