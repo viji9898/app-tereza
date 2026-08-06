@@ -663,11 +663,10 @@ export default function BaliSeptemberRetreat() {
           <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
           <p className="kurulu-bay-page__lead">
             This retreat is built as much on what we do together as on where we
-            do it. Over seven days the practices, the spaces and the
-            experiences become one continuous story - one we write together.
-            These carefully curated immersions are part of that story rather
-            than an add-on. Each one of them is already included in the retreat
-            journey.
+            do it. Over seven days the practices, the spaces and the experiences
+            become one continuous story - one we write together. These carefully
+            curated immersions are part of that story rather than an add-on.
+            Each one of them is already included in the retreat journey.
           </p>
           <div className="kurulu-bay-page__immersion-grid">
             {immersionCards.map((item) => (
@@ -763,11 +762,11 @@ export default function BaliSeptemberRetreat() {
                 </h3>
                 <div className="kurulu-bay-page__pricing-row">
                   <span>Single Occupancy</span>
-                  <strong>4,700 USD</strong>
+                  <strong>3,700 USD</strong>
                 </div>
                 <div className="kurulu-bay-page__pricing-row">
                   <span>Double Occupancy</span>
-                  <strong>3,700 USD</strong>
+                  <strong>2,700 USD</strong>
                 </div>
               </section>
             </div>
