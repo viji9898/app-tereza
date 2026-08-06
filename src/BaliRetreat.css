@@ -749,7 +749,10 @@
     column-gap: 4rem;
   }
 
-  .bali-retreat-page .kurulu-bay-page__immersion-grid,
+  .bali-retreat-page .kurulu-bay-page__immersion-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .bali-retreat-page .kurulu-bay-page__investment-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
