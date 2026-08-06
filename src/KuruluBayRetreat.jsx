@@ -5,7 +5,7 @@ const imageAssets = {
   villa:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/2bedroom+villa.png",
   sonicBreath:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/tereza-sonic-breath.jpg",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/tereza-hand-pan.webp",
   cottages:
     "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/e996980f-77af-4ca1-ac1a-648b18a6941a/siriwanchmprn_KuruluBay_20220211-19.jpg?format=1500w",
   cover:
@@ -13,7 +13,7 @@ const imageAssets = {
   ayurvedaHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/shirodhara-treatment.jpg",
   piano:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/tereza-pionma.jpg",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/hand-pan-lake.webp",
   treehouse:
     "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IkM0ODk0Rjc4QzJDOTBCMTJEQTM1OEM3MzMwRTYzQzY5IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozODQwLCJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoiY2VudGVyIn0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiYXZpZiI6eyJxdWFsaXR5Ijo1MH19fQ==?signature=688e5c856c56497cec55c843a8571150b1e33e7165f2bed2c17a6022bfab6112",
   lakeView:
@@ -411,7 +411,7 @@ export default function KuruluBayRetreat() {
       </section>
 
       <FullImage
-        src="https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/4feb5084-87d9-4806-b522-5e8015f8a9e4/IMG_2033.jpg?format=2500w"
+        src="https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/kurulu-bay-lake0-view+(1).webp"
         alt="Kurulu Bay pool with lagoon beyond"
         overlayIndex="03"
         overlayLabel="YOUR HOME"
