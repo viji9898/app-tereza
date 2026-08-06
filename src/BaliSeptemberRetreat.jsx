@@ -212,7 +212,7 @@ const immersionCards = [
 ];
 
 const includedItems = [
-  "9 nights accommodation at Dwa Chandra",
+  "6 nights accommodation at Dwa Chandra",
   "Round-trip airport transfers",
   "Daily chef-prepared vegetarian breakfast",
   "Daily dinner experiences throughout the retreat",
@@ -430,7 +430,7 @@ export default function BaliSeptemberRetreat() {
                 we've said goodbye, then I believe we've created something truly
                 meaningful together.
               </p>
-              <p>I can't wait to share these ten days with you.</p>
+              <p>I can't wait to share these seven days with you.</p>
               <p className="kurulu-bay-page__signature">
                 Com amor,
                 <br />
@@ -663,10 +663,11 @@ export default function BaliSeptemberRetreat() {
           <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
           <p className="kurulu-bay-page__lead">
             This retreat is built as much on what we do together as on where we
-            do it. Over ten days the practices, the spaces and the experiences
-            become one continuous story - one we write together. These carefully
-            curated immersions are part of that story rather than an add-on.
-            Each one of them is already included in the retreat journey.
+            do it. Over seven days the practices, the spaces and the
+            experiences become one continuous story - one we write together.
+            These carefully curated immersions are part of that story rather
+            than an add-on. Each one of them is already included in the retreat
+            journey.
           </p>
           <div className="kurulu-bay-page__immersion-grid">
             {immersionCards.map((item) => (
