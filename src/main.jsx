@@ -157,7 +157,12 @@ function HomePage() {
     };
 
     const scheduleRetry = () => {
-      if (playbackStarted || document.hidden || !video.paused || retryCount >= 12) {
+      if (
+        playbackStarted ||
+        document.hidden ||
+        !video.paused ||
+        retryCount >= 12
+      ) {
         return;
       }
 

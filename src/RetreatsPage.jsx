@@ -31,8 +31,8 @@ export default function RetreatsPage() {
           <p className="retreats-page__eyebrow">Retreats</p>
           <h1>Choose your return.</h1>
           <p className="retreats-page__lead">
-            Two intimate retreat experiences, each designed around rest,
-            ritual, and deep reconnection.
+            Two intimate retreat experiences, each designed around rest, ritual,
+            and deep reconnection.
           </p>
         </div>
       </section>
@@ -50,8 +50,13 @@ export default function RetreatsPage() {
               <div className="retreat-card__body">
                 <p className="retreat-card__eyebrow">{retreat.eyebrow}</p>
                 <h2>{retreat.title}</h2>
-                <p className="retreat-card__description">{retreat.description}</p>
-                <div className="retreat-card__meta" aria-label={`${retreat.title} highlights`}>
+                <p className="retreat-card__description">
+                  {retreat.description}
+                </p>
+                <div
+                  className="retreat-card__meta"
+                  aria-label={`${retreat.title} highlights`}
+                >
                   {retreat.highlights.map((item) => (
                     <span key={item}>{item}</span>
                   ))}
