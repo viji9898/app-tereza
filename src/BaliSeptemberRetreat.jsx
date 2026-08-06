@@ -37,6 +37,7 @@ const journeyDays = [
   ["Day 3", "METTA"],
   ["Day 4", "LET GO"],
   ["Day 5", "FEEL FULLY"],
+  ["Day 6", "CREATE"],
   ["Day 7", "INTEGRATE | RETURN"],
 ];
 
@@ -461,9 +462,9 @@ export default function BaliSeptemberRetreat() {
           </div>
           <div className="kurulu-bay-page__rule kurulu-bay-page__rule--wide" />
           <p>
-            Over ten carefully curated days, we'll move through practices rooted
-            in nervous system regulation, somatic experiencing, movement, sound,
-            nature and human connection.
+            Over seven carefully curated days, we'll move through practices
+            rooted in nervous system regulation, somatic experiencing, movement,
+            sound, nature and human connection.
           </p>
           <p>
             Not everything will be revealed in advance. Some experiences are
@@ -663,10 +664,11 @@ export default function BaliSeptemberRetreat() {
           <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
           <p className="kurulu-bay-page__lead">
             This retreat is built as much on what we do together as on where we
-            do it. Over seven days the practices, the spaces and the experiences
-            become one continuous story - one we write together. These carefully
-            curated immersions are part of that story rather than an add-on.
-            Each one of them is already included in the retreat journey.
+            do it. Over seven days, the practices, the spaces and the
+            experiences become one continuous story - one we write together.
+            These carefully curated immersions are part of that story rather
+            than an add-on. Each one of them is already included in the retreat
+            journey.
           </p>
           <div className="kurulu-bay-page__immersion-grid">
             {immersionCards.map((item) => (
