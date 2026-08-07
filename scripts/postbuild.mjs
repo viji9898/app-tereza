@@ -21,27 +21,30 @@ const routeMetadata = {
   },
   kuruluBay: {
     routePath: "/sri-lanka",
-    title: "The Return Sri Lanka Edition | Tereza Dos Santos",
+    title:
+      "The Return Sri Lanka Edition | September 21-30, 2026 | 10 Days, 9 Nights | Tereza Dos Santos",
     description:
-      "Explore The Return, a 10-day private Sri Lanka retreat curated by Tereza Dos Santos with Ayurveda, movement, sound, and immersive restoration.",
+      "Explore The Return Sri Lanka Edition, a private retreat running September 21-30, 2026 with 10 days and 9 nights of Ayurveda, movement, sound, and immersive restoration curated by Tereza Dos Santos.",
     image:
       "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
     imageAlt: "Kurulu Bay retreat pool framed by tropical palms",
   },
   bali: {
     routePath: "/bali-october",
-    title: "The Return Bali Edition | Tereza Dos Santos",
+    title:
+      "The Return Bali Edition | October 3-12, 2026 | 10 Days, 9 Nights | Tereza Dos Santos",
     description:
-      "Explore The Return, a 10-day private Bali retreat curated by Tereza Dos Santos with breathwork, movement, ritual, and immersive restoration.",
+      "Explore The Return Bali Edition, a private retreat running October 3-12, 2026 with 10 days and 9 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
   },
   baliSeptember: {
     routePath: "/bali-september",
-    title: "The Return Bali Edition | Tereza Dos Santos",
+    title:
+      "The Return Bali Edition | September 23-29, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
     description:
-      "Explore The Return, a 10-day private Bali retreat curated by Tereza Dos Santos with breathwork, movement, ritual, and immersive restoration.",
+      "Explore The Return Bali September Edition, a private retreat running September 23-29, 2026 with 7 days and 6 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
