@@ -8,6 +8,7 @@ import ContractsPage from "./ContractsPage";
 import KuruluBayRetreat from "./KuruluBayRetreat";
 import RetreatsPage from "./RetreatsPage";
 import RetreatsDirectoryPage from "./RetreatsDirectoryPage";
+import SriLankaOctober7Days from "./SriLankaOctober7Days";
 import "./styles.css";
 
 const HERO_VIDEO =
@@ -46,6 +47,15 @@ const pageMetadata = {
     image:
       "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
     imageAlt: "Kurulu Bay retreat pool framed by tropical palms",
+  },
+  sriLankaOctober7Days: {
+    title:
+      "The RESET Sri Lanka Retreat | October 3-9, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
+    description:
+      "Join The RESET Sri Lanka at The Palms, an open retreat running October 3-9, 2026 with 7 days and 6 nights of Ayurveda, movement, sound, and immersive restoration curated by Tereza Dos Santos.",
+    image:
+      "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
+    imageAlt: "Sri Lanka retreat pool framed by tropical palms",
   },
   bali: {
     title:
@@ -438,9 +448,11 @@ function ContentPage() {
 
 function App() {
   const pathname = window.location.pathname;
-  const metadata = pathname.startsWith("/sri-lanka")
-    ? pageMetadata.kuruluBay
-    : pathname.startsWith("/retreats-directory")
+  const metadata = pathname.startsWith("/sri-lanka-october-7-days")
+    ? pageMetadata.sriLankaOctober7Days
+    : pathname.startsWith("/sri-lanka")
+      ? pageMetadata.kuruluBay
+      : pathname.startsWith("/retreats-directory")
       ? pageMetadata.retreatsDirectory
       : pathname.startsWith("/retreats")
         ? pageMetadata.retreats
@@ -459,6 +471,10 @@ function App() {
                     : pageMetadata.home;
 
   usePageMetadata(metadata);
+
+  if (pathname.startsWith("/sri-lanka-october-7-days")) {
+    return <SriLankaOctober7Days />;
+  }
 
   if (pathname.startsWith("/sri-lanka")) {
     return <KuruluBayRetreat />;
