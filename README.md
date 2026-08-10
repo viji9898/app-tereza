@@ -38,6 +38,7 @@ Routes:
 - `/` - hero video landing page
 - `/content/` - video playlist
 - `/sri-lanka` - mobile-first editorial retreat page
+- `/retreats-directory` - read-only administrative retreat directory
 
 ## Page Notes
 

@@ -49,6 +49,15 @@ const routeMetadata = {
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
   },
+  retreatsDirectory: {
+    routePath: "/retreats-directory",
+    title: "Retreats Directory | Tereza Dos Santos",
+    description:
+      "Administrative directory of Bali and Sri Lanka retreats curated by Tereza Dos Santos.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    imageAlt: "Retreat directory for Bali and Sri Lanka",
+  },
   baliImages: {
     routePath: "/bali-images",
     title: "Bali Image Collection | Tereza Dos Santos",
@@ -175,6 +184,7 @@ for (const [directoryName, metadata] of [
   ["bali", routeMetadata.bali],
   ["bali-october", routeMetadata.bali],
   ["bali-september", routeMetadata.baliSeptember],
+  ["retreats-directory", routeMetadata.retreatsDirectory],
   ["bali-images", routeMetadata.baliImages],
   ["contracts", routeMetadata.contracts],
 ]) {
