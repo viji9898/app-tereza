@@ -49,6 +49,16 @@ const routeMetadata = {
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
   },
+  baliSeptember7Days: {
+    routePath: "/bali-september-7-days",
+    title:
+      "The RESET Bali Retreat | September 23-29, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
+    description:
+      "Join The RESET Bali, an open retreat running September 23-29, 2026 with 7 days and 6 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    imageAlt: "Women standing in a Bali paddy field",
+  },
   retreatsDirectory: {
     routePath: "/retreats-directory",
     title: "Retreats Directory | Tereza Dos Santos",
@@ -183,6 +193,7 @@ for (const [directoryName, metadata] of [
   ["kurulu-bay", routeMetadata.kuruluBay],
   ["bali", routeMetadata.bali],
   ["bali-october", routeMetadata.bali],
+  ["bali-september-7-days", routeMetadata.baliSeptember7Days],
   ["bali-september", routeMetadata.baliSeptember],
   ["retreats-directory", routeMetadata.retreatsDirectory],
   ["bali-images", routeMetadata.baliImages],

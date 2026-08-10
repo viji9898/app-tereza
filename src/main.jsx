@@ -2,6 +2,7 @@ import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import BaliRetreat from "./BaliRetreat";
 import BaliSeptemberRetreat from "./BaliSeptemberRetreat";
+import BaliSeptember7Days from "./BaliSeptember7Days";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import KuruluBayRetreat from "./KuruluBayRetreat";
@@ -60,6 +61,15 @@ const pageMetadata = {
       "The Return Bali Edition | September 23-29, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
     description:
       "Explore The Return Bali September Edition, a private retreat running September 23-29, 2026 with 7 days and 6 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    imageAlt: "Women standing in a Bali paddy field",
+  },
+  baliSeptember7Days: {
+    title:
+      "The RESET Bali Retreat | September 23-29, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
+    description:
+      "Join The RESET Bali, an open retreat running September 23-29, 2026 with 7 days and 6 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
@@ -432,19 +442,21 @@ function App() {
     ? pageMetadata.kuruluBay
     : pathname.startsWith("/retreats-directory")
       ? pageMetadata.retreatsDirectory
-    : pathname.startsWith("/retreats")
-      ? pageMetadata.retreats
-      : pathname.startsWith("/bali-images")
-        ? pageMetadata.baliImages
-        : pathname.startsWith("/contracts")
-          ? pageMetadata.contracts
-      : pathname.startsWith("/bali-september")
-        ? pageMetadata.baliSeptember
-          : pathname.startsWith("/bali-october")
-            ? pageMetadata.bali
-            : pathname.startsWith("/content")
-              ? pageMetadata.content
-              : pageMetadata.home;
+      : pathname.startsWith("/retreats")
+        ? pageMetadata.retreats
+        : pathname.startsWith("/bali-images")
+          ? pageMetadata.baliImages
+          : pathname.startsWith("/contracts")
+            ? pageMetadata.contracts
+            : pathname.startsWith("/bali-september-7-days")
+              ? pageMetadata.baliSeptember7Days
+              : pathname.startsWith("/bali-september")
+                ? pageMetadata.baliSeptember
+                : pathname.startsWith("/bali-october")
+                  ? pageMetadata.bali
+                  : pathname.startsWith("/content")
+                    ? pageMetadata.content
+                    : pageMetadata.home;
 
   usePageMetadata(metadata);
 
@@ -466,6 +478,10 @@ function App() {
 
   if (pathname.startsWith("/contracts")) {
     return <ContractsPage />;
+  }
+
+  if (pathname.startsWith("/bali-september-7-days")) {
+    return <BaliSeptember7Days />;
   }
 
   if (pathname.startsWith("/bali-september")) {

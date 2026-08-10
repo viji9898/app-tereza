@@ -18,6 +18,7 @@ export default function RetreatsDirectoryPage() {
       retreat.destination,
       retreat.edition,
       retreat.venue,
+      retreat.retreatType,
       retreat.dates,
       retreat.route,
     ].some((value) => value.toLowerCase().includes(deferredQuery));
@@ -50,7 +51,10 @@ export default function RetreatsDirectoryPage() {
         </a>
       </header>
 
-      <section className="retreat-directory__toolbar" aria-label="Directory filters">
+      <section
+        className="retreat-directory__toolbar"
+        aria-label="Directory filters"
+      >
         <label className="retreat-directory__search">
           <span>Search</span>
           <input
@@ -101,13 +105,15 @@ export default function RetreatsDirectoryPage() {
                 <th scope="col">Duration</th>
                 <th scope="col">Status</th>
                 <th scope="col">Route</th>
-                <th scope="col"><span className="sr-only">Actions</span></th>
+                <th scope="col">
+                  <span className="sr-only">Actions</span>
+                </th>
               </tr>
             </thead>
             <tbody>
               {retreats.map((retreat) => {
-                const conflictingRetreat = retreatDirectory.find((otherRetreat) =>
-                  overlaps(retreat, otherRetreat),
+                const conflictingRetreat = retreatDirectory.find(
+                  (otherRetreat) => overlaps(retreat, otherRetreat),
                 );
 
                 return (
@@ -115,6 +121,7 @@ export default function RetreatsDirectoryPage() {
                     <td data-label="Retreat">
                       <strong>{retreat.edition}</strong>
                       <span>{retreat.venue}</span>
+                      <span>{retreat.retreatType} retreat</span>
                       {conflictingRetreat ? (
                         <span className="retreat-directory__warning">
                           Overlaps {conflictingRetreat.edition}
@@ -130,7 +137,8 @@ export default function RetreatsDirectoryPage() {
                         {retreat.status}
                       </span>
                       <span className="retreat-directory__meta-status">
-                        Metadata {retreat.metadataComplete ? "complete" : "incomplete"}
+                        Metadata{" "}
+                        {retreat.metadataComplete ? "complete" : "incomplete"}
                       </span>
                     </td>
                     <td data-label="Route">
@@ -138,7 +146,10 @@ export default function RetreatsDirectoryPage() {
                     </td>
                     <td className="retreat-directory__actions">
                       <a href={retreat.route}>Open</a>
-                      <button type="button" onClick={() => copyRoute(retreat.route)}>
+                      <button
+                        type="button"
+                        onClick={() => copyRoute(retreat.route)}
+                      >
                         {copiedRoute === retreat.route ? "Copied" : "Copy URL"}
                       </button>
                     </td>
@@ -150,7 +161,9 @@ export default function RetreatsDirectoryPage() {
         </div>
 
         {retreats.length === 0 ? (
-          <p className="retreat-directory__empty">No retreats match these filters.</p>
+          <p className="retreat-directory__empty">
+            No retreats match these filters.
+          </p>
         ) : null}
       </section>
     </main>

@@ -536,8 +536,7 @@ button {
   padding: 28px clamp(16px, 4vw, 56px) 64px;
   color: #17201d;
   background:
-    linear-gradient(rgba(23, 32, 29, 0.035) 1px, transparent 1px),
-    #f5f6f2;
+    linear-gradient(rgba(23, 32, 29, 0.035) 1px, transparent 1px), #f5f6f2;
   background-size: 100% 36px;
   font-family: Optima, Candara, "Noto Sans", sans-serif;
 }
