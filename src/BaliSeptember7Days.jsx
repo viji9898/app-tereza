@@ -338,8 +338,8 @@ export default function BaliSeptember7Days() {
               September 23 — September 29, 2026
             </p>
             <div className="kurulu-bay-page__hero-lines">
-              <p>A RESET to what matters.</p>
-              <p>A RESET to yourself.</p>
+              <p>Less noise.</p>
+              <p>More you.</p>
             </div>
           </div>
         </section>
@@ -760,31 +760,12 @@ export default function BaliSeptember7Days() {
               </article>
             ))}
           </div>
-          <div className="kurulu-bay-page__pricing-summary">
-            <div className="kurulu-bay-page__pricing-columns">
-              <section
-                className="kurulu-bay-page__pricing-group"
-                aria-label="All rooms pricing"
-              >
-                <h3 className="kurulu-bay-page__pricing-heading">
-                  A L L R O O M S
-                </h3>
-                <div className="kurulu-bay-page__pricing-row">
-                  <span>Single Occupancy</span>
-                  <strong>3,200 USD</strong>
-                </div>
-                <div className="kurulu-bay-page__pricing-row">
-                  <span>Double Occupancy</span>
-                  <strong>2,200 USD</strong>
-                </div>
-              </section>
-            </div>
-            <p className="kurulu-bay-page__pricing-note">
-              A detailed room menu with photographs and layouts is available on
-              request, so we can find the room that suits you best. Rooms are
-              allocated in the order that bookings are received.
-            </p>
-          </div>
+          <br />
+          <p className="kurulu-bay-page__pricing-note">
+            A detailed room menu with photographs and layouts is available on
+            request, so we can find the room that suits you best. Rooms are
+            allocated in the order that bookings are received.
+          </p>
         </section>
 
         <section id="closing">
