@@ -3,10 +3,10 @@ import "./SriLankaOctober7Days.css";
 
 const images = {
   cover:
-    "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/hero-1.webp",
   reset:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/hand-pan-lake.webp",
-  home: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/kurulu-bay-lake0-view+(1).webp",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/the-rest.webp",
+  home: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/your-home.webp",
   ayurveda:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/shirodhara-treatment.jpg",
   practice:
@@ -22,13 +22,14 @@ const images = {
 };
 
 const journeyDays = [
-  ["Day 1", "ARRIVE | BE HERE NOW"],
-  ["Day 2", "SELF LOVE"],
-  ["Day 3", "METTA"],
-  ["Day 4", "LET GO"],
-  ["Day 5", "FEEL FULLY"],
-  ["Day 6", "CREATE"],
-  ["Day 7", "INTEGRATE | RETURN"],
+  ["Day 1", "ARRIVE"],
+  ["Day 2", "BE HERE NOW"],
+  ["Day 3", "SELF LOVE"],
+  ["Day 4", "METTA"],
+  ["Day 5", "LET GO"],
+  ["Day 6", "FEEL FULLY"],
+  ["Day 7", "CREATE"],
+  ["Day 8", "INTEGRATE | RETURN"],
 ];
 
 const gallery = [
