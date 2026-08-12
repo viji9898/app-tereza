@@ -10,6 +10,7 @@ import KuruluBayRetreat from "./KuruluBayRetreat";
 import PalmsImagesPage from "./PalmsImagesPage";
 import RetreatsPage from "./RetreatsPage";
 import RetreatsDirectoryPage from "./RetreatsDirectoryPage";
+import SriLankaInvestmentPage from "./SriLankaInvestmentPage";
 import SriLankaOctober7Days from "./SriLankaOctober7Days";
 import "./styles.css";
 
@@ -58,6 +59,14 @@ const pageMetadata = {
     image:
       "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
     imageAlt: "Sri Lanka retreat pool framed by tropical palms",
+  },
+  sriLankaOctober7DaysInvestment: {
+    title: "Investment | The RESET Sri Lanka Retreat | Tereza Dos Santos",
+    description:
+      "Investment and room information for The RESET Sri Lanka retreat, October 3-9, 2026.",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/92c414ec-5896-48d1-92a4-10dc10450838/KuruluBaySriLanka050424_NateleeCocks_062.jpg?format=2500w",
+    imageAlt: "The Palms retreat accommodation in Sri Lanka",
   },
   bali: {
     title:
@@ -466,9 +475,13 @@ function ContentPage() {
 
 function App() {
   const pathname = window.location.pathname;
-  const metadata = pathname.startsWith("/sri-lanka-october-7-days")
-    ? pageMetadata.sriLankaOctober7Days
-    : pathname.startsWith("/sri-lanka")
+  const metadata = pathname.startsWith(
+    "/sri-lanka-october-7-days/investment",
+  )
+    ? pageMetadata.sriLankaOctober7DaysInvestment
+    : pathname.startsWith("/sri-lanka-october-7-days")
+      ? pageMetadata.sriLankaOctober7Days
+      : pathname.startsWith("/sri-lanka")
       ? pageMetadata.kuruluBay
       : pathname.startsWith("/retreats-directory")
         ? pageMetadata.retreatsDirectory
@@ -493,6 +506,10 @@ function App() {
                           : pageMetadata.home;
 
   usePageMetadata(metadata);
+
+  if (pathname.startsWith("/sri-lanka-october-7-days/investment")) {
+    return <SriLankaInvestmentPage />;
+  }
 
   if (pathname.startsWith("/sri-lanka-october-7-days")) {
     return <SriLankaOctober7Days />;

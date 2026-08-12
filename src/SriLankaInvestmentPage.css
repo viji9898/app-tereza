@@ -1,0 +1,106 @@
+.sri-lanka-investment-page {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+}
+
+.sri-lanka-investment-page__section {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: clamp(2rem, 7vw, 6rem);
+  background:
+    linear-gradient(rgba(28, 32, 24, 0.48), rgba(28, 32, 24, 0.72)),
+    url("https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/92c414ec-5896-48d1-92a4-10dc10450838/KuruluBaySriLanka050424_NateleeCocks_062.jpg?format=2500w")
+      center / cover;
+  color: #fffaf2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sri-lanka-investment-page__eyebrow {
+  margin: 0 0 0.65rem;
+  font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.sri-lanka-investment-page__meta {
+  margin: 0 0 clamp(1.5rem, 3vh, 2.25rem);
+  color: rgba(255, 250, 242, 0.82);
+  font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  font-size: clamp(0.82rem, 1.5vw, 1rem);
+  line-height: 1.65;
+}
+
+.sri-lanka-investment-page__title {
+  margin: 0;
+  color: inherit;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 10vw, 8rem);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.sri-lanka-investment-page__pricing {
+  display: grid;
+  width: min(100%, 680px);
+  margin: clamp(2rem, 5vh, 3.5rem) 0 0;
+  border-top: 1px solid rgba(255, 250, 242, 0.45);
+  border-bottom: 1px solid rgba(255, 250, 242, 0.45);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sri-lanka-investment-page__price {
+  padding: 1.25rem;
+}
+
+.sri-lanka-investment-page__price + .sri-lanka-investment-page__price {
+  border-left: 1px solid rgba(255, 250, 242, 0.45);
+}
+
+.sri-lanka-investment-page__price dt,
+.sri-lanka-investment-page__price dd {
+  margin: 0;
+  font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+}
+
+.sri-lanka-investment-page__price dt {
+  color: rgba(255, 250, 242, 0.72);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.sri-lanka-investment-page__price dd {
+  margin-top: 0.55rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.sri-lanka-investment-page__copy {
+  max-width: 620px;
+  margin: clamp(1.5rem, 4vh, 2.5rem) 0 0;
+  color: rgba(255, 250, 242, 0.88);
+  font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+}
+
+@media (max-width: 560px) {
+  .sri-lanka-investment-page__pricing {
+    grid-template-columns: 1fr;
+  }
+
+  .sri-lanka-investment-page__price + .sri-lanka-investment-page__price {
+    border-top: 1px solid rgba(255, 250, 242, 0.45);
+    border-left: 0;
+  }
+}
