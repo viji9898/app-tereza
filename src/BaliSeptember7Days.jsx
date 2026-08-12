@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import BaliWhatsAppCta from "./BaliWhatsAppCta";
 import "./BaliRetreat.css";
 
 const placeholder = (size, text) =>
@@ -396,7 +397,7 @@ export default function BaliSeptember7Days() {
                 My name is Tereza Dos Santos, and over the past two decades I’ve
                 been exploring the ways breath, sound, movement and stillness
                 can help us reconnect with ourselves. What began with classical
-                music, performance and athletic movement growing up has slowly
+                music, performance and athletic movement growing up, has slowly
                 evolved into the work I feel most called to share today:
                 creating spaces where people can slow down, breathe deeply, and
                 create space for healing. Somewhere along the way, a dream began
@@ -807,6 +808,7 @@ export default function BaliSeptember7Days() {
             </div>
           </div>
         </section>
+        <BaliWhatsAppCta />
       </div>
     </div>
   );
