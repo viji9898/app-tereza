@@ -69,6 +69,15 @@ const routeMetadata = {
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
   },
+  baliSeptember7DaysInvestment: {
+    routePath: "/bali-september-7-days/investment",
+    title: "Investment | The RESET Bali Retreat | Tereza Dos Santos",
+    description:
+      "Investment and room information for The RESET Bali retreat, September 23-29, 2026.",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg",
+    imageAlt: "Dwa Chandra villa in Bali",
+  },
   retreatsDirectory: {
     routePath: "/retreats-directory",
     title: "Retreats Directory | Tereza Dos Santos",
@@ -213,6 +222,10 @@ for (const [directoryName, metadata] of [
   ["kurulu-bay", routeMetadata.kuruluBay],
   ["bali", routeMetadata.bali],
   ["bali-october", routeMetadata.bali],
+  [
+    "bali-september-7-days/investment",
+    routeMetadata.baliSeptember7DaysInvestment,
+  ],
   ["bali-september-7-days", routeMetadata.baliSeptember7Days],
   ["bali-september", routeMetadata.baliSeptember],
   ["retreats-directory", routeMetadata.retreatsDirectory],
