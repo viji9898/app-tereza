@@ -6,8 +6,7 @@ const images = {
     "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
   reset:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/hand-pan-lake.webp",
-  home:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/kurulu-bay-lake0-view+(1).webp",
+  home: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/kurulu-bay-lake0-view+(1).webp",
   ayurveda:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/shirodhara-treatment.jpg",
   practice:
@@ -29,7 +28,7 @@ const journeyDays = [
   ["Day 4", "LET GO"],
   ["Day 5", "FEEL FULLY"],
   ["Day 6", "CREATE"],
-  ["Day 7", "INTEGRATE | RESET"],
+  ["Day 7", "INTEGRATE | RETURN"],
 ];
 
 const gallery = [
@@ -85,19 +84,33 @@ const dayBlocks = [
     title: "MIDDAY",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-ahangama-demo/womoen-walking-along-the-pool.jpg",
-    items: ["Free time", "Personal Ayurvedic treatments", "Time to rest, swim, journal or read"],
+    items: [
+      "Free time",
+      "Personal Ayurvedic treatments",
+      "Time to rest, swim, journal or read",
+    ],
   },
   {
     title: "GOLDEN HOUR",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/man-in-boat-koggala-lanke.jpg",
-    items: ["Nature or cultural immersion", "Monk blessing", "Koggala Lake", "Temple visit"],
+    items: [
+      "Nature or cultural immersion",
+      "Monk blessing",
+      "Koggala Lake",
+      "Temple visit",
+    ],
   },
   {
     title: "EVENING RITUAL",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/dining-at-kurulu-bay.jpg",
-    items: ["SONIC BREATH™", "SOUND TEMPLE™", "FLOATING TEMPLE™", "Ayurvedic dinner"],
+    items: [
+      "SONIC BREATH™",
+      "SOUND TEMPLE™",
+      "FLOATING TEMPLE™",
+      "Ayurvedic dinner",
+    ],
   },
 ];
 
@@ -183,7 +196,9 @@ export default function SriLankaOctober7Days() {
           <p className="sri-lanka-reset-page__meta">
             A 7-Day | 6-Night Retreat curated by Tereza Dos Santos
           </p>
-          <p className="sri-lanka-reset-page__meta">October 3 — October 9, 2026</p>
+          <p className="sri-lanka-reset-page__meta">
+            October 3 — October 9, 2026
+          </p>
           <div className="sri-lanka-reset-page__hero-lines">
             <p>A RESET to what matters.</p>
             <p>A RESET to yourself.</p>
@@ -225,25 +240,50 @@ export default function SriLankaOctober7Days() {
           <div>
             <p>If you’re reading this, welcome.</p>
             <p>
-              My name is Tereza Dos Santos, and over the past two decades I’ve been exploring the ways breath, sound, movement and stillness can help us reconnect with ourselves. What began with classical music, performance and athletic movement growing up, has slowly evolved into the work I feel most called to share today: creating spaces where people can slow down, breathe deeply, and create space for healing.
+              My name is Tereza Dos Santos, and over the past two decades I’ve
+              been exploring the ways breath, sound, movement and stillness can
+              help us reconnect with ourselves. What began with classical music,
+              performance and athletic movement growing up, has slowly evolved
+              into the work I feel most called to share today: creating spaces
+              where people can slow down, breathe deeply, and create space for
+              healing.
             </p>
             <p>
-              Somewhere along the way, a dream began to take shape: I wanted to create something that couldn’t be experienced in just a single evening.
-              A journey with enough space to slow down. Enough time to settle. Enough time for everything to unfold naturally. And enough time to integrate it before returning home.
+              Somewhere along the way, a dream began to take shape: I wanted to
+              create something that couldn’t be experienced in just a single
+              evening. A journey with enough space to slow down. Enough time to
+              settle. Enough time for everything to unfold naturally. And enough
+              time to integrate it before returning home.
             </p>
             <p>
-              This retreat brings together everything that has shaped my work over the years: breath, sound, movement, nature, meaningful connection, and the beautiful wisdom of Ayurveda, woven seamlessly throughout the experience through personalised treatments, nourishing food, and ancient healing practices. Sri Lanka’s rich healing traditions, warm and devoted people, and slower rhythm of life have deeply influenced the way this journey has been designed.
+              This retreat brings together everything that has shaped my work
+              over the years: breath, sound, movement, nature, meaningful
+              connection, and the beautiful wisdom of Ayurveda, woven seamlessly
+              throughout the experience through personalised treatments,
+              nourishing food, and ancient healing practices. Sri Lanka’s rich
+              healing traditions, warm and devoted people, and slower rhythm of
+              life have deeply influenced the way this journey has been
+              designed.
             </p>
           </div>
           <div>
             <p>
-              My intention was never to create another retreat packed with activities or a schedule to keep up with. Instead, I wanted to create something spacious and profound. Thoughtfully curated. A place to go deep, not wide.
+              My intention was never to create another retreat packed with
+              activities or a schedule to keep up with. Instead, I wanted to
+              create something spacious and profound. Thoughtfully curated. A
+              place to go deep, not wide.
             </p>
             <p>
-              My greatest hope is not that you leave feeling inspired for a few days, but that you return home carrying one small practice, one new perspective, or one feeling that quietly becomes part of the way you live. Not something you simply understand with your mind. Something you’ve truly embodied.
+              My greatest hope is not that you leave feeling inspired for a few
+              days, but that you return home carrying one small practice, one
+              new perspective, or one feeling that quietly becomes part of the
+              way you live. Not something you simply understand with your mind.
+              Something you’ve truly embodied.
             </p>
             <p>
-              So if even one small part of this journey stays with you long after you’ve returned home, then I believe we’ve created something truly meaningful together.
+              So if even one small part of this journey stays with you long
+              after you’ve returned home, then I believe we’ve created something
+              truly meaningful together.
             </p>
             <p>I can’t wait to welcome you to Sri Lanka.</p>
             <p className="sri-lanka-reset-page__signature">
@@ -256,22 +296,44 @@ export default function SriLankaOctober7Days() {
       </section>
 
       <div id="reset">
-        <FullImage src={images.reset} alt="Tereza guiding a sound experience" index="02" label="THE RESET">
+        <FullImage
+          src={images.reset}
+          alt="Tereza guiding a sound experience"
+          index="02"
+          label="THE RESET"
+        >
           <p>Modern life asks us to be constantly available.</p>
           <p>To respond. To produce. To perform. To stay connected.</p>
         </FullImage>
       </div>
 
       <section className="sri-lanka-reset-page__section">
-        <p className="sri-lanka-reset-page__lead">This journey asks something entirely different.</p>
-        <p>To slow down. To breathe. To listen. To reconnect with yourself, with nature, and with one another.</p>
-        <p>Over seven carefully curated days, we’ll move through practices rooted in nervous system regulation, somatic experiencing, movement, sound, nature and human connection.</p>
+        <p className="sri-lanka-reset-page__lead">
+          This journey asks something entirely different.
+        </p>
+        <p>
+          To slow down. To breathe. To listen. To reconnect with yourself, with
+          nature, and with one another.
+        </p>
+        <p>
+          Over seven carefully curated days, we’ll move through practices rooted
+          in nervous system regulation, somatic experiencing, movement, sound,
+          nature and human connection.
+        </p>
         <p>Give yourself permission to surrender to the mystery.</p>
       </section>
 
       <div id="home">
-        <FullImage src={images.home} alt="Tropical retreat pool with lagoon beyond" index="03" label="YOUR HOME">
-          <p>Nestled between jungle and ocean, The Palms is a sanctuary where nature, thoughtful design and Sri Lankan hospitality come together.</p>
+        <FullImage
+          src={images.home}
+          alt="Tropical retreat pool with lagoon beyond"
+          index="03"
+          label="YOUR HOME"
+        >
+          <p>
+            Nestled between jungle and ocean, The Palms is a sanctuary where
+            nature, thoughtful design and Sri Lankan hospitality come together.
+          </p>
         </FullImage>
       </div>
 
@@ -286,39 +348,77 @@ export default function SriLankaOctober7Days() {
       </section>
 
       <div id="ayurveda">
-        <FullImage src={images.ayurveda} alt="Shirodhara treatment in Sri Lanka" index="04" label="AYURVEDA">
+        <FullImage
+          src={images.ayurveda}
+          alt="Shirodhara treatment in Sri Lanka"
+          index="04"
+          label="AYURVEDA"
+        >
           <p>Ayurveda’s wisdom is woven throughout your RESET.</p>
         </FullImage>
       </div>
 
       <section className="sri-lanka-reset-page__section">
         <div className="sri-lanka-reset-page__columns">
-          <p>Upon arrival, each guest receives a private consultation and Dosha assessment with The Palms’ Ayurvedic doctor, who creates a personalised wellness plan.</p>
-          <p>Your journey includes a signature Shirodhara treatment, personalised Ayurvedic nutritional guidance, and meals thoughtfully prepared throughout the retreat.</p>
+          <p>
+            Upon arrival, each guest receives a private consultation and Dosha
+            assessment with The Palms’ Ayurvedic doctor, who creates a
+            personalised wellness plan.
+          </p>
+          <p>
+            Your journey includes a signature Shirodhara treatment, personalised
+            Ayurvedic nutritional guidance, and meals thoughtfully prepared
+            throughout the retreat.
+          </p>
         </div>
       </section>
 
       <div id="practice">
-        <FullImage src={images.practice} alt="Tereza holding space during a breath and sound session" index="05" label="THE PRACTICE">
-          <p>Explore SONIC BREATH™, SOUND TEMPLE™, FLOATING TEMPLE™ and BREATH LAB workshops.</p>
+        <FullImage
+          src={images.practice}
+          alt="Tereza holding space during a breath and sound session"
+          index="05"
+          label="THE PRACTICE"
+        >
+          <p>
+            Explore SONIC BREATH™, SOUND TEMPLE™, FLOATING TEMPLE™ and BREATH
+            LAB workshops.
+          </p>
         </FullImage>
       </div>
 
       <section className="sri-lanka-reset-page__section">
         <div className="sri-lanka-reset-page__columns">
-          <p>Alongside Tereza’s signature work, you’ll practise movement, meditation and yoga, and share a traditional opening blessing with local monks.</p>
-          <p>Together, these experiences weave breath, sound, movement, Ayurveda, nature and meaningful connection into one continuous journey.</p>
+          <p>
+            Alongside Tereza’s signature work, you’ll practise movement,
+            meditation and yoga, and share a traditional opening blessing with
+            local monks.
+          </p>
+          <p>
+            Together, these experiences weave breath, sound, movement, Ayurveda,
+            nature and meaningful connection into one continuous journey.
+          </p>
         </div>
       </section>
 
       <div id="journey">
-        <FullImage src={images.journey} alt="Guests walking towards Koggala Lake" index="06" label="THE JOURNEY">
-          <p>Each day explores a theme designed to build upon the one before it.</p>
+        <FullImage
+          src={images.journey}
+          alt="Guests walking towards Koggala Lake"
+          index="06"
+          label="THE JOURNEY"
+        >
+          <p>
+            Each day explores a theme designed to build upon the one before it.
+          </p>
         </FullImage>
       </div>
 
       <section className="sri-lanka-reset-page__section">
-        <p>Rather than revealing every experience in advance, we’ve intentionally left space for curiosity, spontaneity and surprise.</p>
+        <p>
+          Rather than revealing every experience in advance, we’ve intentionally
+          left space for curiosity, spontaneity and surprise.
+        </p>
         <div className="sri-lanka-reset-page__journey">
           {journeyDays.map(([day, theme]) => (
             <div key={day} className="sri-lanka-reset-page__journey-row">
@@ -333,11 +433,16 @@ export default function SriLankaOctober7Days() {
         <Eyebrow index="07">A TYPICAL DAY</Eyebrow>
         <div className="sri-lanka-reset-page__cards">
           {dayBlocks.map((block) => (
-            <article key={block.title} className="sri-lanka-reset-page__card sri-lanka-reset-page__day-card">
+            <article
+              key={block.title}
+              className="sri-lanka-reset-page__card sri-lanka-reset-page__day-card"
+            >
               <img src={block.image} alt={block.title} loading="lazy" />
               <div className="sri-lanka-reset-page__day-copy">
                 <h3>{block.title}</h3>
-                {block.items.map((item) => <p key={item}>{item}</p>)}
+                {block.items.map((item) => (
+                  <p key={item}>{item}</p>
+                ))}
               </div>
             </article>
           ))}
@@ -345,14 +450,24 @@ export default function SriLankaOctober7Days() {
       </section>
 
       <div id="in-between">
-        <FullImage src={images.inBetween} alt="Quiet moment at the Sri Lanka retreat" index="08" label="THE IN-BETWEEN">
+        <FullImage
+          src={images.inBetween}
+          alt="Quiet moment at the Sri Lanka retreat"
+          index="08"
+          label="THE IN-BETWEEN"
+        >
           <p>Not every moment is scheduled.</p>
         </FullImage>
       </div>
 
       <section className="sri-lanka-reset-page__section">
-        <p className="sri-lanka-reset-page__lead">Some of the most meaningful moments happen between sessions.</p>
-        <p>Swimming in the ocean. Reading beneath the palms. A conversation over tea. Watching the sunset. Receiving an Ayurvedic massage.</p>
+        <p className="sri-lanka-reset-page__lead">
+          Some of the most meaningful moments happen between sessions.
+        </p>
+        <p>
+          Swimming in the ocean. Reading beneath the palms. A conversation over
+          tea. Watching the sunset. Receiving an Ayurvedic massage.
+        </p>
       </section>
 
       <section id="immersions" className="sri-lanka-reset-page__section">
@@ -370,37 +485,75 @@ export default function SriLankaOctober7Days() {
       <section id="included" className="sri-lanka-reset-page__section">
         <Eyebrow index="10">YOUR JOURNEY INCLUDES</Eyebrow>
         <div className="sri-lanka-reset-page__list-columns">
-          <ul>{included.slice(0, 6).map((item) => <li key={item}>{item}</li>)}</ul>
-          <ul>{included.slice(6).map((item) => <li key={item}>{item}</li>)}</ul>
+          <ul>
+            {included.slice(0, 6).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <ul>
+            {included.slice(6).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </section>
 
       <section id="optional" className="sri-lanka-reset-page__section">
         <Eyebrow index="11">NOT INCLUDED</Eyebrow>
         <div className="sri-lanka-reset-page__list-columns">
-          <ul>{optional.slice(0, 4).map((item) => <li key={item}>{item}</li>)}</ul>
-          <ul>{optional.slice(4).map((item) => <li key={item}>{item}</li>)}</ul>
+          <ul>
+            {optional.slice(0, 4).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <ul>
+            {optional.slice(4).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </section>
 
       <div id="investment">
-        <FullImage src={images.investment} alt="The Palms retreat accommodation" index="12" label="INVESTMENT">
+        <FullImage
+          src={images.investment}
+          alt="The Palms retreat accommodation"
+          index="12"
+          label="INVESTMENT"
+        >
           <p>Choose your home.</p>
         </FullImage>
       </div>
 
       <section className="sri-lanka-reset-page__section">
-        <p className="sri-lanka-reset-page__lead">A limited number of beautifully designed rooms are available, each selected for comfort, privacy and deep rest.</p>
-        <div className="sri-lanka-reset-page__price-box" aria-label="All rooms pricing">
+        <p className="sri-lanka-reset-page__lead">
+          A limited number of beautifully designed rooms are available, each
+          selected for comfort, privacy and deep rest.
+        </p>
+        <div
+          className="sri-lanka-reset-page__price-box"
+          aria-label="All rooms pricing"
+        >
           <h3>All Rooms</h3>
-          <div className="sri-lanka-reset-page__price-row"><span>Single Occupancy</span><strong>1,900 USD</strong></div>
-          <div className="sri-lanka-reset-page__price-row"><span>Double Occupancy</span><strong>1,700 USD</strong></div>
+          <div className="sri-lanka-reset-page__price-row">
+            <span>Single Occupancy</span>
+            <strong>1,900 USD</strong>
+          </div>
+          <div className="sri-lanka-reset-page__price-row">
+            <span>Double Occupancy</span>
+            <strong>1,700 USD</strong>
+          </div>
           <p>Rooms are allocated in the order that bookings are received.</p>
         </div>
       </section>
 
       <section id="closing" className="sri-lanka-reset-page__closing">
-        <img className="sri-lanka-reset-page__closing-image" src={images.closing} alt="Closing scene from the Sri Lanka retreat" loading="lazy" />
+        <img
+          className="sri-lanka-reset-page__closing-image"
+          src={images.closing}
+          alt="Closing scene from the Sri Lanka retreat"
+          loading="lazy"
+        />
         <div className="sri-lanka-reset-page__closing-copy">
           <p className="sri-lanka-reset-page__brand">THE RESET</p>
           <div className="sri-lanka-reset-page__rule" />
@@ -408,7 +561,12 @@ export default function SriLankaOctober7Days() {
             <p>The journey doesn’t end when you leave Sri Lanka.</p>
             <p>It begins the moment you return.</p>
           </div>
-          <a className="sri-lanka-reset-page__website" href="https://www.terezadossantos.com">www.terezadossantos.com</a>
+          <a
+            className="sri-lanka-reset-page__website"
+            href="https://www.terezadossantos.com"
+          >
+            www.terezadossantos.com
+          </a>
         </div>
       </section>
     </main>

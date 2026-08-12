@@ -220,7 +220,7 @@ const includedItems = [
   "Round-trip airport transfers",
   "Daily chef-prepared vegetarian breakfast",
   "Daily dinner experiences throughout the retreat",
-  "Signature dinner experience at Merlin",
+  "Signature dinner experience at Merlin's Magic",
   "Free-flowing herbal tea, black coffee & fresh tropical fruit",
   "Traditional Balinese welcome massage (60 min)",
   "All of Tereza's signature sessions and workshops throughout the retreat",

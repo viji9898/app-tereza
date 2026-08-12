@@ -39,7 +39,7 @@ const journeyDays = [
   ["Day 4", "LET GO"],
   ["Day 5", "FEEL FULLY"],
   ["Day 6", "CREATE"],
-  ["Day 7", "INTEGRATE | RESET"],
+  ["Day 7", "INTEGRATE | RETURN"],
 ];
 
 const homeFrames = [
@@ -218,7 +218,7 @@ const includedItems = [
   "Round-trip airport transfers",
   "Daily chef-prepared vegetarian breakfast",
   "Daily dinner experiences throughout the retreat",
-  "Signature dinner experience at Merlin",
+  "Signature dinner experience at Merli's Magic'",
   "Free-flowing herbal tea, black coffee & fresh tropical fruit",
   "Traditional Balinese welcome massage (60 min)",
   "All of Tereza's signature sessions and workshops throughout the retreat",
@@ -477,7 +477,7 @@ export default function BaliSeptember7Days() {
             Not everything will be revealed in advance. Some experiences are
             meant to be discovered only when the moment arrives.
           </p>
-          <p>Give yourself permission to Surrender To The Mystery.</p>
+          <p>Give yourself permission to Surrender to the Mystery.</p>
         </section>
 
         <FullImage
