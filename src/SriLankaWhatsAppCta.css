@@ -1,10 +1,10 @@
-.bali-whatsapp-cta {
+.sri-lanka-whatsapp-cta {
   display: flex;
   min-height: min(72vh, 680px);
   padding: clamp(4.5rem, 10vw, 8rem) clamp(1.5rem, 8vw, 7rem);
   background:
-    linear-gradient(rgba(29, 43, 34, 0.92), rgba(29, 43, 34, 0.92)),
-    url("https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra.webp")
+    linear-gradient(rgba(42, 47, 36, 0.8), rgba(42, 47, 36, 0.8)),
+    url("https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/cta-backrgound-image.webp")
       center / cover;
   color: #fffaf2;
   flex-direction: column;
@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.bali-whatsapp-cta__title {
+.sri-lanka-whatsapp-cta__title {
   max-width: 780px;
   margin: 0;
   color: inherit;
@@ -23,7 +23,7 @@
   line-height: 1.06;
 }
 
-.bali-whatsapp-cta__copy {
+.sri-lanka-whatsapp-cta__copy {
   max-width: 570px;
   margin: 1.75rem 0 2.25rem;
   color: rgba(255, 250, 242, 0.78);
@@ -31,7 +31,7 @@
   line-height: 1.7;
 }
 
-.bali-whatsapp-cta__link {
+.sri-lanka-whatsapp-cta__link {
   display: inline-flex;
   min-height: 3.5rem;
   padding: 0.9rem 1.35rem;
@@ -51,26 +51,26 @@
     border-color 180ms ease;
 }
 
-.bali-whatsapp-cta__link:hover,
-.bali-whatsapp-cta__link:focus-visible {
+.sri-lanka-whatsapp-cta__link:hover,
+.sri-lanka-whatsapp-cta__link:focus-visible {
   border-color: #fffaf2;
   background: #fffaf2;
-  color: #1d2b22;
+  color: #2a2f24;
   outline: none;
 }
 
-.bali-whatsapp-cta__link:focus-visible {
+.sri-lanka-whatsapp-cta__link:focus-visible {
   box-shadow: 0 0 0 4px rgba(255, 250, 242, 0.3);
 }
 
-.bali-whatsapp-cta__icon {
+.sri-lanka-whatsapp-cta__icon {
   width: 1.25rem;
   height: 1.25rem;
   flex: 0 0 auto;
 }
 
 @media (max-width: 520px) {
-  .bali-whatsapp-cta__link {
+  .sri-lanka-whatsapp-cta__link {
     width: 100%;
     max-width: 320px;
   }

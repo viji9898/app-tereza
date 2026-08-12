@@ -471,26 +471,26 @@ function App() {
     : pathname.startsWith("/sri-lanka")
       ? pageMetadata.kuruluBay
       : pathname.startsWith("/retreats-directory")
-      ? pageMetadata.retreatsDirectory
-      : pathname.startsWith("/retreats")
-        ? pageMetadata.retreats
-        : pathname.startsWith("/palms-image")
-          ? pageMetadata.palmsImages
-          : pathname.startsWith("/bali-images")
-            ? pageMetadata.baliImages
-            : pathname.startsWith("/contracts")
-            ? pageMetadata.contracts
-            : pathname.startsWith("/bali-september-7-days/investment")
-              ? pageMetadata.baliSeptember7DaysInvestment
-              : pathname.startsWith("/bali-september-7-days")
-                ? pageMetadata.baliSeptember7Days
-              : pathname.startsWith("/bali-september")
-                ? pageMetadata.baliSeptember
-                : pathname.startsWith("/bali-october")
-                  ? pageMetadata.bali
-                  : pathname.startsWith("/content")
-                    ? pageMetadata.content
-                    : pageMetadata.home;
+        ? pageMetadata.retreatsDirectory
+        : pathname.startsWith("/retreats")
+          ? pageMetadata.retreats
+          : pathname.startsWith("/palms-image")
+            ? pageMetadata.palmsImages
+            : pathname.startsWith("/bali-images")
+              ? pageMetadata.baliImages
+              : pathname.startsWith("/contracts")
+                ? pageMetadata.contracts
+                : pathname.startsWith("/bali-september-7-days/investment")
+                  ? pageMetadata.baliSeptember7DaysInvestment
+                  : pathname.startsWith("/bali-september-7-days")
+                    ? pageMetadata.baliSeptember7Days
+                    : pathname.startsWith("/bali-september")
+                      ? pageMetadata.baliSeptember
+                      : pathname.startsWith("/bali-october")
+                        ? pageMetadata.bali
+                        : pathname.startsWith("/content")
+                          ? pageMetadata.content
+                          : pageMetadata.home;
 
   usePageMetadata(metadata);
 

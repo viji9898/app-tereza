@@ -217,7 +217,9 @@ export default function PalmsImagesPage() {
           >
             <div className="bali-images-page__section-header">
               <p className="section-label">{group.label}</p>
-              <h2 id={`palms-${group.label.toLowerCase().replaceAll(" ", "-")}`}>
+              <h2
+                id={`palms-${group.label.toLowerCase().replaceAll(" ", "-")}`}
+              >
                 {group.title}
               </h2>
             </div>
@@ -245,7 +247,10 @@ export default function PalmsImagesPage() {
                       </div>
                     </dl>
                     <div className="bali-images-page__actions">
-                      <button type="button" onClick={() => handleCopy(item.url)}>
+                      <button
+                        type="button"
+                        onClick={() => handleCopy(item.url)}
+                      >
                         {copiedUrl === item.url ? "Copied" : "Copy image link"}
                       </button>
                       <a href={item.url} target="_blank" rel="noreferrer">

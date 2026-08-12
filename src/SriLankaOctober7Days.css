@@ -9,7 +9,8 @@
   min-height: 100vh;
   color: var(--sl-text);
   background: linear-gradient(180deg, #efe6d8 0%, #f6f0e7 100%);
-  font-family: "Avenir Next", Avenir, "Century Gothic", "Trebuchet MS", sans-serif;
+  font-family:
+    "Avenir Next", Avenir, "Century Gothic", "Trebuchet MS", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -133,7 +134,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(27, 23, 18, 0.12), rgba(27, 23, 18, 0.74));
+  background: linear-gradient(
+    180deg,
+    rgba(27, 23, 18, 0.12),
+    rgba(27, 23, 18, 0.74)
+  );
 }
 
 .sri-lanka-reset-page__hero-copy,

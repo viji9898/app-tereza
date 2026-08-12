@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./SriLankaOctober7Days.css";
+import SriLankaWhatsAppCta from "./SriLankaWhatsAppCta";
 
 const images = {
   cover:
@@ -18,7 +19,7 @@ const images = {
   investment:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/choose-your-home.webp",
   closing:
-    "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IkYxNTAwODA4MzI2MEVEQTY5NTdDRURGNzBGODBFOUU4IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozODQwLCJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoiY2VudGVyIn0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiYXZpZiI6eyJxdWFsaXR5Ijo1MH19fQ==?signature=4b16c3d5b0f27a963abbbf70955f763a75cb8b467c1255df7850e75f858fb9c1",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/the-rest.webp",
 };
 
 const journeyDays = [
@@ -587,6 +588,7 @@ export default function SriLankaOctober7Days() {
           </a>
         </div>
       </section>
+      <SriLankaWhatsAppCta />
     </main>
   );
 }
