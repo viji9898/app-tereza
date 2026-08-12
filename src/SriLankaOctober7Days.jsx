@@ -215,10 +215,10 @@ export default function SriLankaOctober7Days() {
           <div className="sri-lanka-reset-page__rule" />
           <p className="sri-lanka-reset-page__meta">The Palms</p>
           <p className="sri-lanka-reset-page__meta">
-            A 7-Day | 6-Night Retreat curated by Tereza Dos Santos
+            A 8-Day | 7-Night Retreat curated by Tereza Dos Santos
           </p>
           <p className="sri-lanka-reset-page__meta">
-            October 3 — October 9, 2026
+            October 2 — October 9, 2026
           </p>
           <div className="sri-lanka-reset-page__hero-lines">
             <p>A RESET to what matters.</p>
@@ -256,7 +256,7 @@ export default function SriLankaOctober7Days() {
 
       <section id="welcome" className="sri-lanka-reset-page__section">
         <Eyebrow index="01">WELCOME</Eyebrow>
-        <h1 className="sri-lanka-reset-page__headline">Axé família,</h1>
+        <h1 className="sri-lanka-reset-page__headline">Axé família</h1>
         <div className="sri-lanka-reset-page__columns">
           <div>
             <p>If you’re reading this, welcome.</p>
@@ -264,27 +264,24 @@ export default function SriLankaOctober7Days() {
               My name is Tereza Dos Santos, and over the past two decades I’ve
               been exploring the ways breath, sound, movement and stillness can
               help us reconnect with ourselves. What began with classical music,
-              performance and athletic movement growing up, has slowly evolved
+              performance and athletic movement growing up has slowly evolved
               into the work I feel most called to share today: creating spaces
               where people can slow down, breathe deeply, and create space for
-              healing.
+              healing. Somewhere along the way, a dream began to take shape:
             </p>
             <p>
-              Somewhere along the way, a dream began to take shape: I wanted to
-              create something that couldn’t be experienced in just a single
-              evening. A journey with enough space to slow down. Enough time to
-              settle. Enough time for everything to unfold naturally. And enough
-              time to integrate it before returning home.
+              I wanted to create something that couldn’t be experienced in just
+              a single evening. A journey with enough space to slow down. Enough
+              time to settle. Enough time for everything to unfold naturally.
+              And enough time to integrate it before returning home.
             </p>
             <p>
               This retreat brings together everything that has shaped my work
               over the years: breath, sound, movement, nature, meaningful
-              connection, and the beautiful wisdom of Ayurveda, woven seamlessly
-              throughout the experience through personalised treatments,
-              nourishing food, and ancient healing practices. Sri Lanka’s rich
-              healing traditions, warm and devoted people, and slower rhythm of
-              life have deeply influenced the way this journey has been
-              designed.
+              connection — and Sri Lanka, one of my favourite places in the
+              world. Its lush landscapes, warm and devoted people, slower rhythm
+              of life, and incredible natural beauty have deeply influenced the
+              way this journey has been designed.
             </p>
           </div>
           <div>
@@ -298,13 +295,13 @@ export default function SriLankaOctober7Days() {
               My greatest hope is not that you leave feeling inspired for a few
               days, but that you return home carrying one small practice, one
               new perspective, or one feeling that quietly becomes part of the
-              way you live. Not something you simply understand with your mind.
-              Something you’ve truly embodied.
+              way you live.
             </p>
             <p>
-              So if even one small part of this journey stays with you long
-              after you’ve returned home, then I believe we’ve created something
-              truly meaningful together.
+              Not something you simply understand with your mind. Something
+              you’ve truly embodied. So if even one small part of this journey
+              stays with you long after you’ve returned home, then I believe
+              we’ve created something truly meaningful together.
             </p>
             <p>I can’t wait to welcome you to Sri Lanka.</p>
             <p className="sri-lanka-reset-page__signature">
@@ -352,13 +349,20 @@ export default function SriLankaOctober7Days() {
           label="YOUR HOME"
         >
           <p>
-            Nestled between jungle and ocean, The Palms is a sanctuary where
-            nature, thoughtful design and Sri Lankan hospitality come together.
+            Hidden between lush palm groves and the ocean of Ahangama, THE PALM
+            is a contemporary sanctuary where tropical nature and thoughtful
+            design come together in perfect harmony.
           </p>
         </FullImage>
       </div>
 
       <section className="sri-lanka-reset-page__section">
+        <p>
+          Surrounded by jungle, open skies and the sounds of Sri Lanka’s south
+          coast, it offers a peaceful place to slow down, reconnect and simply
+          be. Throughout your stay, this extraordinary setting becomes just as
+          much a part of the journey as the practices themselves.
+        </p>
         <div className="sri-lanka-reset-page__gallery">
           {gallery.map((item) => (
             <figure key={item.alt}>
