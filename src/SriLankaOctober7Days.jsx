@@ -34,20 +34,20 @@ const journeyDays = [
 
 const gallery = [
   {
-    src: "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IkM0ODk0Rjc4QzJDOTBCMTJEQTM1OEM3MzMwRTYzQzY5IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozODQwLCJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoiY2VudGVyIn0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiYXZpZiI6eyJxdWFsaXR5Ijo1MH19fQ==?signature=688e5c856c56497cec55c843a8571150b1e33e7165f2bed2c17a6022bfab6112",
-    alt: "Tropical treehouse exterior in Sri Lanka",
-  },
-  {
-    src: images.closing,
-    alt: "Open-air yoga shala in Sri Lanka",
-  },
-  {
-    src: "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjBFNzc5MDdDMThGRDVDNzFCQ0Y2ODZEMzRFRDQyM0E4IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozODQwLCJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoiY2VudGVyIn0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiYXZpZiI6eyJxdWFsaXR5Ijo1MH19fQ==?signature=58f3589df589cea11e0d3af09576a43f8b41c91f56fd31eaadc9fffc6326dfee",
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/room-01-room-bed-light.webp",
     alt: "Sri Lanka retreat bedroom",
   },
   {
-    src: "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/e996980f-77af-4ca1-ac1a-648b18a6941a/siriwanchmprn_KuruluBay_20220211-19.jpg?format=1500w",
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/room-03.webp",
+    alt: "Open-air yoga shala in Sri Lanka",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/room-02-pool-view.webp",
     alt: "Retreat cottages overlooking Koggala Lake",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/room-04-common-areas.webp",
+    alt: "Tropical treehouse exterior in Sri Lanka",
   },
 ];
 
