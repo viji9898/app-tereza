@@ -204,6 +204,7 @@
 .sri-lanka-reset-page__columns,
 .sri-lanka-reset-page__cards,
 .sri-lanka-reset-page__gallery,
+.sri-lanka-reset-page__investment-grid,
 .sri-lanka-reset-page__list-columns {
   display: grid;
   gap: 1.5rem;
@@ -223,12 +224,14 @@
   color: var(--sl-muted);
 }
 
-.sri-lanka-reset-page__gallery {
+.sri-lanka-reset-page__gallery,
+.sri-lanka-reset-page__investment-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .sri-lanka-reset-page__card,
-.sri-lanka-reset-page__gallery figure {
+.sri-lanka-reset-page__gallery figure,
+.sri-lanka-reset-page__investment-grid figure {
   position: relative;
   margin: 0;
   overflow: hidden;
@@ -238,11 +241,29 @@
 }
 
 .sri-lanka-reset-page__card img,
-.sri-lanka-reset-page__gallery img {
+.sri-lanka-reset-page__gallery img,
+.sri-lanka-reset-page__investment-grid img {
   display: block;
   width: 100%;
   aspect-ratio: 0.9;
   object-fit: cover;
+}
+
+.sri-lanka-reset-page__investment-grid {
+  margin-top: 2.5rem;
+}
+
+.sri-lanka-reset-page__investment-grid figcaption {
+  padding: 0.9rem 1rem 1.1rem;
+  color: var(--sl-muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.sri-lanka-reset-page__room-note {
+  max-width: 44rem;
+  margin: 2.5rem 0 0;
+  color: var(--sl-muted);
 }
 
 .sri-lanka-reset-page__card figcaption {

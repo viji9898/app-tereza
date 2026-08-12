@@ -16,7 +16,7 @@ const images = {
   inBetween:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/girl-opening-window-dark-room.jpg",
   investment:
-    "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/92c414ec-5896-48d1-92a4-10dc10450838/KuruluBaySriLanka050424_NateleeCocks_062.jpg?format=2500w",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/choose-your-home.webp",
   closing:
     "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IkYxNTAwODA4MzI2MEVEQTY5NTdDRURGNzBGODBFOUU4IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozODQwLCJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoiY2VudGVyIn0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiYXZpZiI6eyJxdWFsaXR5Ijo1MH19fQ==?signature=4b16c3d5b0f27a963abbbf70955f763a75cb8b467c1255df7850e75f858fb9c1",
 };
@@ -48,6 +48,25 @@ const gallery = [
   {
     src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/room-04-common-areas.webp",
     alt: "Tropical treehouse exterior in Sri Lanka",
+  },
+];
+
+const investmentRooms = [
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/choose-home-02.webp",
+    title: "A Frames",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/choose-home-01.webp",
+    title: "A Frames",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/room-03.webp",
+    title: "Room Four",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/choose-home-03.webp",
+    title: "Room Three",
   },
 ];
 
@@ -531,21 +550,19 @@ export default function SriLankaOctober7Days() {
           A limited number of beautifully designed rooms are available, each
           selected for comfort, privacy and deep rest.
         </p>
-        <div
-          className="sri-lanka-reset-page__price-box"
-          aria-label="All rooms pricing"
-        >
-          <h3>All Rooms</h3>
-          <div className="sri-lanka-reset-page__price-row">
-            <span>Single Occupancy</span>
-            <strong>1,900 USD</strong>
-          </div>
-          <div className="sri-lanka-reset-page__price-row">
-            <span>Double Occupancy</span>
-            <strong>1,700 USD</strong>
-          </div>
-          <p>Rooms are allocated in the order that bookings are received.</p>
+        <div className="sri-lanka-reset-page__investment-grid">
+          {investmentRooms.map((room) => (
+            <figure key={room.title}>
+              <img src={room.src} alt="" loading="lazy" />
+              <figcaption>{room.title}</figcaption>
+            </figure>
+          ))}
         </div>
+        <p className="sri-lanka-reset-page__room-note">
+          A detailed room menu with photographs and layouts is available on
+          request, so we can find the room that suits you best. Rooms are
+          allocated in the order that bookings are received.
+        </p>
       </section>
 
       <section id="closing" className="sri-lanka-reset-page__closing">
