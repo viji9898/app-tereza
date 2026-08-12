@@ -6,6 +6,7 @@ import BaliSeptember7Days from "./BaliSeptember7Days";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import KuruluBayRetreat from "./KuruluBayRetreat";
+import PalmsImagesPage from "./PalmsImagesPage";
 import RetreatsPage from "./RetreatsPage";
 import RetreatsDirectoryPage from "./RetreatsDirectoryPage";
 import SriLankaOctober7Days from "./SriLankaOctober7Days";
@@ -107,6 +108,14 @@ const pageMetadata = {
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Preview of the Bali image collection",
+  },
+  palmsImages: {
+    title: "The Palms Image Collection | Tereza Dos Santos",
+    description:
+      "Image library for The Palms Sri Lanka venue, brand, and retreat assets with resolution and file-size details.",
+    image:
+      "https://cdn.prod.website-files.com/66f278307a717e3092522530/67206d1467066b0d7a1b4d88_67206b417a66087aa5195e36_Main-image_C.webp",
+    imageAlt: "Preview of The Palms image collection",
   },
   contracts: {
     title: "Contracts | Tereza Dos Santos",
@@ -456,9 +465,11 @@ function App() {
       ? pageMetadata.retreatsDirectory
       : pathname.startsWith("/retreats")
         ? pageMetadata.retreats
-        : pathname.startsWith("/bali-images")
-          ? pageMetadata.baliImages
-          : pathname.startsWith("/contracts")
+        : pathname.startsWith("/palms-image")
+          ? pageMetadata.palmsImages
+          : pathname.startsWith("/bali-images")
+            ? pageMetadata.baliImages
+            : pathname.startsWith("/contracts")
             ? pageMetadata.contracts
             : pathname.startsWith("/bali-september-7-days")
               ? pageMetadata.baliSeptember7Days
@@ -486,6 +497,10 @@ function App() {
 
   if (pathname.startsWith("/retreats")) {
     return <RetreatsPage />;
+  }
+
+  if (pathname.startsWith("/palms-image")) {
+    return <PalmsImagesPage />;
   }
 
   if (pathname.startsWith("/bali-images")) {

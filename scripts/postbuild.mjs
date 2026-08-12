@@ -87,6 +87,15 @@ const routeMetadata = {
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Preview of the Bali image collection",
   },
+  palmsImages: {
+    routePath: "/palms-image",
+    title: "The Palms Image Collection | Tereza Dos Santos",
+    description:
+      "Image library for The Palms Sri Lanka venue, brand, and retreat assets with resolution and file-size details.",
+    image:
+      "https://cdn.prod.website-files.com/66f278307a717e3092522530/67206d1467066b0d7a1b4d88_67206b417a66087aa5195e36_Main-image_C.webp",
+    imageAlt: "Preview of The Palms image collection",
+  },
   contracts: {
     routePath: "/contracts",
     title: "Contracts | Tereza Dos Santos",
@@ -207,6 +216,7 @@ for (const [directoryName, metadata] of [
   ["bali-september-7-days", routeMetadata.baliSeptember7Days],
   ["bali-september", routeMetadata.baliSeptember],
   ["retreats-directory", routeMetadata.retreatsDirectory],
+  ["palms-image", routeMetadata.palmsImages],
   ["bali-images", routeMetadata.baliImages],
   ["contracts", routeMetadata.contracts],
 ]) {

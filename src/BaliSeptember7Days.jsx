@@ -388,7 +388,7 @@ export default function BaliSeptember7Days() {
 
         <section id="welcome" className="kurulu-bay-page__text-section">
           <SectionLabel index="01">WELCOME</SectionLabel>
-          <h1 className="kurulu-bay-page__headline">Axé família 🙏🏻</h1>
+          <h1 className="kurulu-bay-page__headline">Axé família</h1>
           <div className="kurulu-bay-page__columns">
             <div>
               <p>If you’re reading this, welcome.</p>
@@ -396,10 +396,11 @@ export default function BaliSeptember7Days() {
                 My name is Tereza Dos Santos, and over the past two decades I’ve
                 been exploring the ways breath, sound, movement and stillness
                 can help us reconnect with ourselves. What began with classical
-                music, performance and athletic movement has slowly evolved into
-                the work I feel most called to share today: creating spaces
-                where people can slow down, breathe deeply, and create space for
-                healing. Somewhere along the way, a dream began to take shape:
+                music, performance and athletic movement growing up has slowly
+                evolved into the work I feel most called to share today:
+                creating spaces where people can slow down, breathe deeply, and
+                create space for healing. Somewhere along the way, a dream began
+                to take shape:
               </p>
               <p>
                 I wanted to create something that couldn’t be experienced in

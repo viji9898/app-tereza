@@ -1057,6 +1057,43 @@ button {
   background: #f1e5d6;
 }
 
+.palms-images-page__image-link img {
+  object-fit: contain;
+}
+
+.palms-images-page__metadata {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.palms-images-page__metadata div {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid rgba(36, 25, 22, 0.1);
+  border-radius: 8px;
+  background: rgba(242, 232, 220, 0.55);
+}
+
+.palms-images-page__metadata dt {
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.palms-images-page__metadata dd {
+  margin: 0;
+  color: var(--ink);
+  font-family: Optima, Candara, "Noto Sans", sans-serif;
+  font-size: 0.86rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
 .stage {
   overflow: hidden;
   border: 1px solid rgba(36, 25, 22, 0.1);

@@ -39,6 +39,7 @@ Routes:
 - `/content/` - video playlist
 - `/sri-lanka` - mobile-first editorial retreat page
 - `/sri-lanka-october-7-days` - seven-day Sri Lanka RESET retreat page
+- `/palms-image` - The Palms image library with asset dimensions and sizes
 - `/bali-september-7-days` - seven-day Bali retreat page
 - `/retreats-directory` - read-only administrative retreat directory
 
