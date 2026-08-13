@@ -8,8 +8,6 @@ const images = {
   reset:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/the-rest.webp",
   home: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/your-home.webp",
-  ayurveda:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/shirodhara-treatment.jpg",
   practice:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-holding-clarinet-darker.webp",
   journey:
@@ -95,10 +93,10 @@ const dayBlocks = [
     image:
       "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/0fa4e121-b640-413b-9fd9-fa4200db4ac3/Foto+21-02-2025%2C+14+08+25.jpg?format=1000w",
     items: [
-      "Ayurvedic health shot and herbal tea",
-      "Guided meditation",
+      "Local health shots and herbal teas",
+      "Guided morning meditation exploring the day's theme",
       "Morning movement practice",
-      "Ayurvedic breakfast",
+      "Nutritious vegetarian breakfast",
     ],
   },
   {
@@ -165,7 +163,6 @@ const sections = [
   ["welcome", "Welcome"],
   ["reset", "The RESET"],
   ["home", "Your Home"],
-  ["ayurveda", "Ayurveda"],
   ["practice", "The Practice"],
   ["journey", "The Journey"],
   ["typical-day", "A Typical Day"],
@@ -372,37 +369,11 @@ export default function SriLankaOctober7Days() {
         </div>
       </section>
 
-      <div id="ayurveda">
-        <FullImage
-          src={images.ayurveda}
-          alt="Shirodhara treatment in Sri Lanka"
-          index="04"
-          label="AYURVEDA"
-        >
-          <p>Ayurveda’s wisdom is woven throughout your RESET.</p>
-        </FullImage>
-      </div>
-
-      <section className="sri-lanka-reset-page__section">
-        <div className="sri-lanka-reset-page__columns">
-          <p>
-            Upon arrival, each guest receives a private consultation and Dosha
-            assessment with The Palms’ Ayurvedic doctor, who creates a
-            personalised wellness plan.
-          </p>
-          <p>
-            Your journey includes a signature Shirodhara treatment, personalised
-            Ayurvedic nutritional guidance, and meals thoughtfully prepared
-            throughout the retreat.
-          </p>
-        </div>
-      </section>
-
       <div id="practice">
         <FullImage
           src={images.practice}
           alt="Tereza holding space during a breath and sound session"
-          index="05"
+          index="04"
           label="THE PRACTICE"
         >
           <p>
@@ -415,22 +386,29 @@ export default function SriLankaOctober7Days() {
       <section className="sri-lanka-reset-page__section">
         <div className="sri-lanka-reset-page__columns">
           <p>
-            Alongside Tereza’s signature work, you’ll practise movement,
-            meditation and yoga, and share a traditional opening blessing with
-            local monks.
+            I'll also be introducing SUCO, an active meditation and global
+            somatic movement practice that I'm so excited to finally share with
+            you following my recent certification.
           </p>
           <p>
-            Together, these experiences weave breath, sound, movement, Ayurveda,
-            nature and meaningful connection into one continuous journey.
+            Alongside my own work, you'll practise yoga with a renowned local
+            guest facilitator, and we'll share traditional chanting together
+            with a special opening blessing with the monks.
           </p>
         </div>
+        <p>
+          Together, these experiences combine breath, sound and movement through
+          practices rooted in somatic experiencing, nervous system regulation
+          and embodied awareness as you know them - creating shifts that are not
+          only remembered, but deeply embodied.
+        </p>
       </section>
 
       <div id="journey">
         <FullImage
           src={images.journey}
           alt="Guests walking towards Koggala Lake"
-          index="06"
+          index="05"
           label="THE JOURNEY"
         >
           <p>
@@ -455,7 +433,7 @@ export default function SriLankaOctober7Days() {
       </section>
 
       <section id="typical-day" className="sri-lanka-reset-page__section">
-        <Eyebrow index="07">A TYPICAL DAY</Eyebrow>
+        <Eyebrow index="06">A TYPICAL DAY</Eyebrow>
         <div className="sri-lanka-reset-page__cards">
           {dayBlocks.map((block) => (
             <article
@@ -478,7 +456,7 @@ export default function SriLankaOctober7Days() {
         <FullImage
           src={images.inBetween}
           alt="Quiet moment at the Sri Lanka retreat"
-          index="08"
+          index="07"
           label="THE IN-BETWEEN"
         >
           <p>Not every moment is scheduled.</p>
@@ -496,7 +474,7 @@ export default function SriLankaOctober7Days() {
       </section>
 
       <section id="immersions" className="sri-lanka-reset-page__section">
-        <Eyebrow index="09">NATURE & CULTURAL IMMERSIONS</Eyebrow>
+        <Eyebrow index="08">NATURE & CULTURAL IMMERSIONS</Eyebrow>
         <div className="sri-lanka-reset-page__cards sri-lanka-reset-page__cards--three">
           {immersions.map((item) => (
             <figure key={item.title} className="sri-lanka-reset-page__card">
@@ -508,7 +486,7 @@ export default function SriLankaOctober7Days() {
       </section>
 
       <section id="included" className="sri-lanka-reset-page__section">
-        <Eyebrow index="10">YOUR JOURNEY INCLUDES</Eyebrow>
+        <Eyebrow index="09">YOUR JOURNEY INCLUDES</Eyebrow>
         <div className="sri-lanka-reset-page__list-columns">
           <ul>
             {included.slice(0, 6).map((item) => (
@@ -524,7 +502,7 @@ export default function SriLankaOctober7Days() {
       </section>
 
       <section id="optional" className="sri-lanka-reset-page__section">
-        <Eyebrow index="11">NOT INCLUDED</Eyebrow>
+        <Eyebrow index="10">NOT INCLUDED</Eyebrow>
         <div className="sri-lanka-reset-page__list-columns">
           <ul>
             {optional.slice(0, 4).map((item) => (
@@ -543,7 +521,7 @@ export default function SriLankaOctober7Days() {
         <FullImage
           src={images.investment}
           alt="The Palms retreat accommodation"
-          index="12"
+          index="11"
           label="INVESTMENT"
         >
           <p>Choose your home.</p>
