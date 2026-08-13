@@ -103,11 +103,7 @@ const dayBlocks = [
     title: "MIDDAY",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-ahangama-demo/womoen-walking-along-the-pool.jpg",
-    items: [
-      "Free time",
-      "Bodywork and treatments",
-      "Time to rest, swim, journal, read or simply be",
-    ],
+    items: ["Free time", "Time to rest, swim, journal", " Read or simply be"],
   },
   {
     title: "GOLDEN HOUR",
@@ -136,7 +132,7 @@ const dayBlocks = [
 const included = [
   "7 nights accommodation at The Palms",
   "Round-trip airport transfers",
-  "Daily vegetarian breakfast, nourishing afternoon snacks and dinner",
+  "Daily vegetarian breakfast",
   "Water, herbal tea and fresh fruit throughout your stay",
   "Sunset dinner by the ocean",
   "All of Tereza's signature sessions and workshops throughout the retreat",

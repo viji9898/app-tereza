@@ -28,7 +28,7 @@ export default function BaliInvestmentPage() {
           allocated in the order that bookings are received.
         </p>
         <p>
-          <small>Bring - a - friend - and - save!</small>
+          <small>Bring - a - friend & Save!</small>
         </p>
       </section>
     </main>
