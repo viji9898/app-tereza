@@ -146,7 +146,7 @@ const optional = [
   "International flights to and from Sri Lanka",
   "Travel insurance (required)",
   "Visa fees (if applicable)",
-  "Additional Ayurvedic treatments and spa therapies",
+  "Additional food & beverages ordered à la carte",
   "Optional excursions beyond the retreat programme",
   "Personal purchases and pocket money",
   "Alcoholic beverages",
@@ -371,8 +371,9 @@ export default function SriLankaOctober7Days() {
           label="THE PRACTICE"
         >
           <p>
-            Explore SONIC BREATH™, SOUND TEMPLE™, FLOATING TEMPLE™ and BREATH
-            LAB workshops.
+            Throughout the retreat, we'll explore the full spectrum of my
+            signature work, including SONIC BREATH™️, SOUND TEMPLE™️, FLOATING
+            TEMPLE™️, <br></br>and a series of BREATH LAB workshops.
           </p>
         </FullImage>
       </div>
@@ -489,17 +490,19 @@ export default function SriLankaOctober7Days() {
         <Eyebrow index="09">YOUR JOURNEY INCLUDES</Eyebrow>
         <div className="sri-lanka-reset-page__list-columns">
           <ul>
-            {included.slice(0, 5).map((item) => (
+            {included.slice(0, 6).map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
           <ul>
-            {included.slice(5).map((item) => (
+            {included.slice(6).map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
           <p>
-            <small>⁠Donations to the monks are warmly welcomed.</small>
+            <small>
+              <sup>*</sup>⁠Donations to the monks are warmly welcomed.
+            </small>
           </p>
         </div>
       </section>
