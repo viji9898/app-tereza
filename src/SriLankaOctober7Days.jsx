@@ -105,8 +105,8 @@ const dayBlocks = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-ahangama-demo/womoen-walking-along-the-pool.jpg",
     items: [
       "Free time",
-      "Personal Ayurvedic treatments",
-      "Time to rest, swim, journal or read",
+      "Bodywork and treatments",
+      "Time to rest, swim, journal, read or simply be",
     ],
   },
   {
@@ -114,9 +114,9 @@ const dayBlocks = [
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-kurulu-bay-retreat/man-in-boat-koggala-lanke.jpg",
     items: [
-      "Nature or cultural immersion",
-      "Monk blessing",
-      "Koggala Lake",
+      "Tea Plantation Excursion",
+      "Monk Blessing Ceremony",
+      "Koggala Lake Boat Excursion",
       "Temple visit",
     ],
   },
@@ -128,24 +128,22 @@ const dayBlocks = [
       "SONIC BREATH™",
       "SOUND TEMPLE™",
       "FLOATING TEMPLE™",
-      "Ayurvedic dinner",
+      "Curated dinner experience",
     ],
   },
 ];
 
 const included = [
-  "6 nights accommodation at The Palms",
+  "7 nights accommodation at The Palms",
   "Round-trip airport transfers",
-  "Daily Ayurvedic breakfast, nourishing afternoon snacks and dinner",
+  "Daily vegetarian breakfast, nourishing afternoon snacks and dinner",
   "Water, herbal tea and fresh fruit throughout your stay",
-  "Private Ayurvedic consultation and Dosha assessment",
-  "Personalised Ayurvedic nutrition programme",
-  "One 120-minute signature Shirodhara treatment",
-  "Complimentary Ayurvedic follow-up consultation",
-  "All of Tereza's signature sessions and workshops",
+  "Sunset dinner by the ocean",
+  "All of Tereza's signature sessions and workshops throughout the retreat",
+  "2 yoga classes with a renowned local guest facilitator",
   "Daily guided meditation and mindfulness practices",
-  "Nature and cultural immersions",
-  "Traditional monk blessing ceremony",
+  "3 Nature and Cultural Immersions",
+  "Traditional Monk Blessing Ceremony*",
 ];
 
 const optional = [
@@ -465,11 +463,17 @@ export default function SriLankaOctober7Days() {
 
       <section className="sri-lanka-reset-page__section">
         <p className="sri-lanka-reset-page__lead">
-          Some of the most meaningful moments happen between sessions.
+          Some of the most meaningful parts of the retreat happen between the
+          sessions.
         </p>
         <p>
-          Swimming in the ocean. Reading beneath the palms. A conversation over
-          tea. Watching the sunset. Receiving an Ayurvedic massage.
+          Swimming in the ocean. Reading beneath the palms. A soul-touching
+          conversation over tea. Watching the sunset. Falling asleep after SOUND
+          TEMPLE™️.
+        </p>
+        <p>
+          Those quiet moments become just as much a part of the journey as the
+          workshops and experiences themselves.
         </p>
       </section>
 
@@ -530,8 +534,9 @@ export default function SriLankaOctober7Days() {
 
       <section className="sri-lanka-reset-page__section">
         <p className="sri-lanka-reset-page__lead">
-          A limited number of beautifully designed rooms are available, each
-          selected for comfort, privacy and deep rest.
+          A limited number of beautifully designed rooms are available. Each has
+          been thoughtfully selected to provide comfort, privacy, and a peaceful
+          place to rest and integrate throughout the journey.
         </p>
         <div className="sri-lanka-reset-page__investment-grid">
           {investmentRooms.map((room) => (
