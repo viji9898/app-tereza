@@ -10,9 +10,9 @@ export default function SriLankaInvestmentPage() {
 
         <h1 className="sri-lanka-investment-page__title">Investment</h1>
         <p className="sri-lanka-investment-page__meta">
-          A 7-Day | 6-Night Retreat curated by Tereza Dos Santos
+          A 8-Day | 7-Night Retreat curated by Tereza Dos Santos
           <br />
-          October 3 — October 9, 2026
+          October 2 — October 9, 2026
         </p>
         <dl className="sri-lanka-investment-page__pricing">
           <div className="sri-lanka-investment-page__price">
