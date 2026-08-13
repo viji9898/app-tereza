@@ -216,8 +216,8 @@ export default function SriLankaOctober7Days() {
             October 2 — October 9, 2026
           </p>
           <div className="sri-lanka-reset-page__hero-lines">
-            <p>A RESET to what matters.</p>
-            <p>A RESET to yourself.</p>
+            <p>Less Noise.</p>
+            <p>More You.</p>
           </div>
         </div>
       </section>

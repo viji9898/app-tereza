@@ -53,9 +53,9 @@ const pageMetadata = {
   },
   sriLankaOctober7Days: {
     title:
-      "The RESET Sri Lanka Retreat | October 3-9, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
+      "The RESET Sri Lanka Retreat | October 2-9, 2026 | 8 Days, 7 Nights | Tereza Dos Santos",
     description:
-      "Join The RESET Sri Lanka at The Palms, an open retreat running October 3-9, 2026 with 7 days and 6 nights of Ayurveda, movement, sound, and immersive restoration curated by Tereza Dos Santos.",
+      "Join The RESET Sri Lanka at The Palms, an open retreat running October 2-9, 2026 with 8 days and 7 nights of movement, sound, and immersive restoration curated by Tereza Dos Santos.",
     image:
       "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
     imageAlt: "Sri Lanka retreat pool framed by tropical palms",
@@ -63,7 +63,7 @@ const pageMetadata = {
   sriLankaOctober7DaysInvestment: {
     title: "Investment | The RESET Sri Lanka Retreat | Tereza Dos Santos",
     description:
-      "Investment and room information for The RESET Sri Lanka retreat, October 3-9, 2026.",
+      "Investment and room information for The RESET Sri Lanka retreat, October 2-9, 2026.",
     image:
       "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/92c414ec-5896-48d1-92a4-10dc10450838/KuruluBaySriLanka050424_NateleeCocks_062.jpg?format=2500w",
     imageAlt: "The Palms retreat accommodation in Sri Lanka",
