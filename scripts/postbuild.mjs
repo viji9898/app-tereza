@@ -32,9 +32,9 @@ const routeMetadata = {
   sriLankaOctober7Days: {
     routePath: "/sri-lanka-october-7-days",
     title:
-      "The RESET Sri Lanka Retreat | October 3-9, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
+      "The RESET Sri Lanka Retreat | October 2-9, 2026 | 8 Days, 7 Nights | Tereza Dos Santos",
     description:
-      "Join The RESET Sri Lanka at The Palms, an open retreat running October 2-9, 2026 with 7 days and 6 nights of Ayurveda, movement, sound, and immersive restoration curated by Tereza Dos Santos.",
+      "Join The RESET Sri Lanka at The Palms, an open retreat running October 2-9, 2026 with 8 days and 7 nights of Ayurveda, movement, sound, and immersive restoration curated by Tereza Dos Santos.",
     image:
       "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
     imageAlt: "Sri Lanka retreat pool framed by tropical palms",
