@@ -53,19 +53,19 @@ const gallery = [
 const investmentRooms = [
   {
     src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/choose-home-02.webp",
-    title: "A Frames",
+    title: "",
   },
   {
     src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/choose-home-01.webp",
-    title: "A Frames",
+    title: "",
   },
   {
     src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/room-03.webp",
-    title: "Room Four",
+    title: "",
   },
   {
     src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/palms/choose-home-03.webp",
-    title: "Room Three",
+    title: "",
   },
 ];
 
@@ -216,8 +216,8 @@ export default function SriLankaOctober7Days() {
             October 2 — October 9, 2026
           </p>
           <div className="sri-lanka-reset-page__hero-lines">
-            <p>Less Noise.</p>
-            <p>More You.</p>
+            <p>Less noise.</p>
+            <p>More you.</p>
           </div>
         </div>
       </section>
@@ -493,15 +493,18 @@ export default function SriLankaOctober7Days() {
         <Eyebrow index="09">YOUR JOURNEY INCLUDES</Eyebrow>
         <div className="sri-lanka-reset-page__list-columns">
           <ul>
-            {included.slice(0, 6).map((item) => (
+            {included.slice(0, 5).map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
           <ul>
-            {included.slice(6).map((item) => (
+            {included.slice(5).map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
+          <p>
+            <small>⁠Donations to the monks are warmly welcomed.</small>
+          </p>
         </div>
       </section>
 
