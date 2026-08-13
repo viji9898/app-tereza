@@ -17,11 +17,11 @@ export default function SriLankaInvestmentPage() {
         <dl className="sri-lanka-investment-page__pricing">
           <div className="sri-lanka-investment-page__price">
             <dt>Single Occupancy</dt>
-            <dd>1,900 USD</dd>
+            <dd>2,200 USD</dd>
           </div>
           <div className="sri-lanka-investment-page__price">
             <dt>Double Occupancy</dt>
-            <dd>1,700 USD</dd>
+            <dd>1,900 USD</dd>
           </div>
         </dl>
         <p className="sri-lanka-investment-page__copy">
