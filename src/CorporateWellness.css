@@ -1,0 +1,280 @@
+.corporate-wellness-page .kurulu-bay-page {
+  --kb-bg: #e9e8e3;
+  --kb-surface: #f4f2ec;
+  --kb-surface-strong: #d7d8d1;
+  --kb-text: #18231f;
+  --kb-muted: #5e6c67;
+  --kb-accent: #c94831;
+  --kb-accent-strong: #a93624;
+  --kb-rule: rgba(24, 35, 31, 0.2);
+  --kb-shadow: 0 18px 45px rgba(19, 31, 27, 0.1);
+  background: linear-gradient(180deg, #f1f0eb 0%, #e4e6e0 100%);
+}
+
+.corporate-wellness-page .kurulu-bay-page__hero::after {
+  background: linear-gradient(90deg, rgba(13, 28, 23, 0.78), rgba(13, 28, 23, 0.1));
+}
+
+.corporate-wellness-page .kurulu-bay-page__hero-copy {
+  max-width: 65rem;
+  justify-content: center;
+}
+
+.corporate-wellness-page .kurulu-bay-page__brand {
+  max-width: 9ch;
+  font-size: clamp(3.2rem, 11vw, 7rem);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.corporate-wellness-page .kurulu-bay-page__hero-lines {
+  max-width: 34rem;
+  margin: 0;
+  font-size: clamp(1.25rem, 3vw, 1.85rem);
+  line-height: 1.45;
+}
+
+.corporate-wellness-page .kurulu-bay-page__contents-trigger {
+  background: rgba(201, 72, 49, 0.86);
+}
+
+.corporate-wellness-page .kurulu-bay-page__contents-panel {
+  background: rgba(235, 235, 227, 0.94);
+  border-radius: 0;
+}
+
+.corporate-wellness-page__list-grid,
+.corporate-wellness-page__format-grid,
+.corporate-wellness-page__tools-grid,
+.corporate-wellness-page__stats-grid,
+.corporate-wellness-page__case-grid,
+.corporate-wellness-page__testimonial-grid {
+  display: grid;
+  gap: 1px;
+  margin-top: 2.5rem;
+  background: var(--kb-rule);
+}
+
+.corporate-wellness-page__list-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.corporate-wellness-page__list-grid p,
+.corporate-wellness-page__format,
+.corporate-wellness-page__tools-grid > article,
+.corporate-wellness-page__case-grid article,
+.corporate-wellness-page__testimonial-grid blockquote {
+  margin: 0;
+  padding: 1.5rem;
+  background: var(--kb-surface);
+}
+
+.corporate-wellness-page__impact-band {
+  display: grid;
+  gap: 2rem;
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background: #18231f;
+  color: #f1f0e9;
+}
+
+.corporate-wellness-page__impact-band h3,
+.corporate-wellness-page__format h3,
+.corporate-wellness-page__tools-grid h3,
+.corporate-wellness-page__case-grid h3,
+.corporate-wellness-page__outcomes h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.corporate-wellness-page__cost-list p {
+  margin: 0.35rem 0;
+}
+
+.corporate-wellness-page__deck-graphic,
+.corporate-wellness-page__clients {
+  display: block;
+  width: 100%;
+  margin-top: 2.5rem;
+  object-fit: contain;
+}
+
+.corporate-wellness-page__format-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.corporate-wellness-page__format {
+  display: flex;
+  flex-direction: column;
+  min-height: 22rem;
+}
+
+.corporate-wellness-page__format > span,
+.corporate-wellness-page__format > strong,
+.corporate-wellness-page__tools-grid h3,
+.corporate-wellness-page__sources,
+.corporate-wellness-page__testimonial-grid cite {
+  color: var(--kb-accent-strong);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.corporate-wellness-page__format h3 {
+  margin-top: 2rem;
+}
+
+.corporate-wellness-page__format > strong {
+  margin-top: auto;
+}
+
+.corporate-wellness-page__tools-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.corporate-wellness-page__tools-grid article > div + div {
+  margin-top: 1.5rem;
+}
+
+.corporate-wellness-page__tools-grid p {
+  margin: 0.4rem 0 0;
+}
+
+.corporate-wellness-page__outcomes p {
+  margin: 0.45rem 0;
+}
+
+.corporate-wellness-page__statement {
+  margin-top: 3rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+  line-height: 1.35 !important;
+}
+
+.corporate-wellness-page__stats-section {
+  padding: 10vw 7vw;
+  background: #18231f;
+  color: #f1f0e9;
+}
+
+.corporate-wellness-page__stats-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.corporate-wellness-page__stats-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.corporate-wellness-page__stats-grid article {
+  padding: 1.25rem;
+  background: #18231f;
+}
+
+.corporate-wellness-page__stats-grid strong {
+  display: block;
+  color: #ef745b;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+}
+
+.corporate-wellness-page__stats-grid p {
+  line-height: 1.55;
+}
+
+.corporate-wellness-page__profile,
+.corporate-wellness-page__contact {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  min-height: 100vh;
+}
+
+.corporate-wellness-page__profile-image img,
+.corporate-wellness-page__contact > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.corporate-wellness-page__profile-copy,
+.corporate-wellness-page__contact-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7vw;
+}
+
+.corporate-wellness-page__profile-copy p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.corporate-wellness-page__case-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.corporate-wellness-page__testimonial-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.corporate-wellness-page__testimonial-grid blockquote p {
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+.corporate-wellness-page__contact {
+  background: #c94831;
+  color: #fff7ee;
+}
+
+.corporate-wellness-page__contact-copy h2 {
+  max-width: 8ch;
+  margin: 0 0 1rem;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  line-height: 0.96;
+}
+
+.corporate-wellness-page__contact-copy > p {
+  font-size: 1.5rem;
+}
+
+.corporate-wellness-page__contact-copy a {
+  margin-top: 0.7rem;
+  color: inherit;
+  font-size: clamp(0.9rem, 2vw, 1.15rem);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 899px) {
+  .corporate-wellness-page__list-grid,
+  .corporate-wellness-page__format-grid,
+  .corporate-wellness-page__tools-grid,
+  .corporate-wellness-page__stats-grid,
+  .corporate-wellness-page__case-grid,
+  .corporate-wellness-page__testimonial-grid,
+  .corporate-wellness-page__profile,
+  .corporate-wellness-page__contact {
+    grid-template-columns: 1fr;
+  }
+
+  .corporate-wellness-page__format {
+    min-height: 17rem;
+  }
+
+  .corporate-wellness-page__profile-image,
+  .corporate-wellness-page__contact > img {
+    min-height: 65vh;
+  }
+
+  .corporate-wellness-page__profile-copy,
+  .corporate-wellness-page__contact-copy {
+    padding: 4rem 7vw;
+  }
+}

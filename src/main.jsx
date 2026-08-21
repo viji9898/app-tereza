@@ -7,6 +7,7 @@ import BaliSeptember7Days from "./BaliSeptember7Days";
 import BaliSeptember7DaysVillaBeji from "./BaliSeptember7DaysVillaBeji";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
+import CorporateWellness from "./CorporateWellness";
 import KuruluBayRetreat from "./KuruluBayRetreat";
 import PalmsImagesPage from "./PalmsImagesPage";
 import RetreatsPage from "./RetreatsPage";
@@ -152,6 +153,13 @@ const pageMetadata = {
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Contracts checklist page for Tereza Dos Santos",
+  },
+  corporate: {
+    title: "Corporate Wellness | Tereza Dos Santos",
+    description:
+      "Science-backed corporate wellness programs for team resilience, sustainable performance, recovery, and human connection with Tereza Dos Santos.",
+    image: "/corporate/cover.jpg",
+    imageAlt: "Corporate wellness with Tereza Dos Santos",
   },
 };
 
@@ -499,6 +507,8 @@ function App() {
               ? pageMetadata.palmsImages
               : pathname.startsWith("/bali-images")
                 ? pageMetadata.baliImages
+                : pathname.startsWith("/corporate")
+                  ? pageMetadata.corporate
                 : pathname.startsWith("/contracts")
                   ? pageMetadata.contracts
                   : pathname.startsWith("/bali-september-7-days/investment")
@@ -545,6 +555,10 @@ function App() {
 
   if (pathname.startsWith("/bali-images")) {
     return <BaliImagesPage />;
+  }
+
+  if (pathname.startsWith("/corporate")) {
+    return <CorporateWellness />;
   }
 
   if (pathname.startsWith("/contracts")) {
