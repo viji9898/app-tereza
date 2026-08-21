@@ -155,11 +155,12 @@ const pageMetadata = {
     imageAlt: "Contracts checklist page for Tereza Dos Santos",
   },
   corporate: {
-    title: "Corporate Wellness | Tereza Dos Santos",
+    title: "Corporate Wellness Programs | Tereza Dos Santos",
     description:
-      "Science-backed corporate wellness programs for team resilience, sustainable performance, recovery, and human connection with Tereza Dos Santos.",
-    image: "/corporate/cover.jpg",
-    imageAlt: "Corporate wellness with Tereza Dos Santos",
+      "Help your team thrive with science-backed corporate wellness programs for resilience, sustainable performance, recovery, and human connection.",
+    image:
+      "https://www.terezadossantos.com/corporate/og-corporate.jpg",
+    imageAlt: "Corporate wellness programs with Tereza Dos Santos",
   },
 };
 

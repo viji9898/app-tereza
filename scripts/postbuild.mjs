@@ -123,6 +123,14 @@ const routeMetadata = {
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Contracts checklist page for Tereza Dos Santos",
   },
+  corporate: {
+    routePath: "/corporate",
+    title: "Corporate Wellness Programs | Tereza Dos Santos",
+    description:
+      "Help your team thrive with science-backed corporate wellness programs for resilience, sustainable performance, recovery, and human connection.",
+    image: `${siteUrl}/corporate/og-corporate.jpg`,
+    imageAlt: "Corporate wellness programs with Tereza Dos Santos",
+  },
 };
 
 function toAbsoluteUrl(url) {
@@ -245,6 +253,7 @@ for (const [directoryName, metadata] of [
   ["palms-image", routeMetadata.palmsImages],
   ["bali-images", routeMetadata.baliImages],
   ["contracts", routeMetadata.contracts],
+  ["corporate", routeMetadata.corporate],
 ]) {
   await mkdir(`dist/${directoryName}`, { recursive: true });
   await writeFile(
