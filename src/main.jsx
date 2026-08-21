@@ -4,6 +4,7 @@ import BaliRetreat from "./BaliRetreat";
 import BaliInvestmentPage from "./BaliInvestmentPage";
 import BaliSeptemberRetreat from "./BaliSeptemberRetreat";
 import BaliSeptember7Days from "./BaliSeptember7Days";
+import BaliSeptember7DaysVillaBeji from "./BaliSeptember7DaysVillaBeji";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import KuruluBayRetreat from "./KuruluBayRetreat";
@@ -91,6 +92,15 @@ const pageMetadata = {
       "The RESET Bali Retreat | September 23-29, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
     description:
       "Join The RESET Bali, an open retreat running September 23-29, 2026 with 7 days and 6 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+    imageAlt: "Women standing in a Bali paddy field",
+  },
+  baliSeptember7DaysVillaBeji: {
+    title:
+      "The RESET Bali Retreat at Villa Beji | September 23-29, 2026 | Tereza Dos Santos",
+    description:
+      "Join The RESET Bali at Villa Beji, running September 23-29, 2026 with 7 days and 6 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
@@ -493,6 +503,10 @@ function App() {
                   ? pageMetadata.contracts
                   : pathname.startsWith("/bali-september-7-days/investment")
                     ? pageMetadata.baliSeptember7DaysInvestment
+                    : pathname.startsWith(
+                          "/bali-september-7-days-villa-beji",
+                        )
+                      ? pageMetadata.baliSeptember7DaysVillaBeji
                     : pathname.startsWith("/bali-september-7-days")
                       ? pageMetadata.baliSeptember7Days
                       : pathname.startsWith("/bali-september")
@@ -539,6 +553,10 @@ function App() {
 
   if (pathname.startsWith("/bali-september-7-days/investment")) {
     return <BaliInvestmentPage />;
+  }
+
+  if (pathname.startsWith("/bali-september-7-days-villa-beji")) {
+    return <BaliSeptember7DaysVillaBeji />;
   }
 
   if (pathname.startsWith("/bali-september-7-days")) {
