@@ -125,11 +125,11 @@ const routeMetadata = {
   },
   corporate: {
     routePath: "/corporate",
-    title: "Corporate Wellness Programs | Tereza Dos Santos",
+    title: "Corporate Wellbeing Experiences | Tereza Dos Santos",
     description:
-      "Help your team thrive with science-backed corporate wellness programs for resilience, sustainable performance, recovery, and human connection.",
+      "Immersive wellbeing experiences for teams, company events, leadership retreats, offsites, conferences, and extraordinary gatherings worldwide.",
     image: `${siteUrl}/corporate/og-corporate.jpg`,
-    imageAlt: "Corporate wellness programs with Tereza Dos Santos",
+    imageAlt: "Immersive corporate wellbeing experiences with Tereza Dos Santos",
   },
 };
 
