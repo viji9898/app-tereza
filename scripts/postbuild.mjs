@@ -129,7 +129,8 @@ const routeMetadata = {
     description:
       "Immersive wellbeing experiences for teams, company events, leadership retreats, offsites, conferences, and extraordinary gatherings worldwide.",
     image: `${siteUrl}/corporate/og-corporate.jpg`,
-    imageAlt: "Immersive corporate wellbeing experiences with Tereza Dos Santos",
+    imageAlt:
+      "Immersive corporate wellbeing experiences with Tereza Dos Santos",
   },
 };
 

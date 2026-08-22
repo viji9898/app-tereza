@@ -158,9 +158,9 @@ const pageMetadata = {
     title: "Corporate Wellbeing Experiences | Tereza Dos Santos",
     description:
       "Immersive wellbeing experiences for teams, company events, leadership retreats, offsites, conferences, and extraordinary gatherings worldwide.",
-    image:
-      "https://www.terezadossantos.com/corporate/og-corporate.jpg",
-    imageAlt: "Immersive corporate wellbeing experiences with Tereza Dos Santos",
+    image: "https://www.terezadossantos.com/corporate/og-corporate.jpg",
+    imageAlt:
+      "Immersive corporate wellbeing experiences with Tereza Dos Santos",
   },
 };
 
@@ -510,23 +510,21 @@ function App() {
                 ? pageMetadata.baliImages
                 : pathname.startsWith("/corporate")
                   ? pageMetadata.corporate
-                : pathname.startsWith("/contracts")
-                  ? pageMetadata.contracts
-                  : pathname.startsWith("/bali-september-7-days/investment")
-                    ? pageMetadata.baliSeptember7DaysInvestment
-                    : pathname.startsWith(
-                          "/bali-september-7-days-villa-beji",
-                        )
-                      ? pageMetadata.baliSeptember7DaysVillaBeji
-                    : pathname.startsWith("/bali-september-7-days")
-                      ? pageMetadata.baliSeptember7Days
-                      : pathname.startsWith("/bali-september")
-                        ? pageMetadata.baliSeptember
-                        : pathname.startsWith("/bali-october")
-                          ? pageMetadata.bali
-                          : pathname.startsWith("/content")
-                            ? pageMetadata.content
-                            : pageMetadata.home;
+                  : pathname.startsWith("/contracts")
+                    ? pageMetadata.contracts
+                    : pathname.startsWith("/bali-september-7-days/investment")
+                      ? pageMetadata.baliSeptember7DaysInvestment
+                      : pathname.startsWith("/bali-september-7-days-villa-beji")
+                        ? pageMetadata.baliSeptember7DaysVillaBeji
+                        : pathname.startsWith("/bali-september-7-days")
+                          ? pageMetadata.baliSeptember7Days
+                          : pathname.startsWith("/bali-september")
+                            ? pageMetadata.baliSeptember
+                            : pathname.startsWith("/bali-october")
+                              ? pageMetadata.bali
+                              : pathname.startsWith("/content")
+                                ? pageMetadata.content
+                                : pageMetadata.home;
 
   usePageMetadata(metadata);
 
