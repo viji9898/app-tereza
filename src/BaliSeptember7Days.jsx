@@ -48,7 +48,7 @@ const homeFrames = [
     alt: "Chair and room view at Dwa Chandra",
   },
   {
-    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/twin-room-view.jpg",
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/twin-room-view.webp",
     alt: "Twin room view at Dwa Chandra",
   },
   {
@@ -117,19 +117,19 @@ const guideCards = [
 
 const investmentRoomImages = [
   {
-    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-pool.webp",
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking_pool_optimised.webp",
     alt: "Dwa Chandra room overlooking the pool",
   },
   {
-    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-balcony.webp",
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-balcony.optimised.webp",
     alt: "Dwa Chandra room overlooking a balcony",
   },
   {
-    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-over-looking-trees.webp",
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-over-looking-trees_optmisied.webp",
     alt: "Dwa Chandra room overlooking the trees",
   },
   {
-    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-bathtub-outdoors.webp",
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-bathtub-outdoors_optimised.webp",
     alt: "Dwa Chandra room with an outdoor bathtub view",
   },
 ];
