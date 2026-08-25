@@ -11,23 +11,23 @@ const imageAssets = {
   returnHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view-from-room-of-ubud-resort.jpg",
   homeHero:
-    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/ce95e139-6fb5-4bc9-8cee-11fb1d046dc5/dwa+chandra.jpeg",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa_chandra_home_hero.webp",
   practiceHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tezera-edge-inifity.webp",
   journeyHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
   morning:
-    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/438d4804-2bad-4edd-a652-45f18a8453eb/Bali+Hai_UpperShala1.jpg",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/morning_ritual_shala.webp",
   midday:
-    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/c234d272-a808-4c82-83dc-9144a685d060/DSC01089.jpg",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/midday_massage.webp",
   goldenHour:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-bali-sunet-temple.webp",
   evening:
-    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/3641c094-9ce7-4c7d-a908-39817f93e989/ENG00624.jpg",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/evening_ritual.webp",
   inBetweenHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/terereza-seatitng-by-the-river.webp",
   investmentHero:
-    "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa_chandra_villa_investment_page.webp",
   closing:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/Namaste+Raabta.webp",
 };
@@ -66,19 +66,19 @@ const spaceCards = [
     title: "The Glass Shala",
     overlayTitle: "THE GLASS SHALA",
     image:
-      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/1724831548844-OO1ETH1UNT9VQL55D54I/dwa+chandra+yoga+shala.JPG",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/glass_yoga_shala.webp",
   },
   {
     title: "The Open Pavilion",
     overlayTitle: "THE OPEN PAVILION",
     image:
-      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/1e9fbf4f-586d-4322-a80d-a5a22f923dfb/65d41b51-39ba-4f88-abd1-7b7deedb4b70+2.jpg",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/open_pavillion.webp",
   },
   {
     title: "The Hanging Pool With Firepit",
     overlayTitle: "THE HANGING POOL WITH FIREPIT",
     image:
-      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/ed5f095e-fe24-4316-b1b6-4a19b04db449/DSC00376.jpeg",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/hanging_pool.webp",
   },
   {
     title: "The River Gorge",
@@ -92,19 +92,19 @@ const guideCards = [
   {
     title: "Bex Tyrer",
     image:
-      "https://www.balispiritfestival.com/wp-content/uploads/2019/07/BSF23-Bex-Tyrer-Headshot.jpg",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/bex_tyrer.webp",
     overlayTitle: "BEX TYRER",
   },
   {
     title: "Jordi Jules",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpdMnJPCj4_QXmCYAz5z5xkyRjIzBzxBh8un9PCbgtIA&s=10",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/jordi_jules.jpeg",
     overlayTitle: "JORDI JULES",
   },
   {
     title: "Francie La Flow",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOBgiFERtnXITvYrcCHREfUPN9NcgAseiiJkJoNh5KA&s=10",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/francie_la_flow.jpeg",
     overlayTitle: "FRANCIE LA FLOW",
   },
   {
