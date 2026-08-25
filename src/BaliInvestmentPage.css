@@ -10,7 +10,7 @@
   width: 100%;
   min-height: 100vh;
   min-height: 100svh;
-  padding: clamp(2rem, 7vw, 6rem);
+  padding: clamp(2.5rem, 6vw, 5rem);
   background:
     linear-gradient(rgba(28, 32, 24, 0.48), rgba(28, 32, 24, 0.72)),
     url("https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg")
@@ -32,11 +32,15 @@
 }
 
 .bali-investment-page__meta {
-  margin: 0 0 clamp(1.5rem, 3vh, 2.25rem);
+  margin: 0;
   color: rgba(255, 250, 242, 0.82);
   font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
   font-size: clamp(0.82rem, 1.5vw, 1rem);
   line-height: 1.65;
+}
+
+.bali-investment-page__meta em {
+  font-style: italic;
 }
 
 .bali-investment-page__title {
@@ -51,7 +55,7 @@
 .bali-investment-page__pricing {
   display: grid;
   width: min(100%, 680px);
-  margin: clamp(2rem, 5vh, 3.5rem) 0 0;
+  margin: clamp(1.5rem, 4vh, 2.5rem) 0 0;
   border-top: 1px solid rgba(255, 250, 242, 0.45);
   border-bottom: 1px solid rgba(255, 250, 242, 0.45);
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -82,19 +86,86 @@
 .bali-investment-page__price dd {
   margin-top: 0.55rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
-.bali-investment-page__copy {
-  max-width: 620px;
-  margin: clamp(1.5rem, 4vh, 2.5rem) 0 0;
-  color: rgba(255, 250, 242, 0.88);
+.bali-investment-page__price dd,
+.bali-investment-page__price dd span {
+  display: grid;
+  justify-items: center;
+}
+
+.bali-investment-page__price dd del {
+  color: rgba(255, 250, 242, 0.64);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.bali-investment-page__price dd strong {
+  margin-top: 0.15rem;
+  font-size: clamp(1.65rem, 3vw, 2.15rem);
+  font-weight: 400;
+}
+
+.bali-investment-page__price dd span {
+  margin-top: 0.75rem;
   font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  line-height: 1.7;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.bali-investment-page__price dd small {
+  font-size: 0.82rem;
+}
+
+.bali-investment-page__payment-plan,
+.bali-investment-page__room-note {
+  max-width: 620px;
+  margin-top: clamp(1.4rem, 3vh, 2rem);
+  font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+}
+
+.bali-investment-page__payment-plan h2,
+.bali-investment-page__room-note h2,
+.bali-investment-page__payment-plan p,
+.bali-investment-page__room-note p {
+  margin: 0;
+}
+
+.bali-investment-page__payment-plan h2 {
+  font-size: clamp(0.78rem, 1.5vw, 0.92rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.bali-investment-page__payment-plan p {
+  margin-top: 0.45rem;
+  color: rgba(255, 250, 242, 0.82);
+  font-size: clamp(0.88rem, 1.5vw, 1rem);
+}
+
+.bali-investment-page__room-note {
+  padding-top: clamp(1.4rem, 3vh, 2rem);
+  border-top: 1px solid rgba(255, 250, 242, 0.35);
+}
+
+.bali-investment-page__room-note h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.bali-investment-page__room-note p {
+  margin-top: 0.65rem;
+  color: rgba(255, 250, 242, 0.88);
+  font-size: clamp(0.88rem, 1.6vw, 1rem);
+  line-height: 1.6;
 }
 
 @media (max-width: 560px) {
+  .bali-investment-page__section {
+    justify-content: flex-start;
+  }
+
   .bali-investment-page__pricing {
     grid-template-columns: 1fr;
   }
