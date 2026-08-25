@@ -7,7 +7,7 @@ const placeholder = (size, text) =>
 
 const imageAssets = {
   cover:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra.webp",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
   returnHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view-from-room-of-ubud-resort.jpg",
   homeHero:
@@ -25,7 +25,7 @@ const imageAssets = {
   evening:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/evening_ritual.webp",
   inBetweenHero:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/terereza-seatitng-by-the-river.webp",
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/terereza-seatitng-by-the-river_optimised.webp",
   investmentHero:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa_chandra_villa_investment_page.webp",
   closing:
@@ -56,7 +56,7 @@ const homeFrames = [
     alt: "View looking into a room at Dwa Chandra",
   },
   {
-    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view-from+the+-pool-looking-at-resort-house.jpg",
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view_from_the_pool_looking_at_resort_house.webp",
     alt: "View from the pool looking at the resort house",
   },
 ];
@@ -110,7 +110,7 @@ const guideCards = [
   {
     title: "Tereza Dos Santos",
     image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/Bali+Singing+Bowls+close+up.png",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza_singing_bowls.webp",
     overlayTitle: "TEREZA DOS SANTOS",
   },
 ];
@@ -186,14 +186,14 @@ const immersionCards = [
   {
     title: "Melukat Water Blessing",
     image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-at-water-temple.webp",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-at-water-temple_optimised.webp",
     overlayTitle: "Balinese priest blessing",
     overlayText: "At the river gorge",
   },
   {
     title: "Hidden-Gem Waterfall",
     image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/Waterfall+Tereza+Jump+2.webp",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/waterfall_tereza_jump.webp",
     overlayTitle: "Nature immersion",
     overlayText: "Jungle waterfall experience",
   },
