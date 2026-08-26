@@ -20,7 +20,7 @@ export default function BaliInvestmentPage() {
               <strong>$2,300 USD</strong>
               <span>
                 <em>$1,500 secures your place</em>
-                <small>then 2 × $400</small>
+                <small>then 2 monthly payments of $400</small>
               </span>
             </dd>
           </div>
@@ -31,7 +31,7 @@ export default function BaliInvestmentPage() {
               <strong>$2,900 USD</strong>
               <span>
                 <em>$1,500 secures your place</em>
-                <small>then 2 × $700</small>
+                <small>then 2 monthly payments of $700</small>
               </span>
             </dd>
           </div>
@@ -39,7 +39,6 @@ export default function BaliInvestmentPage() {
 
         <div className="bali-investment-page__payment-plan">
           <h2>Come now. Pay over time.</h2>
-          <p>Flexible payment plan included. No additional fees.</p>
         </div>
 
         <div className="bali-investment-page__room-note">
