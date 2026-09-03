@@ -16,6 +16,8 @@ const images = {
   pavilion:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/open_pavillion.webp",
   jam: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tezera-edge-inifity.webp",
+  paddyField:
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
   daily:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/morning_ritual_shala.webp",
   inBetween:
@@ -374,20 +376,20 @@ export default function BaliFriendsPage() {
           </div>
         </section>
 
+        <FullImage
+          src={images.jam}
+          alt="Movement above the clouds in Bali"
+          index="05"
+          label="THE JAM"
+        >
+          <h2 className="kurulu-bay-page__media-overlay-title">
+            There's no programme. I want to be really clear about that, because
+            I know how invitations like this usually read.
+          </h2>
+        </FullImage>
+
         <section id="jam">
-          <div className="bali-friends__wide-photo">
-            <img
-              src={images.jam}
-              alt="Movement above the clouds in Bali"
-              loading="lazy"
-            />
-          </div>
           <div className="kurulu-bay-page__text-section">
-            <SectionLabel>The jam</SectionLabel>
-            <p>
-              There's no programme. I want to be really clear about that,
-              because I know how invitations like this usually read.
-            </p>
             <p className="kurulu-bay-page__lead">
               <strong>
                 Nobody is teaching. Nobody is being taught. What happens is
@@ -404,30 +406,38 @@ export default function BaliFriendsPage() {
             </p>
             <p>
               I'll be doing my thing too. Some SONIC BREATH™, probably a SOUND
-              TEMPLE™, a FLOATING TEMPLE™ if the mood takes us. Not as a
-              schedule — as an offering, when it feels right, for whoever's
-              around.
+              TEMPLE™ if the mood takes us. Not as a schedule — as an offering,
+              when it feels right, for whoever's around.
             </p>
             <p>
               And if you're in the middle of building something: bring it. There
               are beautiful working and co-working spaces, a library, fast wifi,
-              and the kind of environment that makes work feel like a pleasure
-              instead of a grind. Several of us will probably be doing exactly
-              that.
+              and the kind of energy and environment that makes work feel like a
+              pleasure instead of a grind. Several of us will probably be doing
+              exactly that.
             </p>
             <p>
               If what you need is to hermit for seven days and speak to no one —
-              that's completely allowed, and nobody will take it personally.
+              that's completely invited, and nobody will take it personally.
             </p>
             <p className="bali-friends__invitation">
               Everyone plays. Or doesn't.
             </p>
-            <SectionLabel>The shape of the week</SectionLabel>
-            <p>
+          </div>
+          <FullImage
+            src={images.paddyField}
+            alt="Women standing in a Bali paddy field"
+            index="06"
+            label="THE SHAPE OF THE WEEK"
+          >
+            <h2 className="kurulu-bay-page__media-overlay-title">
               There's no arc. No theme for each day building on the one before
-              it. The week will find its own shape and we'll find it together.
-              Though from experience, it tends to go something like:
-            </p>
+              it. The week will find its own shape and we'll co-create it
+              together.
+            </h2>
+          </FullImage>
+          <div className="kurulu-bay-page__text-section">
+            <p> Though from experience, it tends to go something like:</p>
             <div className="bali-friends__week-shape">
               <p>You sleep more than you expected to.</p>
               <p>Your body stops bracing.</p>
