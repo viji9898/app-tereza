@@ -26,6 +26,8 @@ const images = {
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-at-water-temple_optimised.webp",
   waterfall:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/waterfall_tereza_jump.webp",
+  investment:
+    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa_chandra_villa_investment_page.webp",
   roomDetail:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-balcony.optimised.webp",
   closing:
@@ -157,6 +159,25 @@ const immersionCards = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/9th-century+sites-goa-gajah.webp",
     overlayTitle: "9th-century sites",
     overlayText: "Guided walk through the rice fields",
+  },
+];
+
+const investmentRoomImages = [
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking_pool_optimised.webp",
+    alt: "Dwa Chandra room overlooking the pool",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-balcony.optimised.webp",
+    alt: "Dwa Chandra room overlooking a balcony",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-over-looking-trees_optmisied.webp",
+    alt: "Dwa Chandra room overlooking the trees",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/room-overlooking-bathtub-outdoors_optimised.webp",
+    alt: "Dwa Chandra room with an outdoor bathtub view",
   },
 ];
 
@@ -639,8 +660,19 @@ export default function BaliFriendsPage() {
           </div>
         </section>
 
+        <FullImage
+          src={images.investment}
+          alt="Investment at The RESET Friends Edition"
+          index="12"
+          label="CONTRIBUTION"
+        >
+          {/* <h2 className="kurulu-bay-page__media-overlay-title">
+            Choose your home
+          </h2> */}
+        </FullImage>
+
         <section id="investment" className="kurulu-bay-page__text-section">
-          <SectionLabel>Choose your home</SectionLabel>
+          {/* <SectionLabel>Choose your home</SectionLabel> */}
           <p className="kurulu-bay-page__lead">
             Dwa Chandra is, without question, my favourite place to stay in
             Bali. It's where I come to write, to create, to breathe, and to
@@ -650,14 +682,32 @@ export default function BaliFriendsPage() {
             story, and I couldn't imagine a more beautiful place to share this
             journey with you.
           </p>
+          <div className="kurulu-bay-page__day-grid">
+            {investmentRoomImages.map((room) => (
+              <article
+                key={room.src}
+                className="kurulu-bay-page__day-card kurulu-bay-page__day-card--plain"
+              >
+                <img src={room.src} alt={room.alt} loading="lazy" />
+              </article>
+            ))}
+          </div>
           <p>
             A detailed room menu with photographs and layouts is available on
             request, so we can find the room that suits you best. Rooms are
             allocated in the order that bookings are received.
           </p>
           <div className="bali-friends__price">
-            <span>$1,100 USD</span>
-            <small>Per person · The whole week</small>
+            <div className="bali-friends__price-option">
+              <p>September 23 - 29</p>
+              <span>$1,110 USD</span>
+              <p>Per person · The whole week</p>
+            </div>
+            <div className="bali-friends__price-option">
+              <p>October 3 - 13</p>
+              <span>$1,990 USD</span>
+              <p>Per person · Across 11 days</p>
+            </div>
           </div>
           <p>
             <strong>
@@ -666,18 +716,10 @@ export default function BaliFriendsPage() {
             </strong>
           </p>
           <p>
-            The owner gave me a rate that makes no sense because he's a friend
-            and because the week suddenly opened up. All I'm doing is passing it
-            straight on. There's no margin in this for me — I'm coming as one of
-            you.
+            The owner gave us a wild 50% rate because she's a friend and because
+            the week suddenly opened up. All I'm doing is passing it straight
+            on. There's no margin in this for us — we're coming as one of you.
           </p>
-          <div className="bali-friends__landscape">
-            <img
-              src={images.roomDetail}
-              alt="A draped bedroom at Dwa Chandra"
-              loading="lazy"
-            />
-          </div>
         </section>
 
         <section

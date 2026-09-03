@@ -254,14 +254,25 @@
 
 .bali-friends-page .bali-friends__price {
   display: grid;
-  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 5vw, 4rem);
   margin: 3.5rem 0;
   padding-top: 2rem;
   border-top: 1px solid var(--kb-rule);
 }
 
+.bali-friends-page .bali-friends__price-option {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+}
+
+.bali-friends-page .bali-friends__price-option p {
+  margin: 0;
+}
+
 .bali-friends-page .bali-friends__price span {
-  font-size: clamp(2.6rem, 7vw, 5rem);
+  font-size: clamp(1.3rem, 3.5vw, 2.5rem);
   font-weight: 300;
   line-height: 1;
 }
