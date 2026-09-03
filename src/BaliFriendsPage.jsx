@@ -191,8 +191,7 @@ const notIncluded = [
   "International flights to and from Bali",
   "Travel insurance (required)",
   "Visa fees (if applicable)",
-  "Lunches and dinners",
-  "Additional food & beverages ordered a la carte",
+  "Lunches and dinners can be ordered a la carte",
   "Optional excursions and activities beyond what's included",
   "Personal purchases & pocket money",
   "Alcoholic beverages",
@@ -584,7 +583,7 @@ export default function BaliFriendsPage() {
 
         <section id="culture" className="kurulu-bay-page__text-section">
           <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
-          <h2 className="kurulu-bay-page__headline">
+          <h2 className="kurulu-bay-page__headline bali-friends__hero-text-size">
             Bali is right there, and none of it is compulsory.
           </h2>
           <p>

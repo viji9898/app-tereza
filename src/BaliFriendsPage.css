@@ -48,10 +48,16 @@
 }
 
 .bali-friends-page #in-between {
+  padding-top: clamp(2.5rem, 5vw, 4.5rem);
   padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
 }
 
 .bali-friends-page #culture {
+  padding-top: clamp(2.5rem, 5vw, 4.5rem);
+  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.bali-friends-page #included {
   padding-top: clamp(2.5rem, 5vw, 4.5rem);
 }
 
@@ -113,6 +119,11 @@
 .bali-friends-page .bali-friends__in-between-closing {
   font-size: clamp(0.68rem, 2vw, 1.625rem) !important;
   line-height: 1.35 !important;
+}
+
+.bali-friends-page .bali-friends__hero-text-size {
+  font-size: clamp(0.68rem, 2vw, 1.625rem);
+  line-height: 1.35;
 }
 
 .bali-friends-page .bali-friends__image-copy {
