@@ -200,7 +200,7 @@ const sections = [
 ];
 
 const included = [
-  "6 nights accommodation at Dwa Chandra",
+  "6 or 10 nights accommodation at Dwa Chandra",
   "Round-trip airport transfers",
   "Daily chef-prepared anti-inflammatory vegetarian breakfast",
   "Free-flowing herbal tea, black coffee, fresh tropical fruit and water throughout the day",
@@ -319,7 +319,7 @@ export default function BaliFriendsPage() {
         >
           <SectionLabel>AXÉ, MEUS AMORES 🤍</SectionLabel>
           <p className="kurulu-bay-page__lead">
-            If you're reading this, you're one of about a handfull people I'm
+            If you're reading this, you're one of about a handful of people I'm
             sending this to.
           </p>
           <p>Two days ago, I fainted.</p>
@@ -360,7 +360,7 @@ export default function BaliFriendsPage() {
           <p>
             Soul friends. Creatives. Healers. Artists. Childhood friends. People
             from completely different corners of my life who I have a feeling
-            would really enjoy finding themselves in the same room.
+            would really enjoy finding themselves in the same space.
           </p>
           <p>So that's what this is.</p>
         </section>
@@ -399,7 +399,7 @@ export default function BaliFriendsPage() {
               the frequency you carry.
             </p>
             <p className="bali-friends__invitation">
-              Lets go disappear together.
+              Let's go disappear together.
             </p>
             <p className="kurulu-bay-page__signature">
               Com amor,
@@ -523,8 +523,9 @@ export default function BaliFriendsPage() {
               exactly that.
             </p>
             <p>
-              If what you need is to hermit for seven days and speak to no one —
-              that's completely invited, and nobody will take it personally.
+              If what you need is to hermit for seven or 11 days and speak to no
+              one — that's completely invited, and nobody will take it
+              personally.
             </p>
             <p className="bali-friends__invitation">
               Everyone plays. Or doesn't.
@@ -547,7 +548,7 @@ export default function BaliFriendsPage() {
             <div className="bali-friends__week-shape">
               <p>You sleep more than you expected to.</p>
               <p>Your body stops bracing.</p>
-              <p>The conversations get good.</p>
+              <p>The conversations get deep.</p>
               <p>You stop reaching for your phone.</p>
               <p>You don't want to leave.</p>
             </div>
@@ -736,8 +737,8 @@ export default function BaliFriendsPage() {
           </h2>
           <div className="bali-friends__notes-list">
             <p>
-              20 of us, maximum. Rooms allocate in the order people say yes. It
-              is double occupancy.
+              20 of us, maximum. Rooms allocate in the order people say yes.
+              It's double occupancy.
             </p>
             <p>
               If you travel with a partner, a friend, a person — bring them.
