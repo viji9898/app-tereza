@@ -78,6 +78,57 @@ const spaceCards = [
   },
 ];
 
+const dayBlocks = [
+  {
+    title: "Morning",
+    overlayTitle: "M O R N I N G",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/morning_ritual_shala.webp",
+    items: [
+      "Homemade Jamu and herbal tea, whenever you surface",
+      "Anti-inflammatory breakfast",
+      "The valley with the mist still on it",
+      "Someone will probably be moving in one of the shalas — join or don't",
+    ],
+  },
+  {
+    title: "Midday",
+    overlayTitle: "M I D D A Y",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/midday_massage.webp",
+    items: [
+      "Bodywork and treatments",
+      "The pools",
+      " Market strolls",
+      "Work, if you're working",
+      "Sleep, if you're sleeping",
+    ],
+  },
+  {
+    title: "Golden Hour",
+    overlayTitle: "G O L D E N  H O U R",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-bali-sunet-temple.webp",
+    items: [
+      "The river gorge, the caves, the rice fields, the temple carvings in our own cliffs",
+      "Or further out — we'll tell you what's worth doing and get you there",
+      "Or the deck, with a book",
+    ],
+  },
+  {
+    title: "Evening",
+    overlayTitle: "E V E N I N G",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/evening_ritual.webp",
+    items: [
+      "Whatever someone feels moved to offer",
+      "The fire pit",
+      "Dinner — together, or not",
+      "The jungle as your soundtrack",
+    ],
+  },
+];
+
 const sections = [
   ["cover", "Cover"],
   ["letter", "Axé família"],
@@ -451,69 +502,29 @@ export default function BaliFriendsPage() {
           </div>
         </section>
 
-        <section id="day" className="kurulu-bay-page__text-section">
-          <SectionLabel>No typical day</SectionLabel>
-          <h2 className="kurulu-bay-page__headline">
-            There isn't one. But here's what's there every day, if and when you
-            want it.
+        <section
+          id="day"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
+          <SectionLabel index="07">A TYPICAL DAY</SectionLabel>
+          <h2 className="kurulu-bay-page__headline bali-friends__day-intro">
+            <span>There isn't one. But here's what's there every day,</span>
+            <span>if and when you want it.</span>
           </h2>
-          <div className="bali-friends__day-grid">
-            <article>
-              <SectionLabel>Morning</SectionLabel>
-              <p>
-                Homemade Jamu and herbal tea, whenever you surface
-                <br />
-                Anti-inflammatory breakfast
-                <br />
-                The valley with the mist still on it
-                <br />
-                Someone will probably be moving in one of the shalas — join or
-                don't
-              </p>
-            </article>
-            <article>
-              <SectionLabel>Midday</SectionLabel>
-              <p>
-                Bodywork and treatments
-                <br />
-                The pools
-                <br />
-                Work, if you're working
-                <br />
-                Sleep, if you're sleeping
-              </p>
-            </article>
-            <article>
-              <SectionLabel>Golden hour</SectionLabel>
-              <p>
-                The river gorge, the caves, the rice fields, the temple carvings
-                in our own cliffs
-                <br />
-                Or further out — we'll tell you what's worth doing and get you
-                there
-                <br />
-                Or the deck, with a book
-              </p>
-            </article>
-            <article>
-              <SectionLabel>Evening</SectionLabel>
-              <p>
-                Whatever someone feels moved to offer
-                <br />
-                The fire pit
-                <br />
-                Dinner — together, or not
-                <br />
-                The jungle as your soundtrack
-              </p>
-            </article>
-          </div>
-          <div className="bali-friends__landscape">
-            <img
-              src={images.daily}
-              alt="A shala looking over the Bali jungle"
-              loading="lazy"
-            />
+          <div className="kurulu-bay-page__day-grid">
+            {dayBlocks.map((block) => (
+              <article key={block.title} className="kurulu-bay-page__day-card">
+                <img src={block.image} alt={block.title} loading="lazy" />
+                <div className="kurulu-bay-page__day-card-overlay">
+                  <h3>{block.overlayTitle}</h3>
+                  <div className="kurulu-bay-page__day-card-lines">
+                    {block.items.map((item) => (
+                      <p key={item}>{item}</p>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </section>
 

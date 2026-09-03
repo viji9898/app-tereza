@@ -39,6 +39,14 @@
   padding-top: clamp(2.5rem, 5vw, 4.5rem);
 }
 
+.bali-friends-page #jam > .kurulu-bay-page__text-section:last-child {
+  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.bali-friends-page #day {
+  padding-top: clamp(2.5rem, 5vw, 4.5rem);
+}
+
 .bali-friends-page .bali-friends__letter {
   max-width: 840px;
 }
@@ -164,6 +172,16 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 3rem;
   column-gap: clamp(2rem, 8vw, 7rem);
+}
+
+.bali-friends-page .bali-friends__day-intro {
+  font-size: clamp(0.7rem, 2.2vw, 1.65rem);
+  line-height: 1.4;
+}
+
+.bali-friends-page .bali-friends__day-intro span {
+  display: block;
+  white-space: nowrap;
 }
 
 .bali-friends-page .bali-friends__landscape {
