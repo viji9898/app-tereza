@@ -124,7 +124,7 @@ const dayBlocks = [
       "Whatever someone feels moved to offer",
       "The fire pit",
       "Dinner — together, or not",
-      "The jungle as your soundtrack",
+      "The jungle as your sound bath",
     ],
   },
 ];
@@ -531,39 +531,35 @@ export default function BaliFriendsPage() {
         <FullImage
           src={images.inBetween}
           alt="A quiet moment beside the river"
-          label="It's all the in-between"
+          label="08 It's all the in-between"
           className="bali-friends__in-between"
         >
-          <div id="in-between" className="bali-friends__overlay-prose">
-            <p>On a retreat, the best parts happen between the sessions.</p>
-            <p className="kurulu-bay-page__media-overlay-title">
-              This week is all in-between.
-            </p>
-            <p>
-              Watching the morning mist lift from the valley. Barefoot walks
-              through the gardens. A conversation over tea that was going to be
-              twenty minutes and runs three hours. Listening to the river.
-              Receiving a traditional Balinese massage. Someone picking up an
-              instrument at exactly the right moment. Falling asleep with the
-              jungle as your soundtrack.
-            </p>
-            <p className="kurulu-bay-page__media-overlay-title">
-              That's not the space around the thing.
-              <br />
-              <strong>That is the thing.</strong>
-            </p>
-          </div>
+          <h2 className="kurulu-bay-page__media-overlay-title">
+            On a retreat, the best parts happen between the sessions.
+          </h2>
         </FullImage>
 
+        <section id="in-between" className="kurulu-bay-page__text-section">
+          <p className="kurulu-bay-page__lead">This week is all in-between.</p>
+          <p>
+            Watching the morning mist lift from the valley. Barefoot walks
+            through the gardens. A conversation over tea that was going to be
+            twenty minutes and runs three hours. Listening to the river.
+            Receiving a traditional Balinese massage. Someone picking up an
+            instrument at exactly the right moment. Falling asleep with nature
+            as your soundtrack.
+          </p>
+        </section>
+
         <section id="culture" className="kurulu-bay-page__text-section">
-          <SectionLabel>Nature & culture</SectionLabel>
+          <SectionLabel>09 - Nature & culture Immersions</SectionLabel>
           <h2 className="kurulu-bay-page__headline">
             Bali is right there, and none of it is compulsory.
           </h2>
           <p>
             A couple of immersions are included, and we'll do those together if
             there's appetite — the Melukat water blessing at the river gorge is
-            the one I'd genuinely hate for you to miss.
+            the one I'd genuinely love for you to experience.
           </p>
           <p>
             Beyond that: the hidden-gem jungle waterfall. Goa Gajah. The rice
@@ -571,8 +567,8 @@ export default function BaliFriendsPage() {
             some of it isn't, all of it is available.
           </p>
           <p>
-            Tell us what your capacity is on any given day and we'll point you
-            at the right thing — or at the hammock. Both are correct answers.
+            Check what your capacity is on any given day and we'll point you at
+            the right thing — or at the hammock. Both are correct answers.
           </p>
           <div className="bali-friends__photo-pair">
             <figure>
