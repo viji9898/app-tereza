@@ -14,12 +14,11 @@
 }
 
 .bali-friends-page .bali-friends__hero-copy {
-  justify-content: center;
-  padding-top: 22vh;
+  justify-content: flex-end;
 }
 
 .bali-friends-page .bali-friends__hero-copy .kurulu-bay-page__hero-lines {
-  margin-top: auto;
+  margin-top: clamp(2rem, 6vh, 4.5rem);
 }
 
 .bali-friends-page .kurulu-bay-page__text-section {
@@ -208,7 +207,7 @@
   }
 
   .bali-friends-page .bali-friends__hero-copy {
-    padding-top: 18vh;
+    padding-top: 10vw;
   }
 
   .bali-friends-page .bali-friends__hero-copy .kurulu-bay-page__meta {
