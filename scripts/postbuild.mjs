@@ -78,6 +78,16 @@ const routeMetadata = {
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
   },
+  baliFriends: {
+    routePath: "/bali-friends",
+    title:
+      "The RESET Friends Edition | September 23-29, 2026 | Dwa Chandra, Bali",
+    description:
+      "Seven days off-grid with Tereza Dos Santos and a handful of her favourite humans at Dwa Chandra, Bali, September 23-29, 2026.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
+    imageAlt: "Dwa Chandra surrounded by the Bali jungle",
+  },
   baliSeptember7DaysInvestment: {
     routePath: "/bali-september-7-days/investment",
     title: "Investment | The RESET Bali Retreat | Tereza Dos Santos",
@@ -206,6 +216,12 @@ function buildHtml(html, metadata) {
     metadata.description,
   );
   output = replaceMetaContent(output, "name", "twitter:image", imageUrl);
+  output = replaceMetaContent(
+    output,
+    "name",
+    "twitter:image:alt",
+    metadata.imageAlt,
+  );
   output = upsertHeadTag(
     output,
     /<meta\s+property="og:url"[^>]*>/,
@@ -249,6 +265,7 @@ for (const [directoryName, metadata] of [
     routeMetadata.baliSeptember7DaysInvestment,
   ],
   ["bali-september-7-days", routeMetadata.baliSeptember7Days],
+  ["bali-friends", routeMetadata.baliFriends],
   ["bali-september", routeMetadata.baliSeptember],
   ["retreats-directory", routeMetadata.retreatsDirectory],
   ["palms-image", routeMetadata.palmsImages],

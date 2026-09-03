@@ -185,15 +185,26 @@ function setMetaContent(name, content, attribute = "name") {
 
 function usePageMetadata(metadata) {
   useEffect(() => {
+    const canonicalUrl = `${window.location.origin}${window.location.pathname}`;
     document.title = metadata.title;
     setMetaContent("description", metadata.description);
     setMetaContent("og:title", metadata.title, "property");
     setMetaContent("og:description", metadata.description, "property");
     setMetaContent("og:image", metadata.image, "property");
     setMetaContent("og:image:alt", metadata.imageAlt, "property");
+    setMetaContent("og:url", canonicalUrl, "property");
     setMetaContent("twitter:title", metadata.title);
     setMetaContent("twitter:description", metadata.description);
     setMetaContent("twitter:image", metadata.image);
+    setMetaContent("twitter:image:alt", metadata.imageAlt);
+
+    let canonical = document.head.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", canonicalUrl);
   }, [metadata]);
 }
 
