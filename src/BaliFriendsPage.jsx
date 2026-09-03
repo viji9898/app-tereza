@@ -129,6 +129,37 @@ const dayBlocks = [
   },
 ];
 
+const immersionCards = [
+  {
+    title: "Melukat Water Blessing",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-at-water-temple_optimised.webp",
+    overlayTitle: "Balinese priest blessing",
+    overlayText: "At the river gorge",
+  },
+  {
+    title: "Hidden-Gem Waterfall",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/waterfall_tereza_jump.webp",
+    overlayTitle: "Nature immersion",
+    overlayText: "Jungle waterfall experience",
+  },
+  {
+    title: "Ecstatic Dance",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/yoga-barn-ecstatic-dance.webp",
+    overlayTitle: "Yoga Barn",
+    overlayText: "A renowned Bali ritual",
+  },
+  {
+    title: "Goa Gajah & Rice Fields",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/9th-century+sites-goa-gajah.webp",
+    overlayTitle: "9th-century sites",
+    overlayText: "Guided walk through the rice fields",
+  },
+];
+
 const sections = [
   ["cover", "Cover"],
   ["letter", "Axé família"],
@@ -552,7 +583,7 @@ export default function BaliFriendsPage() {
         </section>
 
         <section id="culture" className="kurulu-bay-page__text-section">
-          <SectionLabel>09 - Nature & culture Immersions</SectionLabel>
+          <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
           <h2 className="kurulu-bay-page__headline">
             Bali is right there, and none of it is compulsory.
           </h2>
@@ -570,23 +601,20 @@ export default function BaliFriendsPage() {
             Check what your capacity is on any given day and we'll point you at
             the right thing — or at the hammock. Both are correct answers.
           </p>
-          <div className="bali-friends__photo-pair">
-            <figure>
-              <img
-                src={images.melukat}
-                alt="Melukat water blessing"
-                loading="lazy"
-              />
-              <figcaption>Melukat · The river gorge</figcaption>
-            </figure>
-            <figure>
-              <img
-                src={images.waterfall}
-                alt="The jungle waterfall"
-                loading="lazy"
-              />
-              <figcaption>The jungle waterfall</figcaption>
-            </figure>
+          <div className="kurulu-bay-page__immersion-grid">
+            {immersionCards.map((item) => (
+              <figure
+                key={item.title}
+                className="kurulu-bay-page__immersion-card"
+              >
+                <img src={item.image} alt={item.title} loading="lazy" />
+                <div className="kurulu-bay-page__immersion-card-overlay">
+                  <strong>{item.overlayTitle}</strong>
+                  <p>{item.overlayText}</p>
+                </div>
+                <figcaption>{item.title}</figcaption>
+              </figure>
+            ))}
           </div>
         </section>
 
