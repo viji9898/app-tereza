@@ -47,6 +47,14 @@
   padding-top: clamp(2.5rem, 5vw, 4.5rem);
 }
 
+.bali-friends-page #investment {
+  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.bali-friends-page #notes {
+  padding-top: clamp(2.5rem, 5vw, 4.5rem);
+}
+
 .bali-friends-page #in-between {
   padding-top: clamp(2.5rem, 5vw, 4.5rem);
   padding-bottom: clamp(2.5rem, 5vw, 4.5rem);

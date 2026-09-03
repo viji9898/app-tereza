@@ -728,41 +728,27 @@ export default function BaliFriendsPage() {
         >
           <SectionLabel>A few honest notes</SectionLabel>
           <h2 className="kurulu-bay-page__headline">
-            The more of us weirdos, the merrier.
+            The more of us , the merrier.
           </h2>
           <div className="bali-friends__notes-list">
             <p>
-              [ number ] of us, maximum. Rooms go in the order people say yes.
+              20 of us, maximum. Rooms allocate in the order people say yes. It
+              is double occupancy.
             </p>
             <p>
               If you travel with a partner, a friend, a person — bring them.
               Just tell me who.
             </p>
+
+            <p>Send this on to anyone you'd want beside you that week.</p>
             <p>
-              If money is the thing standing between you and yes, say that to me
-              before you say no. We'll find a way.
-            </p>
-            <p>
-              Send this on to anyone you'd want beside you that week. Sally, or
-              whoever Sally is for you.
-            </p>
-            <p>
-              Let me know by [ date ] if you can — flights to Bali get silly
-              close in.
+              Need confirmation by Sunday, September 6th, if you are on board —
+              flights to Bali get silly close in.
             </p>
           </div>
-          <p className="bali-friends__date">
-            23 — 29 September
-            <br />
-            Bali
-          </p>
+
           <p className="bali-friends__invitation">
             Let me know how this lands in the body.
-          </p>
-          <p className="kurulu-bay-page__signature">
-            Com amor,
-            <br />
-            Tereza
           </p>
         </section>
 
