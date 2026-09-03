@@ -31,6 +31,14 @@
   margin-bottom: 1.45rem;
 }
 
+.bali-friends-page #home {
+  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.bali-friends-page #spaces {
+  padding-top: clamp(2.5rem, 5vw, 4.5rem);
+}
+
 .bali-friends-page .bali-friends__letter {
   max-width: 840px;
 }
@@ -55,19 +63,27 @@
   background: linear-gradient(180deg, rgba(13, 24, 18, 0.06) 25%, rgba(8, 17, 12, 0.76) 100%);
 }
 
-.bali-friends-page .bali-friends__welcome-hero p {
+.bali-friends-page .bali-friends__welcome-copy {
   position: absolute;
   left: clamp(1rem, 4vw, 3.5rem);
   bottom: clamp(0.9rem, 2vw, 2rem);
   z-index: 1;
-  margin: 0;
   padding-right: 1rem;
+}
+
+.bali-friends-page .bali-friends__welcome-copy .kurulu-bay-page__eyebrow {
+  margin-bottom: 0.65rem;
+  color: rgba(248, 243, 234, 0.75);
+}
+
+.bali-friends-page .bali-friends__welcome-copy > p:last-child {
+  margin: 0;
   font-size: clamp(0.68rem, 2vw, 1.625rem);
   font-weight: 400;
   line-height: 1.35;
 }
 
-.bali-friends-page .bali-friends__welcome-hero p span {
+.bali-friends-page .bali-friends__welcome-copy > p:last-child span {
   display: block;
   white-space: nowrap;
 }

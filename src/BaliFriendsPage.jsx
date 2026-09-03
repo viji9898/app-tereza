@@ -264,14 +264,17 @@ export default function BaliFriendsPage() {
               alt="Dwa Chandra in the Bali landscape"
               loading="lazy"
             />
-            <p>
-              <span>
-                Not a retreat. No programme. No schedule. Nothing to keep up
-              </span>
-              <span>
-                with and nobody performing anything — least of all me.
-              </span>
-            </p>
+            <div className="bali-friends__welcome-copy">
+              <SectionLabel index="02">THE RESET</SectionLabel>
+              <p>
+                <span>
+                  Not a retreat. No programme. No schedule. Nothing to keep up
+                </span>
+                <span>
+                  with and nobody performing anything — least of all me.
+                </span>
+              </p>
+            </div>
           </div>
           <div className="kurulu-bay-page__text-section">
             <p className="kurulu-bay-page__lead">
@@ -347,15 +350,15 @@ export default function BaliFriendsPage() {
             Not one hall we return to each day, but a collection of spaces and
             platforms, each built for a different kind of attention, each
             opening onto the valley. The glass shala. The open pavilion. The
-            meditation deck above the river. A library. Quiet corners with good
-            light and good wifi, if you've got something you're in the middle of
-            building.
+            meditation deck above the river. A library. Quiet corners with
+            beautiful light and strong wifi, if you've got something you're in
+            the middle of building.
           </p>
           <p>
             Use them however you want. Move through all of them, or claim one as
-            yours for the week and never leave it.
+            yours for the week and never leave it. They're here. Nothing in them
+            is scheduled.
           </p>
-          <p>They're here. Nothing in them is scheduled.</p>
           <div className="kurulu-bay-page__day-grid">
             {spaceCards.map((item) => (
               <figure
