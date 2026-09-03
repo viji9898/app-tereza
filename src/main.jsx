@@ -5,6 +5,7 @@ import BaliInvestmentPage from "./BaliInvestmentPage";
 import BaliSeptemberRetreat from "./BaliSeptemberRetreat";
 import BaliSeptember7Days from "./BaliSeptember7Days";
 import BaliSeptember7DaysVillaBeji from "./BaliSeptember7DaysVillaBeji";
+import BaliFriendsPage from "./BaliFriendsPage";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import CorporateWellness from "./CorporateWellness";
@@ -105,6 +106,15 @@ const pageMetadata = {
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
     imageAlt: "Women standing in a Bali paddy field",
+  },
+  baliFriends: {
+    title:
+      "The RESET Friends Edition | September 23-29, 2026 | Dwa Chandra, Bali",
+    description:
+      "Seven days off-grid with Tereza Dos Santos and a handful of her favourite humans at Dwa Chandra, Bali, September 23-29, 2026.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
+    imageAlt: "Dwa Chandra surrounded by the Bali jungle",
   },
   baliSeptember7DaysInvestment: {
     title: "Investment | The RESET Bali Retreat | Tereza Dos Santos",
@@ -512,6 +522,8 @@ function App() {
                   ? pageMetadata.corporate
                   : pathname.startsWith("/contracts")
                     ? pageMetadata.contracts
+                    : pathname.startsWith("/bali-friends")
+                      ? pageMetadata.baliFriends
                     : pathname.startsWith("/bali-september-7-days/investment")
                       ? pageMetadata.baliSeptember7DaysInvestment
                       : pathname.startsWith("/bali-september-7-days-villa-beji")
@@ -562,6 +574,10 @@ function App() {
 
   if (pathname.startsWith("/contracts")) {
     return <ContractsPage />;
+  }
+
+  if (pathname.startsWith("/bali-friends")) {
+    return <BaliFriendsPage />;
   }
 
   if (pathname.startsWith("/bali-september-7-days/investment")) {
