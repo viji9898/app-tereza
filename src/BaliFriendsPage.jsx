@@ -2,6 +2,10 @@ import { useMemo, useState } from "react";
 import "./BaliRetreat.css";
 import "./BaliFriendsPage.css";
 
+const WHATSAPP_URL = `https://wa.me/201010001133?text=${encodeURIComponent(
+  "Hello Tereza, I'd like to join The RESET Friends Edition in Bali.",
+)}`;
+
 const images = {
   cover:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
@@ -758,11 +762,21 @@ export default function BaliFriendsPage() {
           label="The RESET · Friends Edition"
           className="bali-friends__closing"
         >
-          <h2 className="kurulu-bay-page__media-overlay-title">
-            Less noise.
-            <br />
-            More us.
-          </h2>
+          <div className="bali-friends__closing-action">
+            <h2 className="kurulu-bay-page__media-overlay-title">
+              SO… BALI?
+              <br />
+            </h2>
+            <a
+              className="bali-friends__closing-link"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Message Tereza about The RESET Friends Edition on WhatsApp"
+            >
+              Let's go
+            </a>
+          </div>
         </FullImage>
       </main>
     </div>
