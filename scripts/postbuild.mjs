@@ -82,7 +82,7 @@ const routeMetadata = {
     routePath: "/bali-friends",
     title: "THE RESET | Friends Edition · Dwa Chandra, Bali",
     description:
-      "THE RESET Friends Edition at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — September 13, 2026.",
+      "THE RESET Friends Edition at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — October 13, 2026.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
     imageAlt: "Dwa Chandra surrounded by the Bali jungle",
