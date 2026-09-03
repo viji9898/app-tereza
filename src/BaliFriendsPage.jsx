@@ -160,12 +160,12 @@ export default function BaliFriendsPage() {
           id="letter"
           className="kurulu-bay-page__text-section bali-friends__letter"
         >
-          <SectionLabel>Axé família</SectionLabel>
+          <SectionLabel>AXÉ, MEUS AMORES 🤍</SectionLabel>
           <p className="kurulu-bay-page__lead">
             If you're reading this, you're one of about a dozen people I'm
-            sending it to.
+            sending this to.
           </p>
-          <p>Two days ago I fainted.</p>
+          <p>Two days ago, I fainted.</p>
           <p>
             Not dramatically. I'd been running on very little for months —
             holding a lot, pushing hard to make these retreats happen — and my
@@ -174,42 +174,60 @@ export default function BaliFriendsPage() {
           </p>
           <p>
             And the thought that arrived while I was down there wasn't{" "}
-            <em>how do I fix this</em>. It was much simpler, and much louder:{" "}
+            <em>how do I fix this?</em> It was much simpler, and much louder:
+          </p>
+          <p>
             <strong>I'm the one who needs this.</strong>
           </p>
+          <p>Here's what had already happened.</p>
           <p>
-            Here's what had already happened. Dwa Chandra — my favourite place
-            in Bali, the sanctuary I keep returning to, where I go to write and
-            breathe and remember what actually matters — had a last-minute
-            cancellation. The owner is a dear friend of mine, and he gave me a
-            rate that makes no sense, on the one condition that I come and do my
-            thing there.
+            Dwa Chandra — my favourite place in Bali, and probably in the world
+            — is the sanctuary I keep returning to. It's where I go to write and
+            compose, practice and breathe, and remember what actually matters.
           </p>
           <p>
-            My first impulse, obviously, was to build a retreat. Design the
-            programme. Sell the spots. Hold everyone.
+            They had a last-minute cancellation. The owner is a dope and dear
+            sister of mine, and she gave me a rate that makes absolutely no
+            sense, on the one condition that I come and do my thing there.
+          </p>
+          <p>My first impulse, obviously, was to build a retreat.</p>
+          <p>Design the programme. Sell the spots. Hold everyone.</p>
+          <p>Then I fainted, and a second, quieter impulse arrived:</p>
+          <p>
+            <strong>What if I just went?</strong>
           </p>
           <p>
-            Then I fainted, and a second, quieter impulse arrived: what if I
-            just went? What if instead of holding a room full of strangers, I
-            invited the people I actually want to be around, and we simply had
-            the week?
+            What if instead of holding a room full of strangers, I invited the
+            people I actually want to be around, and we simply had the week?
+          </p>
+          <p>
+            Soul friends. Creatives. Healers. Artists. Childhood friends. People
+            from completely different corners of my life who I have a feeling
+            would really enjoy finding themselves in the same room.
           </p>
           <p>So that's what this is.</p>
         </section>
 
         <section className="bali-friends__letter-continuation">
-          <img
-            src={images.welcome}
-            alt="Dwa Chandra in the Bali landscape"
-            loading="lazy"
-          />
+          <div className="bali-friends__welcome-hero">
+            <img
+              src={images.welcome}
+              alt="Dwa Chandra in the Bali landscape"
+              loading="lazy"
+            />
+            <p>
+              <span>
+                Not a retreat. No programme. No schedule. Nothing to keep up
+              </span>
+              <span>
+                with and nobody performing anything — least of all me.
+              </span>
+            </p>
+          </div>
           <div className="kurulu-bay-page__text-section">
             <p className="kurulu-bay-page__lead">
-              Not a retreat. No programme. No schedule. Nothing to keep up with
-              and nobody performing anything — least of all me. Just a handful
-              of people I love, scattered around the world, off-grid together in
-              an absurdly beautiful place for seven days.
+              Just a handful of people I love, scattered around the world,
+              off-grid together in an absurdly beautiful place for seven days.
             </p>
             <p>
               A spiritual jam session. Healing, co-working, swimming, eating,
@@ -220,7 +238,9 @@ export default function BaliFriendsPage() {
               You're on this list because you came to mind, and because I trust
               the frequency you carry.
             </p>
-            <p className="bali-friends__invitation">Come disappear with me.</p>
+            <p className="bali-friends__invitation">
+              Lets go disappear together.
+            </p>
             <p className="kurulu-bay-page__signature">
               Com amor,
               <br />
@@ -234,11 +254,10 @@ export default function BaliFriendsPage() {
           alt="Aerial view of Dwa Chandra"
           label="Your home"
         >
-          <h2 className="kurulu-bay-page__media-overlay-title">
+          <h2 className="kurulu-bay-page__media-overlay-title bali-friends__single-line">
             Dwa Chandra is a sanctuary where jungle, architecture and nature
             exist in perfect harmony.
           </h2>
-          <p className="bali-friends__location">Dwa Chandra · Pejeng</p>
         </FullImage>
 
         <section id="home" className="kurulu-bay-page__text-section">
