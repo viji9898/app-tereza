@@ -266,7 +266,7 @@ export default function BaliFriendsPage() {
               September 23 — September 29, 2026
             </p>
             <p className="kurulu-bay-page__meta kurulu-bay-page__meta--spaced">
-              October 3 — September 13, 2026
+              October 3 — October 13, 2026
             </p>
             <div className="kurulu-bay-page__hero-lines">
               <p>Less noise.</p>
@@ -319,7 +319,7 @@ export default function BaliFriendsPage() {
         >
           <SectionLabel>AXÉ, MEUS AMORES 🤍</SectionLabel>
           <p className="kurulu-bay-page__lead">
-            If you're reading this, you're one of about a dozen people I'm
+            If you're reading this, you're one of about a handfull people I'm
             sending this to.
           </p>
           <p>Two days ago, I fainted.</p>

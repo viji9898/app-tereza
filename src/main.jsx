@@ -108,10 +108,9 @@ const pageMetadata = {
     imageAlt: "Women standing in a Bali paddy field",
   },
   baliFriends: {
-    title:
-      "The RESET Friends Edition | September 23-29, 2026 | Dwa Chandra, Bali",
+    title: "THE RESET | Friends Edition · Dwa Chandra, Bali",
     description:
-      "Seven days off-grid with Tereza Dos Santos and a handful of her favourite humans at Dwa Chandra, Bali, September 23-29, 2026.",
+      "THE RESET Friends Edition at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — September 13, 2026.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
     imageAlt: "Dwa Chandra surrounded by the Bali jungle",
