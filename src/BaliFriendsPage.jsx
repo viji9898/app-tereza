@@ -30,6 +30,52 @@ const images = {
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/Namaste+Raabta.webp",
 };
 
+const homeFrames = [
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/chair-room-view.jpg",
+    alt: "Chair and room view at Dwa Chandra",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/twin-room-view.webp",
+    alt: "Twin room view at Dwa Chandra",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/firts-view-looking-into-room.jpg",
+    alt: "View looking into a room at Dwa Chandra",
+  },
+  {
+    src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view_from_the_pool_looking_at_resort_house.webp",
+    alt: "View from the pool looking at the resort house",
+  },
+];
+
+const spaceCards = [
+  {
+    title: "The Glass Shala",
+    overlayTitle: "THE GLASS SHALA",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/glass_yoga_shala.webp",
+  },
+  {
+    title: "The Open Pavilion",
+    overlayTitle: "THE OPEN PAVILION",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/open_pavillion.webp",
+  },
+  {
+    title: "The Hanging Pool With Firepit",
+    overlayTitle: "THE HANGING POOL WITH FIREPIT",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/hanging_pool.webp",
+  },
+  {
+    title: "The River Gorge",
+    overlayTitle: "THE RIVER GORGE",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/river_gorge.webp",
+  },
+];
+
 const sections = [
   ["cover", "Cover"],
   ["letter", "Axé família"],
@@ -68,17 +114,20 @@ const notIncluded = [
   "Alcoholic beverages",
 ];
 
-const SectionLabel = ({ children }) => (
-  <p className="kurulu-bay-page__eyebrow">{children}</p>
+const SectionLabel = ({ children, index }) => (
+  <p className="kurulu-bay-page__eyebrow">
+    {index ? `${index} ` : ""}
+    {children}
+  </p>
 );
 
-const FullImage = ({ src, alt, label, children, className = "" }) => (
+const FullImage = ({ src, alt, label, index, children, className = "" }) => (
   <section
     className={`kurulu-bay-page__media kurulu-bay-page__media--with-overlay bali-friends__full-image ${className}`}
   >
     <img src={src} alt={alt} loading="lazy" />
     <div className="kurulu-bay-page__media-overlay bali-friends__image-copy">
-      {label ? <SectionLabel>{label}</SectionLabel> : null}
+      {label ? <SectionLabel index={index}>{label}</SectionLabel> : null}
       {children}
     </div>
   </section>
@@ -251,8 +300,9 @@ export default function BaliFriendsPage() {
 
         <FullImage
           src={images.home}
-          alt="Aerial view of Dwa Chandra"
-          label="Your home"
+          alt="Dwa Chandra retreat sanctuary"
+          index="03"
+          label="YOUR HOME"
         >
           <h2 className="kurulu-bay-page__media-overlay-title bali-friends__single-line">
             Dwa Chandra is a sanctuary where jungle, architecture and nature
@@ -260,8 +310,10 @@ export default function BaliFriendsPage() {
           </h2>
         </FullImage>
 
-        <section id="home" className="kurulu-bay-page__text-section">
-          <SectionLabel>Your home</SectionLabel>
+        <section
+          id="home"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
           <p className="kurulu-bay-page__lead">
             Just outside Ubud, tucked above a private river gorge in the ancient
             village of Pejeng, Dwa Chandra is a sanctuary where jungle,
@@ -269,38 +321,28 @@ export default function BaliFriendsPage() {
             villas, three open-air yoga shalas, a meditation deck suspended
             above the river, and ninth-century temple carvings hidden within the
             cliffs create a setting that feels both timeless and deeply
-            connected to the land.
+            connected to the land. Throughout your stay, this extraordinary
+            sanctuary becomes as much a part of the journey as the practices
+            themselves.
           </p>
-          <p>
-            Throughout your stay, this extraordinary sanctuary becomes as much a
-            part of the week as the people in it.
-          </p>
-          <div className="bali-friends__photo-pair">
-            <figure>
-              <img
-                src={images.villa}
-                alt="A Dwa Chandra villa"
-                loading="lazy"
-              />
-              <figcaption>The villas</figcaption>
-            </figure>
-            <figure>
-              <img
-                src={images.room}
-                alt="A bedroom at Dwa Chandra"
-                loading="lazy"
-              />
-              <figcaption>Your room</figcaption>
-            </figure>
+          <div className="kurulu-bay-page__gallery-grid">
+            {homeFrames.map((item) => (
+              <figure key={item.alt} className="kurulu-bay-page__gallery-card">
+                <img src={item.src} alt={item.alt} loading="lazy" />
+              </figure>
+            ))}
           </div>
         </section>
 
-        <section id="spaces" className="kurulu-bay-page__text-section">
-          <SectionLabel>The spaces</SectionLabel>
-          <h2 className="kurulu-bay-page__headline">
-            Every practice has its own room here — and this week, none of them
-            are booked.
-          </h2>
+        <section
+          id="spaces"
+          className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
+        >
+          <SectionLabel index="04">THE SPACES</SectionLabel>
+          <p className="kurulu-bay-page__lead">
+            Every practice has its own room here — and this week, all of them
+            are open to us.
+          </p>
           <p>
             Not one hall we return to each day, but a collection of spaces and
             platforms, each built for a different kind of attention, each
@@ -313,26 +355,19 @@ export default function BaliFriendsPage() {
             Use them however you want. Move through all of them, or claim one as
             yours for the week and never leave it.
           </p>
-          <p>
-            <strong>They're here. Nothing in them is scheduled.</strong>
-          </p>
-          <div className="bali-friends__photo-pair">
-            <figure>
-              <img
-                src={images.glassShala}
-                alt="The glass shala"
-                loading="lazy"
-              />
-              <figcaption>The glass shala</figcaption>
-            </figure>
-            <figure>
-              <img
-                src={images.pavilion}
-                alt="The open pavilion"
-                loading="lazy"
-              />
-              <figcaption>The open pavilion</figcaption>
-            </figure>
+          <p>They're here. Nothing in them is scheduled.</p>
+          <div className="kurulu-bay-page__day-grid">
+            {spaceCards.map((item) => (
+              <figure
+                key={item.title}
+                className="kurulu-bay-page__immersion-card"
+              >
+                <img src={item.image} alt={item.title} loading="lazy" />
+                <div className="kurulu-bay-page__immersion-card-overlay">
+                  <strong>{item.overlayTitle}</strong>
+                </div>
+              </figure>
+            ))}
           </div>
         </section>
 
