@@ -2,6 +2,7 @@ import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import BaliRetreat from "./BaliRetreat";
 import BaliInvestmentPage from "./BaliInvestmentPage";
+import BaliOctoberInvestmentPage from "./BaliOctoberInvestmentPage";
 import BaliSeptemberRetreat from "./BaliSeptemberRetreat";
 import BaliSeptember7Days from "./BaliSeptember7Days";
 import BaliSeptember7DaysVillaBeji from "./BaliSeptember7DaysVillaBeji";
@@ -119,6 +120,14 @@ const pageMetadata = {
     title: "Investment | The RESET Bali Retreat | Tereza Dos Santos",
     description:
       "Investment and room information for The RESET Bali retreat, September 23-29, 2026.",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg",
+    imageAlt: "Dwa Chandra villa in Bali",
+  },
+  baliOctoberInvestment: {
+    title: "Investment | The Return Bali Retreat | Tereza Dos Santos",
+    description:
+      "Investment and room information for The Return Bali retreat, October 3-12, 2026.",
     image:
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg",
     imageAlt: "Dwa Chandra villa in Bali",
@@ -536,6 +545,8 @@ function App() {
                       ? pageMetadata.baliFriends
                     : pathname.startsWith("/bali-september-7-days/investment")
                       ? pageMetadata.baliSeptember7DaysInvestment
+                    : pathname.startsWith("/bali-october/investment")
+                      ? pageMetadata.baliOctoberInvestment
                       : pathname.startsWith("/bali-september-7-days-villa-beji")
                         ? pageMetadata.baliSeptember7DaysVillaBeji
                         : pathname.startsWith("/bali-september-7-days")
@@ -592,6 +603,10 @@ function App() {
 
   if (pathname.startsWith("/bali-september-7-days/investment")) {
     return <BaliInvestmentPage />;
+  }
+
+  if (pathname.startsWith("/bali-october/investment")) {
+    return <BaliOctoberInvestmentPage />;
   }
 
   if (pathname.startsWith("/bali-september-7-days-villa-beji")) {
