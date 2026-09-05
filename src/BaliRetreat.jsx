@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import BaliWhatsAppCta from "./BaliWhatsAppCta";
 import "./BaliRetreat.css";
 
 const placeholder = (size, text) =>
@@ -154,6 +155,7 @@ const dayBlocks = [
     image: imageAssets.midday,
     items: [
       "Free time",
+      "Market strolls",
       "Bodywork and treatments",
       "Time to rest, swim, journal, read or simply be",
     ],
@@ -175,11 +177,10 @@ const dayBlocks = [
     overlayTitle: "E V E N I N G  R I T U A L",
     image: imageAssets.evening,
     items: [
-      "Tereza's Signature Session:",
       "SONIC BREATH™",
       "SOUND TEMPLE™",
       "FLOATING TEMPLE™",
-      "Curated dinner experience",
+      "Curated dinner experiences",
     ],
   },
 ];
@@ -219,7 +220,6 @@ const includedItems = [
   "9 nights accommodation at Dwa Chandra",
   "Round-trip airport transfers",
   "Daily chef-prepared vegetarian breakfast",
-  "Daily dinner experiences throughout the retreat",
   "Signature dinner experience at Merlin's Magic",
   "Free-flowing herbal tea, black coffee & fresh tropical fruit",
   "Traditional Balinese welcome massage (60 min)",
@@ -237,7 +237,7 @@ const optionalItems = [
   "International flights to and from Bali",
   "Travel insurance (required)",
   "Visa fees (if applicable)",
-  "Lunches (available a la carte at Dwa Chandra)",
+  "Lunches & dinners (can be ordered a la carte at Dwa Chandra)",
   "Additional food & beverages ordered a la carte",
   "Optional excursions and activities beyond the retreat programme",
   "Personal purchases & pocket money",
@@ -757,7 +757,7 @@ export default function BaliRetreat() {
           </div>
           <div className="kurulu-bay-page__pricing-summary">
             <div className="kurulu-bay-page__pricing-columns">
-              <section
+              {/* <section
                 className="kurulu-bay-page__pricing-group"
                 aria-label="All rooms pricing"
               >
@@ -772,7 +772,7 @@ export default function BaliRetreat() {
                   <span>Double Occupancy</span>
                   <strong>3,700 USD</strong>
                 </div>
-              </section>
+              </section> */}
             </div>
             <p className="kurulu-bay-page__pricing-note">
               A detailed room menu with photographs and layouts is available on
@@ -803,6 +803,10 @@ export default function BaliRetreat() {
             </div>
           </div>
         </section>
+        <BaliWhatsAppCta
+          message="Hello Tereza, I would like more information about The Return Bali retreat, October 3-12, 2026."
+          ariaLabel="Message us about The Return Bali retreat on WhatsApp"
+        />
       </div>
     </div>
   );

@@ -1,11 +1,15 @@
 import "./BaliWhatsAppCta.css";
 
 const WHATSAPP_NUMBER = "201010001133";
-const WHATSAPP_MESSAGE =
+const DEFAULT_WHATSAPP_MESSAGE =
   "Hello Tereza, I would like more information about The RESET Bali retreat, September 23-29, 2026.";
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
-export default function BaliWhatsAppCta() {
+export default function BaliWhatsAppCta({
+  message = DEFAULT_WHATSAPP_MESSAGE,
+  ariaLabel = "Message us about The RESET Bali retreat on WhatsApp",
+}) {
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
   return (
     <section
       className="bali-whatsapp-cta"
@@ -20,10 +24,10 @@ export default function BaliWhatsAppCta() {
       </p>
       <a
         className="bali-whatsapp-cta__link"
-        href={WHATSAPP_URL}
+        href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Message us about The RESET Bali retreat on WhatsApp"
+        aria-label={ariaLabel}
       >
         Let’s Go!
         <svg
