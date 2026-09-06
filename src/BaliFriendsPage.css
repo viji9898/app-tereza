@@ -370,6 +370,28 @@
     font-size: 1.625rem;
   }
 
+  .bali-friends-page .bali-friends__welcome-copy {
+    left: 2rem;
+    bottom: 2rem;
+    padding-right: 2rem;
+  }
+
+  .bali-friends-page .bali-friends__welcome-copy > p:last-child,
+  .bali-friends-page .bali-friends__image-copy .kurulu-bay-page__media-overlay-title,
+  .bali-friends-page .bali-friends__image-copy .bali-friends__single-line {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  .bali-friends-page .bali-friends__welcome-copy > p:last-child span {
+    white-space: normal;
+  }
+
+  .bali-friends-page .bali-friends__image-copy {
+    padding: 0 2rem 2rem;
+  }
+
   .bali-friends-page .bali-friends__photo-pair,
   .bali-friends-page .bali-friends__day-grid,
   .bali-friends-page .bali-friends__included {
