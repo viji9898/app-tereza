@@ -16,30 +16,18 @@ export default function BaliInvestmentPage() {
           <div className="bali-investment-page__price">
             <dt>Double Occupancy</dt>
             <dd>
-              <del>$2,500 USD</del>
+              <del>$2,800 USD</del>
               <strong>$2,300 USD</strong>
-              <span>
-                <em>$1,500 secures your place</em>
-                <small>then 2 monthly payments of $400</small>
-              </span>
             </dd>
           </div>
           <div className="bali-investment-page__price">
             <dt>Single Occupancy</dt>
             <dd>
-              <del>$3,100 USD</del>
+              <del>$3,400 USD</del>
               <strong>$2,900 USD</strong>
-              <span>
-                <em>$1,500 secures your place</em>
-                <small>then 2 monthly payments of $700</small>
-              </span>
             </dd>
           </div>
         </dl>
-
-        <div className="bali-investment-page__payment-plan">
-          <h2>Come now. Pay over time.</h2>
-        </div>
 
         <div className="bali-investment-page__room-note">
           <h2>Every room is different.</h2>
