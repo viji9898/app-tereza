@@ -382,9 +382,16 @@
 
   .bali-friends-page .bali-friends__hero-copy .kurulu-bay-page__meta {
     max-width: 28rem;
+    font-size: 0.95rem;
     letter-spacing: 0.19em;
   }
 
+  .bali-friends-page .bali-friends__hero-copy .kurulu-bay-page__hero-lines p {
+    font-size: 1.625rem;
+  }
+
+  .bali-friends-page .bali-friends__welcome-hero,
+  .bali-friends-page .bali-friends__welcome-hero img,
   .bali-friends-page .bali-friends__full-image,
   .bali-friends-page .bali-friends__full-image img {
     min-height: 100svh;
