@@ -746,7 +746,7 @@ export default function BaliFriendsPage() {
             </p>
 
             <p>Send this on to anyone you'd want beside you that week.</p>
-            <p>Let me know as soon as possible if your onboard.</p>
+            <p>Let me know as soon as possible if you're onboard.</p>
           </div>
 
           <p className="bali-friends__invitation">
