@@ -317,18 +317,37 @@ export default function OfferingsPage() {
             <p className="offer-label">Start a conversation</p>
             <h2 id="contact-title">Bring an experience to your space.</h2>
           </div>
-          <div>
-            <p>
+          <div className="offer-contact__actions">
+            <p className="offer-contact__intro">
               Tell us about your venue, your audience, and your dates. We will
               shape the format around them.
             </p>
             <a
+              className="offer-contact__primary"
               href="https://wa.me/201010001133"
               target="_blank"
               rel="noreferrer"
             >
               Enquire about an experience <span aria-hidden="true">→</span>
             </a>
+            <div className="offer-contact__secondary">
+              <div>
+                <p>Want this for your team all year?</p>
+                <a href="mailto:corporate@terezadossantos.com">
+                  Explore corporate packages <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div>
+                <p>Curious about the wider work?</p>
+                <a
+                  href="https://terezadossantos.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Terezadossantos.com <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>

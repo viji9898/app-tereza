@@ -403,16 +403,17 @@
   line-height: 0.9;
   text-transform: uppercase;
 }
-.offer-contact > div:last-child {
-  align-self: end;
+.offer-contact__actions {
+  align-self: center;
 }
-.offer-contact > div:last-child p {
+.offer-contact__intro {
   max-width: 33rem;
   margin-bottom: 2rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
   line-height: 1.7;
 }
-.offer-contact a {
+.offer-contact__primary,
+.offer-contact__secondary a {
   display: inline-flex;
   gap: 2rem;
   padding-bottom: 0.5rem;
@@ -422,6 +423,22 @@
   letter-spacing: 0.12em;
   text-decoration: none;
   text-transform: uppercase;
+}
+.offer-contact__secondary {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #fff9ef40;
+}
+.offer-contact__secondary p {
+  margin: 0 0 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.offer-contact__secondary a {
+  gap: 1rem;
+  font-size: 0.62rem;
 }
 .offer-footer {
   display: flex;
@@ -497,6 +514,7 @@
   }
   .offer-trusted__logos {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 7rem;
     gap: 2rem;
   }
   .offer-manifesto__image {
