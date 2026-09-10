@@ -54,6 +54,9 @@
 .offer-hero__footer a span { margin-left: .75rem; }
 
 .offer-label { font-size: .67rem; font-weight: 600; letter-spacing: .16em; line-height: 1.5; text-transform: uppercase; }
+.offer-trusted { padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.25rem, 6vw, 6rem); background: var(--offer-ink); color: #fff9ef; }
+.offer-trusted .offer-label { margin-bottom: 1.5rem; }
+.offer-trusted img { display: block; width: 100%; max-height: 13rem; object-fit: cover; object-position: center; }
 .offer-manifesto { display: grid; grid-template-columns: minmax(18rem, .8fr) minmax(0, 1.2fr); gap: 2.5rem 5vw; padding: clamp(4.5rem, 8vw, 7rem) clamp(1.25rem, 6vw, 6rem); }
 .offer-manifesto__label { grid-column: 1 / -1; margin-bottom: 0; }
 .offer-manifesto__image { min-height: 35rem; }
@@ -137,6 +140,7 @@
   .offer-hero__footer { align-items: start; gap: 1.5rem; }
   .offer-hero__footer > span { max-width: 15rem; }
   .offer-manifesto { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+  .offer-trusted img { min-height: 7rem; object-fit: cover; }
   .offer-manifesto__image { min-height: auto; aspect-ratio: 4 / 5; }
   .offer-experience { grid-template-columns: 1fr; }
   .offer-experience--reverse .offer-experience__image { order: initial; }

@@ -10,7 +10,8 @@ const offerings = [
     description:
       "A 90–120 minute transformational experience exploring breath, sound, and guided meditation with immersion headphones. Created for emotional release and nervous system regulation, we first activate the system through transformational breathwork, then guide it into deep rest with an immersive sound bath and somatic integration.",
     closing: "Leave remembering what it feels like to truly exhale.",
-    image: "https://placehold.co/1200x900/1d4238/f4eee4?text=SONIC+BREATH",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/sonic_breath_cropped_tereza_during_session.webp",
     duration: "90–120 min",
     imagePosition: "center",
   },
@@ -140,6 +141,17 @@ export default function OfferingsPage() {
           </div>
         </section>
 
+        <section className="offer-trusted" aria-labelledby="trusted-title">
+          <p id="trusted-title" className="offer-label">
+            Trusted By
+          </p>
+          <img
+            src="/corporate/clients.jpg"
+            alt="Organisations that have worked with Tereza Dos Santos"
+            loading="lazy"
+          />
+        </section>
+
         <section className="offer-manifesto" aria-labelledby="manifesto-title">
           <p className="offer-label offer-manifesto__label">Why Tereza</p>
           <div className="offer-manifesto__image">
@@ -152,14 +164,14 @@ export default function OfferingsPage() {
           <div className="offer-manifesto__copy">
             <h2 id="manifesto-title">Tereza Dos Santos.</h2>
             <p>
-              For more than two decades, Tereza has worked in environments
-              where performance, adaptability, and resilience are essential.
+              For more than two decades, Tereza has worked in environments where
+              performance, adaptability, and resilience are essential.
             </p>
             <p>
               From international touring productions and live television to
-              leadership retreats, corporate teams, and large-scale events,
-              she has worked across the United States, Europe, the Middle East,
-              and Southeast Asia, developing a deep understanding of what helps
+              leadership retreats, corporate teams, and large-scale events, she
+              has worked across the United States, Europe, the Middle East, and
+              Southeast Asia, developing a deep understanding of what helps
               people perform sustainably under pressure.
             </p>
             <p>
