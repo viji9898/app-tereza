@@ -145,11 +145,73 @@ export default function OfferingsPage() {
           <p id="trusted-title" className="offer-label">
             Trusted By
           </p>
-          <img
-            src="/corporate/clients.jpg"
-            alt="Organisations that have worked with Tereza Dos Santos"
-            loading="lazy"
-          />
+          <div className="offer-trusted__logos">
+            <img
+              className="offer-trusted__logo--forbes"
+              src="https://static.cdnlogo.com/logos/f/87/forbes.svg"
+              alt="Forbes"
+              loading="lazy"
+            />
+            <img
+              className="offer-trusted__logo--color"
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f0d9e681-e324-435a-a219-599fbc57e57b/dil6ytz-825429bb-8bf0-4f3b-a644-89c635b56ef8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9mMGQ5ZTY4MS1lMzI0LTQzNWEtYTIxOS01OTlmYmM1N2U1N2IvZGlsNnl0ei04MjU0MjliYi04YmYwLTRmM2ItYTY0NC04OWM2MzViNTZlZjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xVpRhHx0TP37elQ3nkCWUvwBi2LvKI-N_dFLGfH5NKg"
+              alt="Disney On Ice"
+              loading="lazy"
+            />
+            <img
+              className="offer-trusted__logo--color offer-trusted__logo--marriott"
+              src="/corporate/marriott-white-wordmark.svg"
+              alt="Marriott Hotels & Resorts"
+              loading="lazy"
+            />
+            <img
+              className="offer-trusted__logo--color"
+              src="/corporate/hsbc-white-wordmark.svg"
+              alt="HSBC"
+              loading="lazy"
+            />
+            <img
+              className="offer-trusted__logo--color"
+              src="https://static.cdnlogo.com/logos/n/4/netflix.svg"
+              alt="Netflix"
+              loading="lazy"
+            />
+            <img
+              className="offer-trusted__logo--ferrari"
+              src="/corporate/ferrari-combined.svg"
+              alt="Ferrari"
+              loading="lazy"
+            />
+            <img
+              src="https://static.cdnlogo.com/logos/i/95/imax.svg"
+              alt="IMAX"
+              loading="lazy"
+            />
+            <img src="/corporate/emaar.svg" alt="Emaar" loading="lazy" />
+            <img
+              className="offer-trusted__logo--color"
+              src="https://www.orascomdh.com/_next/image?url=%2ForascomDevelopmentHorizontalLogo.png&w=384&q=75"
+              alt="Orascom Development"
+              loading="lazy"
+            />
+            <img
+              src="https://fi.loropiana.com/on/demandware.static/Sites-loropiana-b2c-emea-Site/-/default/dw00a5e926/images/LoroPiana-logo.svg"
+              alt="Loro Piana"
+              loading="lazy"
+            />
+            <img
+              src="/corporate/hassan-allam.svg"
+              alt="Hassan Allam"
+              loading="lazy"
+            />
+            <div className="offer-trusted__palm-hills" aria-label="Palm Hill">
+              <img
+                src="/corporate/palm-hills-white-wordmark.svg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
         </section>
 
         <section className="offer-manifesto" aria-labelledby="manifesto-title">
@@ -257,10 +319,14 @@ export default function OfferingsPage() {
           </div>
           <div>
             <p>
-              Tell us about your venue, audience, location, and preferred dates.
-              We will help you select the right format.
+              Tell us about your venue, your audience, and your dates. We will
+              shape the format around them.
             </p>
-            <a href="mailto:corporate@terezadossantos.com?subject=Signature%20experience%20enquiry">
+            <a
+              href="https://wa.me/201010001133"
+              target="_blank"
+              rel="noreferrer"
+            >
               Enquire about an experience <span aria-hidden="true">→</span>
             </a>
           </div>
