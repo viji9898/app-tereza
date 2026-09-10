@@ -182,11 +182,12 @@ const pageMetadata = {
       "Immersive corporate wellbeing experiences with Tereza Dos Santos",
   },
   offerings: {
-    title: "Signature Experiences & Rates | Tereza Dos Santos",
+    title: "Signature Experiences for Corporate Events | Tereza Dos Santos",
     description:
       "Explore Sonic Breath, Sound Temple, Floating Temple, SUCO, and Åkasha Project experiences, with venue partnership pricing.",
-    image: "https://placehold.co/1200x630/173b35/f7efe3?text=SIGNATURE+EXPERIENCES",
-    imageAlt: "Signature experiences by Tereza Dos Santos",
+    image: "https://www.terezadossantos.com/corporate/og-corporate.jpg",
+    imageAlt:
+      "Immersive signature breathwork, sound, movement, and music experiences by Tereza Dos Santos",
   },
 };
 
@@ -208,6 +209,9 @@ function usePageMetadata(metadata) {
     setMetaContent("og:description", metadata.description, "property");
     setMetaContent("og:image", metadata.image, "property");
     setMetaContent("og:image:alt", metadata.imageAlt, "property");
+    setMetaContent("og:image:width", "1200", "property");
+    setMetaContent("og:image:height", "630", "property");
+    setMetaContent("og:image:type", "image/jpeg", "property");
     setMetaContent("og:url", canonicalUrl, "property");
     setMetaContent("twitter:title", metadata.title);
     setMetaContent("twitter:description", metadata.description);
@@ -549,25 +553,29 @@ function App() {
                   ? pageMetadata.offerings
                   : pathname.startsWith("/corporate")
                     ? pageMetadata.corporate
-                  : pathname.startsWith("/contracts")
-                    ? pageMetadata.contracts
-                    : pathname.startsWith("/bali-friends")
-                      ? pageMetadata.baliFriends
-                    : pathname.startsWith("/bali-september-7-days/investment")
-                      ? pageMetadata.baliSeptember7DaysInvestment
-                    : pathname.startsWith("/bali-october/investment")
-                      ? pageMetadata.baliOctoberInvestment
-                      : pathname.startsWith("/bali-september-7-days-villa-beji")
-                        ? pageMetadata.baliSeptember7DaysVillaBeji
-                        : pathname.startsWith("/bali-september-7-days")
-                          ? pageMetadata.baliSeptember7Days
-                          : pathname.startsWith("/bali-september")
-                            ? pageMetadata.baliSeptember
-                            : pathname.startsWith("/bali-october")
-                              ? pageMetadata.bali
-                              : pathname.startsWith("/content")
-                                ? pageMetadata.content
-                                : pageMetadata.home;
+                    : pathname.startsWith("/contracts")
+                      ? pageMetadata.contracts
+                      : pathname.startsWith("/bali-friends")
+                        ? pageMetadata.baliFriends
+                        : pathname.startsWith(
+                              "/bali-september-7-days/investment",
+                            )
+                          ? pageMetadata.baliSeptember7DaysInvestment
+                          : pathname.startsWith("/bali-october/investment")
+                            ? pageMetadata.baliOctoberInvestment
+                            : pathname.startsWith(
+                                  "/bali-september-7-days-villa-beji",
+                                )
+                              ? pageMetadata.baliSeptember7DaysVillaBeji
+                              : pathname.startsWith("/bali-september-7-days")
+                                ? pageMetadata.baliSeptember7Days
+                                : pathname.startsWith("/bali-september")
+                                  ? pageMetadata.baliSeptember
+                                  : pathname.startsWith("/bali-october")
+                                    ? pageMetadata.bali
+                                    : pathname.startsWith("/content")
+                                      ? pageMetadata.content
+                                      : pageMetadata.home;
 
   usePageMetadata(metadata);
 

@@ -150,6 +150,15 @@ const routeMetadata = {
     imageAlt:
       "Immersive corporate wellbeing experiences with Tereza Dos Santos",
   },
+  offerings: {
+    routePath: "/offerings",
+    title: "Signature Experiences & Rates | Tereza Dos Santos",
+    description:
+      "Explore Sonic Breath, Sound Temple, Floating Temple, SUCO, and Åkasha Project experiences, with venue partnership pricing.",
+    image: `${siteUrl}/corporate/og-corporate.jpg`,
+    imageAlt:
+      "Immersive signature breathwork, sound, movement, and music experiences by Tereza Dos Santos",
+  },
 };
 
 function toAbsoluteUrl(url) {
@@ -210,6 +219,9 @@ function buildHtml(html, metadata) {
     metadata.description,
   );
   output = replaceMetaContent(output, "property", "og:image", imageUrl);
+  output = replaceMetaContent(output, "property", "og:image:width", "1200");
+  output = replaceMetaContent(output, "property", "og:image:height", "630");
+  output = replaceMetaContent(output, "property", "og:image:type", "image/jpeg");
   output = replaceMetaContent(
     output,
     "property",
@@ -281,6 +293,7 @@ for (const [directoryName, metadata] of [
   ["bali-images", routeMetadata.baliImages],
   ["contracts", routeMetadata.contracts],
   ["corporate", routeMetadata.corporate],
+  ["offerings", routeMetadata.offerings],
 ]) {
   await mkdir(`dist/${directoryName}`, { recursive: true });
   await writeFile(
