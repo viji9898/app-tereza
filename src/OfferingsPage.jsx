@@ -14,6 +14,8 @@ const offerings = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/sonic_breath_cropped_tereza_during_session.webp",
     duration: "90–120 min",
     imagePosition: "center",
+    reel: "https://www.instagram.com/reel/DLVV_WtNH2e/?stkn=bWdvc3FiZzRzZGt5",
+    reelTitle: "Sonic Breath",
     details: [
       "Includes immersion headphones",
       "Maximum capacity: 45",
@@ -35,6 +37,8 @@ const offerings = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/sound_temple.webp",
     duration: "60 min",
     imagePosition: "center",
+    reel: "https://www.instagram.com/reel/DNS9SWdsZ7I/?stkn=MXIweXY4eTlmcXNvNw==",
+    reelTitle: "Sound Temple",
     details: ["Unlimited capacity", "Suitable for all levels"],
     startingPrice: "€1,990",
   },
@@ -53,6 +57,8 @@ const offerings = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/FLOATING+TEMPLE+2.webp",
     duration: "90–120 min",
     imagePosition: "center",
+    reel: "https://www.instagram.com/reel/DX6W1NmKV95/?stkn=enM0dDk5bDI0cTRs",
+    reelTitle: "Floating Temple",
     startingPrice: "€3,200",
   },
   {
@@ -94,33 +100,6 @@ const offerings = [
   },
 ];
 
-const rates = [
-  {
-    title: "Sound Temple",
-    ticket: "2,250 EGP",
-    buyout: "60,000 EGP",
-    capacity: "Unlimited capacity",
-    includes: "Live instruments and sound healing equipment",
-    image: "https://placehold.co/800x520/a43f2d/fff8ed?text=SOUND+TEMPLE",
-  },
-  {
-    title: "Sonic Breath",
-    ticket: "3,100 EGP",
-    buyout: "75,000 EGP",
-    capacity: "Maximum capacity: 45",
-    includes: "Includes immersion headphones",
-    image: "https://placehold.co/800x520/1d4238/f4eee4?text=SONIC+BREATH",
-  },
-  {
-    title: "Floating Temple",
-    ticket: "3,600 EGP",
-    buyout: "90,000 EGP",
-    capacity: "Maximum capacity: 25",
-    includes: "Includes immersion headphones and mattresses",
-    image: "https://placehold.co/800x520/d6a442/102c32?text=FLOATING+TEMPLE",
-  },
-];
-
 export default function OfferingsPage() {
   return (
     <div className="offer-page">
@@ -130,7 +109,6 @@ export default function OfferingsPage() {
         </a>
         <nav aria-label="Offerings navigation">
           <a href="#experiences">Experiences</a>
-          <a href="#rates">Rates</a>
         </nav>
         <a className="offer-header__cta" href="#contact">
           Enquire
@@ -242,7 +220,8 @@ export default function OfferingsPage() {
                 {offering.note && <small>{offering.note}</small>}
                 {offering.reel && (
                   <a href={offering.reel} target="_blank" rel="noreferrer">
-                    Watch the SUCO reel <span aria-hidden="true">↗</span>
+                    Watch the {offering.reelTitle ?? offering.title} reel{" "}
+                    <span aria-hidden="true">↗</span>
                   </a>
                 )}
                 {offering.startingPrice && (
@@ -261,58 +240,6 @@ export default function OfferingsPage() {
               </div>
             </article>
           ))}
-        </section>
-
-        <section
-          id="rates"
-          className="offer-rates"
-          aria-labelledby="rates-title"
-        >
-          <div className="offer-rates__heading">
-            <p className="offer-label">Venue partnership pricing</p>
-            <h2 id="rates-title">Choose how you gather.</h2>
-            <p>Ticketed experiences or an exclusive private buyout.</p>
-          </div>
-          <div className="offer-rates__grid">
-            {rates.map((rate) => (
-              <article className="offer-rate" key={rate.title}>
-                <img
-                  src={rate.image}
-                  alt={`Placeholder for ${rate.title}`}
-                  loading="lazy"
-                />
-                <div className="offer-rate__body">
-                  <h3>{rate.title}</h3>
-                  <div className="offer-rate__price">
-                    <p>
-                      <span>Ticketed experience</span>
-                      <strong>{rate.ticket}</strong>
-                      <small>per participant</small>
-                    </p>
-                    <p>
-                      <span>Private buyout</span>
-                      <strong>{rate.buyout}</strong>
-                      <small>exclusive experience</small>
-                    </p>
-                  </div>
-                  <div className="offer-rate__details">
-                    <p>{rate.includes}</p>
-                    <p>{rate.capacity}</p>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-          <div className="offer-rates__notes">
-            <p>Bookings and dates upon request</p>
-            <p>Suitable for all levels</p>
-            <p>All equipment provided</p>
-            <p>Revenue sharing models available upon request</p>
-          </div>
-          <p className="offer-rates__bespoke">
-            Corporate, festival, retreat, and bespoke event proposals are quoted
-            individually.
-          </p>
         </section>
 
         <section
