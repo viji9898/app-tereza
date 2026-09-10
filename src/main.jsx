@@ -185,7 +185,9 @@ const pageMetadata = {
     title: "Signature Experiences for Corporate Events | Tereza Dos Santos",
     description:
       "Explore Sonic Breath, Sound Temple, Floating Temple, SUCO, and Åkasha Project experiences, with venue partnership pricing.",
-    image: "https://www.terezadossantos.com/corporate/og-corporate.jpg",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/og-image-tereza-performance.webp",
+    imageType: "image/webp",
     imageAlt:
       "Immersive signature breathwork, sound, movement, and music experiences by Tereza Dos Santos",
   },
@@ -211,7 +213,11 @@ function usePageMetadata(metadata) {
     setMetaContent("og:image:alt", metadata.imageAlt, "property");
     setMetaContent("og:image:width", "1200", "property");
     setMetaContent("og:image:height", "630", "property");
-    setMetaContent("og:image:type", "image/jpeg", "property");
+    setMetaContent(
+      "og:image:type",
+      metadata.imageType ?? "image/jpeg",
+      "property",
+    );
     setMetaContent("og:url", canonicalUrl, "property");
     setMetaContent("twitter:title", metadata.title);
     setMetaContent("twitter:description", metadata.description);

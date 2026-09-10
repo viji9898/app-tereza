@@ -155,7 +155,9 @@ const routeMetadata = {
     title: "Signature Experiences & Rates | Tereza Dos Santos",
     description:
       "Explore Sonic Breath, Sound Temple, Floating Temple, SUCO, and Åkasha Project experiences, with venue partnership pricing.",
-    image: `${siteUrl}/corporate/og-corporate.jpg`,
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/og-image-tereza-performance.webp",
+    imageType: "image/webp",
     imageAlt:
       "Immersive signature breathwork, sound, movement, and music experiences by Tereza Dos Santos",
   },
@@ -225,7 +227,7 @@ function buildHtml(html, metadata) {
     output,
     "property",
     "og:image:type",
-    "image/jpeg",
+    metadata.imageType ?? "image/jpeg",
   );
   output = replaceMetaContent(
     output,
