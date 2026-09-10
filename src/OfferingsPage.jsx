@@ -25,7 +25,8 @@ const offerings = [
       "A 60-minute immersive sound journey exploring deep rest, guided yoga nidra meditation, and the therapeutic power of vibration and frequency. Created for nervous system regulation and profound relaxation, participants are invited to simply receive as live sound from classical and sound healing instruments support restoration, inner balance, and deep presence.",
     closing: "An invitation to simply receive.",
     note: "Also available as an Aerial Sound Bath, experienced in suspended silk hammocks. Aerial hammocks are not provided.",
-    image: "https://placehold.co/1200x900/a43f2d/fff8ed?text=SOUND+TEMPLE",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/sound_temple.webp",
     duration: "60 min",
     imagePosition: "center",
   },
@@ -40,7 +41,8 @@ const offerings = [
     closing:
       "An experience that stays with you long after you leave the water.",
     note: "Limited number of floating mattresses available.",
-    image: "https://placehold.co/1200x900/d6a442/102c32?text=FLOATING+TEMPLE",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/FLOATING+TEMPLE+2.webp",
     duration: "90–120 min",
     imagePosition: "center",
   },
