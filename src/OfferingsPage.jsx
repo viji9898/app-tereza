@@ -36,7 +36,8 @@ const offerings = [
     lead: "Where transformation meets weightlessness.",
     description:
       "A 90–120 minute immersive experience exploring breath, sound, and somatic integration on water. Participants rest weightlessly on floating mattresses as the gentle movement of the water amplifies every breath and vibration. Created for nervous system regulation, emotional release, and deep restoration, this journey is one of the most cinematic expressions in modern wellness.",
-    closing: "An experience that stays with you long after you leave the water.",
+    closing:
+      "An experience that stays with you long after you leave the water.",
     note: "Limited number of floating mattresses available.",
     image: "https://placehold.co/1200x900/d6a442/102c32?text=FLOATING+TEMPLE",
     duration: "90–120 min",
@@ -124,29 +125,64 @@ export default function OfferingsPage() {
           />
           <div className="offer-hero__veil" />
           <div className="offer-hero__content">
-            <p>Venue partnerships · Private events · Ticketed experiences</p>
-            <h1 id="offer-title">Signature<br />Experiences</h1>
+            <p>Venue partnerships · Private events · Corporate Events</p>
+            <h1 id="offer-title">
+              Signature
+              <br />
+              Experiences
+            </h1>
             <div className="offer-hero__footer">
               <span>Breath · Sound · Movement · Music</span>
-              <a href="#experiences">Explore the collection <span aria-hidden="true">↓</span></a>
+              <a href="#experiences">
+                Explore the collection <span aria-hidden="true">↓</span>
+              </a>
             </div>
           </div>
         </section>
 
         <section className="offer-manifesto" aria-labelledby="manifesto-title">
-          <p className="offer-label">The collection</p>
-          <h2 id="manifesto-title">
-            Experiences designed to shift the energy of a room and stay with
-            you long after it ends.
-          </h2>
-          <p>
-            Created and facilitated by Tereza Dos Santos for studios, wellness
-            spaces, hotels, community venues, retreats, festivals, and private
-            gatherings.
-          </p>
+          <p className="offer-label offer-manifesto__label">Why Tereza</p>
+          <div className="offer-manifesto__image">
+            <img
+              src="/corporate/tereza.jpg"
+              alt="Tereza Dos Santos facilitating a session"
+              loading="lazy"
+            />
+          </div>
+          <div className="offer-manifesto__copy">
+            <h2 id="manifesto-title">Tereza Dos Santos.</h2>
+            <p>
+              For more than two decades, Tereza has worked in environments
+              where performance, adaptability, and resilience are essential.
+            </p>
+            <p>
+              From international touring productions and live television to
+              leadership retreats, corporate teams, and large-scale events,
+              she has worked across the United States, Europe, the Middle East,
+              and Southeast Asia, developing a deep understanding of what helps
+              people perform sustainably under pressure.
+            </p>
+            <p>
+              Today, she brings that experience into organisations through
+              science-backed tools for recovery, resilience, and human
+              connection, helping teams perform at their best from the inside
+              out, without burning out.
+            </p>
+            <p>
+              Beyond her own work, Tereza collaborates with a trusted
+              international network of leading facilitators, artists, and
+              speakers from the global wellness, performance, and leadership
+              space, allowing programs to expand and adapt to each
+              organisation's unique goals and needs.
+            </p>
+          </div>
         </section>
 
-        <section id="experiences" className="offer-experiences" aria-label="Signature offerings">
+        <section
+          id="experiences"
+          className="offer-experiences"
+          aria-label="Signature offerings"
+        >
           {offerings.map((offering, index) => (
             <article
               className={`offer-experience${index % 2 ? " offer-experience--reverse" : ""}`}
@@ -163,7 +199,9 @@ export default function OfferingsPage() {
                 <span>{offering.duration}</span>
               </div>
               <div className="offer-experience__copy">
-                <span className="offer-experience__number">{offering.number}</span>
+                <span className="offer-experience__number">
+                  {offering.number}
+                </span>
                 <p className="offer-label">{offering.eyebrow}</p>
                 <h2>{offering.title}</h2>
                 <p className="offer-experience__lead">{offering.lead}</p>
@@ -180,7 +218,11 @@ export default function OfferingsPage() {
           ))}
         </section>
 
-        <section id="rates" className="offer-rates" aria-labelledby="rates-title">
+        <section
+          id="rates"
+          className="offer-rates"
+          aria-labelledby="rates-title"
+        >
           <div className="offer-rates__heading">
             <p className="offer-label">Venue partnership pricing</p>
             <h2 id="rates-title">Choose how you gather.</h2>
@@ -189,12 +231,24 @@ export default function OfferingsPage() {
           <div className="offer-rates__grid">
             {rates.map((rate) => (
               <article className="offer-rate" key={rate.title}>
-                <img src={rate.image} alt={`Placeholder for ${rate.title}`} loading="lazy" />
+                <img
+                  src={rate.image}
+                  alt={`Placeholder for ${rate.title}`}
+                  loading="lazy"
+                />
                 <div className="offer-rate__body">
                   <h3>{rate.title}</h3>
                   <div className="offer-rate__price">
-                    <p><span>Ticketed experience</span><strong>{rate.ticket}</strong><small>per participant</small></p>
-                    <p><span>Private buyout</span><strong>{rate.buyout}</strong><small>exclusive experience</small></p>
+                    <p>
+                      <span>Ticketed experience</span>
+                      <strong>{rate.ticket}</strong>
+                      <small>per participant</small>
+                    </p>
+                    <p>
+                      <span>Private buyout</span>
+                      <strong>{rate.buyout}</strong>
+                      <small>exclusive experience</small>
+                    </p>
                   </div>
                   <div className="offer-rate__details">
                     <p>{rate.includes}</p>
@@ -211,11 +265,16 @@ export default function OfferingsPage() {
             <p>Revenue sharing models available upon request</p>
           </div>
           <p className="offer-rates__bespoke">
-            Corporate, festival, retreat, and bespoke event proposals are quoted individually.
+            Corporate, festival, retreat, and bespoke event proposals are quoted
+            individually.
           </p>
         </section>
 
-        <section id="contact" className="offer-contact" aria-labelledby="contact-title">
+        <section
+          id="contact"
+          className="offer-contact"
+          aria-labelledby="contact-title"
+        >
           <div>
             <p className="offer-label">Start a conversation</p>
             <h2 id="contact-title">Bring an experience to your space.</h2>
