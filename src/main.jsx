@@ -11,6 +11,7 @@ import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import CorporateWellness from "./CorporateWellness";
 import KuruluBayRetreat from "./KuruluBayRetreat";
+import OfferingsPage from "./OfferingsPage";
 import PalmsImagesPage from "./PalmsImagesPage";
 import RetreatsPage from "./RetreatsPage";
 import RetreatsDirectoryPage from "./RetreatsDirectoryPage";
@@ -179,6 +180,13 @@ const pageMetadata = {
     image: "https://www.terezadossantos.com/corporate/og-corporate.jpg",
     imageAlt:
       "Immersive corporate wellbeing experiences with Tereza Dos Santos",
+  },
+  offerings: {
+    title: "Signature Experiences & Rates | Tereza Dos Santos",
+    description:
+      "Explore Sonic Breath, Sound Temple, Floating Temple, SUCO, and Åkasha Project experiences, with venue partnership pricing.",
+    image: "https://placehold.co/1200x630/173b35/f7efe3?text=SIGNATURE+EXPERIENCES",
+    imageAlt: "Signature experiences by Tereza Dos Santos",
   },
 };
 
@@ -537,8 +545,10 @@ function App() {
               ? pageMetadata.palmsImages
               : pathname.startsWith("/bali-images")
                 ? pageMetadata.baliImages
-                : pathname.startsWith("/corporate")
-                  ? pageMetadata.corporate
+                : pathname.startsWith("/offerings")
+                  ? pageMetadata.offerings
+                  : pathname.startsWith("/corporate")
+                    ? pageMetadata.corporate
                   : pathname.startsWith("/contracts")
                     ? pageMetadata.contracts
                     : pathname.startsWith("/bali-friends")
@@ -587,6 +597,10 @@ function App() {
 
   if (pathname.startsWith("/bali-images")) {
     return <BaliImagesPage />;
+  }
+
+  if (pathname.startsWith("/offerings")) {
+    return <OfferingsPage />;
   }
 
   if (pathname.startsWith("/corporate")) {
