@@ -60,6 +60,7 @@ const offerings = [
     reel: "https://www.instagram.com/reel/DX6W1NmKV95/?stkn=enM0dDk5bDI0cTRs",
     reelTitle: "Floating Temple",
     startingPrice: "€3,200",
+    priceDivider: true,
   },
   {
     id: "suco",
@@ -97,6 +98,7 @@ const offerings = [
     duration: "Bespoke",
     imagePosition: "center",
     startingPrice: "€2,300",
+    priceDivider: true,
   },
 ];
 
@@ -225,7 +227,9 @@ export default function OfferingsPage() {
                   </a>
                 )}
                 {offering.startingPrice && (
-                  <div className="offer-experience__price">
+                  <div
+                    className={`offer-experience__price${offering.priceDivider ? " offer-experience__price--divided" : ""}`}
+                  >
                     <span>Starting From</span>
                     <strong>{offering.startingPrice}</strong>
                   </div>
