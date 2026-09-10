@@ -355,7 +355,6 @@ export default function OfferingsPage() {
       <footer className="offer-footer">
         <a href="/">Tereza Dos Santos</a>
         <span>Signature Experiences</span>
-        <a href="/corporate">Corporate wellbeing</a>
       </footer>
     </div>
   );

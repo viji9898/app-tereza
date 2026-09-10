@@ -499,7 +499,8 @@
     padding-bottom: 2rem;
   }
   .offer-hero h1 {
-    font-size: clamp(3.35rem, 16.5vw, 5rem);
+    font-size: clamp(2.4rem, 12vw, 4.6rem);
+    line-height: 0.95;
   }
   .offer-hero__footer {
     align-items: start;
