@@ -221,7 +221,12 @@ function buildHtml(html, metadata) {
   output = replaceMetaContent(output, "property", "og:image", imageUrl);
   output = replaceMetaContent(output, "property", "og:image:width", "1200");
   output = replaceMetaContent(output, "property", "og:image:height", "630");
-  output = replaceMetaContent(output, "property", "og:image:type", "image/jpeg");
+  output = replaceMetaContent(
+    output,
+    "property",
+    "og:image:type",
+    "image/jpeg",
+  );
   output = replaceMetaContent(
     output,
     "property",

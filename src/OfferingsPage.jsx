@@ -14,6 +14,11 @@ const offerings = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/sonic_breath_cropped_tereza_during_session.webp",
     duration: "90–120 min",
     imagePosition: "center",
+    details: [
+      "Includes immersion headphones",
+      "Maximum capacity: 45",
+      "Suitable for all levels",
+    ],
   },
   {
     id: "sound-temple",
@@ -29,6 +34,7 @@ const offerings = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/sound_temple.webp",
     duration: "60 min",
     imagePosition: "center",
+    details: ["Unlimited capacity", "Suitable for all levels"],
   },
   {
     id: "floating-temple",
@@ -40,7 +46,7 @@ const offerings = [
       "A 90–120 minute immersive experience exploring breath, sound, and somatic integration on water. Participants rest weightlessly on floating mattresses as the gentle movement of the water amplifies every breath and vibration. Created for nervous system regulation, emotional release, and deep restoration, this journey is one of the most cinematic expressions in modern wellness.",
     closing:
       "An experience that stays with you long after you leave the water.",
-    note: "Limited number of floating mattresses available.",
+    note: "Limited number of floating mattresses available. Suitable for all levels.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/FLOATING+TEMPLE+2.webp",
     duration: "90–120 min",
@@ -58,7 +64,7 @@ const offerings = [
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/SUCO+cosmic.webp",
     duration: "60 min",
-    reel: "https://www.instagram.com/reel/DYFUsiooDmo/?igsh=b2Jjc2ZuN2hmOW9j",
+    reel: "https://www.instagram.com/reel/DZZ2MwMo77W/?stkn=Y3lvaWhvbHJxZGlw",
     imagePosition: "center",
   },
   {
@@ -228,6 +234,13 @@ export default function OfferingsPage() {
                   <a href={offering.reel} target="_blank" rel="noreferrer">
                     Watch the SUCO reel <span aria-hidden="true">↗</span>
                   </a>
+                )}
+                {offering.details && (
+                  <div className="offer-experience__details">
+                    {offering.details.map((detail) => (
+                      <span key={detail}>{detail}</span>
+                    ))}
+                  </div>
                 )}
               </div>
             </article>
