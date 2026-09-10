@@ -186,10 +186,10 @@ const pageMetadata = {
     description:
       "Explore Sonic Breath, Sound Temple, Floating Temple, SUCO, and Åkasha Project experiences, with venue partnership pricing.",
     image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/og-image-tereza-performance.webp",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/og-image-tereza-performance-optimised.webp",
     imageType: "image/webp",
-    imageWidth: "1920",
-    imageHeight: "1280",
+    imageWidth: "1200",
+    imageHeight: "800",
     imageAlt:
       "Immersive signature breathwork, sound, movement, and music experiences by Tereza Dos Santos",
   },
