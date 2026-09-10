@@ -259,7 +259,7 @@ export default function OfferingsPage() {
         >
           {offerings.map((offering, index) => (
             <article
-              className={`offer-experience${index % 2 ? " offer-experience--reverse" : ""}`}
+              className={`offer-experience${index % 2 === 0 ? " offer-experience--reverse" : ""}`}
               id={offering.id}
               key={offering.id}
             >
