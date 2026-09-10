@@ -148,7 +148,7 @@ export default function OfferingsPage() {
           <div className="offer-trusted__logos">
             <img
               className="offer-trusted__logo--forbes"
-              src="https://static.cdnlogo.com/logos/f/87/forbes.svg"
+              src="/corporate/forbes.svg"
               alt="Forbes"
               loading="lazy"
             />
@@ -172,7 +172,7 @@ export default function OfferingsPage() {
             />
             <img
               className="offer-trusted__logo--color"
-              src="https://static.cdnlogo.com/logos/n/4/netflix.svg"
+              src="/corporate/netflix.svg"
               alt="Netflix"
               loading="lazy"
             />
@@ -183,7 +183,7 @@ export default function OfferingsPage() {
               loading="lazy"
             />
             <img
-              src="https://static.cdnlogo.com/logos/i/95/imax.svg"
+              src="/corporate/imax.svg"
               alt="IMAX"
               loading="lazy"
             />
@@ -195,7 +195,7 @@ export default function OfferingsPage() {
               loading="lazy"
             />
             <img
-              src="https://fi.loropiana.com/on/demandware.static/Sites-loropiana-b2c-emea-Site/-/default/dw00a5e926/images/LoroPiana-logo.svg"
+              src="/corporate/loro-piana.svg"
               alt="Loro Piana"
               loading="lazy"
             />
