@@ -158,6 +158,8 @@ const routeMetadata = {
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/og-image-tereza-performance.webp",
     imageType: "image/webp",
+    imageWidth: "1920",
+    imageHeight: "1280",
     imageAlt:
       "Immersive signature breathwork, sound, movement, and music experiences by Tereza Dos Santos",
   },
@@ -221,8 +223,18 @@ function buildHtml(html, metadata) {
     metadata.description,
   );
   output = replaceMetaContent(output, "property", "og:image", imageUrl);
-  output = replaceMetaContent(output, "property", "og:image:width", "1200");
-  output = replaceMetaContent(output, "property", "og:image:height", "630");
+  output = replaceMetaContent(
+    output,
+    "property",
+    "og:image:width",
+    metadata.imageWidth ?? "1200",
+  );
+  output = replaceMetaContent(
+    output,
+    "property",
+    "og:image:height",
+    metadata.imageHeight ?? "630",
+  );
   output = replaceMetaContent(
     output,
     "property",

@@ -188,6 +188,8 @@ const pageMetadata = {
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/og-image-tereza-performance.webp",
     imageType: "image/webp",
+    imageWidth: "1920",
+    imageHeight: "1280",
     imageAlt:
       "Immersive signature breathwork, sound, movement, and music experiences by Tereza Dos Santos",
   },
@@ -211,8 +213,12 @@ function usePageMetadata(metadata) {
     setMetaContent("og:description", metadata.description, "property");
     setMetaContent("og:image", metadata.image, "property");
     setMetaContent("og:image:alt", metadata.imageAlt, "property");
-    setMetaContent("og:image:width", "1200", "property");
-    setMetaContent("og:image:height", "630", "property");
+    setMetaContent("og:image:width", metadata.imageWidth ?? "1200", "property");
+    setMetaContent(
+      "og:image:height",
+      metadata.imageHeight ?? "630",
+      "property",
+    );
     setMetaContent(
       "og:image:type",
       metadata.imageType ?? "image/jpeg",
