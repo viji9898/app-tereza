@@ -6,7 +6,7 @@ const offerings = [
     number: "01",
     title: "Sonic Breath™",
     eyebrow: "Breathwork · Sound Bath · Headphones",
-    lead: "Tereza's signature journey. Science-backed, designed for real life.",
+    lead: "Tereza's signature session. Science-backed, designed for real life.",
     description:
       "A 90–120 minute transformational experience exploring breath, sound, and guided meditation with immersion headphones. Created for emotional release and nervous system regulation, we first activate the system through transformational breathwork, then guide it into deep rest with an immersive sound bath and somatic integration.",
     closing: "Leave remembering what it feels like to truly exhale.",
@@ -19,6 +19,7 @@ const offerings = [
       "Maximum capacity: 45",
       "Suitable for all levels",
     ],
+    startingPrice: "€2,850",
   },
   {
     id: "sound-temple",
@@ -29,12 +30,13 @@ const offerings = [
     description:
       "A 60-minute immersive sound journey exploring deep rest, guided yoga nidra meditation, and the therapeutic power of vibration and frequency. Created for nervous system regulation and profound relaxation, participants are invited to simply receive as live sound from classical and sound healing instruments support restoration, inner balance, and deep presence.",
     closing: "An invitation to simply receive.",
-    note: "Also available as an Aerial Sound Bath, experienced in suspended silk hammocks. Aerial hammocks are not provided.",
+    note: "Also available as an Aerial Sound Bath, experienced in suspended silk hammocks. For Aerial hammocks check for availability.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/sound_temple.webp",
     duration: "60 min",
     imagePosition: "center",
     details: ["Unlimited capacity", "Suitable for all levels"],
+    startingPrice: "€1,990",
   },
   {
     id: "floating-temple",
@@ -51,6 +53,7 @@ const offerings = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/FLOATING+TEMPLE+2.webp",
     duration: "90–120 min",
     imagePosition: "center",
+    startingPrice: "€3,200",
   },
   {
     id: "suco",
@@ -66,6 +69,12 @@ const offerings = [
     duration: "60 min",
     reel: "https://www.instagram.com/reel/DZZ2MwMo77W/?stkn=Y3lvaWhvbHJxZGlw",
     imagePosition: "center",
+    startingPrice: "€2,550",
+    details: [
+      "Includes immersion headphones",
+      "Maximum capacity: 45",
+      "Suitable for all adults",
+    ],
   },
   {
     id: "akasha-project",
@@ -81,6 +90,7 @@ const offerings = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/AKASHA.jpeg",
     duration: "Bespoke",
     imagePosition: "center",
+    startingPrice: "€2,300",
   },
 ];
 
@@ -234,6 +244,12 @@ export default function OfferingsPage() {
                   <a href={offering.reel} target="_blank" rel="noreferrer">
                     Watch the SUCO reel <span aria-hidden="true">↗</span>
                   </a>
+                )}
+                {offering.startingPrice && (
+                  <div className="offer-experience__price">
+                    <span>Starting From</span>
+                    <strong>{offering.startingPrice}</strong>
+                  </div>
                 )}
                 {offering.details && (
                   <div className="offer-experience__details">
