@@ -55,7 +55,8 @@ const offerings = [
     description:
       "A 60-minute guided active meditation journey combining movement, breathwork, visualization, and electronic music through immersion headphones. Part of a growing global movement, SUCO is designed for all experience levels, supporting nervous system regulation while fostering presence, joy, confidence, and authentic connection.",
     closing: "Return to your body. Feel fully.",
-    image: "https://placehold.co/1200x900/202c46/f6d976?text=SUCO",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/SUCO+cosmic.webp",
     duration: "60 min",
     reel: "https://www.instagram.com/reel/DYFUsiooDmo/?igsh=b2Jjc2ZuN2hmOW9j",
     imagePosition: "center",
@@ -70,7 +71,8 @@ const offerings = [
       "ÅKASHA PROJECT blends handpans, world instruments, organic percussion, and contemporary soundscapes into a rich, cinematic performance that invites audiences to listen, feel, and connect.",
     closing:
       "Also available as a Solo Piano Candlelight Concert or bespoke live music performances tailored to your event.",
-    image: "https://placehold.co/1200x900/8d3f33/f7efe3?text=AKASHA+PROJECT",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tereza/offerings/AKASHA.jpeg",
     duration: "Bespoke",
     imagePosition: "center",
   },
