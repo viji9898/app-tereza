@@ -154,7 +154,7 @@ export default function OfferingsPage() {
             />
             <img
               className="offer-trusted__logo--color"
-              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f0d9e681-e324-435a-a219-599fbc57e57b/dil6ytz-825429bb-8bf0-4f3b-a644-89c635b56ef8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9mMGQ5ZTY4MS1lMzI0LTQzNWEtYTIxOS01OTlmYmM1N2U1N2IvZGlsNnl0ei04MjU0MjliYi04YmYwLTRmM2ItYTY0NC04OWM2MzViNTZlZjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xVpRhHx0TP37elQ3nkCWUvwBi2LvKI-N_dFLGfH5NKg"
+              src="/corporate/disney-on-ice.png"
               alt="Disney On Ice"
               loading="lazy"
             />
@@ -190,7 +190,7 @@ export default function OfferingsPage() {
             <img src="/corporate/emaar.svg" alt="Emaar" loading="lazy" />
             <img
               className="offer-trusted__logo--color"
-              src="https://www.orascomdh.com/_next/image?url=%2ForascomDevelopmentHorizontalLogo.png&w=384&q=75"
+              src="/corporate/orascom-development.png"
               alt="Orascom Development"
               loading="lazy"
             />
