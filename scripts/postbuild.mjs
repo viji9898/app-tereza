@@ -96,6 +96,15 @@ const routeMetadata = {
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
     imageAlt: "Dwa Chandra surrounded by the Bali jungle",
   },
+  baliCreativeGetaway: {
+    routePath: "/bali-creative-getaway",
+    title: "THE RESET Creative Getaway · Dwa Chandra, Bali",
+    description:
+      "THE RESET Creative Getaway at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — October 12, 2026.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
+    imageAlt: "Dwa Chandra surrounded by the Bali jungle",
+  },
   baliSeptember7DaysInvestment: {
     routePath: "/bali-september-7-days/investment",
     title: "Investment | The RESET Bali Retreat | Tereza Dos Santos",
@@ -306,6 +315,7 @@ for (const [directoryName, metadata] of [
   ],
   ["bali-september-7-days", routeMetadata.baliSeptember7Days],
   ["bali-friends", routeMetadata.baliFriends],
+  ["bali-creative-getaway", routeMetadata.baliCreativeGetaway],
   ["bali-september", routeMetadata.baliSeptember],
   ["retreats-directory", routeMetadata.retreatsDirectory],
   ["palms-image", routeMetadata.palmsImages],
