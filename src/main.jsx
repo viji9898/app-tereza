@@ -7,6 +7,7 @@ import BaliSeptemberRetreat from "./BaliSeptemberRetreat";
 import BaliSeptember7Days from "./BaliSeptember7Days";
 import BaliSeptember7DaysVillaBeji from "./BaliSeptember7DaysVillaBeji";
 import BaliFriendsPage from "./BaliFriendsPage";
+import BaliCreativeGetawayPage from "./BaliCreativeGetawayPage";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import CorporateWellness from "./CorporateWellness";
@@ -110,6 +111,14 @@ const pageMetadata = {
     imageAlt: "Women standing in a Bali paddy field",
   },
   baliFriends: {
+    title: "THE RESET | Friends Edition · Dwa Chandra, Bali",
+    description:
+      "THE RESET Friends Edition at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — September 13, 2026.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
+    imageAlt: "Dwa Chandra surrounded by the Bali jungle",
+  },
+  baliCreativeGetaway: {
     title: "THE RESET | Friends Edition · Dwa Chandra, Bali",
     description:
       "THE RESET Friends Edition at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — September 13, 2026.",
@@ -567,27 +576,29 @@ function App() {
                     ? pageMetadata.corporate
                     : pathname.startsWith("/contracts")
                       ? pageMetadata.contracts
-                      : pathname.startsWith("/bali-friends")
-                        ? pageMetadata.baliFriends
-                        : pathname.startsWith(
+                      : pathname.startsWith("/bali-creative-getaway")
+                        ? pageMetadata.baliCreativeGetaway
+                        : pathname.startsWith("/bali-friends")
+                          ? pageMetadata.baliFriends
+                          : pathname.startsWith(
                               "/bali-september-7-days/investment",
                             )
-                          ? pageMetadata.baliSeptember7DaysInvestment
-                          : pathname.startsWith("/bali-october/investment")
-                            ? pageMetadata.baliOctoberInvestment
-                            : pathname.startsWith(
+                            ? pageMetadata.baliSeptember7DaysInvestment
+                            : pathname.startsWith("/bali-october/investment")
+                              ? pageMetadata.baliOctoberInvestment
+                              : pathname.startsWith(
                                   "/bali-september-7-days-villa-beji",
                                 )
-                              ? pageMetadata.baliSeptember7DaysVillaBeji
-                              : pathname.startsWith("/bali-september-7-days")
-                                ? pageMetadata.baliSeptember7Days
-                                : pathname.startsWith("/bali-september")
-                                  ? pageMetadata.baliSeptember
-                                  : pathname.startsWith("/bali-october")
-                                    ? pageMetadata.bali
-                                    : pathname.startsWith("/content")
-                                      ? pageMetadata.content
-                                      : pageMetadata.home;
+                                ? pageMetadata.baliSeptember7DaysVillaBeji
+                                : pathname.startsWith("/bali-september-7-days")
+                                  ? pageMetadata.baliSeptember7Days
+                                  : pathname.startsWith("/bali-september")
+                                    ? pageMetadata.baliSeptember
+                                    : pathname.startsWith("/bali-october")
+                                      ? pageMetadata.bali
+                                      : pathname.startsWith("/content")
+                                        ? pageMetadata.content
+                                        : pageMetadata.home;
 
   usePageMetadata(metadata);
 
@@ -629,6 +640,10 @@ function App() {
 
   if (pathname.startsWith("/contracts")) {
     return <ContractsPage />;
+  }
+
+  if (pathname.startsWith("/bali-creative-getaway")) {
+    return <BaliCreativeGetawayPage />;
   }
 
   if (pathname.startsWith("/bali-friends")) {
