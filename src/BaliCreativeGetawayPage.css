@@ -162,7 +162,8 @@
 }
 
 .bali-creative-getaway-page .kurulu-bay-page__contents-link:hover::before,
-.bali-creative-getaway-page .kurulu-bay-page__contents-link:focus-visible::before {
+.bali-creative-getaway-page
+  .kurulu-bay-page__contents-link:focus-visible::before {
   background: var(--kb-accent-strong);
 }
 
@@ -826,14 +827,20 @@
 }
 
 .bali-creative-getaway-page .kurulu-bay-page__hero::after {
-  background: linear-gradient(180deg, rgba(13, 24, 18, 0.18), rgba(8, 17, 12, 0.78));
+  background: linear-gradient(
+    180deg,
+    rgba(13, 24, 18, 0.18),
+    rgba(8, 17, 12, 0.78)
+  );
 }
 
 .bali-creative-getaway-page .bali-creative-getaway__hero-copy {
   justify-content: flex-end;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__hero-copy .kurulu-bay-page__hero-lines {
+.bali-creative-getaway-page
+  .bali-creative-getaway__hero-copy
+  .kurulu-bay-page__hero-lines {
   margin-top: clamp(2rem, 6vh, 4.5rem);
 }
 
@@ -922,7 +929,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(13, 24, 18, 0.06) 25%, rgba(8, 17, 12, 0.76) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(13, 24, 18, 0.06) 25%,
+    rgba(8, 17, 12, 0.76) 100%
+  );
 }
 
 .bali-creative-getaway-page .bali-creative-getaway__welcome-copy {
@@ -933,19 +944,26 @@
   padding-right: 1rem;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__welcome-copy .kurulu-bay-page__eyebrow {
+.bali-creative-getaway-page
+  .bali-creative-getaway__welcome-copy
+  .kurulu-bay-page__eyebrow {
   margin-bottom: 0.65rem;
   color: rgba(248, 243, 234, 0.75);
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__welcome-copy > p:last-child {
+.bali-creative-getaway-page
+  .bali-creative-getaway__welcome-copy
+  > p:last-child {
   margin: 0;
   font-size: clamp(0.68rem, 2vw, 1.625rem);
   font-weight: 400;
   line-height: 1.35;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__welcome-copy > p:last-child span {
+.bali-creative-getaway-page
+  .bali-creative-getaway__welcome-copy
+  > p:last-child
+  span {
   display: block;
   white-space: nowrap;
 }
@@ -971,14 +989,18 @@
   padding: 0 clamp(1rem, 4vw, 3.5rem) clamp(0.9rem, 2vw, 2rem);
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__image-copy .kurulu-bay-page__media-overlay-title {
+.bali-creative-getaway-page
+  .bali-creative-getaway__image-copy
+  .kurulu-bay-page__media-overlay-title {
   max-width: 1000px;
   margin-bottom: 0;
   font-size: clamp(0.68rem, 2vw, 1.625rem);
   line-height: 1.35;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__image-copy .bali-creative-getaway__single-line {
+.bali-creative-getaway-page
+  .bali-creative-getaway__image-copy
+  .bali-creative-getaway__single-line {
   max-width: none;
   font-size: clamp(0.45rem, 1.6vw, 1.3rem);
   white-space: nowrap;
@@ -1059,7 +1081,9 @@
   object-fit: cover;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__in-between .kurulu-bay-page__media-overlay {
+.bali-creative-getaway-page
+  .bali-creative-getaway__in-between
+  .kurulu-bay-page__media-overlay {
   padding-top: 7rem;
 }
 
@@ -1073,7 +1097,9 @@
   line-height: 1.55;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__overlay-prose .kurulu-bay-page__media-overlay-title {
+.bali-creative-getaway-page
+  .bali-creative-getaway__overlay-prose
+  .kurulu-bay-page__media-overlay-title {
   font-size: clamp(0.68rem, 2vw, 1.625rem);
   line-height: 1.35;
 }
@@ -1149,14 +1175,18 @@
   min-height: 82dvh;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__closing .kurulu-bay-page__media-overlay {
+.bali-creative-getaway-page
+  .bali-creative-getaway__closing
+  .kurulu-bay-page__media-overlay {
   top: 0;
   bottom: 0;
   padding: 0;
   text-align: right;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__closing .kurulu-bay-page__eyebrow {
+.bali-creative-getaway-page
+  .bali-creative-getaway__closing
+  .kurulu-bay-page__eyebrow {
   position: absolute;
   bottom: clamp(2rem, 5vw, 5rem);
   left: clamp(1rem, 4vw, 3.5rem);
@@ -1174,11 +1204,15 @@
   text-align: right;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__closing-action .kurulu-bay-page__media-overlay-title {
+.bali-creative-getaway-page
+  .bali-creative-getaway__closing-action
+  .kurulu-bay-page__media-overlay-title {
   position: static;
 }
 
-.bali-creative-getaway-page .bali-creative-getaway__closing-action .bali-creative-getaway__closing-prompt {
+.bali-creative-getaway-page
+  .bali-creative-getaway__closing-action
+  .bali-creative-getaway__closing-prompt {
   font-size: clamp(1.05rem, 3.5vw, 1.7rem);
 }
 
@@ -1202,7 +1236,9 @@
   letter-spacing: 0.12em;
   text-decoration: none;
   text-transform: uppercase;
-  transition: background-color 180ms ease, color 180ms ease;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
 }
 
 .bali-creative-getaway-page .bali-creative-getaway__closing-link:hover,
@@ -1213,7 +1249,9 @@
 }
 
 @media (max-width: 700px) {
-  .bali-creative-getaway-page .bali-creative-getaway__closing-action .kurulu-bay-page__media-overlay-title {
+  .bali-creative-getaway-page
+    .bali-creative-getaway__closing-action
+    .kurulu-bay-page__media-overlay-title {
     font-size: 1.625rem;
   }
 
@@ -1223,15 +1261,24 @@
     padding-right: 2rem;
   }
 
-  .bali-creative-getaway-page .bali-creative-getaway__welcome-copy > p:last-child,
-  .bali-creative-getaway-page .bali-creative-getaway__image-copy .kurulu-bay-page__media-overlay-title,
-  .bali-creative-getaway-page .bali-creative-getaway__image-copy .bali-creative-getaway__single-line {
+  .bali-creative-getaway-page
+    .bali-creative-getaway__welcome-copy
+    > p:last-child,
+  .bali-creative-getaway-page
+    .bali-creative-getaway__image-copy
+    .kurulu-bay-page__media-overlay-title,
+  .bali-creative-getaway-page
+    .bali-creative-getaway__image-copy
+    .bali-creative-getaway__single-line {
     font-size: 1.625rem;
     line-height: 1.2;
     white-space: normal;
   }
 
-  .bali-creative-getaway-page .bali-creative-getaway__welcome-copy > p:last-child span {
+  .bali-creative-getaway-page
+    .bali-creative-getaway__welcome-copy
+    > p:last-child
+    span {
     white-space: normal;
   }
 
@@ -1249,13 +1296,18 @@
     padding-top: 10vw;
   }
 
-  .bali-creative-getaway-page .bali-creative-getaway__hero-copy .kurulu-bay-page__meta {
+  .bali-creative-getaway-page
+    .bali-creative-getaway__hero-copy
+    .kurulu-bay-page__meta {
     max-width: 28rem;
     font-size: 0.95rem;
     letter-spacing: 0.19em;
   }
 
-  .bali-creative-getaway-page .bali-creative-getaway__hero-copy .kurulu-bay-page__hero-lines p {
+  .bali-creative-getaway-page
+    .bali-creative-getaway__hero-copy
+    .kurulu-bay-page__hero-lines
+    p {
     font-size: 1.625rem;
   }
 
