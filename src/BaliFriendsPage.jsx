@@ -704,14 +704,14 @@ export default function BaliFriendsPage() {
           </p>
           <div className="bali-friends__price">
             <div className="bali-friends__price-option">
-              <p>September 23 - 29</p>
-              <span>$1,110 USD</span>
-              <p>Per person · The whole week</p>
+              <p>23 — 29 September · 6 nights</p>
+              <span>$1,800 private room</span>
+              <p>$1,110 per person if you share</p>
             </div>
             <div className="bali-friends__price-option">
-              <p>October 3 - 13</p>
-              <span>$1,990 USD</span>
-              <p>Per person · Across 11 days</p>
+              <p>3 — 12 October · 9 nights</p>
+              <span>$2,990 private room</span>
+              <p>$1,990 per person if you share</p>
             </div>
           </div>
           <p>
