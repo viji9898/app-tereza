@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import "./BaliCreativeGetawayPage.css";
 
 const WHATSAPP_URL = `https://wa.me/201010001133?text=${encodeURIComponent(
-  "Hello Tereza, I'd like to join The RESET Friends Edition in Bali.",
+  "Hello Tereza, I'd like to join The RESET Creative Getaway in Bali.",
 )}`;
 
 const images = {
@@ -619,11 +619,7 @@ export default function BaliCreativeGetawayPage() {
               </article>
             ))}
           </div>
-          <p>
-            A detailed room menu with photographs and layouts is available on
-            request, so we can find the room that suits you best. Rooms are
-            allocated in the order that bookings are received.
-          </p>
+
           <div className="bali-creative-getaway__price">
             <div className="bali-creative-getaway__price-option">
               <p>September 23 - 29</p>
@@ -700,28 +696,35 @@ export default function BaliCreativeGetawayPage() {
           </div>
         </section>
 
-        <FullImage
-          src={images.closing}
-          alt="Tereza in Bali at sunset"
-          label="The RESET · Friends Edition"
-          className="bali-creative-getaway__closing"
-        >
-          <div className="bali-creative-getaway__closing-action">
-            <h2 className="kurulu-bay-page__media-overlay-title">
-              SO… BALI?
-              <br />
-            </h2>
-            <a
-              className="bali-creative-getaway__closing-link"
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Message Tereza about The RESET Friends Edition on WhatsApp"
-            >
-              Let's go
-            </a>
+        <section id="closing">
+          <div className="kurulu-bay-page__closing-image kurulu-bay-page__media kurulu-bay-page__media--with-overlay">
+            <img src={images.closing} alt="The RESET Bali Edition closing" />
+            <div className="kurulu-bay-page__media-overlay kurulu-bay-page__closing-overlay">
+              <h2 className="kurulu-bay-page__media-overlay-title kurulu-bay-page__closing-overlay-title">
+                T H E R E S E T
+              </h2>
+              <div className="kurulu-bay-page__media-overlay-text-group kurulu-bay-page__closing-overlay-text-group">
+                <p className="kurulu-bay-page__media-overlay-text kurulu-bay-page__closing-overlay-text">
+                  as creative getaway edition
+                </p>
+              </div>
+              <div className="bali-creative-getaway__closing-action">
+                <h2 className="kurulu-bay-page__media-overlay-title bali-creative-getaway__closing-prompt">
+                  Are you joining?
+                </h2>
+                <a
+                  className="bali-creative-getaway__closing-link"
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Message Tereza about The RESET Creative Getaway on WhatsApp"
+                >
+                  Let's go
+                </a>
+              </div>
+            </div>
           </div>
-        </FullImage>
+        </section>
       </main>
     </div>
   );
