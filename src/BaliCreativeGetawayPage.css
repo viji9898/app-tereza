@@ -877,7 +877,7 @@
 }
 
 .bali-creative-getaway-page #culture {
-  padding-top: clamp(2.5rem, 5vw, 4.5rem);
+  padding-top: 0;
   padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
 }
 
@@ -1127,6 +1127,10 @@
 .bali-creative-getaway-page .bali-creative-getaway__notes-list {
   margin: 3rem 0;
   border-top: 1px solid var(--kb-rule);
+}
+
+.bali-creative-getaway-page .bali-creative-getaway__notes-heading {
+  font-size: clamp(1rem, 4vw, 1.75rem);
 }
 
 .bali-creative-getaway-page .bali-creative-getaway__notes-list p {

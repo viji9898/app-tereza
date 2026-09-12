@@ -8,8 +8,6 @@ const WHATSAPP_URL = `https://wa.me/201010001133?text=${encodeURIComponent(
 const images = {
   cover:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
-  welcome:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view-from-room-of-ubud-resort.jpg",
   home: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa_chandra_home_hero.webp",
   villa:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/chair-room-view.jpg",
@@ -108,14 +106,14 @@ const dayBlocks = [
     ],
   },
   {
-    title: "Golden Hour",
-    overlayTitle: "G O L D E N  H O U R",
+    title: "Afternoon",
+    overlayTitle: "A F T E R N O O N",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tereza-bali-sunet-temple.webp",
     items: [
       "The river gorge, the caves, the rice fields, the temple carvings in our own cliffs",
-      "Or further out — we'll tell you what's worth doing and get you there",
-      "Or the deck, with a book",
+      "Or further out, and we'll tell you what's worth it",
+      "Or the deck with a book",
     ],
   },
   {
@@ -126,8 +124,9 @@ const dayBlocks = [
     items: [
       "Whatever someone feels moved to offer",
       "The fire pit",
-      "Dinner — together, or not",
-      "The jungle as your sound bath",
+      "Dinner, together or not",
+      "The piano",
+      "The jungle as your soundtrack",
     ],
   },
 ];
@@ -263,7 +262,7 @@ export default function BaliCreativeGetawayPage() {
               September 23 — September 29, 2026
             </p>
             <p className="kurulu-bay-page__meta kurulu-bay-page__meta--spaced">
-              October 3 — October 13, 2026
+              October 3 — 12, 2026
             </p>
             <div className="kurulu-bay-page__hero-lines">
               <p>come work on something</p>
@@ -411,50 +410,6 @@ export default function BaliCreativeGetawayPage() {
           </ul>
         </section>
 
-        <section className="bali-creative-getaway__letter-continuation">
-          <div className="bali-creative-getaway__welcome-hero">
-            <img
-              src={images.welcome}
-              alt="Dwa Chandra in the Bali landscape"
-              loading="lazy"
-            />
-            <div className="bali-creative-getaway__welcome-copy">
-              <SectionLabel index="02">THE RESET</SectionLabel>
-              <p>
-                <span>
-                  Not a retreat. No programme. No schedule. Nothing to keep up
-                </span>
-                <span>
-                  with and nobody performing anything — least of all me.
-                </span>
-              </p>
-            </div>
-          </div>
-          <div className="kurulu-bay-page__text-section">
-            <p className="kurulu-bay-page__lead">
-              Just a handful of people I love, scattered around the world,
-              off-grid together in an absurdly beautiful place for seven days.
-            </p>
-            <p>
-              A spiritual jam session. Healing, co-working, swimming, eating,
-              reflecting, conversing, practising, singing, doing absolutely
-              nothing. All of it. Whatever the week turns out to want.
-            </p>
-            <p>
-              You're on this list because you came to mind, and because I trust
-              the frequency you carry.
-            </p>
-            <p className="bali-creative-getaway__invitation">
-              Let's go disappear together.
-            </p>
-            <p className="kurulu-bay-page__signature">
-              Com amor,
-              <br />
-              Tereza
-            </p>
-          </div>
-        </section>
-
         <FullImage
           src={images.home}
           alt="Dwa Chandra retreat sanctuary"
@@ -592,45 +547,29 @@ export default function BaliCreativeGetawayPage() {
         <FullImage
           src={images.inBetween}
           alt="A quiet moment beside the river"
-          label="08 It's all the in-between"
+          label="08 BEYOND THE GATE
+"
           className="bali-creative-getaway__in-between"
         >
           <h2 className="kurulu-bay-page__media-overlay-title">
-            On a retreat, the best parts happen between the sessions.
+            Bali is right there, and none of it is compulsory.
           </h2>
         </FullImage>
 
         <section id="in-between" className="kurulu-bay-page__text-section">
-          <p className="kurulu-bay-page__lead">This week is all in-between.</p>
           <p>
-            Watching the morning mist lift from the valley. Barefoot walks
-            through the gardens. A conversation over tea that was going to be
-            twenty minutes and runs three hours. Listening to the river.
-            Receiving a traditional Balinese massage. Someone picking up an
-            instrument at exactly the right moment. Falling asleep with nature
-            as your soundtrack.
+            The Melukat water blessing at the river gorge. The hidden-gem jungle
+            waterfall. Goa Gajah. The rice fields. Ecstatic dance at the Yoga
+            Barn. Ubud, twenty minutes away, when you want a city again.
+          </p>
+          <p>
+            Some of it is included, some isn't, all of it is arrangeable. Tell
+            us what your capacity is on any given day and we'll point you at the
+            right thing — or at the hammock.
           </p>
         </section>
 
         <section id="culture" className="kurulu-bay-page__text-section">
-          <SectionLabel index="09">NATURE & CULTURAL IMMERSIONS</SectionLabel>
-          <h2 className="kurulu-bay-page__headline bali-creative-getaway__hero-text-size">
-            Bali is right there, and none of it is compulsory.
-          </h2>
-          <p>
-            A couple of immersions are included, and we'll do those together if
-            there's appetite — the Melukat water blessing at the river gorge is
-            the one I'd genuinely love for you to experience.
-          </p>
-          <p>
-            Beyond that: the hidden-gem jungle waterfall. Goa Gajah. The rice
-            fields. Ecstatic dance at the Yoga Barn. Some of it is included,
-            some of it isn't, all of it is available.
-          </p>
-          <p>
-            Check what your capacity is on any given day and we'll point you at
-            the right thing — or at the hammock. Both are correct answers.
-          </p>
           <div className="kurulu-bay-page__immersion-grid">
             {immersionCards.map((item) => (
               <figure
@@ -645,28 +584,6 @@ export default function BaliCreativeGetawayPage() {
                 <figcaption>{item.title}</figcaption>
               </figure>
             ))}
-          </div>
-        </section>
-
-        <section
-          id="included"
-          className="kurulu-bay-page__text-section bali-creative-getaway__included"
-        >
-          <div>
-            <SectionLabel>What's included</SectionLabel>
-            <ul>
-              {included.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <SectionLabel>What's not included</SectionLabel>
-            <ul>
-              {notIncluded.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
           </div>
         </section>
 
@@ -714,7 +631,7 @@ export default function BaliCreativeGetawayPage() {
               <p>Per person · The whole week</p>
             </div>
             <div className="bali-creative-getaway__price-option">
-              <p>October 3 - 13</p>
+              <p>October 3 - 12</p>
               <span>$1,990 USD</span>
               <p>Per person · Across 11 days</p>
             </div>
@@ -730,6 +647,37 @@ export default function BaliCreativeGetawayPage() {
             the week suddenly opened up. All I'm doing is passing it straight
             on. There's no margin in this for us — we're coming as one of you.
           </p>
+          <p>
+            Come for either. Come for both. Whichever suits where you happen to
+            be in the world.
+          </p>
+          <p>
+            A room menu with photographs and layouts is available on request, so
+            we can find the one that suits you. Rooms go in the order people
+            confirm.
+          </p>
+        </section>
+
+        <section
+          id="included"
+          className="kurulu-bay-page__text-section bali-creative-getaway__included"
+        >
+          <div>
+            <SectionLabel>What's included</SectionLabel>
+            <ul>
+              {included.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <SectionLabel>What's not included</SectionLabel>
+            <ul>
+              {notIncluded.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </section>
 
         <section
@@ -737,26 +685,19 @@ export default function BaliCreativeGetawayPage() {
           className="kurulu-bay-page__text-section bali-creative-getaway__notes"
         >
           <SectionLabel>A few honest notes</SectionLabel>
-          <h2 className="kurulu-bay-page__headline">
+          <h2 className="kurulu-bay-page__headline bali-creative-getaway__notes-heading">
             The more of us , the merrier.
           </h2>
           <div className="bali-creative-getaway__notes-list">
-            <p>
-              20 of us, maximum. Rooms allocate in the order people say yes.
-              It's double occupancy.
-            </p>
+            <p>Rooms allocate in the order people say yes.</p>
             <p>
               If you travel with a partner, a friend, a person — bring them.
-              Just tell me who.
+              Just send them my way.
             </p>
 
             <p>Send this on to anyone you'd want beside you that week.</p>
             <p>Let me know as soon as possible if you're onboard.</p>
           </div>
-
-          <p className="bali-creative-getaway__invitation">
-            Let me know how this lands in the body.
-          </p>
         </section>
 
         <FullImage
