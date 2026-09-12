@@ -359,7 +359,7 @@ export default function BaliCreativeGetawayPage() {
             studio — film producer, composer, concert pianist, and as a figure
             skater with Disney on Ice. These days I also work as a breathwork
             coach and sound therapist, which is more or less what happens when
-            you spend twenty years learning what performance does to a nervous
+            you spend thirty years learning what performance does to a nervous
             system.
           </p>
           <p>
