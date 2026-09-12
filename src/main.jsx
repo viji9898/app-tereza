@@ -119,7 +119,7 @@ const pageMetadata = {
     imageAlt: "Dwa Chandra surrounded by the Bali jungle",
   },
   baliCreativeGetaway: {
-    title: "THE RESET | Friends Edition · Dwa Chandra, Bali",
+    title: "THE RESET Creative Getaway · Dwa Chandra, Bali",
     description:
       "THE RESET Friends Edition at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — October 12, 2026.",
     image:
@@ -581,14 +581,14 @@ function App() {
                         : pathname.startsWith("/bali-friends")
                           ? pageMetadata.baliFriends
                           : pathname.startsWith(
-                              "/bali-september-7-days/investment",
-                            )
+                                "/bali-september-7-days/investment",
+                              )
                             ? pageMetadata.baliSeptember7DaysInvestment
                             : pathname.startsWith("/bali-october/investment")
                               ? pageMetadata.baliOctoberInvestment
                               : pathname.startsWith(
-                                  "/bali-september-7-days-villa-beji",
-                                )
+                                    "/bali-september-7-days-villa-beji",
+                                  )
                                 ? pageMetadata.baliSeptember7DaysVillaBeji
                                 : pathname.startsWith("/bali-september-7-days")
                                   ? pageMetadata.baliSeptember7Days
