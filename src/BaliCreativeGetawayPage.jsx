@@ -316,7 +316,7 @@ export default function BaliCreativeGetawayPage() {
           id="letter"
           className="kurulu-bay-page__text-section bali-creative-getaway__letter"
         >
-          <SectionLabel>WHAT THIS IS? </SectionLabel>
+          <SectionLabel index="01">WHAT THIS IS?</SectionLabel>
           <p className="kurulu-bay-page__lead">
             We've booked a private sanctuary outside Ubud, and there are still a
             few rooms open.
@@ -346,6 +346,7 @@ export default function BaliCreativeGetawayPage() {
         <FullImage
           src="https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tezera-edge-inifity.webp"
           alt="Tereza at the infinity pool overlooking the Bali landscape"
+          index="02"
           label="MEET YOUR HOST"
         >
           <h2 className="kurulu-bay-page__media-overlay-title"></h2>
@@ -522,7 +523,7 @@ export default function BaliCreativeGetawayPage() {
           id="day"
           className="kurulu-bay-page__text-section kurulu-bay-page__text-section--compact"
         >
-          <SectionLabel index="07">A TYPICAL DAY</SectionLabel>
+          <SectionLabel index="06">A TYPICAL DAY</SectionLabel>
           <h2 className="kurulu-bay-page__headline bali-creative-getaway__day-intro">
             <span>There isn't one. But here's what's there every day,</span>
             <span>if and when you want it.</span>
@@ -547,8 +548,8 @@ export default function BaliCreativeGetawayPage() {
         <FullImage
           src={images.inBetween}
           alt="A quiet moment beside the river"
-          label="08 BEYOND THE GATE
-"
+          index="07"
+          label="BEYOND THE GATE"
           className="bali-creative-getaway__in-between"
         >
           <h2 className="kurulu-bay-page__media-overlay-title">
@@ -590,7 +591,7 @@ export default function BaliCreativeGetawayPage() {
         <FullImage
           src={images.investment}
           alt="Investment at The RESET Friends Edition"
-          index="12"
+          index="08"
           label="CONTRIBUTION"
         >
           {/* <h2 className="kurulu-bay-page__media-overlay-title">
@@ -659,7 +660,7 @@ export default function BaliCreativeGetawayPage() {
           className="kurulu-bay-page__text-section bali-creative-getaway__included"
         >
           <div>
-            <SectionLabel>What's included</SectionLabel>
+            <SectionLabel index="09">What's included</SectionLabel>
             <ul>
               {included.map((item) => (
                 <li key={item}>{item}</li>
@@ -705,7 +706,7 @@ export default function BaliCreativeGetawayPage() {
               </h2>
               <div className="kurulu-bay-page__media-overlay-text-group kurulu-bay-page__closing-overlay-text-group">
                 <p className="kurulu-bay-page__media-overlay-text kurulu-bay-page__closing-overlay-text">
-                  as creative getaway edition
+                  a creative getaway
                 </p>
               </div>
               <div className="bali-creative-getaway__closing-action">
