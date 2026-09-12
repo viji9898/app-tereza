@@ -18,9 +18,7 @@ const images = {
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/glass_yoga_shala.webp",
   pavilion:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/open_pavillion.webp",
-  jam: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tezera-edge-inifity.webp",
-  paddyField:
-    "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
+  jam: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/view-from-room-of-ubud-resort.jpg",
   daily:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/morning_ritual_shala.webp",
   inBetween:
@@ -102,10 +100,10 @@ const dayBlocks = [
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/midday_massage.webp",
     items: [
-      "Bodywork and treatments",
+      "Deep work hours, for those who work",
       "The pools",
-      " Market strolls",
-      "Work, if you're working",
+      "Bodywork and treatments",
+
       "Sleep, if you're sleeping",
     ],
   },
@@ -189,7 +187,7 @@ const sections = [
   ["letter", "Axé família"],
   ["home", "Your home"],
   ["spaces", "The spaces"],
-  ["jam", "The jam"],
+  ["jam", "How it works"],
   ["day", "No typical day"],
   ["in-between", "The in-between"],
   ["culture", "Nature & culture"],
@@ -321,50 +319,96 @@ export default function BaliCreativeGetawayPage() {
         >
           <SectionLabel>WHAT THIS IS? </SectionLabel>
           <p className="kurulu-bay-page__lead">
-            If you're reading this, you're one of about a handful of people I'm
-            sending this to.
-          </p>
-          <p>Two days ago, I fainted.</p>
-          <p>
-            Not dramatically. I'd been running on very little for months —
-            holding a lot, pushing hard to make these retreats happen — and my
-            body finally did the thing bodies do when you stop listening to
-            them. It put me on the floor.
+            We've booked a private sanctuary outside Ubud, and there are still a
+            few rooms open.
           </p>
           <p>
-            And the thought that arrived while I was down there wasn't{" "}
-            <em>how do I fix this?</em> It was much simpler, and much louder:
+            It's shared living for a while — a small group of artists,
+            entrepreneurs and good humans in one extraordinary house,
+            co-working, co-creating, co-existing, and mostly just enjoying the
+            fact that we get to be here at all.
           </p>
           <p>
-            <strong>I'm the one who needs this.</strong>
-          </p>
-          <p>Here's what had already happened.</p>
-          <p>
-            Dwa Chandra — my favourite place in Bali, and probably in the world
-            — is the sanctuary I keep returning to. It's where I go to write and
-            compose, practice and breathe, and remember what actually matters.
+            The owner is a dear friend of mine. She had a last-minute opening
+            and gave us the place at a rate that doesn't really exist. We're
+            splitting that cost between us, with no margin added. I'm not
+            running this as a business — I'm filling a house I already love with
+            people worth being around.
           </p>
           <p>
-            They had a last-minute cancellation. The owner is a dope and dear
-            sister of mine, and she gave me a rate that makes absolutely no
-            sense, on the one condition that I come and do my thing there.
+            There's no programme and no schedule. Nobody is teaching, nobody is
+            being taught. The wifi is strong and fast, so bring the thing you're
+            building and build it from somewhere beautiful. Or bring nothing at
+            all and finally stop.
           </p>
-          <p>My first impulse, obviously, was to build a retreat.</p>
-          <p>Design the programme. Sell the spots. Hold everyone.</p>
-          <p>Then I fainted, and a second, quieter impulse arrived:</p>
+          <p>I'm bringing a piano and my favorite humans as well.</p>
+        </section>
+
+        <FullImage
+          src="https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/tezera-edge-inifity.webp"
+          alt="Tereza at the infinity pool overlooking the Bali landscape"
+          label="MEET YOUR HOST"
+        >
+          <h2 className="kurulu-bay-page__media-overlay-title"></h2>
+        </FullImage>
+
+        <section className="kurulu-bay-page__text-section">
+          <SectionLabel>WHO'S HOSTING</SectionLabel>
+          <p className="kurulu-bay-page__lead">I'm Tereza.</p>
           <p>
-            <strong>What if I just went?</strong>
+            I've spent the last two decades somewhere between the stage and the
+            studio — film producer, composer, concert pianist, and as a figure
+            skater with Disney on Ice. These days I also work as a breathwork
+            coach and sound therapist, which is more or less what happens when
+            you spend twenty years learning what performance does to a nervous
+            system.
           </p>
           <p>
-            What if instead of holding a room full of strangers, I invited the
-            people I actually want to be around, and we simply had the week?
+            Which is a long way of saying: I know what it is to need to make
+            something, and I know what it is to need to stop. These lux villas
+            are good for both.
           </p>
           <p>
-            Soul friends. Creatives. Healers. Artists. Childhood friends. People
-            from completely different corners of my life who I have a feeling
-            would really enjoy finding themselves in the same space.
+            I'll be there the whole time — bringing a piano, working on my own
+            things, and potentially offering some breathwork or a sound bath to
+            whoever wants it. Not on a schedule.
           </p>
-          <p>So that's what this is.</p>
+
+          <div className="bali-creative-getaway__section-divider" />
+
+          <SectionLabel>WHO IT'S FOR</SectionLabel>
+          <p className="kurulu-bay-page__lead">You'll fit here if:</p>
+          <ul className="bali-creative-getaway__fit-list">
+            <li>
+              You work from anywhere, and you're tired of doing it from a café
+            </li>
+            <li>
+              You're mid-project and you need somewhere inspiring to actually
+              finish it
+            </li>
+            <li>
+              You make things, and you want other people who make things nearby
+            </li>
+            <li>
+              You're flexible with where you are in the world, and you want the
+              next stretch of it to be good
+            </li>
+            <li>
+              You're running on empty and you already know a hotel won't fix it
+            </li>
+          </ul>
+
+          <p className="kurulu-bay-page__lead">You won't if:</p>
+          <ul className="bali-creative-getaway__fit-list">
+            <li>You want a party or a big social scene</li>
+            <li>
+              You want a structured retreat with a teacher and a timetable
+            </li>
+            <li>
+              You want a hotel where you never run into anyone — there are two
+              shared Villas, and that's the point
+            </li>
+          </ul>
         </section>
 
         <section className="bali-creative-getaway__letter-continuation">
@@ -434,9 +478,11 @@ export default function BaliCreativeGetawayPage() {
             villas, three open-air yoga shalas, a meditation deck suspended
             above the river, and ninth-century temple carvings hidden within the
             cliffs create a setting that feels both timeless and deeply
-            connected to the land. Throughout your stay, this extraordinary
-            sanctuary becomes as much a part of the journey as the practices
-            themselves.
+            connected to the land.
+          </p>
+          <p>
+            Fully staffed, fully serviced. You won't have to move a finger from
+            the moment you land.
           </p>
           <div className="kurulu-bay-page__gallery-grid">
             {homeFrames.map((item) => (
@@ -453,22 +499,19 @@ export default function BaliCreativeGetawayPage() {
         >
           <SectionLabel index="04">THE SPACES</SectionLabel>
           <p className="kurulu-bay-page__lead">
-            Every practice has its own room here — and this week, all of them
-            are open to us.
+            Every practice has its own room here — and this week, none of them
+            are booked.
           </p>
           <p>
-            Not one hall we return to each day, but a collection of spaces and
-            platforms, each built for a different kind of attention, each
-            opening onto the valley. The glass shala. The open pavilion. The
-            meditation deck above the river. A library. Quiet corners with
-            beautiful light and strong wifi, if you've got something you're in
-            the middle of building.
+            Three open-air shalas. A meditation deck suspended above the river.
+            A library. Two villas. Pools. A fire pit. Long tables and quiet
+            corners with good light and fast, reliable wifi.
           </p>
           <p>
-            Use them however you want. Move through all of them, or claim one as
-            yours for the week and never leave it. They're here. Nothing in them
-            is scheduled.
+            Somewhere to work in the morning, and somewhere completely different
+            to collapse in the afternoon.
           </p>
+          <p>Use them however you want. Nothing in them is scheduled.</p>
           <div className="kurulu-bay-page__day-grid">
             {spaceCards.map((item) => (
               <figure
@@ -488,74 +531,34 @@ export default function BaliCreativeGetawayPage() {
           src={images.jam}
           alt="Movement above the clouds in Bali"
           index="05"
-          label="THE JAM"
+          label="HOW IT WORKS"
         >
           <h2 className="kurulu-bay-page__media-overlay-title">
-            There's no programme. I want to be really clear about that, because
-            I know how invitations like this usually read.
+            No programme. No schedule. Nobody holding the room.
           </h2>
         </FullImage>
 
         <section id="jam">
           <div className="kurulu-bay-page__text-section">
-            <p className="kurulu-bay-page__lead">
-              <strong>
-                Nobody is teaching. Nobody is being taught. What happens is
-                whatever we bring.
-              </strong>
+            <p>
+              If you want to offer something, offer it. A sound bath. A talk on
+              how you built your company. A song. A screening of the thing you
+              just cut. A workshop you've been wanting to test on kind people.
+              Cooking one dinner. The space is yours and we'd love it.
             </p>
             <p>
-              If you want to offer something, the space is yours and we'd love
-              it — a sound bath, a breath session, a talk on how you built your
-              business, a song, a workshop you've been wanting to test on kind
-              people, a recipe, a long walk with whoever wants to come. If you
-              want to offer nothing at all, that is equally and entirely the
-              point.
+              If you want to offer nothing, offer nothing. Several people will
+              spend the whole week heads-down on their own work, and that's
+              exactly as valid.
             </p>
             <p>
-              I'll be doing my thing too. Some SONIC BREATH™, probably a SOUND
-              TEMPLE™ if the mood takes us. Not as a schedule — as an offering,
-              when it feels right, for whoever's around.
+              If you want to disappear entirely, you can. You can socialise
+              every evening or hermit for the full stretch, and nobody will take
+              it personally.
             </p>
             <p>
-              And if you're in the middle of building something: bring it. There
-              are beautiful working and co-working spaces, a library, fast wifi,
-              and the kind of energy and environment that makes work feel like a
-              pleasure instead of a grind. Several of us will probably be doing
-              exactly that.
-            </p>
-            <p>
-              If what you need is to hermit for seven or 11 days and speak to no
-              one — that's completely invited, and nobody will take it
-              personally.
-            </p>
-            <p className="bali-creative-getaway__invitation">
-              Everyone plays. Or doesn't.
-            </p>
-          </div>
-          <FullImage
-            src={images.paddyField}
-            alt="Women standing in a Bali paddy field"
-            index="06"
-            label="THE SHAPE OF THE WEEK"
-          >
-            <h2 className="kurulu-bay-page__media-overlay-title">
-              There's no arc. No theme for each day building on the one before
-              it. The week will find its own shape and we'll co-create it
-              together.
-            </h2>
-          </FullImage>
-          <div className="kurulu-bay-page__text-section">
-            <p> Though from experience, it tends to go something like:</p>
-            <div className="bali-creative-getaway__week-shape">
-              <p>You sleep more than you expected to.</p>
-              <p>Your body stops bracing.</p>
-              <p>The conversations get deep.</p>
-              <p>You stop reaching for your phone.</p>
-              <p>You don't want to leave.</p>
-            </div>
-            <p>
-              <strong>That's the entire itinerary.</strong>
+              The staff handle the rest — rooms, breakfast, transfers, all of
+              it. Your only job is to decide what you're doing with the day.
             </p>
           </div>
         </section>
