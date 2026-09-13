@@ -153,7 +153,7 @@ const rooms = [
   },
   {
     id: "grand-jungle",
-    booked: { september: false, october: false },
+    booked: { september: false, october: true },
     villa: "Villa II",
     name: "Grand Jungle Suite",
     image:
