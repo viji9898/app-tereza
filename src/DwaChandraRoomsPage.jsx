@@ -329,8 +329,8 @@ export default function DwaChandraRoomsPage() {
     setSelectedRoom(null);
   };
   const message = selected
-    ? `Hello, I would like to request the ${selected.name} in ${selected.villa} for the Bali retreat from ${selectedDate.message}. Could you confirm availability?`
-    : `Hello, I would like help choosing a room for the Bali retreat from ${selectedDate.message}.`;
+    ? `Hi Tereza, I would like to request the ${selected.name} in ${selected.villa} for the Bali retreat from ${selectedDate.message}. Could you confirm availability?`
+    : `Hi Tereza, I would like help choosing a room for the Bali retreat from ${selectedDate.message}.`;
   const whatsappUrl = `https://wa.me/201010001133?text=${encodeURIComponent(message)}`;
 
   return (
