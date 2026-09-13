@@ -231,7 +231,7 @@ const rooms = [
   },
   {
     id: "fishbowl",
-    booked: { september: false, october: false },
+    booked: { september: true, october: false },
     villa: "Villa II",
     name: "Fishbowl Suite & Family Room",
     image:
