@@ -11,6 +11,7 @@ import BaliCreativeGetawayPage from "./BaliCreativeGetawayPage";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import CorporateWellness from "./CorporateWellness";
+import DwaChandraRoomsPage from "./DwaChandraRoomsPage";
 import KuruluBayRetreat from "./KuruluBayRetreat";
 import OfferingsPage from "./OfferingsPage";
 import PalmsImagesPage from "./PalmsImagesPage";
@@ -201,6 +202,14 @@ const pageMetadata = {
     imageHeight: "800",
     imageAlt:
       "Immersive signature breathwork, sound, movement, and music experiences by Tereza Dos Santos",
+  },
+  dwaChandraRooms: {
+    title: "Choose Your Room | Dwa Chandra, Bali",
+    description:
+      "Explore and select from the unique luxury suites at Dwa Chandra for your Bali retreat.",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/e1eb03f6-12fe-44e0-a840-c8e51944b3a1/DSC09956-HDR.jpeg?format=1500w",
+    imageAlt: "Royal Suite at Dwa Chandra in Bali",
   },
 };
 
@@ -556,7 +565,9 @@ function ContentPage() {
 
 function App() {
   const pathname = window.location.pathname;
-  const metadata = pathname.startsWith("/sri-lanka-october-7-days/investment")
+  const metadata = pathname.startsWith("/dwa-chandra-rooms")
+    ? pageMetadata.dwaChandraRooms
+    : pathname.startsWith("/sri-lanka-october-7-days/investment")
     ? pageMetadata.sriLankaOctober7DaysInvestment
     : pathname.startsWith("/sri-lanka-october-7-days")
       ? pageMetadata.sriLankaOctober7Days
@@ -601,6 +612,10 @@ function App() {
                                         : pageMetadata.home;
 
   usePageMetadata(metadata);
+
+  if (pathname.startsWith("/dwa-chandra-rooms")) {
+    return <DwaChandraRoomsPage />;
+  }
 
   if (pathname.startsWith("/sri-lanka-october-7-days/investment")) {
     return <SriLankaInvestmentPage />;

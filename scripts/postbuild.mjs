@@ -114,6 +114,15 @@ const routeMetadata = {
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg",
     imageAlt: "Dwa Chandra villa in Bali",
   },
+  dwaChandraRooms: {
+    routePath: "/dwa-chandra-rooms",
+    title: "Choose Your Room | Dwa Chandra, Bali",
+    description:
+      "Explore and select from the unique luxury suites at Dwa Chandra for your Bali retreat.",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/e1eb03f6-12fe-44e0-a840-c8e51944b3a1/DSC09956-HDR.jpeg?format=1500w",
+    imageAlt: "Royal Suite at Dwa Chandra in Bali",
+  },
   retreatsDirectory: {
     routePath: "/retreats-directory",
     title: "Retreats Directory | Tereza Dos Santos",
@@ -317,6 +326,7 @@ for (const [directoryName, metadata] of [
   ["bali-friends", routeMetadata.baliFriends],
   ["bali-creative-getaway", routeMetadata.baliCreativeGetaway],
   ["bali-september", routeMetadata.baliSeptember],
+  ["dwa-chandra-rooms", routeMetadata.dwaChandraRooms],
   ["retreats-directory", routeMetadata.retreatsDirectory],
   ["palms-image", routeMetadata.palmsImages],
   ["bali-images", routeMetadata.baliImages],
