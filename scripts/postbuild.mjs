@@ -120,7 +120,7 @@ const routeMetadata = {
     description:
       "Explore and select from the unique luxury suites at Dwa Chandra for your Bali retreat.",
     image:
-      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/e1eb03f6-12fe-44e0-a840-c8e51944b3a1/DSC09956-HDR.jpeg?format=1500w",
+      " https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/1710daca-49aa-4a8b-8497-06f37c356c76/DSC09138-HDR.jpg?format=1500w",
     imageAlt: "Royal Suite at Dwa Chandra in Bali",
   },
   retreatsDirectory: {
