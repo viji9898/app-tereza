@@ -4,6 +4,7 @@ import "./DwaChandraRoomsPage.css";
 const rooms = [
   {
     id: "royal",
+    booked: { september: true, october: true },
     villa: "Villa I",
     name: "Royal Suite",
     image:
@@ -17,10 +18,15 @@ const rooms = [
     ],
     summary: "A top-floor sanctuary with panoramic pool and jungle views.",
     bed: "King canopy bed",
-    details: ["Private balcony", "Outdoor soaking tub", "Writing desk & daybed"],
+    details: [
+      "Private balcony",
+      "Outdoor soaking tub",
+      "Writing desk & daybed",
+    ],
   },
   {
     id: "bungalow",
+    booked: { september: false, october: false },
     villa: "Villa I",
     name: "Bungalow Suite",
     image:
@@ -38,6 +44,7 @@ const rooms = [
   },
   {
     id: "poolview",
+    booked: { september: false, october: false },
     villa: "Villa I",
     name: "Poolview Suite",
     image:
@@ -51,10 +58,15 @@ const rooms = [
     ],
     summary: "An airy suite overlooking the movement of Villa I below.",
     bed: "King or two twins",
-    details: ["Private pool-view balcony", "Optional third bed", "Indoor bathtub"],
+    details: [
+      "Private pool-view balcony",
+      "Optional third bed",
+      "Indoor bathtub",
+    ],
   },
   {
     id: "skylight",
+    booked: { september: false, october: false },
     villa: "Villa I",
     name: "Skylight Suite",
     image:
@@ -68,10 +80,15 @@ const rooms = [
     ],
     summary: "A serene top-floor room named for the light above its bath.",
     bed: "King or two twins",
-    details: ["Optional third bed", "Open-air en suite", "Skylit bathtub & shower"],
+    details: [
+      "Optional third bed",
+      "Open-air en suite",
+      "Skylit bathtub & shower",
+    ],
   },
   {
     id: "river",
+    booked: { september: false, october: false },
     villa: "Villa I",
     name: "River Suite",
     image:
@@ -88,6 +105,7 @@ const rooms = [
   },
   {
     id: "family-one",
+    booked: { september: false, october: false },
     villa: "Villa I",
     name: "Family Room",
     image:
@@ -95,11 +113,16 @@ const rooms = [
     gallery: [],
     summary: "A relaxed family room that can be converted for sleeping.",
     bed: "Two converted twin beds",
-    details: ["Shared access bathroom", "Temporary wardrobe", "Flexible layout"],
+    details: [
+      "Shared access bathroom",
+      "Temporary wardrobe",
+      "Flexible layout",
+    ],
     conversion: true,
   },
   {
     id: "grand-jungle",
+    booked: { september: false, october: false },
     villa: "Villa II",
     name: "Grand Jungle Suite",
     image:
@@ -117,6 +140,7 @@ const rooms = [
   },
   {
     id: "mural",
+    booked: { september: false, october: false },
     villa: "Villa II",
     name: "Mural Suite",
     image:
@@ -134,6 +158,7 @@ const rooms = [
   },
   {
     id: "gardenview",
+    booked: { september: false, october: false },
     villa: "Villa II",
     name: "Gardenview Suite",
     image:
@@ -150,6 +175,7 @@ const rooms = [
   },
   {
     id: "fishbowl",
+    booked: { september: false, october: false },
     villa: "Villa II",
     name: "Fishbowl Suite & Family Room",
     image:
@@ -161,16 +187,29 @@ const rooms = [
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/d945f8f3-5b4d-4c23-ac44-10212e8037b4/DSC00534+%282%29.jpg?format=1500w",
       "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/b70cbfca-aa3c-4c0b-857c-e2167b3893ed/DSC00512.jpeg?format=1500w",
     ],
-    summary: "Curved glass walls open this lower-floor suite to the river gorge.",
+    summary:
+      "Curved glass walls open this lower-floor suite to the river gorge.",
     bed: "King bed + convertible couch",
-    details: ["Separate family room", "Curved jungle deck", "Outdoor soaking tub"],
+    details: [
+      "Separate family room",
+      "Curved jungle deck",
+      "Outdoor soaking tub",
+    ],
     conversion: true,
   },
 ];
 
 const retreatDates = [
-  { id: "september", label: "23rd–29th Sept", message: "23rd–29th September 2026" },
-  { id: "october", label: "3rd–12th October", message: "3rd–12th October 2026" },
+  {
+    id: "september",
+    label: "23rd–29th Sept",
+    message: "23rd–29th September 2026",
+  },
+  {
+    id: "october",
+    label: "3rd–12th October",
+    message: "3rd–12th October 2026",
+  },
 ];
 
 function RoomGallery({ room, eager }) {
@@ -178,7 +217,9 @@ function RoomGallery({ room, eager }) {
   const [activeImage, setActiveImage] = useState(0);
 
   const showImage = (offset) => {
-    setActiveImage((current) => (current + offset + images.length) % images.length);
+    setActiveImage(
+      (current) => (current + offset + images.length) % images.length,
+    );
   };
 
   return (
@@ -192,9 +233,25 @@ function RoomGallery({ room, eager }) {
       {room.conversion ? <small>Flexible room</small> : null}
       {images.length > 1 ? (
         <div className="dwa-room__gallery-controls">
-          <button type="button" onClick={() => showImage(-1)} aria-label={`Previous ${room.name} image`} title="Previous image">←</button>
-          <b>{activeImage + 1} / {images.length}</b>
-          <button type="button" onClick={() => showImage(1)} aria-label={`Next ${room.name} image`} title="Next image">→</button>
+          <button
+            type="button"
+            onClick={() => showImage(-1)}
+            aria-label={`Previous ${room.name} image`}
+            title="Previous image"
+          >
+            ←
+          </button>
+          <b>
+            {activeImage + 1} / {images.length}
+          </b>
+          <button
+            type="button"
+            onClick={() => showImage(1)}
+            aria-label={`Next ${room.name} image`}
+            title="Next image"
+          >
+            →
+          </button>
         </div>
       ) : null}
     </div>
@@ -206,7 +263,12 @@ export default function DwaChandraRoomsPage() {
   const [selectedRoom, setSelectedRoom] = useState(null);
 
   const selectedDate = retreatDates.find((date) => date.id === selectedDateId);
-  const selected = rooms.find((room) => room.id === selectedRoom);
+  const availableRooms = rooms.filter((room) => !room.booked[selectedDateId]);
+  const selected = availableRooms.find((room) => room.id === selectedRoom);
+  const handleDateChange = (dateId) => {
+    setSelectedDateId(dateId);
+    setSelectedRoom(null);
+  };
   const message = selected
     ? `Hello, I would like to request the ${selected.name} in ${selected.villa} for the Bali retreat from ${selectedDate.message}. Could you confirm availability?`
     : `Hello, I would like help choosing a room for the Bali retreat from ${selectedDate.message}.`;
@@ -218,7 +280,12 @@ export default function DwaChandraRoomsPage() {
         <a className="dwa-rooms-page__brand" href="/bali-september-7-days">
           The Reset · Bali
         </a>
-        <a className="dwa-rooms-page__help" href={whatsappUrl} target="_blank" rel="noreferrer">
+        <a
+          className="dwa-rooms-page__help"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
           Need help choosing?
           <span aria-hidden="true">↗</span>
         </a>
@@ -240,18 +307,24 @@ export default function DwaChandraRoomsPage() {
         </div>
       </section>
 
-      <section className="dwa-rooms-page__selector" aria-labelledby="rooms-heading">
+      <section
+        className="dwa-rooms-page__selector"
+        aria-labelledby="rooms-heading"
+      >
         <div className="dwa-rooms-page__selector-head">
           <div>
             <p className="dwa-rooms-page__eyebrow">Your space</p>
             <h2 id="rooms-heading">Explore the suites</h2>
           </div>
-          <div className="dwa-rooms-page__filters" aria-label="Choose retreat dates">
+          <div
+            className="dwa-rooms-page__filters"
+            aria-label="Choose retreat dates"
+          >
             {retreatDates.map((date) => (
               <button
                 className={selectedDateId === date.id ? "is-active" : ""}
                 key={date.id}
-                onClick={() => setSelectedDateId(date.id)}
+                onClick={() => handleDateChange(date.id)}
                 type="button"
               >
                 {date.label}
@@ -261,10 +334,13 @@ export default function DwaChandraRoomsPage() {
         </div>
 
         <div className="dwa-rooms-page__grid">
-          {rooms.map((room, index) => {
+          {availableRooms.map((room, index) => {
             const isSelected = selectedRoom === room.id;
             return (
-              <article className={`dwa-room${isSelected ? " is-selected" : ""}`} key={room.id}>
+              <article
+                className={`dwa-room${isSelected ? " is-selected" : ""}`}
+                key={room.id}
+              >
                 <RoomGallery room={room} eager={index < 2} />
                 <div className="dwa-room__body">
                   <div className="dwa-room__heading">
@@ -273,7 +349,9 @@ export default function DwaChandraRoomsPage() {
                   </div>
                   <p>{room.summary}</p>
                   <ul>
-                    {room.details.map((detail) => <li key={detail}>{detail}</li>)}
+                    {room.details.map((detail) => (
+                      <li key={detail}>{detail}</li>
+                    ))}
                   </ul>
                   <button
                     type="button"
@@ -287,18 +365,26 @@ export default function DwaChandraRoomsPage() {
               </article>
             );
           })}
+          {availableRooms.length === 0 ? (
+            <p className="dwa-rooms-page__empty">
+              All rooms are currently booked for these retreat dates.
+            </p>
+          ) : null}
         </div>
       </section>
 
       <section className="dwa-rooms-page__note">
         <p className="dwa-rooms-page__eyebrow">A note on room requests</p>
         <p>
-          Rooms are allocated in the order bookings are received. Your choice
-          is a request until availability is confirmed by the retreat team.
+          Rooms are allocated in the order bookings are received. Your choice is
+          a request until availability is confirmed by the retreat team.
         </p>
       </section>
 
-      <div className={`dwa-rooms-page__selection${selected ? " is-visible" : ""}`} aria-live="polite">
+      <div
+        className={`dwa-rooms-page__selection${selected ? " is-visible" : ""}`}
+        aria-live="polite"
+      >
         {selected ? (
           <>
             <div>
