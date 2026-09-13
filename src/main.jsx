@@ -570,48 +570,50 @@ function App() {
   const metadata = pathname.startsWith("/dwa-chandra-rooms")
     ? pageMetadata.dwaChandraRooms
     : pathname.startsWith("/sri-lanka-october-7-days/investment")
-    ? pageMetadata.sriLankaOctober7DaysInvestment
-    : pathname.startsWith("/sri-lanka-october-7-days")
-      ? pageMetadata.sriLankaOctober7Days
-      : pathname.startsWith("/sri-lanka")
-        ? pageMetadata.kuruluBay
-        : pathname.startsWith("/retreats-directory")
-          ? pageMetadata.retreatsDirectory
-          : pathname.startsWith("/retreats")
-            ? pageMetadata.retreats
-            : pathname.startsWith("/palms-image")
-              ? pageMetadata.palmsImages
-              : pathname.startsWith("/bali-images")
-                ? pageMetadata.baliImages
-                : pathname.startsWith("/offerings")
-                  ? pageMetadata.offerings
-                  : pathname.startsWith("/corporate")
-                    ? pageMetadata.corporate
-                    : pathname.startsWith("/contracts")
-                      ? pageMetadata.contracts
-                      : pathname.startsWith("/bali-creative-getaway")
-                        ? pageMetadata.baliCreativeGetaway
-                        : pathname.startsWith("/bali-friends")
-                          ? pageMetadata.baliFriends
-                          : pathname.startsWith(
-                                "/bali-september-7-days/investment",
-                              )
-                            ? pageMetadata.baliSeptember7DaysInvestment
-                            : pathname.startsWith("/bali-october/investment")
-                              ? pageMetadata.baliOctoberInvestment
-                              : pathname.startsWith(
-                                    "/bali-september-7-days-villa-beji",
-                                  )
-                                ? pageMetadata.baliSeptember7DaysVillaBeji
-                                : pathname.startsWith("/bali-september-7-days")
-                                  ? pageMetadata.baliSeptember7Days
-                                  : pathname.startsWith("/bali-september")
-                                    ? pageMetadata.baliSeptember
-                                    : pathname.startsWith("/bali-october")
-                                      ? pageMetadata.bali
-                                      : pathname.startsWith("/content")
-                                        ? pageMetadata.content
-                                        : pageMetadata.home;
+      ? pageMetadata.sriLankaOctober7DaysInvestment
+      : pathname.startsWith("/sri-lanka-october-7-days")
+        ? pageMetadata.sriLankaOctober7Days
+        : pathname.startsWith("/sri-lanka")
+          ? pageMetadata.kuruluBay
+          : pathname.startsWith("/retreats-directory")
+            ? pageMetadata.retreatsDirectory
+            : pathname.startsWith("/retreats")
+              ? pageMetadata.retreats
+              : pathname.startsWith("/palms-image")
+                ? pageMetadata.palmsImages
+                : pathname.startsWith("/bali-images")
+                  ? pageMetadata.baliImages
+                  : pathname.startsWith("/offerings")
+                    ? pageMetadata.offerings
+                    : pathname.startsWith("/corporate")
+                      ? pageMetadata.corporate
+                      : pathname.startsWith("/contracts")
+                        ? pageMetadata.contracts
+                        : pathname.startsWith("/bali-creative-getaway")
+                          ? pageMetadata.baliCreativeGetaway
+                          : pathname.startsWith("/bali-friends")
+                            ? pageMetadata.baliFriends
+                            : pathname.startsWith(
+                                  "/bali-september-7-days/investment",
+                                )
+                              ? pageMetadata.baliSeptember7DaysInvestment
+                              : pathname.startsWith("/bali-october/investment")
+                                ? pageMetadata.baliOctoberInvestment
+                                : pathname.startsWith(
+                                      "/bali-september-7-days-villa-beji",
+                                    )
+                                  ? pageMetadata.baliSeptember7DaysVillaBeji
+                                  : pathname.startsWith(
+                                        "/bali-september-7-days",
+                                      )
+                                    ? pageMetadata.baliSeptember7Days
+                                    : pathname.startsWith("/bali-september")
+                                      ? pageMetadata.baliSeptember
+                                      : pathname.startsWith("/bali-october")
+                                        ? pageMetadata.bali
+                                        : pathname.startsWith("/content")
+                                          ? pageMetadata.content
+                                          : pageMetadata.home;
 
   usePageMetadata(metadata);
 
