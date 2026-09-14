@@ -49,7 +49,7 @@ export default function BaliCreativeGetawayFlexPage() {
           </div>
           <div>
             <dt>Minimum stay</dt>
-            <dd>6 days</dd>
+            <dd>6 nights</dd>
           </div>
           <div className="creative-flex-page__calculation">
             <dt>Your minimum stay</dt>
