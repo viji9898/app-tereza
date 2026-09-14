@@ -131,7 +131,7 @@ const pageMetadata = {
   baliCreativeGetawayFlex: {
     title: "Flexible Bali Creative Getaway | 3–17 October 2026",
     description:
-      "Choose a flexible stay at Dwa Chandra between 3 and 17 October 2026, from $180 USD per day with a six-day minimum.",
+      "Choose a flexible stay at Dwa Chandra between 3 and 17 October 2026, from $180 USD per night with a six-day minimum.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa_chandra_home_hero.webp",
     imageType: "image/webp",
@@ -606,28 +606,30 @@ function App() {
                           : pathname.startsWith("/bali-creative-getaway")
                             ? pageMetadata.baliCreativeGetaway
                             : pathname.startsWith("/bali-friends")
-                            ? pageMetadata.baliFriends
-                            : pathname.startsWith(
-                                  "/bali-september-7-days/investment",
-                                )
-                              ? pageMetadata.baliSeptember7DaysInvestment
-                              : pathname.startsWith("/bali-october/investment")
-                                ? pageMetadata.baliOctoberInvestment
+                              ? pageMetadata.baliFriends
+                              : pathname.startsWith(
+                                    "/bali-september-7-days/investment",
+                                  )
+                                ? pageMetadata.baliSeptember7DaysInvestment
                                 : pathname.startsWith(
-                                      "/bali-september-7-days-villa-beji",
+                                      "/bali-october/investment",
                                     )
-                                  ? pageMetadata.baliSeptember7DaysVillaBeji
+                                  ? pageMetadata.baliOctoberInvestment
                                   : pathname.startsWith(
-                                        "/bali-september-7-days",
+                                        "/bali-september-7-days-villa-beji",
                                       )
-                                    ? pageMetadata.baliSeptember7Days
-                                    : pathname.startsWith("/bali-september")
-                                      ? pageMetadata.baliSeptember
-                                      : pathname.startsWith("/bali-october")
-                                        ? pageMetadata.bali
-                                        : pathname.startsWith("/content")
-                                          ? pageMetadata.content
-                                          : pageMetadata.home;
+                                    ? pageMetadata.baliSeptember7DaysVillaBeji
+                                    : pathname.startsWith(
+                                          "/bali-september-7-days",
+                                        )
+                                      ? pageMetadata.baliSeptember7Days
+                                      : pathname.startsWith("/bali-september")
+                                        ? pageMetadata.baliSeptember
+                                        : pathname.startsWith("/bali-october")
+                                          ? pageMetadata.bali
+                                          : pathname.startsWith("/content")
+                                            ? pageMetadata.content
+                                            : pageMetadata.home;
 
   usePageMetadata(metadata);
 

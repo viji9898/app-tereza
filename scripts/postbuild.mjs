@@ -109,7 +109,7 @@ const routeMetadata = {
     routePath: "/bali-creative-getaway/flex",
     title: "Flexible Bali Creative Getaway | 3–17 October 2026",
     description:
-      "Choose a flexible stay at Dwa Chandra between 3 and 17 October 2026, from $180 USD per day with a six-day minimum.",
+      "Choose a flexible stay at Dwa Chandra between 3 and 17 October 2026, from $180 USD per night with a six-day minimum.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa_chandra_home_hero.webp",
     imageType: "image/webp",
