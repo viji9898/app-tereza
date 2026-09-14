@@ -14,7 +14,10 @@ export default function BaliCreativeGetawayFlexPage() {
       />
 
       <header className="creative-flex-page__header">
-        <a href="/bali-creative-getaway" aria-label="Back to The RESET Creative Getaway">
+        <a
+          href="/bali-creative-getaway"
+          aria-label="Back to The RESET Creative Getaway"
+        >
           <span aria-hidden="true">←</span>
           The RESET · Creative Getaway
         </a>
@@ -23,10 +26,14 @@ export default function BaliCreativeGetawayFlexPage() {
 
       <section className="creative-flex-page__content">
         <p className="creative-flex-page__eyebrow">Stay your way</p>
-        <h1>Flexible<br />Getaway</h1>
+        <h1>
+          Flexible
+          <br />
+          Getaway
+        </h1>
         <p className="creative-flex-page__intro">
-          Arrive when it works for you. Choose any six days or stay longer,
-          and settle into the rhythm of Dwa Chandra at your own pace.
+          Arrive when it works for you. Choose any six days or stay longer, and
+          settle into the rhythm of Dwa Chandra at your own pace.
         </p>
 
         <dl className="creative-flex-page__details">
@@ -36,7 +43,9 @@ export default function BaliCreativeGetawayFlexPage() {
           </div>
           <div>
             <dt>Daily rate</dt>
-            <dd><strong>$180</strong> USD per day</dd>
+            <dd>
+              <strong>$180</strong> USD per night
+            </dd>
           </div>
           <div>
             <dt>Minimum stay</dt>
@@ -44,7 +53,9 @@ export default function BaliCreativeGetawayFlexPage() {
           </div>
           <div className="creative-flex-page__calculation">
             <dt>Your minimum stay</dt>
-            <dd>Six days. One reset. <strong>$1,080 USD</strong></dd>
+            <dd>
+              Six days. One reset. <strong>$1,080 USD</strong>
+            </dd>
           </div>
         </dl>
 
