@@ -32,8 +32,8 @@ export default function BaliCreativeGetawayFlexPage() {
           Getaway
         </h1>
         <p className="creative-flex-page__intro">
-          Arrive when it works for you. Choose any six days or stay longer, and
-          settle into the rhythm of Dwa Chandra at your own pace.
+          Arrive when it works for you. Choose any of our six day blocks or stay
+          longer, and settle into the rhythm of Dwa Chandra at your own pace.
         </p>
 
         <dl className="creative-flex-page__details">
