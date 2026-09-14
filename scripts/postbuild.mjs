@@ -105,6 +105,18 @@ const routeMetadata = {
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
     imageAlt: "Dwa Chandra surrounded by the Bali jungle",
   },
+  baliCreativeGetawayFlex: {
+    routePath: "/bali-creative-getaway/flex",
+    title: "Flexible Bali Creative Getaway | 3–17 October 2026",
+    description:
+      "Choose a flexible stay at Dwa Chandra between 3 and 17 October 2026, from $180 USD per day with a six-day minimum.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa_chandra_home_hero.webp",
+    imageType: "image/webp",
+    imageWidth: "1600",
+    imageHeight: "900",
+    imageAlt: "Dwa Chandra sanctuary surrounded by tropical greenery in Bali",
+  },
   baliSeptember7DaysInvestment: {
     routePath: "/bali-september-7-days/investment",
     title: "Investment | The RESET Bali Retreat | Tereza Dos Santos",
@@ -326,6 +338,7 @@ for (const [directoryName, metadata] of [
   ],
   ["bali-september-7-days", routeMetadata.baliSeptember7Days],
   ["bali-friends", routeMetadata.baliFriends],
+  ["bali-creative-getaway/flex", routeMetadata.baliCreativeGetawayFlex],
   ["bali-creative-getaway", routeMetadata.baliCreativeGetaway],
   ["bali-september", routeMetadata.baliSeptember],
   ["dwa-chandra-rooms", routeMetadata.dwaChandraRooms],

@@ -8,6 +8,7 @@ import BaliSeptember7Days from "./BaliSeptember7Days";
 import BaliSeptember7DaysVillaBeji from "./BaliSeptember7DaysVillaBeji";
 import BaliFriendsPage from "./BaliFriendsPage";
 import BaliCreativeGetawayPage from "./BaliCreativeGetawayPage";
+import BaliCreativeGetawayFlexPage from "./BaliCreativeGetawayFlexPage";
 import BaliImagesPage from "./BaliImagesPage";
 import ContractsPage from "./ContractsPage";
 import CorporateWellness from "./CorporateWellness";
@@ -126,6 +127,17 @@ const pageMetadata = {
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
     imageAlt: "Dwa Chandra surrounded by the Bali jungle",
+  },
+  baliCreativeGetawayFlex: {
+    title: "Flexible Bali Creative Getaway | 3–17 October 2026",
+    description:
+      "Choose a flexible stay at Dwa Chandra between 3 and 17 October 2026, from $180 USD per day with a six-day minimum.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa_chandra_home_hero.webp",
+    imageType: "image/webp",
+    imageWidth: "1600",
+    imageHeight: "900",
+    imageAlt: "Dwa Chandra sanctuary surrounded by tropical greenery in Bali",
   },
   baliSeptember7DaysInvestment: {
     title: "Investment | The RESET Bali Retreat | Tereza Dos Santos",
@@ -589,9 +601,11 @@ function App() {
                       ? pageMetadata.corporate
                       : pathname.startsWith("/contracts")
                         ? pageMetadata.contracts
-                        : pathname.startsWith("/bali-creative-getaway")
-                          ? pageMetadata.baliCreativeGetaway
-                          : pathname.startsWith("/bali-friends")
+                        : pathname.startsWith("/bali-creative-getaway/flex")
+                          ? pageMetadata.baliCreativeGetawayFlex
+                          : pathname.startsWith("/bali-creative-getaway")
+                            ? pageMetadata.baliCreativeGetaway
+                            : pathname.startsWith("/bali-friends")
                             ? pageMetadata.baliFriends
                             : pathname.startsWith(
                                   "/bali-september-7-days/investment",
@@ -659,6 +673,10 @@ function App() {
 
   if (pathname.startsWith("/contracts")) {
     return <ContractsPage />;
+  }
+
+  if (pathname.startsWith("/bali-creative-getaway/flex")) {
+    return <BaliCreativeGetawayFlexPage />;
   }
 
   if (pathname.startsWith("/bali-creative-getaway")) {
