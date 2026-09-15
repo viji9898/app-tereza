@@ -31,7 +31,7 @@ const rooms = [
   },
   {
     id: "bungalow",
-    booked: { september: true, october: false },
+    booked: { september: true, october: true },
     villa: "Villa I",
     name: "Bungalow Suite",
     image:
