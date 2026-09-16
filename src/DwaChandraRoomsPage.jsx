@@ -85,7 +85,7 @@ const rooms = [
   },
   {
     id: "skylight",
-    booked: { september: false, october: false },
+    booked: { september: true, october: false },
     villa: "Villa I",
     name: "Skylight Suite",
     image:
