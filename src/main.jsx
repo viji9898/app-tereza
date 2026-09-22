@@ -532,6 +532,15 @@ function ContentPage() {
 }
 
 function App() {
+  const requestedPathname = window.location.pathname;
+  const isDisabledBaliRoute =
+    requestedPathname.startsWith("/bali") ||
+    requestedPathname.startsWith("/dwa-chandra-rooms");
+
+  if (isDisabledBaliRoute) {
+    window.history.replaceState({}, "", "/");
+  }
+
   const pathname = window.location.pathname;
   const metadata = pathname.startsWith("/dwa-chandra-rooms")
     ? pageMetadata.dwaChandraRooms
