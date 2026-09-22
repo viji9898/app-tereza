@@ -11,17 +11,6 @@ export default function RetreatsPage() {
       imageAlt: "Kurulu Bay retreat pool framed by tropical palms",
       highlights: ["10 days", "Ayurveda", "Sri Lanka"],
     },
-    {
-      href: "/bali-october",
-      eyebrow: "Bali",
-      title: "The Return Bali",
-      description:
-        "Breathwork, movement, ceremony, and nature immersion in a private Bali retreat setting.",
-      image:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
-      imageAlt: "Women standing in a Bali paddy field",
-      highlights: ["10 days", "Movement", "Bali"],
-    },
   ];
 
   return (
@@ -31,8 +20,8 @@ export default function RetreatsPage() {
           <p className="retreats-page__eyebrow">Retreats</p>
           <h1>Choose your return.</h1>
           <p className="retreats-page__lead">
-            Two intimate retreat experiences, each designed around rest, ritual,
-            and deep reconnection.
+            An intimate retreat experience designed around rest, ritual, and
+            deep reconnection.
           </p>
         </div>
       </section>

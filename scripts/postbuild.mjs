@@ -48,100 +48,14 @@ const routeMetadata = {
       "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/92c414ec-5896-48d1-92a4-10dc10450838/KuruluBaySriLanka050424_NateleeCocks_062.jpg?format=2500w",
     imageAlt: "The Palms retreat accommodation in Sri Lanka",
   },
-  bali: {
-    routePath: "/bali-october",
-    title:
-      "The Return Bali Edition | October 3-12, 2026 | 10 Days, 9 Nights | Tereza Dos Santos",
-    description:
-      "Explore The Return Bali Edition, a private retreat running October 3-12, 2026 with 10 days and 9 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
-    image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
-    imageAlt: "Women standing in a Bali paddy field",
-  },
-  baliOctoberInvestment: {
-    routePath: "/bali-october/investment",
-    title: "Investment | The Return Bali Retreat | Tereza Dos Santos",
-    description:
-      "Investment and room information for The Return Bali retreat, October 3-12, 2026.",
-    image:
-      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg",
-    imageAlt: "Dwa Chandra villa in Bali",
-  },
-  baliSeptember: {
-    routePath: "/bali-september",
-    title:
-      "The Return Bali Edition | September 23-29, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
-    description:
-      "Explore The Return Bali September Edition, a private retreat running September 23-29, 2026 with 7 days and 6 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
-    image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
-    imageAlt: "Women standing in a Bali paddy field",
-  },
-  baliSeptember7Days: {
-    routePath: "/bali-september-7-days",
-    title:
-      "The RESET Bali Retreat | September 23-29, 2026 | 7 Days, 6 Nights | Tereza Dos Santos",
-    description:
-      "Join The RESET Bali, an open retreat running September 23-29, 2026 with 7 days and 6 nights of breathwork, movement, ritual, and immersive restoration curated by Tereza Dos Santos.",
-    image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
-    imageAlt: "Women standing in a Bali paddy field",
-  },
-  baliFriends: {
-    routePath: "/bali-friends",
-    title: "THE RESET | Friends Edition · Dwa Chandra, Bali",
-    description:
-      "THE RESET Friends Edition at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — October 13, 2026.",
-    image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
-    imageAlt: "Dwa Chandra surrounded by the Bali jungle",
-  },
-  baliCreativeGetaway: {
-    routePath: "/bali-creative-getaway",
-    title: "THE RESET Creative Getaway · Dwa Chandra, Bali",
-    description:
-      "THE RESET Creative Getaway at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — October 12, 2026.",
-    image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
-    imageAlt: "Dwa Chandra surrounded by the Bali jungle",
-  },
-  baliSeptember7DaysInvestment: {
-    routePath: "/bali-september-7-days/investment",
-    title: "Investment | The RESET Bali Retreat | Tereza Dos Santos",
-    description:
-      "Investment and room information for The RESET Bali retreat, September 23-29, 2026.",
-    image:
-      "https://images.squarespace-cdn.com/content/v1/63c64b7893ba491276a4defc/8e62810a-84fe-4678-b93a-bc0c2be71c54/dwa+chandra+villa+1.jpg",
-    imageAlt: "Dwa Chandra villa in Bali",
-  },
-  dwaChandraRooms: {
-    routePath: "/dwa-chandra-rooms",
-    title: "Choose Your Room | Dwa Chandra, Bali",
-    description:
-      "Explore and select from the unique luxury suites at Dwa Chandra for your Bali retreat.",
-    image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/dwa-chandra/og-imgae-dwa-chandra-rooms.jpg",
-    imageWidth: "1200",
-    imageHeight: "750",
-    imageAlt: "Dwa Chandra suite overlooking a tropical pool in Bali",
-  },
   retreatsDirectory: {
     routePath: "/retreats-directory",
     title: "Retreats Directory | Tereza Dos Santos",
     description:
-      "Administrative directory of Bali and Sri Lanka retreats curated by Tereza Dos Santos.",
+      "Administrative directory of Sri Lanka retreats curated by Tereza Dos Santos.",
     image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
-    imageAlt: "Retreat directory for Bali and Sri Lanka",
-  },
-  baliImages: {
-    routePath: "/bali-images",
-    title: "Bali Image Collection | Tereza Dos Santos",
-    description:
-      "Temporary Bali image library for selecting Dwa Chandra and retreat assets.",
-    image:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/paddy-field-bali-women-standing.jpg",
-    imageAlt: "Preview of the Bali image collection",
+      "https://img.fitreisen.group/eyJidWNrZXQiOiJmaXRyZWlzZW4tY2RuLWltYWdlcyIsImtleSI6IjZEQjZFMzIyREU1MkFFNTlDQThCQkJCRTU3NjFEMDg2IiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjkwMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImF0dGVudGlvbiJ9fX0=?signature=95da0fdc15dc80f60e1d8aeb14c35be56b56803999c229bbe68f306b1c677381",
+    imageAlt: "Retreat directory for Sri Lanka",
   },
   palmsImages: {
     routePath: "/palms-image",
@@ -317,21 +231,8 @@ for (const [directoryName, metadata] of [
   ["sri-lanka-october-7-days", routeMetadata.sriLankaOctober7Days],
   ["sri-lanka", routeMetadata.kuruluBay],
   ["kurulu-bay", routeMetadata.kuruluBay],
-  ["bali", routeMetadata.bali],
-  ["bali-october/investment", routeMetadata.baliOctoberInvestment],
-  ["bali-october", routeMetadata.bali],
-  [
-    "bali-september-7-days/investment",
-    routeMetadata.baliSeptember7DaysInvestment,
-  ],
-  ["bali-september-7-days", routeMetadata.baliSeptember7Days],
-  ["bali-friends", routeMetadata.baliFriends],
-  ["bali-creative-getaway", routeMetadata.baliCreativeGetaway],
-  ["bali-september", routeMetadata.baliSeptember],
-  ["dwa-chandra-rooms", routeMetadata.dwaChandraRooms],
   ["retreats-directory", routeMetadata.retreatsDirectory],
   ["palms-image", routeMetadata.palmsImages],
-  ["bali-images", routeMetadata.baliImages],
   ["contracts", routeMetadata.contracts],
   ["corporate", routeMetadata.corporate],
   ["offerings", routeMetadata.offerings],
