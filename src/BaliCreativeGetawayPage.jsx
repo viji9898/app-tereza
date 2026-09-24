@@ -195,9 +195,9 @@ const sections = [
 ];
 
 const included = [
-  "6 or 10 nights accommodation at Dwa Chandra",
+  "Your accommodation at Dwa Chandra",
   "Round-trip airport transfers",
-  "Daily chef-prepared anti-inflammatory vegetarian breakfast",
+  "Daily chef-prepared breakfast",
   "Free-flowing herbal tea, black coffee, fresh tropical fruit and water throughout the day",
   "Traditional Balinese welcome massage (60 min)",
   "Traditional Balinese Water Blessing (Melukat) at the river gorge",
