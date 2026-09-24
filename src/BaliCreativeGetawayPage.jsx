@@ -86,7 +86,6 @@ const dayBlocks = [
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/morning_ritual_shala.webp",
     items: [
-      "Homemade Jamu and herbal tea, whenever you surface",
       "Anti-inflammatory breakfast",
       "The valley with the mist still on it",
       "Someone will probably be moving in one of the shalas — join or don't",
@@ -262,7 +261,7 @@ export default function BaliCreativeGetawayPage() {
               September 23 — September 29, 2026
             </p>
             <p className="kurulu-bay-page__meta kurulu-bay-page__meta--spaced">
-              October 3 — 12, 2026
+              October 3 — 17, 2026
             </p>
             <div className="kurulu-bay-page__hero-lines">
               <p>come work on something</p>
