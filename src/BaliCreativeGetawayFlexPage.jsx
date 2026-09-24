@@ -15,7 +15,7 @@ export default function BaliCreativeGetawayFlexPage() {
 
       <header className="creative-flex-page__header">
         <a
-          href="/bali-creative-getaway"
+          href="/creative-getaway"
           aria-label="Back to The RESET Creative Getaway"
         >
           <span aria-hidden="true">←</span>
@@ -63,7 +63,7 @@ export default function BaliCreativeGetawayFlexPage() {
           <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
             Enquire about your dates <span aria-hidden="true">↗</span>
           </a>
-          <a href="/bali-creative-getaway">
+          <a href="/creative-getaway">
             View the full getaway <span aria-hidden="true">→</span>
           </a>
         </div>
