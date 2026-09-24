@@ -1,5 +1,6 @@
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import BaliCreativeGetawayPage from "./BaliCreativeGetawayPage";
 import ContractsPage from "./ContractsPage";
 import CorporateWellness from "./CorporateWellness";
 import KuruluBayRetreat from "./KuruluBayRetreat";
@@ -58,6 +59,14 @@ const pageMetadata = {
     image:
       "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/92c414ec-5896-48d1-92a4-10dc10450838/KuruluBaySriLanka050424_NateleeCocks_062.jpg?format=2500w",
     imageAlt: "The Palms retreat accommodation in Sri Lanka",
+  },
+  baliCreativeGetaway: {
+    title: "THE RESET Creative Getaway · Dwa Chandra, Bali",
+    description:
+      "THE RESET Creative Getaway at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — October 12, 2026.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
+    imageAlt: "Dwa Chandra surrounded by the Bali jungle",
   },
   retreats: {
     title: "Retreats | Tereza Dos Santos",
@@ -455,9 +464,11 @@ function App() {
                   ? pageMetadata.corporate
                   : pathname.startsWith("/contracts")
                     ? pageMetadata.contracts
-                    : pathname.startsWith("/content")
-                      ? pageMetadata.content
-                      : pageMetadata.home;
+                    : pathname.startsWith("/bali-creative-getaway")
+                      ? pageMetadata.baliCreativeGetaway
+                      : pathname.startsWith("/content")
+                        ? pageMetadata.content
+                        : pageMetadata.home;
 
   usePageMetadata(metadata);
 
@@ -495,6 +506,10 @@ function App() {
 
   if (pathname.startsWith("/contracts")) {
     return <ContractsPage />;
+  }
+
+  if (pathname.startsWith("/bali-creative-getaway")) {
+    return <BaliCreativeGetawayPage />;
   }
 
   if (pathname.startsWith("/content")) {

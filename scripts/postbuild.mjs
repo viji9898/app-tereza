@@ -48,6 +48,15 @@ const routeMetadata = {
       "https://images.squarespace-cdn.com/content/v1/613f1e9767023c65771d8a8f/92c414ec-5896-48d1-92a4-10dc10450838/KuruluBaySriLanka050424_NateleeCocks_062.jpg?format=2500w",
     imageAlt: "The Palms retreat accommodation in Sri Lanka",
   },
+  baliCreativeGetaway: {
+    routePath: "/bali-creative-getaway",
+    title: "THE RESET Creative Getaway · Dwa Chandra, Bali",
+    description:
+      "THE RESET Creative Getaway at Dwa Chandra, Bali. September 23 — September 29, 2026 and October 3 — October 12, 2026.",
+    image:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
+    imageAlt: "Dwa Chandra surrounded by the Bali jungle",
+  },
   retreatsDirectory: {
     routePath: "/retreats-directory",
     title: "Retreats Directory | Tereza Dos Santos",
@@ -231,6 +240,7 @@ for (const [directoryName, metadata] of [
   ["sri-lanka-october-7-days", routeMetadata.sriLankaOctober7Days],
   ["sri-lanka", routeMetadata.kuruluBay],
   ["kurulu-bay", routeMetadata.kuruluBay],
+  ["bali-creative-getaway", routeMetadata.baliCreativeGetaway],
   ["retreats-directory", routeMetadata.retreatsDirectory],
   ["palms-image", routeMetadata.palmsImages],
   ["contracts", routeMetadata.contracts],
