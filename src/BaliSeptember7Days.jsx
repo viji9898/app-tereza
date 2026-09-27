@@ -335,7 +335,7 @@ export default function BaliSeptember7Days() {
               A 7-Day | 6-Night Retreat curated by Tereza Dos Santos
             </p>
             <p className="kurulu-bay-page__meta kurulu-bay-page__meta--spaced">
-              September 23 — September 29, 2026
+              October 12 — October 18, 2026
             </p>
             <div className="kurulu-bay-page__hero-lines">
               <p>Less noise.</p>

@@ -261,8 +261,8 @@ const rooms = [
 const retreatDates = [
   {
     id: "september",
-    label: "23rd–29th Sept",
-    message: "23rd–29th September 2026",
+    label: "12th–18th October",
+    message: "12th–18th October 2026",
   },
   {
     id: "october",

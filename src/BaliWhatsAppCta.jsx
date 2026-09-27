@@ -2,7 +2,7 @@ import "./BaliWhatsAppCta.css";
 
 const WHATSAPP_NUMBER = "201010001133";
 const DEFAULT_WHATSAPP_MESSAGE =
-  "Hello Tereza, I would like more information about The RESET Bali retreat, September 23-29, 2026.";
+  "Hello Tereza, I would like more information about The RESET Bali retreat, October 12-18, 2026.";
 
 export default function BaliWhatsAppCta({
   message = DEFAULT_WHATSAPP_MESSAGE,

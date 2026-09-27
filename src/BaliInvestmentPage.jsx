@@ -10,7 +10,7 @@ export default function BaliInvestmentPage() {
         <p className="bali-investment-page__meta">
           A 7-Day | 6-Night Retreat curated by Tereza Dos Santos
           <br />
-          <em>September 23–29, 2026</em>
+          <em>October 12–18, 2026</em>
         </p>
         <dl className="bali-investment-page__pricing">
           <div className="bali-investment-page__price">

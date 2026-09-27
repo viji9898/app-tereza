@@ -257,9 +257,7 @@ export default function BaliCreativeGetawayPage() {
             </p>
             <div className="kurulu-bay-page__rule" />
 
-            <p className="kurulu-bay-page__meta kurulu-bay-page__meta--spaced">
-              September 23 — September 29, 2026
-            </p>
+            <p className="kurulu-bay-page__meta kurulu-bay-page__meta--spaced"></p>
             <p className="kurulu-bay-page__meta kurulu-bay-page__meta--spaced">
               October 3 — 17, 2026
             </p>
@@ -622,7 +620,7 @@ export default function BaliCreativeGetawayPage() {
 
           <div className="bali-creative-getaway__price">
             <div className="bali-creative-getaway__price-option">
-              <p>23 — 29 September · 6 nights</p>
+              <p>12 — 18 October · 6 nights</p>
               <span>$1,800 private room</span>
               <p>$1,110 per person if you share</p>
             </div>
