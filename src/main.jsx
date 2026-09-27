@@ -63,7 +63,7 @@ const pageMetadata = {
   baliCreativeGetaway: {
     title: "THE RESET Creative Getaway · Dwa Chandra, Bali",
     description:
-      "THE RESET Creative Getaway at Dwa Chandra, Bali. October 12 — October 18, 2026 and October 3 — October 17, 2026.",
+      "THE RESET Creative Getaway at Dwa Chandra, Bali. October 11 — October 17, 2026 and October 3 — October 17, 2026.",
     image:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-bali/ariel-view-dwa-chandra_optimised.webp",
     imageAlt: "Dwa Chandra surrounded by the Bali jungle",

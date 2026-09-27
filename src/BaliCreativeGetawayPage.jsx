@@ -620,7 +620,7 @@ export default function BaliCreativeGetawayPage() {
 
           <div className="bali-creative-getaway__price">
             <div className="bali-creative-getaway__price-option">
-              <p>12 — 18 October · 6 nights</p>
+              <p>11 — 17 October · 6 nights</p>
               <span>$1,800 private room</span>
               <p>$1,110 per person if you share</p>
             </div>
